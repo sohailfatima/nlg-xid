@@ -1,0 +1,44 @@
+dur: Total record duration
+proto: Transaction protocol
+service: Application/service (http, ftp, ssh, dns, …; “-” otherwise)
+state: Connection state and its protocol (e.g., ACC, CLO, “-” otherwise)
+spkts: Packet count source→destination
+dpkts: Packet count destination→source
+sbytes: Bytes from source to destination
+dbytes: Bytes from destination to source
+rate: Connection rate (packets per second)
+sttl: Source→destination time-to-live
+dttl: Destination→source time-to-live
+sload: Source bits per second
+dload: Destination bits per second
+sloss: Source packets retransmitted/dropped
+dloss: Destination packets retransmitted/dropped
+sintpkt: Source inter-packet arrival time (ms)
+dintpkt: Destination inter-packet arrival time (ms)
+sjit: Source jitter (ms)
+djit: Destination jitter (ms)
+swin: Source TCP window advertisement
+dwin: Destination TCP window advertisement
+stcpb: Source TCP sequence number
+dtcpb: Destination TCP sequence number
+tcprtt: SYN-ACK + ACK-DAT sum (TCP round-trip metric)
+synack: Time between SYN and SYN-ACK (TCP)
+ackdat: Time between SYN-ACK and ACK (TCP)
+smean: Mean packet size sent by source
+dmean: Mean packet size sent by destination
+trans_depth: Depth into HTTP request/response transaction
+response_body_len: Size of data returned by server’s HTTP service
+ct_srv_src: Count of same service & source address (windowed over last 100 conns)
+ct_state_ttl: Count per state within specific TTL ranges (uses state, sttl, dttl)
+ct_dst_ltm: Count of same destination address (windowed)
+ct_src_dport_ltm: Count of same source address & destination port (windowed)
+ct_dst_sport_ltm: Count of same destination address & source port (windowed)
+ct_dst_src_ltm: Count of same source & destination addresses (windowed)
+is_ftp_login: 1 if FTP session used user+password; else 0
+ct_ftp_cmd: Number of flows with an FTP command
+ct_flw_http_mthd: Number of flows with HTTP methods (e.g., GET, POST)
+ct_src_ltm: Count of same source address (windowed)
+ct_srv_dst: Count of same service & destination address (windowed)
+is_sm_ips_ports: 1 if src IP = dst IP and src port = dst port; else 0
+attack_cat: Attack category name (nine categories in the dataset)
+label: 0 = normal, 1 = attack

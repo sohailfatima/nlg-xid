@@ -1,0 +1,43 @@
+duration: Length of the connection (seconds)
+protocol_type: Transport protocol (e.g., tcp, udp, icmp)
+service: Application/service on destination (e.g., http, telnet, ftp, …)
+flag: Connection status at summary time (normal/error states)
+src_bytes: Bytes sent from source to destination
+dst_bytes: Bytes sent from destination to source
+land: 1 if src/dst IP and ports are the same; else 0
+wrong_fragment: Number of “wrong” IP fragments
+urgent: Number of urgent (TCP URG) packets.
+hot: Count of “hot” indicators (suspicious content signals)
+num_failed_logins: Failed login attempts
+logged_in: 1 if successful login; else 0
+num_compromised: Number of “compromised” conditions
+root_shell: 1 if root shell obtained; else 0
+su_attempted: 1 if su root attempted; else 0
+num_root: Number of root-level accesses
+num_file_creations: File creation operations
+num_shells: Shell prompts invoked
+num_access_files: Operations on access-control files
+num_outbound_cmds: Outbound FTP commands
+is_host_login: 1 if login is on the “hot list”; else 0
+is_guest_login: 1 if guest login; else 0. 
+count: Connections to the same host
+srv_count: Connections to the same service
+serror_rate: Percentage of those with SYN errors
+srv_serror_rate: Percentage of those with SYN errors
+rerror_rate: Percentage with REJ errors
+srv_rerror_rate: Percentage with REJ errors
+same_srv_rate: Percentage to the same service
+diff_srv_rate: Percentage to different services
+srv_diff_host_rate: Percentage to different hosts (among same-service). 
+dst_host_count: Connections to the same destination host
+dst_host_srv_count: Connections to the same destination host and same service
+dst_host_same_srv_rate: Percentage to the same service (within the host window)
+dst_host_diff_srv_rate: Percentage to different services (within the host window)
+dst_host_same_src_port_rate: Percentage with the same source port (within the host window)
+dst_host_srv_diff_host_rate: Percentage to the same service coming from different source hosts
+dst_host_serror_rate: Percentage with SYN errors (within the host window)
+dst_host_srv_serror_rate: Percentage with SYN errors for the same service (host window)
+dst_host_rerror_rate: Percentage with REJ errors (within the host window)
+dst_host_srv_rerror_rate: Percentage with REJ errors for the same service (host window).
+attack_cat: Target label (attack type)
+difficulty_level: Difficulty level of the attack (1-21)

@@ -1,0 +1,13 @@
+numpy
+pandas
+scikit-learn
+xgboost
+shap
+nltk
+pyyaml
+torch
+torchvision
+transformers
+accelerate
+bitsandbytes
+requests

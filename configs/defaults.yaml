@@ -1,0 +1,32 @@
+seed: 42
+top_k: 5
+test_size: 0.2
+val_size: 0.1
+model:
+  xgb:
+    n_estimators: 300
+    max_depth: 6
+    learning_rate: 0.1
+    subsample: 0.8
+    colsample_bytree: 0.8
+  ae:
+    hidden_dims: [128, 64]
+    latent_dim: 32
+    epochs: 64
+    batch_size: 256
+    lr: 0.001
+shap:
+  background_samples: 200
+  nsamples_kernel: 200
+llm:
+  provider: "openrouter"   # "openai", "ollama", etc. Implement in explain/llm_explainer.py
+  variant: "instruct"   # "uncensored" | "instruct" (for ablation tag only)
+eval:
+  bleu_ngram: 4
+  judge: true
+  judge_model: openai/gpt-4.1-nano
+  judge_provider: openrouter
+  judge_weights:
+    clarity: 0.25
+    completeness: 0.25
+    fidelity: 0.5
