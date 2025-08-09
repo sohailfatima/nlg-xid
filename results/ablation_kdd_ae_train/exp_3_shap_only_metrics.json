@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "bleu": 0.017992647351403948,
+    "shap_fidelity": 1.0,
+    "judge_overall": 3.131
+  },
+  "metadata": {
+    "model_type": "ae",
+    "dataset": "nsl-kdd",
+    "test_samples": 200,
+    "explanation_method": "shap_only",
+    "experiment_name": "exp_3_shap_only"
+  }
+}

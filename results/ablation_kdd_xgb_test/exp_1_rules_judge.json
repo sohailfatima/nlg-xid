@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, which contradicts the claim that they increased confidence. It mentions failed login attempts, which is relevant, but overall the explanation does not align well with the actual feature values. The description is somewhat concise but could clarify the lack of feature influence and explicitly state that features did not contribute to the 'Normal' prediction. It covers some key drivers but overstates their impact given the feature values, and it lacks caveats about the features being neutral or non-influential in this case.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing multiple services and connection patterns indicative of scanning behavior. It correctly notes key drivers such as percentage to different services and bytes sent, consistent with the top features. However, it mentions 'Very short Length of the connection' as typical for probes, but this feature is not explicitly included in the top features or the instance data, which could cause some ambiguity. Overall, the explanation is clear, relevant, and covers main factors, but could improve by explicitly referencing the connection duration aspect.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, indicating they do not influence the prediction, yet it claims they increase confidence in 'Normal' classification. This contradiction reduces fidelity. The explanation is concise and SOC-ready but lacks detail on how these features justify the label or address potential caveats, resulting in moderate completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, matching the prediction. It clearly states the key factors and their influence, though it could be more explicit about the absence of contradictory features or potential caveats. Overall, it is concise and SOC-ready, covering the main drivers of the classification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing repeated rapid connections, rejected handshakes, and increased bytes, which are consistent with a DoS attack. It mentions key drivers such as connections to the same host/service and REJ flags, supporting the classification. However, it could improve clarity by explicitly linking feature signs to the attack pattern and noting potential caveats, such as benign causes of similar patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that increased bytes sent in both directions and certain connection features increased confidence, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is fairly concise and SOC-ready, but it does not justify why the model predicted 'Normal' nor does it discuss potential caveats or other key drivers, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and clear but lacks detail on how features support the 'Normal' label, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or irrelevant in this instance (e.g., bytes sent, service, connection counts), yet claims they increased confidence in a DoS prediction. It mentions connection flag RSTR as indicative of rejection, which aligns with DoS behavior, but the explanation's focus on features with zero values introduces contradictions and hallucinations. The reasoning is somewhat ambiguous and not concise, lacking clear linkage between features and the predicted label. Overall, it partially captures the context but overstates the influence of features that are not active here.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in a 'Normal' classification, and correctly states that these features support the prediction. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature sign (+0.000), suggesting no increase; this could be clarified. The explanation covers key drivers but lacks mention of potential caveats or the absence of contradictory features, slightly limiting completeness. Overall, it is clear and mostly faithful to the features and prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing SYN errors, repeated connections, and connection flags consistent with a DoS attack. It mentions key drivers such as SYN errors, repeated connections, and the connection flag S0, which are relevant for a DoS classification. However, it references 'Percentage with SYN errors' as a key factor, which is not listed among the top features, leading to a slight inconsistency. The explanation is concise and SOC-ready, covering the main points but could clarify the role of the 'flag=S0' feature more explicitly. Overall, it provides a solid, accurate justification for the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. It mentions features as key drivers without supporting evidence, reducing clarity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It clearly states the key factors and their influence, avoiding contradictions. However, it could be more concise and explicitly mention that these features indicate typical traffic patterns, and note that no significant anomalies or caveats are discussed.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It accurately describes the factors contributing to the DoS prediction. Minor improvements could clarify the significance of the features and explicitly note the absence of certain features (e.g., source bytes) in this instance, but overall it is consistent and SOC-ready.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's emphasis on these features as key drivers is misleading, and it does not clarify that these features were neutral in the model's decision. While the explanation is concise and mostly clear, it lacks accuracy in linking features to the prediction, reducing its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the features to the DoS prediction, emphasizing repeated connections, rejected handshakes, and relevant features like REJ flags. However, it mentions features like 'Bytes sent from source to destination' and 'Application/service' increasing confidence, which are zero in this instance, potentially causing confusion. Clarifying that these features contributed in other similar cases or generally support the prediction would improve fidelity. The explanation is concise and covers key drivers but could briefly note that some features had no variation here, and it does not explicitly mention potential caveats or limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing the short duration typical of probes and noting the increased confidence from features like application/service, protocol, and bytes exchanged. However, it mentions 'transport protocol' as a factor increasing confidence, which is not explicitly listed among the top features, indicating a slight inconsistency. The explanation is concise and SOC-ready, covering key drivers and providing a reasonable justification for the 'Probe' label, with minor room for clarity and completeness improvements.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, emphasizing increased bytes sent, specific application/service, and repeated connections to the same host, which support the 'Normal' classification. However, it incorrectly states that these features increased confidence; in reality, the features are neutral or typical for normal traffic, and the explanation could clarify that these patterns are consistent with normal behavior rather than actively increasing confidence. The explanation covers key drivers but lacks mention of caveats or the absence of contradictory features, slightly limiting its completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' prediction. However, it overemphasizes the positive contributions without explicitly addressing the zero or negligible feature values, and it does not mention potential caveats such as the absence of other features or context that could influence the classification. Overall, it is clear and mostly complete but could benefit from more explicit acknowledgment of feature values and limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately references key features associated with DoS attacks, such as SYN errors, repeated connections, and the connection flag S0, aligning with the prediction. It clearly states how these features contribute to the classification. However, it mentions 'Percentage with the same source port' and 'Bytes sent' as increasing confidence, but the top features show zero contribution for these, which could cause some confusion. Overall, it covers the main drivers and provides a coherent rationale, but could improve clarity by explicitly linking the features' signs and contributions.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, which contradicts the claim that they increased the model's confidence. This inconsistency reduces fidelity. The explanation is somewhat concise but could clarify how these features influence the prediction more explicitly. It mentions key drivers like service and bytes but lacks detail on how they justify the 'Probe' label, especially given the feature values. Overall, it partially covers the key points but has notable contradictions.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, which contradicts the model's reliance on these features for the prediction. It mentions increased confidence from features not highlighted as important, leading to inconsistency. The explanation is somewhat verbose and not clearly structured, reducing clarity. It also lacks specific details on how these features justify the 'DoS' label or notes potential caveats, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. While the explanation is concise and SOC-ready, it lacks justification based on the actual feature contributions and does not address potential caveats or the absence of feature influence, resulting in low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It covers key drivers and provides a coherent narrative. However, it mentions 'Bytes sent from source to destination' and other features as increasing confidence, but these features are zero in the instance, which could cause some confusion. Clarifying that these features are generally indicative rather than always active would improve clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It accurately describes the connection behavior typical of DoS attacks. Minor improvements could clarify the specific feature signs and explicitly connect each feature to the predicted label, but overall it provides a coherent and SOC-ready justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN flags, repeated connections, and SYN errors, aligning with the prediction. It clearly states how these features contribute to the classification. However, it mentions 'Percentage with the same source port' and 'Percentage with SYN errors' as increasing confidence, but these features are not listed among the top features provided, which could cause some confusion. Overall, the explanation is coherent and covers main drivers but could be more precise regarding feature references.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, indicating no actual influence on the prediction. It mentions 'hot' indicators and connection length as increasing confidence, but these are not supported by the provided top features or SHAP values. The explanation is somewhat clear but lacks alignment with the model's feature importance and does not justify the 'Normal' label effectively, missing key drivers and caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' prediction, which aligns with the features being zero or typical values. However, it incorrectly states that 'Bytes sent from source to destination increased the model's confidence,' despite the feature value being zero, indicating no increase. The explanation also overstates the influence of features without quantifying their impact or noting that all features are neutral or non-contributory, thus lacking completeness. Clarity is good but could be more concise.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic. It correctly states that these features support the 'Normal' prediction and avoids contradictions. The explanation is concise and SOC-ready, clearly linking features to the classification. However, it could improve by explicitly noting that these features collectively support the normal label and mentioning any potential caveats or limitations, such as the absence of features indicating anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased activity or common patterns associated with normal traffic. It correctly states that these features increase confidence in the 'Normal' classification, with no contradictions or hallucinations. The explanation is concise and clearly links features to the prediction, covering key drivers. However, it could improve by explicitly noting that these features are typical for normal traffic and mentioning any potential caveats or limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all listed features increased confidence in a 'Normal' classification, aligning with the top features' zero or positive contributions. However, the features provided have zero SHAP values, indicating they did not influence the prediction. The explanation's emphasis on these features as key drivers is misleading, and it does not mention the absence of significant feature impact or potential caveats. Clarity is good, but the explanation overstates the role of features with no contribution, reducing overall accuracy.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected flags, and key features that support the DoS prediction. It clearly states how each feature contributes to the classification. However, it mentions features like 'Bytes sent from source to destination' and 'Application/service' increasing confidence, which are marked as zero in the top features, potentially causing slight confusion. Overall, it is concise, covers key drivers, and notes relevant caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It mentions key factors and their influence on the model's confidence, avoiding contradictions. However, it could be more explicit about the actual feature values and their direct impact, and it slightly overstates the influence of features with zero SHAP values, which may not significantly contribute. Overall, it is clear, relevant, and covers key drivers, but could benefit from more precise linkage between features and the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features but incorrectly states that increased bytes from source to destination and connections to the same host increase confidence, which contradicts the top features showing zero contribution. It also mentions the protocol as increasing confidence, but the top features do not include protocol type, and the model's prediction is 'Normal' with no feature contributions. The explanation lacks specific details about the actual feature values and their influence, leading to partial fidelity and completeness. Clarity is good but could be more precise about the actual feature impacts.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, yet claims they increased confidence, creating a contradiction. It mentions multiple factors as key drivers but does not specify their directions or how they contributed to the 'Normal' classification. The explanation is somewhat verbose and could be more concise, but overall it is understandable. It lacks detailed justification linking features to the prediction, and does not note potential caveats or uncertainties.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims all top features increased confidence, but the features have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. Clarity is good, but the explanation does not justify the 'Normal' label or discuss potential caveats, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, contradicting the claim that they increased confidence. It mentions failed login attempts as increasing confidence, but the top features show no such contribution. The explanation is somewhat ambiguous and lacks focus on key drivers relevant to the 'Normal' prediction, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, consistent with the 'Normal' prediction. It correctly mentions key drivers such as application/service, bytes sent, and connection patterns. However, it overstates the influence of features that are actually zero in the top features list, such as 'Bytes sent from source to destination' and 'Percentage with the same source port,' which are marked as zero. Clarification on the actual feature values would improve transparency. The explanation is concise and SOC-ready but could better emphasize caveats or the absence of certain features' influence, hence slightly reducing the completeness score.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 1.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance (e.g., application/service, bytes sent, connections to same host/port), which contradicts the claim that these features increased the model's confidence. It also mentions 'Unusually high Connections' without providing actual values or context, leading to ambiguity. The explanation does not clearly justify the 'DoS' prediction based on the provided feature values, nor does it specify how the features' signs influence the decision. Overall, it lacks alignment with the actual feature data and is somewhat vague, affecting fidelity, clarity, and completeness.",
+      "overall": 1.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. While the explanation is concise and SOC-ready, it lacks justification based on the actual feature contributions and does not mention potential caveats or the absence of feature influence, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify the label or cover key drivers since it overlooks the actual feature contributions and lacks caveats or context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and increased bytes sent, which are consistent with a DoS attack. It mentions key drivers such as connections to the same host/service and the REJ flag, covering the main factors. However, it could improve clarity by explicitly linking the features to the specific attack pattern and noting that some features (e.g., bytes sent) had zero values in this instance, which may limit their contribution. Overall, it provides a solid, SOC-ready summary with minor room for detail.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation references the key features identified by SHAP as increasing confidence, aligning with the 'Normal' prediction. It correctly mentions the general factors influencing the model, such as bytes sent and service type. However, it overstates the significance of some features (e.g., 'Bytes sent from source to destination' and 'Bytes sent from destination to source') without specifying their actual SHAP signs or magnitudes, which could lead to potential contradictions if the features' contributions are minimal or opposite. The explanation is concise and SOC-ready but could better justify why these features support a 'Normal' classification and note any caveats regarding feature importance or potential edge cases.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing increased confidence when these features are present, consistent with the 'Normal' prediction. It clearly states the key factors and their influence, avoiding contradictions. However, it could be more explicit about how each feature contributes to the normal classification and mention potential caveats or limitations, such as the absence of feature magnitudes or thresholds.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections to the same host, and the connection flag S0, aligning with the prediction. It mentions the increased confidence from these features without contradicting the provided top features, which are all zero in the instance, indicating the explanation is more about typical patterns rather than specific feature values. The explanation is concise and SOC-ready, covering main drivers and noting the relevance of SYN errors and connection patterns. However, it could improve clarity by explicitly linking the features to the instance\u2019s actual feature values, which are all zero, to better justify the model's decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features listed have zero SHAP value signs, indicating they did not influence the prediction. The explanation's assertion that these features increased confidence contradicts the SHAP data, which suggests no contribution. The explanation is somewhat concise but lacks clarity in connecting features to the prediction, and it does not explicitly justify why the combination of features supports 'Normal' traffic. Overall, it overstates the influence of features and misses key caveats about their actual contributions.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that key features increased confidence in a 'Normal' classification, but the provided top features are all zero-valued, indicating no contribution. This contradiction reduces fidelity. The explanation is somewhat verbose and could be clearer about the actual feature contributions. It mentions key drivers but does not specify how they influence the prediction, nor does it note that features are neutral, which affects completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It clearly states the key factors and their influence, though it could be more concise and explicitly mention the absence of contradictory features. Overall, it effectively justifies the 'Normal' label based on the features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' classification, but the provided features (src_bytes=315, dst_bytes=347, service=http, etc.) are all zeroed out in the top features list, indicating no contribution. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not specify how these features influence the prediction given their zero importance, limiting completeness. Overall, the explanation does not accurately reflect the feature contributions, leading to a low fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing SYN errors, repeated connections, and the S0 flag, which are indicative of DoS attacks like SYN floods. It mentions key drivers such as connection patterns and flags, and notes the relevance of increased bytes sent and source port behavior. However, it references 'Percentage with SYN errors' as a key factor, which is not listed among the top features, introducing a slight inconsistency. Overall, the explanation is clear, concise, and covers the main drivers, with minor room for more explicit caveats or details on feature interactions.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections to the same host, and the connection flag S0. It aligns these features with the prediction and avoids hallucinations. However, it mentions 'Percentage with the same source port' and 'Percentage with SYN errors' as increasing confidence, but these features are not part of the provided top features, which could cause some inconsistency. The explanation is concise and SOC-ready, covering the main drivers and providing context for the features' relevance.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It covers key drivers and provides a coherent narrative. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature indicating zero bytes, suggesting a slight inconsistency. Overall, the explanation is clear and covers essential points, but could better clarify the role of zero bytes in this context.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify the label or cover key drivers, as it attributes influence to features with no impact and omits caveats about the actual feature contributions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. It mentions key drivers but does not specify how they support the 'Normal' label, and it overlooks the actual feature values and their lack of contribution. Overall, the explanation lacks alignment with the SHAP data and does not clearly justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly links the RSTO flag and repeated connections to the same host as indicators of a DoS attack, aligning with the model's features. However, it mentions 'Bytes sent from source to destination' and 'Application/service' as increasing confidence, despite their SHAP values being zero, which introduces some inconsistency. The mention of 'Percentage with REJ errors' is not supported by the provided features or top SHAP features, leading to a partial gap in completeness. Overall, the explanation is clear and mostly faithful but could better justify the absence of certain features and clarify the role of zero SHAP features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features associated with DoS attacks, such as the S0 flag indicating incomplete handshakes and the increased confidence from source-to-destination bytes and repeated connections. However, it mentions 'Percentage with the same source port' as a driver, which is not supported by the provided features or the top features list, leading to a slight inconsistency. The explanation is concise and covers the main drivers but could clarify the relevance of each feature more explicitly.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, matching the prediction. It correctly states that these features support the 'Normal' classification without contradictions. The explanation is concise and clear, highlighting key drivers without ambiguity. However, it could improve by explicitly noting that all feature values are neutral or typical, reinforcing the normal classification, and mentioning any potential caveats or feature limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It correctly emphasizes typical traffic patterns and key features. However, it overstates the influence of features that are zero, implying they increased confidence, which could be misleading. The explanation could be clearer by explicitly noting that these features did not contribute positively or negatively, and it lacks mention of potential caveats or the absence of anomalous indicators.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references multiple features associated with scanning behavior, such as contact with multiple services and hosts, which aligns with the 'Probe' prediction. However, it incorrectly states that 'Bytes sent from source to destination' increased confidence, contradicting the top features which show zero contribution. The explanation also repeats 'Percentage to different services' twice, reducing clarity. While it covers key drivers like service contacts and connection duration, it lacks explicit mention of the zero values for features that did not contribute, and does not clearly note caveats or potential limitations.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero coefficients, which contradicts the importance of these features in the prediction. It mentions 'Connection flag RSTR' as indicative of DoS, aligning with the prediction, but the other features are not supported by the top features data. The explanation is somewhat ambiguous and lacks detail on how each feature contributes to the classification, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features increased confidence, aligning with the 'Normal' prediction. However, the features' values are all zero or minimal, which contradicts the claim that they increased confidence. The explanation lacks detail on how these features influence the classification and does not address potential caveats or the absence of feature variation. Overall, it is somewhat clear but not fully justified or complete in explaining the model's decision.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top SHAP features for this prediction, such as application/service and source port percentage, which contradicts the provided top features. It also mentions connection length, which is not listed among the top features, leading to potential hallucinations. The explanation is somewhat vague and not concise, reducing clarity. It partially justifies the R2L label by citing features that are not aligned with the top SHAP features, limiting its completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or non-indicative of anomalies, supporting the 'Normal' prediction. It mentions key factors and their influence on the model's confidence, providing a clear rationale. However, it could improve by explicitly noting that the feature values are typical for normal traffic and by clarifying that the features' contributions are consistent with normal behavior, avoiding potential hallucinations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' classification. However, it incorrectly suggests that increased bytes sent from source to destination and other features 'increased the model's confidence,' which contradicts the top features' zero or neutral values; since all features are zero, they do not contribute positively. The explanation could clarify that these features are neutral or not influential in this case. The summary is concise and SOC-ready but could better emphasize the absence of anomalous signals, thus improving completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and increased bytes sent, which are consistent with a DoS attack. It mentions key drivers such as connection patterns and flags, and notes the relevance of REJ flags. However, it could improve clarity by explicitly linking the features to the specific attack type and noting potential caveats like benign causes of similar patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' classification, but the features' signs are all zero, indicating no contribution. The explanation's emphasis on increased confidence is misleading, as the features do not support this assertion. It lacks detail on how these features collectively justify the 'Normal' label and does not address potential caveats or feature interactions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features increasing confidence but contradicts the provided top features, which are all zero and do not support the 'DoS' prediction. It references features like bytes sent and connection counts as key drivers, yet these are not reflected in the top features list. The explanation also introduces details about the connection flag RSTO and typical DoS patterns, but these are not directly linked to the top features or the instance's feature values. Overall, the explanation lacks alignment with the actual feature importance and does not clearly justify the prediction based on the given data.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' prediction. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature value of +0.000, suggesting no contribution. This inconsistency slightly reduces fidelity. Clarity is high due to concise language and clear key points. Completeness is moderate; while it covers the main features supporting the 'Normal' label, it does not explicitly mention potential caveats or the absence of contradictory features, nor does it discuss the overall confidence level or possible limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It accurately describes the typical indicators of a DoS attack, though it could explicitly mention the significance of the 'flag=REJ' feature and clarify the role of the other features in the context of the prediction. Overall, it is concise and covers key drivers, with minor room for more explicit caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, yet claims they increased confidence, creating a contradiction. It mentions multiple features as key drivers without specifying their actual influence or directions, leading to ambiguity. The explanation does not clearly justify why the connection is classified as 'Normal' based on the features, nor does it note potential caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, emphasizing their positive contributions to the 'Normal' prediction. It correctly notes that all key features increased confidence, consistent with their positive SHAP signs. However, it overstates the influence of features like 'Bytes sent from source to destination' and 'Connections to the same host,' which have zero SHAP values, indicating minimal or no contribution. The explanation could be clearer by explicitly stating that these features had negligible impact, and it should mention potential caveats such as the absence of negative feature contributions or other factors not captured by the top features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero importance, indicating no influence on the prediction. This contradiction reduces fidelity. The explanation is somewhat concise but lacks clarity about the actual feature contributions. It also does not justify why the model predicts 'Normal' given the features, nor does it mention potential caveats or the absence of feature influence, limiting completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. The mention of 'hot' indicators and other features as increasing confidence contradicts the actual feature importance, leading to low fidelity. The explanation is concise and mostly clear but lacks detail on why these features are relevant given their zero importance. It also does not address potential caveats or the absence of feature influence, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation introduces factors (e.g., increased bytes, specific services, protocol) that are not supported by the feature importance data, leading to contradictions. While the explanation is concise and generally clear, it lacks alignment with the actual feature contributions and does not justify why the connection is considered normal, missing key details about the features' actual impact.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence in the DoS prediction, creating contradictions. It mentions 'unusually high connections' and 'repeated rapid connections' without supporting data, and references features (e.g., application/service, bytes sent) that are not active in this case. The explanation lacks specific details about the actual features' values and how they contribute to the prediction, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that increased bytes sent from source and destination, as well as specific application/services and connections to the same host, increased confidence in a 'Normal' classification. However, the top features all have zero importance, indicating they did not influence the prediction. The mention of 'transport protocol' increasing confidence is inconsistent with the top features, which show no such influence. Overall, the explanation is somewhat clear but does not accurately reflect the feature importances or justify the 'Normal' label effectively, and it overlooks the fact that the features did not contribute to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It correctly states that increased bytes in either direction and certain connection patterns increase confidence in normal traffic. However, it overstates the influence of features that are actually zero, implying they contributed positively, which could be misleading. Overall, it is clear and covers key drivers but could better specify that these features are neutral or non-contributory in this case.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, which contradicts the stated key factors that increased confidence. It lacks specific feature values or directions, making it ambiguous how these features contributed to the 'Normal' classification. The explanation mentions increased confidence but does not specify how each feature's sign or magnitude supported the prediction, leading to limited fidelity and completeness. Overall, it is somewhat clear but insufficiently detailed and aligned with the model's explanations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references multiple features (percentage to different services, bytes sent, application/service, source port percentage) that are not reflected in the provided top features, which are all zero. This inconsistency reduces fidelity. Clarity is good, but the explanation mentions features not present in the top features list, leading to some ambiguity. It justifies the 'Probe' label by citing scanning behavior and short connection length, which are relevant, but it does not explicitly connect the features to the label or note potential caveats. Overall, the explanation is somewhat inconsistent with the provided features, impacting fidelity and completeness.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features but incorrectly states that 'Bytes sent from source to destination' and 'Percentage with the same source port' increased confidence, which contradicts the top features showing zero contribution. It also mentions 'length of the connection' as a factor, but this is not among the top features. The explanation lacks clarity and misses some key drivers like 'hot' indicators and the specific service, leading to partial coverage and potential hallucinations.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is somewhat concise but includes redundant phrases like 'increased the model's confidence' repeatedly, affecting clarity. It also lacks specific details on how these features support the 'Normal' label or mention potential caveats, limiting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing multiple scanning behaviors typical of probes. It correctly highlights key drivers such as contact patterns and short connection duration, consistent with the prediction. However, it mentions features like 'Bytes sent' and 'Application/service' as increasing confidence, which is somewhat contradictory given their zero values in the instance; clarifying this would improve fidelity. The explanation is concise and SOC-ready, covering key drivers and noting the typical short duration for probes, but could briefly mention caveats such as the low bytes sent in this specific case.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increase confidence in the 'Probe' classification, creating a contradiction. It mentions percentages and behaviors not reflected in the provided features, leading to hallucinations. While it notes key factors like REJ errors and contact patterns, it lacks specific details about the actual feature values and how they support the label, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and factors associated with DoS attacks, such as repeated rapid connections, RSTO flags, and multiple connections to the same host. However, it mentions features like 'Bytes sent from source to destination' and 'Percentage with the same source port' increasing confidence, which are zero in this instance, leading to potential contradictions. Additionally, the mention of REJ errors and other features not reflected in the top features or instance details introduces hallucinations. The explanation is somewhat verbose and could be more concise and focused on the key drivers relevant to this specific case, affecting clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all the listed features have zero SHAP contribution signs, indicating they did not influence the prediction. The explanation suggests these features increased confidence, which contradicts the SHAP data. It also lacks details on how these features collectively justify the 'Normal' label or address potential caveats. Overall, it is somewhat clear but not fully aligned with the model's feature contributions and lacks depth in justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It accurately connects these factors to the DoS prediction. Minor hallucinations are present, such as mentioning 'Bytes sent from source to destination increased the model's confidence,' which isn't supported by the top features' zero coefficients, but overall, the explanation captures key drivers effectively. Clarity is good, with concise language and clear reasoning, though some technical details could be simplified for broader SOC readiness. Completeness covers the main features and their roles in the prediction, noting the key drivers and their implications.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation references key features aligned with the top SHAP features, emphasizing their positive contributions to the 'Normal' prediction. However, it incorrectly states that 'Bytes sent from source to destination' increased confidence, whereas the SHAP value is zero, indicating no contribution. The explanation covers main drivers but lacks mention of caveats or the negligible impact of some features, and could be more concise for SOC readiness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that increased bytes sent from source to destination and other features increased confidence, but the top features all have zero SHAP values, indicating they did not influence the prediction. Additionally, failed login attempts are associated with anomalies, yet the explanation suggests they increased confidence in 'Normal'. The explanation is somewhat clear but lacks alignment with the feature importance, reducing fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately references key features associated with DoS attacks, such as SYN errors, repeated connections, and the connection flag S0. It aligns well with the prediction and features, though it mentions 'Percentage with the same source port' and 'Percentage with SYN errors' as increasing confidence, which are not explicitly listed among the top features; assuming these are part of the broader feature set, the explanation remains consistent. The description is clear and concise, covering the main drivers and providing context for the features' relevance. It notes the typical behavior of SYN floods and the significance of the connection flag, offering a comprehensive justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing multiple services and connection patterns typical of probing activity. It correctly highlights key drivers such as contact patterns and service diversity, consistent with the top features. However, it could improve clarity by explicitly connecting the features to the specific indicators of probing behavior and noting that the low bytes sent may suggest scanning rather than data transfer. The coverage of key drivers is solid, but mentioning potential caveats, such as the very short connection duration or the possibility of benign scanning, would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features are all zero-valued, indicating no significant contribution. The explanation's emphasis on these features as key drivers contradicts the data, reducing fidelity. It is concise and mostly clear but lacks detail on how these features influence the prediction. The explanation does not justify why the connection is normal based on the features, nor does it mention potential caveats or other factors, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' prediction. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature value of 0.000, suggesting no contribution. This inconsistency reduces fidelity slightly. Clarity is good\u2014concise and SOC-ready. Completeness covers key drivers but lacks explicit mention of caveats or the absence of contradictory features, and it could better emphasize that no features decreased confidence or indicated anomalies.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and mostly clear but lacks detail on how features support the 'Normal' label. It also omits caveats or uncertainties, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is somewhat concise but contains ambiguous phrasing like 'Percentage to different services,' which is not directly listed among top features, and the mention of 'hot' indicators is not supported by the feature values or SHAP data. It justifies the label minimally and omits caveats or detailed reasoning, limiting completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, indicating no actual influence on the prediction. It claims increased confidence based on these features, which contradicts the top features' contributions. The explanation is somewhat concise but lacks clarity in connecting features to the 'Normal' prediction and does not sufficiently justify why these factors lead to a normal classification. It also omits caveats or acknowledgment of the features' negligible impact, reducing overall completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing SYN errors, repeated connections, and the S0 flag as key indicators of DoS. It mentions the relevant features and their contribution to the prediction, avoiding hallucinations. However, it references 'Percentage with the same source port' and 'Percentage with SYN errors' as increased confidence factors, which are not explicitly listed among the top features provided, potentially causing slight ambiguity. Overall, it effectively justifies the label with key drivers and notes the relevant caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify the label or cover key drivers, as it overlooks the actual feature contributions and lacks caveats about the zero SHAP values.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections to the same host, and the S0 flag indicating incomplete handshakes. It aligns well with the top features, though it mentions 'Percentage with the same source port' and 'Percentage with SYN errors' as increasing confidence, which are not explicitly listed among the top features; this could cause slight ambiguity. The explanation is concise and SOC-ready, covering the main drivers and providing context for the features used.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided top features, all indicating increased confidence in normal traffic, consistent with the 'Normal' prediction. However, the explanation mentions increased confidence from features that are all zero in the top features list, which could be misleading or suggest a mismatch. Clarifying that these features are not contributing positively or explicitly stating their neutral impact would improve clarity. The explanation covers key drivers but lacks mention of potential caveats or the absence of contradictory features, slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features with positive signs, aligning with the top features, but it mentions 'Application/service on destination' and 'Bytes sent from destination to source' as increasing confidence, which contradicts the top features showing zero contribution for these. The mention of 'Transport protocol' increasing confidence is vague, as 'protocol_type=udp' is not explicitly highlighted in the top features. The explanation lacks detail on how these features justify the 'Normal' label and does not address potential caveats or the absence of negative feature contributions. Overall, it is somewhat aligned but contains contradictions and insufficient detail for full completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP contribution signs, indicating no actual influence on the prediction, yet it suggests these features increased confidence. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify the 'Normal' label with key drivers or caveats, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as application/service and bytes sent, aligning with the top features, but incorrectly states that these features increased confidence, whereas the top features show zero importance. It also references 'length of the connection,' which is not among the top features, indicating hallucination. The explanation lacks clarity and does not clearly justify the R2L prediction based on the actual feature importances or provide caveats. Overall, it partially aligns with the features but contains contradictions and hallucinations, leading to low fidelity and clarity scores.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence, creating a contradiction that reduces fidelity. It mentions key drivers like repeated connections and protocol type, but does not clearly connect these to the actual feature values or specify how they influence the prediction. The explanation is somewhat verbose and not entirely SOC-ready, lacking concise articulation of the causal reasoning. Overall, it partially covers the key drivers but is inconsistent and could be clearer.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It accurately describes the typical indicators of a DoS attack, though it could explicitly mention the significance of the 'flag=REJ' feature's contribution. Overall, it is concise and covers key drivers, with minor room for more explicit caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP contribution signs, indicating no actual influence on the prediction, yet it claims these features increased confidence. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify the 'Normal' label with key drivers or caveats, and it overstates the influence of features with no contribution, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral in this case, indicating typical 'Normal' traffic. It correctly states that increased bytes sent and repeated connections support the 'Normal' classification. However, it mentions features like source/destination bytes and connection patterns as key drivers, which are consistent with the top features. The explanation is concise and SOC-ready, but could improve clarity by explicitly linking the features to the 'Normal' label rather than just stating they increase confidence. It covers key drivers but does not explicitly note potential caveats or the absence of contradictory features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features have zero SHAP values, indicating they did not influence the prediction. The mention of increased confidence from features contradicts the actual feature importance, leading to low fidelity. The explanation is concise and mostly clear but lacks detail on how features support the 'Normal' label and does not address potential caveats or the absence of feature influence, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence, creating a contradiction. It mentions protocol type 'icmp' but suggests protocol increases confidence without specifying how, leading to ambiguity. The explanation does not clearly justify why the connection is classified as 'Probe' based on the features, nor does it note the very short duration or other key indicators. Overall, it lacks alignment with the actual feature values and does not sufficiently justify the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' classification, but the provided top features are all zero-valued and do not support the stated factors. This contradiction reduces fidelity. The explanation is concise and mostly clear, but it does not specify how these features influence the prediction given their zero values, limiting completeness. It mentions key drivers but overlooks the actual feature values and their impact, and it does not note potential caveats or uncertainties.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence, but the features' SHAP values are zero, indicating no contribution. This contradicts the model's prediction of 'Normal' and the provided feature values. The explanation is somewhat concise and SOC-ready but lacks acknowledgment of the zero feature contributions and does not justify why the connection is classified as normal despite the features showing no anomalies. It also does not mention potential caveats or the absence of feature influence.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased the model's confidence, but all top features have zero SHAP values, indicating no influence on the prediction. This contradiction reduces fidelity. The explanation is concise and mostly clear but lacks detail on how features support the 'Normal' label. It also does not mention potential caveats or the absence of feature influence, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections, and the S0 flag, aligning with the prediction. It accurately describes how these features contribute to the classification without contradictions. The explanation is concise and SOC-ready, clearly linking features to the DoS label. It covers the main drivers and notes the relevance of SYN errors and connection patterns, though it could briefly mention potential caveats like benign causes of similar patterns for full completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided top features, all indicating increased confidence in normal traffic, matching the prediction. However, it mentions features with zero SHAP values, which may be misleading or suggest they are considered but not influential; this slightly reduces fidelity. The explanation is concise and clear, but could better specify how each feature contributes to the 'Normal' classification and note that no contradictory features are present, enhancing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, indicating no actual contribution to the prediction. It mentions factors like bytes sent and application type, but these are not supported by the top features or their signs. The mention of 'Percentage with REJ errors' is inconsistent with the provided features, which do not include such a metric. Overall, the explanation lacks alignment with the model's explanations, is somewhat ambiguous, and does not thoroughly justify the 'Normal' prediction based on key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, indicating they do not contribute to the prediction. It incorrectly states that these features increased confidence, which contradicts the top features' signs. The explanation lacks specific details about how the features support the 'Normal' classification and does not mention the actual feature values or potential caveats. Overall, it is somewhat clear but does not accurately justify the prediction based on the provided features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly notes their positive signs. It mentions key drivers such as bytes sent, application type, hot indicators, and connection patterns. However, it incorrectly states that 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature value of zero, suggesting no increase. Clarification on the actual feature values and their influence would improve fidelity. The explanation is concise and SOC-ready, covering main drivers and noting that the pattern indicates normal traffic, but it could better address caveats or feature nuances for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features that supposedly increased confidence but contradicts the top features, which are all zero, indicating no feature influence. It also mentions 'Bytes sent from source to destination' and others as increasing confidence, yet the top features show zero contribution. The explanation lacks clarity in connecting features to the 'Normal' prediction and does not specify how these features justify the label. Overall, it overstates the influence of features that are actually neutral, leading to low fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero coefficients, which contradicts the stated top features that have positive contributions. It mentions increased confidence from features that are not impactful according to the top features, leading to inconsistency. The explanation is somewhat concise but lacks clarity in connecting features to the 'Normal' prediction explicitly. It also does not sufficiently justify why these features lead to a 'Normal' classification or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence, creating a contradiction. It mentions protocol and application as key factors, but these are not supported by the feature values. The explanation lacks clarity in connecting features to the 'Probe' prediction and does not sufficiently justify the label or note caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero importance, which contradicts the stated key factors that increased confidence. It mentions failed login attempts as increasing confidence, but the top features show no such influence. The explanation is somewhat clear but lacks precise linkage between features and the 'Normal' prediction. It does not adequately justify why the connection is normal or note potential caveats, such as the low feature importance or the absence of direct evidence from the top features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that key features increased confidence in a 'Normal' classification, aligning with the provided top features which are all zeroed out, indicating no strong feature influence. However, the explanation suggests increased confidence based on these features, which contradicts their zero values. It also lacks detail on how these features support the 'Normal' label specifically and does not mention potential caveats or other factors. Overall, it is somewhat clear but not fully consistent or comprehensive.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's emphasis on these features is misleading and contradicts the model's attribution, reducing fidelity. Clarity is good, but the explanation lacks justification for the 'Normal' label based on the actual feature contributions. Completeness is limited, as it does not address why the features with zero SHAP values support the normal classification or note potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. The explanation is somewhat concise but lacks specificity about how features support the 'Normal' label and omits caveats or limitations. Overall, it does not accurately reflect the model's reasoning, resulting in moderate scores.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with normal traffic. It clearly states that key features increased confidence in the 'Normal' classification. However, it could improve by explicitly noting that these features are neutral or non-indicative of anomalies, and by summarizing how these features collectively support the normal label. Overall, it is accurate and understandable but slightly verbose.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing the significance of repeated connections, rejected flags, and relevant features like bytes sent and service type. It accurately describes how these factors contribute to the DoS prediction. Minor improvements could include explicitly noting the absence of certain features or potential caveats, but overall it effectively justifies the model's decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as repeated connections, REJ flags, and source/destination behaviors that align with the 'DoS' prediction. It accurately describes how these features contribute to the classification, with minimal contradictions. The explanation is concise and SOC-ready, clearly linking features to the prediction. However, it could improve by explicitly noting the absence of certain features or potential caveats, such as the low feature values or other factors that might influence the decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that increased bytes sent from source to destination and specific services increase confidence, but the top features show zero contribution for these factors, indicating a contradiction. It mentions multiple drivers that are not reflected in the feature importance, reducing fidelity. The explanation is concise and mostly clear but lacks detail on how features influence the prediction, limiting completeness. It does not justify why the model predicts 'Normal' beyond generic statements, nor notes potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, which contradicts the claim that these features increased the model's confidence. It mentions SYN errors and repeated connections, but does not explicitly connect these to the features or the predicted label. The explanation is somewhat verbose and contains inaccuracies, such as referencing 'percentage with the same source port' and 'connection status at summary time' as key factors, despite their SHAP importance being zero. Overall, it lacks precise alignment with the top features and their signs, reducing fidelity and clarity, and does not thoroughly justify the 'DoS' prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is generally clear and concise but lacks detail on how features support the 'Normal' label, resulting in moderate clarity and low completeness. It does not explicitly justify why the features' values lead to a 'Normal' classification or note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims all top features increased confidence, but the features have zero SHAP values, indicating no influence. This contradicts the explanation's assertion that these features contributed positively. The explanation is somewhat concise and SOC-ready but lacks detail on how features support the 'Normal' label and does not address potential caveats or the absence of feature influence, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. The explanation is somewhat concise but lacks clarity in connecting features to the prediction, and it does not justify why the features' contributions are zero or how they support the 'Normal' label. It also omits caveats about the features' actual influence.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections to the same host/service, and the S0 flag indicating incomplete handshakes. It aligns well with the provided top features, though it mentions 'Percentage with the same source port' as increasing confidence, which is consistent with the features. The explanation is concise and covers the main drivers, but could improve clarity by explicitly linking each feature to the label and noting potential caveats, such as benign causes of similar patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections, and the S0 flag, aligning with the prediction. It mentions the increased confidence from these features without contradicting the feature importance scores, which are all zero, indicating the explanation is more interpretative than directly based on feature magnitude. The explanation is concise and SOC-ready, covering the main drivers and noting the relevant flags and connection behaviors. However, it could improve clarity by explicitly linking the features to the specific model decision process and clarifying that the features' importance scores are zero, implying the explanation is more heuristic than data-driven.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flags. It covers key drivers such as connections to the same host/service and the REJ flag, which are consistent with DoS behavior. However, it mentions features like 'Bytes sent from source to destination' and 'Application/service' increasing confidence, but these features are zero in the instance, which could be clarified to avoid potential hallucinations. Overall, the explanation is clear and covers main points but could improve in explicitly connecting zero feature values to the model's decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the role of multiple service contacts and connection patterns typical of probes. It correctly highlights key drivers such as increased percentage to different services and connections to the same host. However, it mentions 'Bytes sent from source to destination increased confidence,' which contradicts the top feature showing zero contribution; this inconsistency slightly reduces fidelity. Clarity is good, with concise language, and the explanation covers the main factors justifying the 'Probe' label, including caveats about connection length and service types.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's emphasis on these features contradicts the actual model output, reducing fidelity. It is concise and mostly clear but lacks detail on how these features support the 'Normal' label and does not mention potential caveats or other influential factors, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features have zero SHAP values, indicating no contribution or influence. This contradicts the assertion that these features increased confidence, leading to a mismatch between the explanation and the model's actual feature importance. The explanation is somewhat clear but lacks detail on how features support the prediction. It also does not address potential caveats or the absence of feature influence, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all listed features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradicts the explanation's emphasis on these features as key drivers, leading to a mismatch between the explanation and the model's actual feature contributions. The explanation is somewhat clear and concise but lacks detail on how these features support the 'Normal' label and does not mention potential caveats or the absence of feature influence, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections to the same host, and the S0 flag indicating incomplete handshakes. It aligns these features with the predicted label and describes their significance clearly. However, it mentions 'Percentage with the same source port' and 'Percentage with SYN errors' as increasing confidence, which are not explicitly listed among the top features with signs, and the explanation could clarify how these features contribute directly to the classification. Overall, it provides a coherent and SOC-ready summary, but could improve on explicitly linking all features to the model's decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims all top features increased confidence in a 'Normal' classification, but the features' SHAP values are all zero, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and clear but lacks detail on how features support the 'Normal' label, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' prediction. It avoids contradictions and hallucinations, providing a clear rationale. However, it could improve by explicitly noting that all feature values are neutral or positive indicators for normal traffic, and by mentioning any potential caveats or limitations, such as the absence of features that might suggest anomalies. Overall, it effectively justifies the prediction with key drivers covered.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references multiple features and their influence on the 'Probe' prediction but contains inaccuracies. It states that bytes sent from source to destination and application/service on destination increased confidence, which contradicts the top features showing zero importance for these. The mention of 'Percentage to different services' and 'Connections to the same host' aligns with the features, but the explanation does not clearly connect these to the prediction. The reasoning is somewhat ambiguous and lacks explicit mention of key factors like connection duration or specific feature signs. Overall, it partially captures the key drivers but includes contradictions and lacks clarity.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing multiple service contacts and connection patterns typical of probes. It correctly highlights the increased confidence from features like percentage to different services and bytes sent, matching the model's top features. However, it mentions 'very short length' as typical for probes but does not explicitly connect this to the features or specify the connection duration in the instance, which could improve clarity. The explanation covers key drivers and notes the caveat that the connection duration is short, supporting the label justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing that increased bytes in both directions and consistent service and host connections support a 'Normal' classification. It correctly notes the key drivers without contradictions. However, it could be more explicit about the absence of anomalous indicators and mention potential caveats, such as the low feature magnitudes or the fact that all features are zero or minimal, which might limit the explanation's robustness. Overall, it provides a clear and mostly complete justification consistent with the model's reasoning.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features not present or relevant in the instance, such as application/service and source/destination bytes, which are all zero. It also mentions protocol and source port percentage, but these are not detailed in the instance data. The reasoning about short connection length is plausible but not explicitly supported by the provided features. Overall, the explanation does not align well with the specific features and data, leading to a moderate fidelity score. Clarity is acceptable but could be more concise; completeness is limited as it does not fully justify the 'Probe' label based on the actual features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features all have zero SHAP values, indicating they did not influence the prediction. The explanation introduces factors (e.g., increased percentage to different services) not reflected in the provided features or SHAPs, leading to contradictions. While the explanation is concise and SOC-ready, it lacks alignment with the actual feature contributions and does not justify the 'Normal' label based on key drivers. It also omits caveats about the features' actual influence.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence in a 'Normal' classification, but all top features are listed with zero importance, which contradicts the assertion that they contributed positively. This inconsistency reduces fidelity. The explanation is concise and mostly clear, but it does not specify how these features collectively justify the 'Normal' label or address potential caveats, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not part of the top features provided (e.g., REJ errors, percentage to different services), leading to contradictions and hallucinations. The mention of increased confidence from features not listed reduces fidelity. The explanation is somewhat concise but includes extraneous details, affecting clarity. It also lacks specific links between features and the 'Normal' label, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not justify why the model predicts 'Normal' given the features, nor does it discuss potential caveats or the absence of feature influence, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing multiple services and connection patterns indicative of scanning behavior. It correctly notes the significance of features like percentage to different services and connection counts, which are consistent with the 'Probe' label. However, it overstates the importance of bytes sent from source to destination, which is minimal in this case, and could clarify that the features are used collectively rather than individually. The explanation is concise and SOC-ready, covering key drivers and providing a reasonable caveat about the short connection duration. Overall, it effectively justifies the prediction with minimal contradictions.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, indicating no contribution to the prediction, yet it suggests these features increased confidence in a 'Normal' classification. This contradiction reduces fidelity. The explanation is concise and mostly unambiguous, but it does not clearly connect features to the 'Normal' label or specify how they justify the prediction, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that features such as bytes sent, connections to the same host, and application type increase confidence in a 'Normal' classification. However, the top features all have zero SHAP values, indicating they do not influence the prediction. The explanation introduces factors (e.g., REJ errors, source port percentage) not reflected in the top features or SHAP values, leading to contradictions. While the explanation is concise and generally clear, it does not accurately justify the model's decision or cover key drivers, resulting in low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero importance signs, indicating they did not influence the prediction. The explanation's emphasis on these features as key drivers contradicts the SHAP results, leading to a low fidelity score. Clarity is good, as the explanation is concise and SOC-ready. Completeness is limited because it does not justify the 'Normal' label based on the features or mention any caveats; it simply states the model's classification without connecting features to the outcome.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not highlighted among the top SHAP features, such as application/service and connection length, which reduces fidelity. It also mentions features with zero SHAP value, indicating they do not contribute to the prediction, leading to contradictions. The explanation is somewhat verbose and lacks clarity and focus on the key drivers, limiting its overall completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features listed have zero SHAP value signs, indicating they did not influence the prediction. The explanation's emphasis on these features as key drivers is misleading, suggesting a contradiction between the model's actual feature contributions and the narrative. While the explanation is concise and understandable, it lacks justification for the 'Normal' label and does not address potential caveats or the absence of influential features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all listed features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and mostly clear but lacks detail on how these features support normal traffic. It also does not mention potential caveats or other factors that could influence the classification, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features listed have zero SHAP value signs, indicating they did not influence the prediction. The explanation's emphasis on these features as key drivers contradicts the SHAP results, reducing fidelity. The explanation is concise and SOC-ready, but it does not justify the label or cover key drivers effectively, especially since the features did not contribute to the prediction. It also notes some features increased confidence, which is misleading given their zero SHAP values.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' classification. It mentions key drivers such as application/service, bytes sent, and connection patterns, which are consistent with the features listed. However, it could improve by explicitly noting that all feature values are neutral or zero, reinforcing the normal classification, and clarifying that no contradictory signals are present. Overall, it provides a clear and mostly complete justification without hallucinations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing key drivers such as repeated connections, rejected flags, and increased byte activity. It accurately describes the typical indicators of a DoS attack like SYN floods. However, it overstates the importance of 'Bytes sent from source/destination' as key factors, which are actually zero in the features, leading to some inconsistency. The explanation is concise and SOC-ready, covering main points but could briefly mention potential caveats or alternative explanations for these features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing multiple contact points and short connection durations typical of probes. It correctly highlights the increased confidence from features like bytes sent, service diversity, and source port percentage. However, it mentions 'Connection status at summary time' as increasing confidence, which is not reflected in the provided top features, introducing a slight inconsistency. Overall, the explanation is clear and covers key drivers, but could better specify the features it references.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features but incorrectly states that increased bytes sent from source to destination and other features increased confidence, which contradicts the top features showing zero contribution. The explanation also mentions features not reflected in the top features list, leading to hallucinations. While it covers some key drivers, it lacks precise alignment with the actual feature contributions and does not clarify the absence of significant feature influence, reducing fidelity and completeness. Clarity is acceptable but could be more concise.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing that all features contributed positively to the 'Normal' classification. It accurately reflects the model's confidence factors without contradictions. The summary is concise and clear, suitable for SOC review. However, it could improve by explicitly noting that all key features support the normal label and mentioning any potential caveats or feature interactions that might influence the decision, thus enhancing completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly notes that these features support the 'Normal' prediction. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which contradicts the top feature value of +0.000, suggesting no contribution; this inconsistency slightly reduces fidelity. Clarity is good, but could be more concise. Completeness covers key drivers but lacks mention of caveats or potential feature interactions, and does not explicitly state that no features decreased confidence or that other features were neutral.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, indicating they do not influence the prediction, yet it suggests these features increased confidence in a 'Normal' classification. This contradiction reduces fidelity. The explanation is somewhat concise but lacks specificity about how features support the 'Normal' label, affecting clarity and completeness. It does not explicitly justify why the connection is normal or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that increased bytes sent from source and destination, as well as connections to the same host and service, increased confidence, but the top features all have zero contribution signs, indicating no influence. This contradicts the explanation's emphasis on these features as key drivers. The explanation is somewhat clear but overstates the importance of features that are not highlighted by the SHAP values. It does not sufficiently justify why the model predicts 'Normal' based on the features, nor does it note potential caveats or the lack of feature influence.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance (e.g., application/service, bytes sent, source port percentage, connections to same host), which contradicts the claim that these factors increased confidence. It also mentions the protocol (icmp) as increasing confidence, but does not clarify how this relates to the features or the prediction. The explanation lacks specific details linking features to the 'DoS' prediction and does not address potential caveats or the absence of key drivers in the instance, resulting in moderate clarity and low completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly links the 'S0' flag and SYN errors to the DoS prediction, aligning with the top features indicating failed or incomplete handshakes. However, it mentions 'Bytes sent from source to destination' and 'Connections to the same host' as key drivers, which are not reflected in the top features with non-zero importance, leading to some inconsistency. The explanation is concise and SOC-ready but could better emphasize the absence of other features' contributions and clarify the role of the 'S0' flag more explicitly.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, emphasizing multiple services and connection patterns typical of probing activity. It correctly notes the significance of increased percentage to different services and connection behaviors. However, it overstates the importance of 'Bytes sent from source to destination' as a confidence factor, which is zero in the top features, and mentions 'Very short length' without explicit feature support. The explanation could be clearer about the actual features influencing the prediction and more explicitly connect the features to the 'Probe' label.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing the importance of repeated rapid connections, rejected handshakes, and consistent service usage, which are typical indicators of DoS attacks. It mentions key drivers and their influence on the prediction. However, it could improve clarity by explicitly connecting the features to the specific label (DoS) and noting that the features' values support the classification without contradictions. Overall, it provides a solid, SOC-ready summary with minor room for increased explicitness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states their contributions. It avoids contradictions and is straightforward. However, it could be more explicit about how each feature supports the 'Normal' label and mention potential caveats or limitations, such as the absence of features that might suggest anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features like SYN errors and connection flags (S0) that are relevant to DoS detection, but the provided top features show zero importance for these indicators, leading to contradictions. The explanation mentions increased bytes sent and source port percentages, which are not reflected in the top features. The reasoning is somewhat ambiguous and lacks clarity about how these features drive the prediction, and it does not explicitly justify why these features lead to a DoS classification or note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but the provided top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. It mentions key factors but does not clarify that these features were not influential, reducing completeness. The explanation is concise and SOC-ready but lacks alignment with the actual feature contributions, affecting fidelity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, and correctly states that these features support the 'Normal' classification. It mentions key drivers and their influence, with no contradictions or hallucinations. However, it could be slightly clearer by explicitly linking each feature's positive contribution to the 'Normal' label and noting that all features support normalcy rather than just increasing confidence. Overall, it provides a concise and comprehensive justification suitable for SOC review.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and consistent source/destination patterns, which are typical indicators of DoS attacks. It mentions key drivers and their influence on the prediction. However, it slightly overstates the role of 'Bytes sent' from source to destination, which is zero in this case, and could clarify that the features are inferred from the context rather than directly observed in the instance. Overall, it provides a clear, relevant, and reasonably complete justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected handshakes, and relevant features like REJ flag and destination service. It accurately describes the typical indicators of a DoS attack. However, it mentions 'Bytes sent from source to destination increased the model's confidence,' which is inconsistent with the feature value of 0, indicating no increase; this contradiction slightly reduces fidelity. Clarity is good, with concise language and clear reasoning. Completeness covers key drivers and notes the relevance of rejected connections and repeated patterns, but could mention potential caveats such as benign causes of similar patterns for full coverage.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all listed features increased confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and clear but lacks detail on how these features support the 'Normal' label or address potential caveats, resulting in moderate completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features listed have zero SHAP values, indicating they did not influence the prediction. The explanation's references to increased confidence are inconsistent with the feature importance data, leading to contradictions. While the explanation is concise and SOC-ready, it lacks justification for the 'Normal' label based on the provided features and does not acknowledge that these features did not contribute to the prediction, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims all top features increased confidence, but the features' SHAP values are zero, indicating no contribution. This contradicts the explanation's emphasis on these features as key drivers, leading to a mismatch in fidelity. Clarity is good, but the explanation does not justify the 'Normal' label based on the features. It mentions increased confidence but fails to connect features to the prediction explicitly, reducing completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing multiple services and connection patterns indicative of scanning behavior. It correctly notes the short connection duration and the increased confidence from source-to-destination bytes, despite the features' zero values in this instance. The explanation covers key drivers and provides a clear rationale, though it could briefly mention the absence of certain features or potential caveats for full completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing multiple services and connection patterns indicative of scanning behavior. It correctly notes the short connection duration and the increased confidence from source-to-destination bytes and service-related features. However, it could improve clarity by explicitly linking the features to the 'Probe' label and mentioning potential caveats, such as benign scanning or false positives, to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing repeated rapid connections, rejected handshakes, and increased source-to-destination bytes\u2014all consistent with a DoS attack. It mentions key drivers such as connection patterns and REJ flags, but could improve clarity by explicitly linking the features to the specific attack behavior and noting that some features (e.g., bytes sent) did not increase, which may suggest other factors at play. Overall, it covers the main points but could be more concise and explicit in connecting features to the DoS label.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately links the features to the DoS prediction, emphasizing SYN errors, repeated connections, and incomplete handshakes, which are key indicators of a DoS attack. It mentions the relevant features and their influence, aligning with the model's top features. However, it could improve clarity by explicitly stating how each feature contributes to the label and noting that some features (like bytes sent) had minimal impact, avoiding potential hallucinations. Overall, it covers the main drivers and provides a coherent justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features and their signs, aligning with the prediction of DoS. It mentions the significance of repeated rapid connections, rejected handshakes, and relevant features like REJ flags, which are typical indicators of DoS attacks. However, it introduces a feature ('Bytes sent from source to destination') that was not highlighted as influential in the top features, which could be a minor hallucination. The explanation is concise and covers the main drivers, but could improve clarity by explicitly linking the features to the specific attack type and noting potential caveats such as the absence of other features or context.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' classification, but the provided feature values are all zero or minimal, indicating no significant activity or deviation. The explanation's attribution of increased confidence to these features contradicts their actual values, which suggest neutrality. Therefore, fidelity is low due to inconsistency. Clarity is relatively high as the explanation is concise and straightforward. Completeness is limited because it does not justify why these features lead to a 'Normal' label nor does it mention potential caveats or the absence of abnormal signals.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that supposedly increase confidence in a 'Normal' classification, but the top features all have zero SHAP values, indicating they did not influence the prediction. The explanation's emphasis on these features contradicts the model's actual attribution, reducing fidelity. Clarity is good, but the explanation lacks detail on how these features support the 'Normal' label. Completeness is limited because it does not justify why the connection is normal based on the features or note any caveats; it merely states that features increased confidence without linking them to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero importance, which contradicts the provided top features. It mentions factors like increased bytes and connections, but the top features show no contribution, leading to a disconnect. The explanation is somewhat vague and lacks specific details about how these features influence the 'Normal' prediction, reducing clarity and completeness. Overall, it does not accurately align with the model's feature importance or provide a clear, comprehensive justification.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, but all top features listed have zero SHAP value signs, indicating they did not influence the prediction. The explanation suggests these features increased confidence, which contradicts the SHAP data. It also omits mention of features that might have contributed to the 'Normal' label or potential caveats. Overall, the explanation lacks alignment with the actual feature importance and is somewhat vague, affecting fidelity and completeness. Clarity is good, as the explanation is concise and SOC-ready.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, which contradicts the claim that these features increased the model's confidence. It mentions 'unusually high connections' but does not specify the actual connection count or how it compares to normal behavior. The explanation is somewhat vague and does not clearly justify the 'DoS' prediction based on the provided feature values, leading to low fidelity and completeness scores. Clarity is moderate, as the explanation is somewhat verbose but generally understandable.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features associated with DoS attacks, such as repeated connections, rejected handshakes, and relevant feature signs. It aligns well with the top features and their contributions. However, it mentions 'Bytes sent from source to destination' and other features as increasing confidence, but these features are zero in this instance, which could cause confusion. Clarifying that these features are generally important but not active here would improve clarity. Overall, the explanation covers the main drivers and is concise, but could better address the specific feature values in this case.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features associated with DoS attacks, such as SYN errors, repeated connections, and the connection flag S0, aligning well with the prediction. It mentions the increased confidence from specific features and their typical behavior during a DoS, avoiding hallucinations. However, it could improve clarity by explicitly linking the features to the specific attack type and providing a more concise summary. It also notes the caveat that some features (e.g., bytes sent) may not be directly indicative but still contribute to the model's confidence, ensuring completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that high bytes sent from source to destination and 'hot' indicators increase confidence, but the top features show all zero coefficients, indicating no feature influence. Additionally, it states that multiple factors increase confidence, yet the features do not support this. The explanation is somewhat ambiguous and does not clearly justify the 'DoS' prediction based on the provided features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence in the 'Probe' prediction, creating a contradiction. The mention of 'very short length' is relevant but not integrated with the features discussed. Overall, the explanation lacks clarity and does not effectively justify the label based on the provided features and instance details.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all marked as increasing confidence in a 'Normal' classification. It correctly mentions key factors such as application/service type, failed login attempts, and byte flows, consistent with the features. However, it slightly overstates the influence of some features (e.g., bytes sent in both directions) without quantifying their contribution, and it could clarify that these features collectively support the 'Normal' label. Overall, it is accurate, concise, and covers main drivers, with minor room for explicit caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing repeated rapid connections, rejected handshakes, and consistent service usage\u2014all indicative of a DoS attack. It accurately interprets the features and their contributions without hallucinations. The explanation is concise and SOC-ready, covering key drivers and providing context for the features. Minor improvements could include explicitly noting the significance of the protocol and flag in the context of DoS detection, but overall it effectively justifies the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features and suggests they increased confidence, aligning with the 'Normal' prediction. However, it incorrectly states that features like 'Bytes sent from source to destination' and 'Application/service' increased confidence, which contradicts the top features all being zero and the model's classification. The mention of 'transport protocol' increasing confidence is vague and not directly supported by the features. Overall, the explanation lacks precise alignment with the feature values and does not clearly justify the 'Normal' label or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero importance scores, which contradicts the claim that they increased the model's confidence. It mentions connection flag RSTR as indicative of DoS, aligning with typical interpretations, but the overall explanation lacks clarity and does not explicitly connect the features to the 'DoS' label or specify how the features' signs influence the prediction. The coverage of key drivers is minimal, and caveats or limitations are not addressed.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all listed features increased confidence in a 'Normal' classification, but the top features are all zero-valued, indicating no contribution. This contradicts the explanation's assertion that these features increased confidence, leading to a mismatch. Clarity is good, but the explanation lacks detail on how these features support the 'Normal' label and does not address potential caveats or the absence of feature influence, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP importance, yet claims they increased confidence, creating a contradiction. It mentions key factors but does not specify how each feature influences the 'Normal' prediction or address potential caveats. Overall, it lacks alignment with the actual feature importances and does not clearly justify the label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating increased confidence in normal traffic, consistent with the 'Normal' prediction. It clearly states the key factors and their positive contributions, avoiding contradictions. However, it could improve by explicitly noting that all features support the normal classification and mentioning any potential caveats or limitations, such as the absence of negative indicators or the context of feature values.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, which are all zero or neutral, consistent with a 'Normal' prediction. It correctly states that these features increase confidence in normal traffic, matching the model's reasoning. However, it could improve by explicitly noting that these features are not indicative of anomalies and clarifying that their neutral or low values support the normal classification. The explanation is concise and SOC-ready but could be slightly more explicit about the absence of anomalous signals.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that all top features increased confidence in a 'Normal' prediction, but the provided features all have zero SHAP values, indicating they did not influence the model's decision. This contradiction reduces fidelity. The explanation is concise and mostly clear, but it overstates the importance of features that had no impact, and it does not mention potential caveats such as the absence of feature influence or the possibility of other unmentioned factors. Overall, it partially aligns with the data but overstates feature contributions, leading to a low completeness score.",
+      "overall": 2.0
+    }
+  ],
+  "summary": {
+    "fidelity": 2.81,
+    "clarity": 3.692,
+    "completeness": 2.842,
+    "overall": 3.039
+  }
+}

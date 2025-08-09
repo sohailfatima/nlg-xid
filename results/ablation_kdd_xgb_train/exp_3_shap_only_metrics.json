@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "bleu": 0.0018825209279909906,
+    "shap_fidelity": 1.0,
+    "judge_overall": 3.132
+  },
+  "metadata": {
+    "model_type": "xgb",
+    "dataset": "nsl-kdd",
+    "test_samples": 200,
+    "explanation_method": "shap_only",
+    "experiment_name": "exp_3_shap_only"
+  }
+}

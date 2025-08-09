@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "bleu": 0.002489244967000503,
+    "shap_fidelity": 1.0,
+    "judge_overall": 2.422
+  },
+  "metadata": {
+    "model_type": "ae",
+    "dataset": "nb15",
+    "test_samples": 200,
+    "explanation_method": "shap_only",
+    "experiment_name": "exp_3_shap_only"
+  }
+}

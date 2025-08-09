@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the key features and their contributions, making it SOC-ready. However, it lacks discussion on how these features support the normal classification or potential caveats, such as the absence of other relevant features or context that could influence the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero importance, which aligns with the top features but provides no insight into why the instance is predicted as 'Probe.' It does not justify the label or discuss key drivers, nor does it note any caveats. The clarity is good, but the lack of detail reduces overall usefulness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP value, indicating they do not influence the prediction. This aligns with the prediction of 'Normal' and the feature values. However, it lacks explicit mention that the features are non-contributory, which would clarify the absence of anomalies. The explanation is concise and SOC-ready but could better justify why these features do not drive an abnormal prediction, thus slightly reducing completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Normal' and the feature values. However, it does not explicitly justify why these features are not contributing to an anomaly or provide context on their typical impact. The explanation is concise and SOC-ready but lacks depth in covering key drivers or caveats, leading to moderate scores in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of DoS, typically associated with high REJ errors and specific service patterns. It lacks detail on how the features relate to the DoS label, making it incomplete. The clarity is good, but the explanation does not justify the prediction effectively, leading to a low completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, indicating they do not influence the prediction. This aligns with the prediction of 'Normal' and the feature values. However, it lacks explicit mention that these features are non-contributory, which would improve clarity and completeness. The explanation is concise and SOC-ready but could better justify why the absence of feature influence supports the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in providing more context on the feature roles.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of DoS, typically associated with high connection attempts or errors. It does not justify why these features are irrelevant or how the model arrived at the DoS prediction. The explanation is concise but lacks coverage of key drivers and does not clarify the reasoning behind the prediction, leading to low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero influence, aligning with the prediction of 'Normal' and the provided features. It clearly states the factors and their signs, avoiding contradictions. However, it lacks detail on how these features collectively support the 'Normal' label, missing some context on key drivers and potential caveats. Overall, it is concise and SOC-ready but could benefit from a brief mention of why these features lead to a normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no contribution to the prediction. However, it does not clarify why the model predicts DoS despite the lack of feature influence, nor does it address potential caveats or the absence of feature effects. The explanation is concise and clear but lacks depth and justification for the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly indicates that none of the top features contributed to the prediction, aligning with the 'Normal' outcome and the zero SHAP values. It is concise and unambiguous, suitable for SOC reporting. However, it lacks detail on how these features relate to the prediction and does not explicitly justify why the absence of anomalies in these features supports the 'Normal' label, thus limiting its completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these zero contributions support the normal classification or mention potential caveats, such as the absence of other features or context. The explanation is concise and SOC-ready but could better justify the label and cover key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states all top features have zero SHAP values, implying they do not contribute to the prediction. However, it does not clarify why these features are irrelevant or how the model arrived at a DoS prediction despite the lack of feature influence. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the prediction and whether other factors were considered. Overall, it minimally justifies the label and misses caveats about potential model limitations.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states that none of the features contributed to an anomaly, which is consistent with the data. However, it could improve by explicitly noting that the features' negligible influence supports the normal classification and mentioning any potential caveats about feature interactions or thresholds.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it does not clarify why these features are non-contributing or how the REJ flag influences the prediction. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Probe' given the instance's characteristics. However, it does not explicitly justify why these features lead to a probe classification, nor does it discuss other potential factors or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers and reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. However, it lacks detail on how these features relate to the normal label and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in completeness by clarifying that zero SHAP values imply no feature-driven anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the features and their contributions, making it SOC-ready. However, it lacks explicit justification of why these features lead to a 'Normal' label, and does not mention potential caveats or the broader context, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS and the feature values. However, it lacks detail on how these features influence the prediction and does not explicitly justify why the absence of these factors supports a DoS label. The clarity is good, but the explanation could be more concise and SOC-ready by explicitly connecting feature contributions to the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. However, it lacks explicit mention that these features are not contributing to the anomaly, and does not clarify that the features' zero values support the normal classification. The explanation is concise and SOC-ready but could better justify why these features imply normalcy and note that no key drivers or caveats are discussed.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, which contradicts the prediction of DoS attack, typically associated with high connection failure rates or specific service patterns. The explanation does not justify the label nor covers key drivers such as connection failures or unusual service usage. It is concise but lacks detail on how the features relate to the DoS prediction, leading to low completeness. Overall, it aligns poorly with the features and prediction, but is clear and straightforward.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no feature-driven anomalies. However, it lacks detail on how these features relate to the normal label or potential caveats, such as the absence of other contributing factors or context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and SOC-ready, but it could better justify the absence of feature influence and note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the SHAP values provided. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leaving some ambiguity. The explanation is concise but lacks detail on the actual reasoning behind the prediction, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, indicating they do not contribute to the DoS prediction. However, it lacks detail on how these features relate to the prediction and does not explicitly justify why the instance is classified as DoS despite the absence of feature influence. The explanation is concise and SOC-ready but could better clarify the reasoning process and note that other factors or model behavior may be involved.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that the top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these features support the normal classification or mention potential caveats, such as the absence of other contributing factors. The explanation is concise and SOC-ready but could better justify the label by discussing the lack of anomalous signals.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or additional context, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their signs, ensuring transparency. However, it lacks explicit mention of how these features collectively support the 'Normal' classification or any caveats about potential other factors, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting they do not influence the prediction. However, the explanation lists these features as top factors, which is contradictory. It does not justify why the prediction is 'Normal' despite the lack of feature influence, nor does it discuss other potential drivers or caveats. The clarity is good, but the explanation lacks depth and justification for the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no significant drivers. However, it lacks detail on how these features influence the prediction and does not explicitly mention the absence of anomalies or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from clearer articulation of the reasoning process.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how the features relate to the DoS label, such as the significance of the REJ flag or other context. The explanation is concise and SOC-ready but does not justify the label thoroughly or note potential caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their contributions, making it SOC-ready. However, it could improve by explicitly noting that these features do not contribute to an anomaly or attack, providing a brief caveat for completeness.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no strong drivers for anomaly. However, it lacks explicit mention of how these features support the normal classification or any caveats about potential subtle factors. The explanation is concise and SOC-ready but could better justify the label by discussing the absence of anomalous signals.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided features. It clearly states the features considered, but it lacks detail on how these features support the normal classification or mention any potential caveats. The explanation is concise and SOC-ready, but could improve in completeness by explicitly connecting the features to the normal label and noting that no feature deviations suggest anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no strong drivers. However, it lacks explicit mention of how these features collectively support the normal classification or any caveats about potential subtle factors. The description is concise and SOC-ready but could better justify the absence of anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no significant anomalies. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of other potential drivers or caveats, limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, indicating no apparent feature-driven reason. However, it lacks detail on how these features relate to DoS behavior or why they are non-contributory, reducing its completeness. Clarity is good, but the explanation could be more explicit about the absence of feature influence and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying they do not contribute to the DoS prediction. This aligns with the features and their signs, which are all zero, indicating no evidence supporting the label. However, the explanation lacks detail on why these features are non-contributory and does not address other potential factors or caveats. Clarity is good but could be more explicit about the absence of feature influence. Overall, the explanation is accurate but somewhat incomplete in justifying the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no feature-driven anomalies. However, it lacks detail on how these features support the normal classification, such as their typical ranges or absence of suspicious activity. The explanation is concise and SOC-ready but does not fully justify why the instance is normal or note potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states that none of the key features contributed to an anomaly, which is consistent with the data. However, it could improve by explicitly noting that the absence of anomalous feature signals supports the 'Normal' classification, adding a slight boost to completeness.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leaving some ambiguity about the reasoning process. The explanation is concise but lacks detail on the key drivers or caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly indicates that none of the top features contributed to the prediction, aligning with the 'Normal' label and the zero SHAP values. It is concise and unambiguous, suitable for SOC reporting. However, it lacks detail on how these features relate to normal behavior and does not explicitly justify why the absence of anomalies supports the 'Normal' classification, thus limiting completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution, aligning with the 'Normal' prediction and the provided feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks detailed justification or caveats, resulting in a moderate completeness score.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of DoS. However, it lacks detail on how these features influence the anomaly, does not specify the absence of REJ errors or other potential indicators, and does not clarify why these features are considered key drivers or why their zero contribution supports the DoS prediction. The explanation is concise but could better justify the label and cover relevant caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP values, indicating no contribution to the prediction. It does not clarify that these features are neutral or irrelevant, nor does it connect the features to the 'Normal' label. The explanation is concise but lacks detail on why these features do not influence the prediction, reducing its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that the top features have zero impact on the prediction, aligning with the provided feature importances. It clearly lists the key features considered. However, it does not explicitly connect these features to the 'Normal' label or discuss why their neutrality supports the prediction, leaving some gaps in completeness. The explanation is concise and SOC-ready, but could benefit from a brief note on caveats or potential limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features' zero influence on the prediction, aligning with the provided feature importance signs. It clearly states the factors considered, but lacks detail on how these features relate to the 'Normal' label or potential caveats, limiting completeness. The clarity is good but could be more concise or explicitly connect features to the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no apparent anomalies. It clearly lists the features and their contributions, making it SOC-ready. However, it lacks discussion on how these features support the normal classification or any caveats about potential subtle anomalies not captured by these features, limiting its completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, indicating no clear drivers for the DoS prediction. However, it lacks detail on how these features relate to the prediction and does not explicitly justify why the instance is classified as DoS, especially given the absence of feature influence. The explanation is concise but could better clarify the reasoning process and acknowledge potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, indicating no apparent feature influence on the DoS prediction. However, it lacks detail on how these features relate to the prediction, and does not clarify why the absence of feature influence supports the DoS label. The explanation is concise but could better justify the prediction by discussing the instance's characteristics and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered the key drivers for the DoS prediction, nor does it discuss the absence of feature influence or potential caveats. The explanation is concise and SOC-ready but lacks depth in justifying the label and covering key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP contribution, implying they do not influence the prediction. However, it does not clarify why these features are considered irrelevant or how the model arrived at a 'Normal' label. The explanation is concise and SOC-ready but lacks detail on key drivers or caveats, leading to limited completeness and some ambiguity in the rationale.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the features considered and their contributions. However, it lacks explicit mention of how these features collectively support the 'Normal' classification or any caveats about potential other factors, slightly limiting completeness. Overall, the explanation is concise and SOC-ready, with high fidelity.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, as these features do not support the anomaly. However, it lacks detail on how these features relate to DoS behavior and does not explicitly justify why the absence of these factors indicates a DoS attack. The explanation is concise but could better clarify the reasoning behind the prediction and note that the features do not contradict the label.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how these features relate to the DoS label or why they are considered neutral. The explanation is concise but does not justify the prediction thoroughly or note potential caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, indicating no apparent feature-driven justification. However, it lacks detail on how the features relate to the DoS prediction, making it less complete. The clarity is good, but the explanation could be more explicit about why these features do not support the DoS label or mention other potential factors.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature signs. However, it lacks detail on how these features influence the normal classification and does not discuss potential caveats or the absence of other contributing factors, limiting its completeness. The explanation is concise and clear but could benefit from more context to enhance understanding.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction 'Probe' but does not clarify how these features influence the decision. It lacks detail on how the features relate to the label, making it somewhat ambiguous. The explanation is concise but does not justify the prediction or note any caveats, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are relevant to a DoS prediction, nor does it connect the features to the observed instance characteristics. The explanation is concise but lacks detail on how these features influence the label, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. However, it lacks detail on how these features relate to the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in completeness by clarifying that zero SHAP values imply no feature-driven anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, which aligns with the prediction of R2L, as these features do not contribute to the anomaly. However, it lacks detail on how these features relate to R2L behavior or why their insignificance supports this label. The clarity is good, but the explanation does not justify the label or discuss potential caveats, resulting in limited completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in completeness by clarifying that zero contributions imply no detected anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no apparent anomalies. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of other potential drivers or caveats. The explanation is concise and SOC-ready but could improve in completeness by discussing the overall context and confirming that no other features suggest abnormality.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how these features relate to DoS behavior and does not justify why the absence of feature influence supports the anomaly. The explanation is concise but misses key insights into the attack's drivers and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no key drivers for an anomaly. However, it does not explicitly mention that these features are neutral or non-influential, nor does it clarify that the absence of significant feature contributions supports the normal classification. The explanation is concise and SOC-ready but could better justify why these features lead to a normal label and note that other unmentioned features might also influence the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of DoS, typically associated with specific traffic patterns. It lacks detail on how these features relate to DoS behavior and does not justify the label. While concise, it does not sufficiently cover key drivers or caveats, leading to low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in providing more context on feature relevance and potential limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying they do not contribute to the prediction. However, it does not explicitly justify why the model predicts a DoS despite these features being neutral, nor does it address other potential factors influencing the prediction. The explanation is concise and clear but lacks depth in covering key drivers or caveats, leading to a low completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these features collectively support the normal classification or mention potential caveats, such as the absence of other relevant features or context. The explanation is concise and SOC-ready but could better justify why these features lead to a normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their signs, ensuring transparency. However, it lacks detail on how these features contribute to the normal classification and does not explicitly mention potential caveats or the absence of other influential factors, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero influence, aligning with the prediction of 'Normal' and the feature values. It clearly states that none of the key features contribute to an anomaly, supporting the normal classification. However, it could be slightly more explicit about how these features relate to the normal label and mention that no significant anomalies are detected, which would enhance completeness.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP value, implying they do not influence the prediction. However, it does not clarify how this aligns with the 'Normal' label or whether other factors contributed. The explanation is concise and SOC-ready but lacks detail on the overall justification for the prediction and potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution scores, aligning with the prediction of 'Normal' and indicating no significant anomalies. It clearly lists the features considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or the absence of influential factors, which would improve completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no contribution to the DoS prediction. This contradicts the expectation that features should influence the label, especially since the instance has characteristics (e.g., protocol_type=icmp, src_bytes=1032) that could be relevant. The explanation lacks detail on why these features are considered non-contributory and does not justify the prediction. It is concise but misses coverage of key drivers or caveats, leading to low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these features collectively support the normal classification or mention any potential caveats, such as the absence of other relevant features or context. The explanation is concise and SOC-ready but could improve in explicitly justifying the label and noting limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not discuss potential caveats or the absence of other contributing factors, limiting its completeness. The explanation is concise and clear but could benefit from more context on the decision process.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly indicates that all top features have zero SHAP values, aligning with the prediction of 'Normal' and showing no contradictions. It is concise and unambiguous, suitable for SOC reporting. However, it lacks detail on how these features contribute to the normal classification, does not justify why these features are key drivers, and omits caveats or context that could enhance understanding of the decision process.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the features' values and the prediction of 'Probe'. However, it does not justify why these features lead to a probe classification or discuss the absence of key drivers. The clarity is good, but the explanation lacks depth and coverage of key factors that justify the label, resulting in a moderate completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the high activity levels (e.g., high src_bytes, hot indicator) that typically suggest an attack like R2L. It lacks justification for why these features are deemed irrelevant, leading to a low completeness score. The clarity is good, but the explanation does not sufficiently justify the label, especially given the feature values.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the features considered, making it SOC-ready. However, it lacks detail on how these features collectively support the 'Normal' classification and does not mention potential caveats or the absence of other influential factors, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction of 'Probe' but provides no detail on how these features influence the decision. It lacks justification for why the instance is classified as a probe, especially given the minimal feature contributions. The explanation is concise but does not sufficiently justify the label or cover key drivers, and it does not note any caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero contributions, which aligns with the provided SHAP values. However, it does not clarify how these features relate to the 'Probe' label or why they are considered key drivers, especially given the instance's REJ flag and zero bytes. The explanation is concise but lacks detail on the reasoning behind the prediction, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how the features relate to DoS characteristics, such as connection patterns or flags. The explanation is concise and SOC-ready but does not justify why these features do not contribute to the anomaly or discuss potential caveats, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states that none of the features contribute to an anomaly, supporting the normal classification. However, it could improve by explicitly noting that the absence of anomalous signals from these features justifies the 'Normal' label, thus enhancing completeness.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributory or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and SOC-ready, but it lacks detail on the absence of feature influence and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features' zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features justify the normal label or note potential caveats, which affects completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no strong feature-driven anomaly. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats, which would improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, indicating they do not contribute to the DoS prediction. However, it lacks detail on how these features relate to the prediction and does not explicitly justify why the instance is classified as DoS despite the absence of feature influence. The explanation is concise but could better clarify the reasoning process and acknowledge that the features do not support the anomaly.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction of 'Probe' but provides no detail on how these features influence the decision. It lacks justification for why the instance is classified as a probe, especially given the minimal feature contributions. The explanation is concise and SOC-ready but does not sufficiently justify the label or cover key drivers, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks explicit mention of how these features support the normal classification or any caveats about potential other factors. The description is concise and SOC-ready but could better justify why these features lead to a normal label and acknowledge possible limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their signs, ensuring transparency. However, it lacks explicit mention of how these features collectively support the normal classification or any caveats about their insignificance, which would enhance completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the key features and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features collectively support the 'Normal' label or any caveats about potential limitations, slightly reducing completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that the top features have zero contribution, aligning with the prediction of 'Normal' and the provided feature values. It clearly lists the features and their contributions, making it SOC-ready. However, it lacks detail on how these features influence the normal classification, and does not explicitly justify why the instance is considered normal based on these features, which affects completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features' zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or other influencing factors, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, indicating they do not contribute to the prediction. However, it lacks detail on why these features are non-informative and does not explicitly connect the absence of feature influence to the 'DoS' label. The clarity is good, but the explanation could better justify the prediction by discussing other potential factors or the absence of typical DoS indicators. Overall, it partially aligns with the features but does not fully justify the label or address caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP contributions, implying they do not influence the prediction. However, it does not clarify that these features are non-contributory or that the model's decision is based on other factors. The explanation is concise and SOC-ready but lacks detail on why the prediction is 'Normal' and whether other features or data points justify this label. It also does not mention potential caveats or the absence of feature impact, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how these features relate to the DoS prediction and does not justify why the absence of these signals supports the anomaly. The explanation is concise but misses key insights into the underlying drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or additional factors influencing the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered and their contributions. However, it lacks detail on how these features collectively support the 'Normal' label, and does not mention potential caveats or other factors that could influence the prediction, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Normal' and the features provided. However, it lacks detail on how these features influence the prediction and does not explicitly justify why the instance is considered normal. The explanation is concise but does not sufficiently cover key drivers or caveats, leading to a moderate score in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero importance, which aligns with the provided SHAP values. However, it does not specify how these features relate to the R2L prediction or justify why these features are relevant or irrelevant, limiting its completeness. The clarity is good, but the explanation could be more explicit about the connection between features and the R2L label.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it lacks detail on how these features relate to DoS behavior and does not justify why the absence of these signals supports the anomaly. The explanation is concise and SOC-ready but misses coverage of key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributory or how they relate to the DoS prediction. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the prediction and whether other factors were considered. It also does not mention potential caveats or limitations.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no significant anomalies. It clearly states the features and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features support the normal classification or any caveats about potential subtle indicators, slightly limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats, limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit justification of the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which aligns with the low feature values. However, it does not explicitly justify why the 'Probe' label is assigned despite the lack of feature influence, nor does it discuss other potential drivers or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers and reasoning.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the model's decision and does not explicitly connect the absence of anomalies to the features' contributions. The explanation is concise and SOC-ready but could improve clarity by explicitly stating that the features do not indicate any suspicious activity, thus supporting the 'Normal' label. It covers the key drivers but misses caveats or context about potential feature interactions.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their contributions, making it SOC-ready. However, it could improve by explicitly noting that these features do not support an anomaly or attack, thus fully justifying the normal prediction and covering potential caveats.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no key drivers for an anomaly. However, it lacks explicit mention that these features are neutral and do not support any anomalous behavior, which would improve completeness. The explanation is concise and clear but could specify that the absence of feature influence supports the normal classification more explicitly.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, as none of the features indicate typical DoS indicators. However, it lacks detail on how these features relate to the DoS prediction, and does not explicitly justify why the absence of these signals supports the anomaly. The explanation is concise and SOC-ready but could benefit from more context on feature relevance and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution scores, aligning with the prediction of 'Normal' and the feature values. It clearly lists the key factors considered. However, it lacks explicit mention of how these features collectively support the 'Normal' label or discuss potential caveats, slightly limiting completeness. Overall, it is concise and SOC-ready, but could improve in explicitly connecting features to the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature contributions. However, it lacks explicit mention that these features are not driving the anomaly, and does not clarify that the absence of notable feature influence supports the normal classification. The explanation is concise and SOC-ready but could better justify why these features' neutrality confirms the normal label and mention potential caveats such as the possibility of other unconsidered factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact scores, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or additional context that might influence the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. However, it lacks detail on how these features contribute to the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in completeness by clarifying that zero SHAP values imply no feature-driven anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the features considered and their contributions, making it SOC-ready. However, it could improve by explicitly noting that these features do not contribute to an anomaly or attack, thus fully justifying the normal prediction and covering key drivers and caveats.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states that none of the features contribute to an anomaly, which is consistent with the data. However, it could improve by explicitly noting that the features' negligible values indicate no suspicious activity, providing a slightly more comprehensive justification.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction 'Probe' given the features' values. However, it does not explicitly justify why these features lead to a probe classification, nor does it discuss the absence of other key drivers or potential caveats. The explanation is concise and SOC-ready but lacks depth in covering the rationale behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution scores, aligning with the prediction of 'Normal' and showing no contradictions. It is concise and SOC-ready, but it lacks detail on how these features influence the normal classification and does not explicitly mention potential caveats or the absence of other contributing factors, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors and their contributions, making it SOC-ready. However, it could improve by explicitly noting that these features do not contribute to an anomaly, providing a brief caveat for completeness.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided features. It clearly states the factors considered, though it could be more explicit about how these features contribute to the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or other influencing factors, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these features support the normal classification or mention the absence of anomalies. The explanation is concise and SOC-ready but could better justify why these features lead to a normal label and acknowledge potential caveats or other factors not captured.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the prediction and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in providing more context on feature relevance.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, as these features do not support the anomaly. However, it lacks detail on how these features relate to DoS behavior and does not explicitly justify why the absence of these factors indicates a DoS attack. The explanation is concise but could better clarify the reasoning behind the prediction and note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the SHAP values provided. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and clear but lacks detail on the reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the model's decision and does not explicitly justify why the instance is considered normal, missing some context on key drivers and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP contribution, indicating no clear drivers for the DoS prediction. However, it lacks detail on why these features are non-contributory and does not explicitly connect the instance's attributes to the absence of typical DoS indicators. The explanation is concise but misses coverage of key factors that could justify the label or highlight caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these features support the normal classification or mention potential caveats, such as the absence of other relevant factors. The explanation is concise and SOC-ready but could better justify why these features lead to a normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features and their zero contributions, aligning with the prediction of 'Normal.' It clearly states the factors and their signs, with no contradictions. However, it could be more explicit about how these features support the normal classification and mention potential caveats or other factors considered, hence slightly lower on completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the prediction and does not explicitly mention the absence of anomalies or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit justification of the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS and the feature values. However, it lacks detail on how these features influence the prediction, making it somewhat ambiguous. It does not justify why these features lead to a DoS label nor notes any caveats or alternative explanations, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS but provides no detail on how these features influence the label. It lacks justification for why the absence of these feature effects leads to a DoS prediction, making it somewhat incomplete. Clarity is good, but the explanation could better connect feature values to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the SHAP values indicating no influence. However, it does not clarify why these features are considered irrelevant or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and SOC-ready but could benefit from explicitly connecting feature values to the DoS label and noting potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero contribution scores, which aligns with the prediction of 'Probe' but provides no insight into how these features influence the label. It lacks detail on the actual feature values or directions, making it ambiguous whether the features support or contradict the prediction. The explanation is concise but does not justify why the instance is classified as a probe or discuss key drivers or caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the features considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks detail on caveats or additional context that might reinforce the justification.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided features. It clearly states the factors considered, though it could be more explicit about how these features contribute to the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or the absence of influential features, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution scores, aligning with the prediction of 'Normal' and indicating no significant anomalies. It clearly states the features considered, but it lacks detail on how these features support the normal classification or mention potential caveats, resulting in high fidelity and clarity but limited completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, as these features do not indicate any abnormal activity. However, it lacks detail on how these features relate to DoS behavior and does not explicitly justify why the absence of these signals supports the prediction. The explanation is concise but could better clarify the reasoning behind the zero contributions and note that the features do not support an anomaly, which would improve completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that the top features have zero impact on the prediction, aligning with the provided feature importances. It clearly states that all features are neutral, supporting the 'Normal' prediction. However, it lacks detail on how these features relate to the normal label, such as typical values or thresholds, and does not mention any caveats or context that could influence the interpretation.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero contributions, which aligns with the prediction of 'Normal' but provides no insight into why the instance is normal. It lacks detail on how these features influence the label, and does not mention key factors like protocol or bytes that could justify the normal classification. The explanation is concise but not sufficiently informative or comprehensive to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Probe' given the instance's characteristics. However, it does not specify how these features relate to the 'Probe' label or why their zero values support this prediction, limiting completeness. The explanation is concise and clear but lacks detail on the reasoning process and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction 'Probe' but does not clarify how these features influence the decision. It lacks detail on how these features justify the label or address potential caveats. The explanation is concise but insufficiently informative to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or the absence of influential anomalies, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction 'Probe' given the features' values. However, it does not explicitly justify why these features lead to a probe classification, nor does it discuss other potential key drivers or caveats. The explanation is concise and SOC-ready but lacks depth in covering the reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered and their contributions, which are all neutral. However, it could improve clarity by explicitly mentioning that these features do not contribute to an anomaly or abnormality, and completeness by noting that other potential factors are not discussed, though they are likely irrelevant given the zero SHAP values.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. However, it lacks detail on how these features contribute to the normal classification and does not explicitly mention the absence of anomalies or potential caveats, slightly limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, implying they do not influence the prediction. However, it does not clarify that the model predicts 'Normal' because none of these features are contributing to an anomaly or attack. The explanation is concise and SOC-ready but lacks detail on how the features relate to the normal prediction and does not mention potential caveats or other factors that might influence the outcome.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero importance scores, which aligns with the prediction of 'Normal' and the features' contributions. However, it does not explicitly connect these features to the normal classification or clarify that their negligible impact supports the normal label. The explanation is concise and SOC-ready but lacks detail on how these features justify the normal prediction or mention potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction of 'Probe' but does not clarify how these features influence the decision. It lacks detail on how the features relate to the label, and does not mention key factors such as protocol type or specific traffic patterns. The explanation is concise but insufficiently informative to justify the prediction thoroughly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features contribute to the normal classification. The explanation covers the key drivers but lacks discussion of potential caveats or the absence of influential anomalies, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution scores, aligning with the prediction of 'Normal' and indicating no feature-driven anomalies. It clearly states the features considered and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features justify the normal label or note potential caveats, such as the absence of other factors influencing the prediction.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could improve in providing context on why these features lead to a normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying they do not contribute to the R2L prediction. However, it does not clarify why these features are considered irrelevant or how the model arrived at R2L despite these features. The explanation is concise and SOC-ready but lacks detail on the key drivers or caveats, leading to limited completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, indicating they do not influence the prediction. This aligns with the model's output of 'Normal' and the feature values. However, it lacks explicit mention that the features are non-contributory and does not discuss potential caveats or the overall context, slightly limiting its completeness. The explanation is concise and SOC-ready, but could benefit from clearer emphasis on the lack of feature impact.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the features and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features support the normal classification or any caveats about potential feature interactions or limitations, which affects completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and the feature values. However, it does not explicitly connect how these zero contributions support the normal classification or mention potential caveats, such as the absence of other influential features. The explanation is concise and SOC-ready but could better justify the label by discussing the overall feature context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS and the features provided. However, it does not explicitly connect why these features' lack of variation indicates a DoS attack, nor does it mention the absence of typical attack indicators such as high connection rates or specific flags. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS, as these features do not support the anomaly. However, it lacks detail on how these features relate to DoS characteristics and does not explicitly justify why the absence of these factors indicates a DoS attack. The clarity is good, but the explanation could be more comprehensive in covering key drivers and caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero contributions, which aligns with the prediction of 'Probe' as no feature influence is indicated. However, it does not explicitly justify why these features lead to a probe classification or discuss key drivers, limiting completeness. Clarity is good, but the explanation could better connect features to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the 'Normal' label and mention potential caveats or other factors not captured.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal.' It clearly lists the features and their contributions, making it SOC-ready. However, it does not explicitly justify why these features lead to a normal classification or discuss potential caveats, slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the features considered, though it could be more explicit about why these features lead to a normal classification. The explanation covers key drivers but lacks discussion of potential caveats or other contributing factors, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states that none of the key features contributed to an anomaly, supporting the normal classification. However, it could improve clarity by explicitly mentioning that these features are not influential in this case and noting that the explanation does not address other potential factors or caveats.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the factors considered, though it could be more explicit about how these features support the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or the absence of influential anomalies, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no contribution to the DoS prediction. This contradicts the expectation that features should influence the label, especially since the instance has characteristics (e.g., protocol ICMP, zero dst_bytes) that could be indicative. The explanation lacks detail on why these features are deemed irrelevant or how they relate to the prediction, reducing its completeness. Clarity is good, but the explanation does not justify the label or provide insight into the anomaly.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, indicating no clear drivers for the DoS prediction. However, it does not explicitly connect the features' values or lack thereof to the prediction, nor does it clarify why these features are considered non-contributing. The explanation is concise and SOC-ready but lacks detail on how the features relate to the anomaly, resulting in limited completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP values, implying no influence on the prediction, but does not clarify why the model predicts 'Probe' despite these features being neutral. It lacks detail on how the features relate to the 'Probe' label or potential other factors. The explanation is concise but insufficiently justified or comprehensive, leading to moderate fidelity and low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of DoS, typically associated with high REJ errors and specific service patterns. It lacks detail on how the features relate to the DoS label, making it incomplete. The clarity is good but the fidelity is compromised by the contradiction between features and prediction, and the explanation does not justify the anomaly sufficiently.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature signs. However, it lacks detail on how these features influence the prediction and does not explicitly justify why the instance is considered normal, such as referencing specific feature values or thresholds. The explanation is concise and SOC-ready but could improve in providing a more comprehensive rationale.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided feature importance signs. However, it does not clarify why these features are considered drivers of the DoS prediction, especially given their zero values. The explanation is concise and SOC-ready but lacks detail on how these features justify the label or account for potential caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states the factors considered, though it could be more explicit about how these features contribute to the normal classification. The explanation covers key drivers but lacks discussion of potential caveats or the absence of influential features, limiting completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their contributions, though it could be more explicit about how these features support the normal classification and mention potential caveats or other factors considered.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered drivers of the DoS prediction, especially given the instance's characteristics such as the REJ flag and zero bytes. The explanation is concise and SOC-ready but lacks detail on how the features relate to the DoS label, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributory or how they relate to the DoS prediction. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the prediction and whether other factors were considered. It also does not mention potential caveats or limitations, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states that none of the features contribute to an anomaly, which is consistent with the data. However, it could improve by explicitly noting that the features' negligible values imply no anomalies or unusual activity, providing a slightly more comprehensive justification.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly indicates that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the key features and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features support the normal classification or any caveats about potential feature interactions, slightly reducing completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP contribution, aligning with the prediction of 'Normal' and indicating no feature-driven anomalies. It is concise and unambiguous, suitable for SOC reporting. However, it lacks detail on how these features support the normal classification, such as noting the absence of suspicious activity or anomalies, which would improve completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which contradicts the expectation that these features influence the prediction. It does not clarify how these features relate to the 'Probe' label or why they are considered top factors. The explanation lacks detail on how the features justify the prediction or any caveats, reducing its completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which aligns with the prediction of 'Probe' but provides no detail on how these features influence the decision. It lacks justification for why the instance is classified as a probe, especially given the minimal feature contributions. The explanation is concise but does not sufficiently justify the label or cover key drivers, and it does not note any caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and SOC-ready, but it lacks detail on the reasoning behind the prediction and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that all top features have zero SHAP values, indicating they do not contribute to the prediction. However, it lacks detail on why these features are non-informative and does not explicitly connect this to the 'DoS' prediction or discuss other potential factors. The clarity is good, but the explanation could be more comprehensive in justifying the absence of influential features. Overall, it provides a basic summary but misses deeper insights into the model's reasoning.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP importance, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it does not justify why these features are irrelevant or how the absence of their influence supports the anomaly. The explanation is concise and clear but lacks detail on the reasoning behind the prediction, especially given the zero importance scores.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of DoS and the feature values. However, it does not specify how these features relate to the DoS prediction or why their contributions are zero, leaving some ambiguity. The explanation is concise and SOC-ready but lacks detail on the key drivers and caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label and the provided feature values. It clearly states that none of the features contribute to an anomaly, making it SOC-ready. However, it could improve by explicitly noting that these features are not drivers of the prediction and mentioning any potential caveats or other factors considered.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features justify the normal label or notes potential caveats, which affects completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. However, it lacks detail on how these features influence the normal classification and does not explicitly mention the absence of anomalies or potential caveats. The explanation is concise and SOC-ready but could better justify why these features lead to a normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero contribution scores, which aligns with the prediction of DoS but provides no insight into the actual drivers behind the label. It lacks detail on how the features relate to the anomaly, making it somewhat ambiguous and incomplete. The explanation is concise but does not justify the prediction or highlight key factors, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of DoS, indicating no feature-driven evidence. However, it does not clarify why these features are non-contributing or how the REJ flag relates to the DoS prediction, leaving some gaps in understanding. The explanation is concise but lacks detail on key drivers and caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, indicating they do not contribute to the DoS prediction. However, it lacks detail on how these features relate to the prediction and does not explicitly justify why the instance is classified as DoS despite the features' neutrality. The explanation is concise and SOC-ready but could better clarify the reasoning process and note that other factors or model behavior may influence the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which contradicts the prediction of DoS attacks that typically involve high connection rates, failed login attempts, or specific service patterns. It does not justify why these features are relevant or how they relate to the DoS prediction. The explanation is concise but lacks detail on key drivers or caveats, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP values, suggesting no influence on the prediction. However, it does not clarify that these features are neutral or irrelevant, nor does it connect the lack of feature influence to the 'Probe' label. The explanation is concise and SOC-ready but lacks detail on how these features justify the prediction or address potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the provided SHAP values. It clearly lists the features and their contributions, making it SOC-ready. However, it does not explicitly connect these features to the predicted 'Normal' label or discuss why their zero impact supports this prediction, which would improve completeness. The explanation is concise and unambiguous, but could benefit from a brief note on how these features collectively support the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not clarify why these features are considered non-contributing or how they relate to the DoS prediction, leading to limited completeness. The explanation is concise and SOC-ready, but it lacks detail on the key drivers and potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly lists the features and their contributions, making it SOC-ready. However, it lacks discussion on how these features support the normal classification or potential caveats, such as the absence of other relevant features or context, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are not contributing to the DoS prediction, nor does it connect the features to the observed instance characteristics. The explanation is concise but lacks detail on how the features relate to the attack, reducing its completeness. Clarity is good, but the lack of context on feature relevance impacts overall usefulness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Normal' and the feature values. However, it does not specify how these features influence the prediction or justify why the instance is considered normal. The explanation is concise and SOC-ready but lacks detail on the key drivers and caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered and their contributions, making it SOC-ready. However, it lacks explicit mention of how these features collectively support the 'Normal' label or discuss potential caveats, slightly reducing completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact on the prediction, aligning with the 'Normal' label. It clearly states the features and their signs, making it SOC-ready. However, it could be more explicit about why these features contribute neutrally, providing a brief note on their insignificance or lack of variation in this instance.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features with zero impact, aligning with the prediction of 'Normal' and the feature values. It clearly states the features considered, making it SOC-ready. However, it lacks detail on how these features collectively support the 'Normal' label, and does not mention potential caveats or other factors that could influence the prediction, limiting its completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero contribution, aligning with the prediction of 'Normal' and the feature values. It clearly states that none of the features are contributing to an anomaly, which supports the normal classification. However, it could be slightly more explicit in noting that the absence of anomalous feature signals justifies the normal label, adding a touch more completeness.",
+      "overall": 4.75
+    }
+  ],
+  "summary": {
+    "fidelity": 3.035,
+    "clarity": 4.067,
+    "completeness": 2.56,
+    "overall": 3.174
+  }
+}

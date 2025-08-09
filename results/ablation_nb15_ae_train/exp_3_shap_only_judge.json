@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not clarify how these features influenced the 'Generic' prediction. The attribution of features is accurate but lacks detail on their actual impact or reasoning behind the label, reducing completeness. Clarity is good, but the explanation could be more informative about why the prediction is 'Generic' given the features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which does not align with the 'Exploits' prediction or the provided feature data. It fails to justify the label or highlight key drivers, and the lack of feature importance details reduces clarity and completeness. The explanation appears generic and does not address the instance-specific context or potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the model's output of 'Exploits'. This contradiction reduces fidelity significantly. The explanation is concise and clear but lacks detail on how the features relate to the 'Exploits' label, resulting in low completeness. It does not justify the prediction or discuss key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal'. However, it does not clarify how the other features support the 'Normal' label, especially given their minimal or zero SHAP values. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the prediction or address potential caveats, leading to moderate scores in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features with their signs, aligning with the prediction of 'Normal' and the top features provided. However, it omits discussion of how these features collectively support the 'Normal' label, and does not mention potential caveats or the absence of other influential features. The explanation is concise and SOC-ready but could improve in completeness by explicitly linking features to the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not specify how these features relate to the 'Generic' prediction or why they are considered key drivers, leading to low completeness. The clarity is good, as the explanation is concise and straightforward, but it lacks detail on the reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of 'Normal' and the provided feature values. However, it does not specify how these features influence the prediction or why they are considered key drivers, leading to limited completeness. The clarity is good, as the explanation is concise and straightforward. The fidelity is moderate because the explanation correctly reflects the zero contributions but lacks detail on the absence of contradictions or hallucinations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction ('+0.000'), which aligns with the provided features being all zero or neutral. However, it does not justify why the prediction is 'Generic' despite the features' values, nor does it discuss the potential influence of other features or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers or reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal'. However, it lacks detail on how these features collectively support the normal label, and does not mention potential caveats or the absence of other influential features. The presentation is concise and SOC-ready, but could benefit from more explicit justification of the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all are zero or near-zero, which does not align with the prediction of 'Fuzzers' that typically involve anomalous behaviors not captured here. The features provided do not justify the label, and the explanation lacks detail on how these features influence the prediction. Clarity is good, but the explanation is incomplete and does not effectively justify the anomaly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP contributions, which aligns with the prediction of 'Normal' but provides no insight into why the instance is normal. It lacks detail on how these features support the normal label or any caveats. The explanation is concise and SOC-ready but does not justify the prediction effectively, leading to a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features and their signs, aligning with the prediction of 'Normal' and avoiding contradictions. It clearly lists the key drivers with their contributions, making it SOC-ready. However, it lacks detail on how these features justify the normal label, such as noting the absence of anomalous patterns or potential caveats, which affects completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the assigned label 'Reconnaissance' that typically involves specific feature patterns. The explanation lacks detail on how features support the label and does not address potential key drivers or caveats. While concise and SOC-ready, it fails to justify the prediction adequately, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all features have near-zero SHAP values, it does not convincingly justify the 'Normal' prediction. The explanation lacks detail on how these features collectively support the label, and it does not address potential caveats or the absence of significant drivers. The clarity is good, but the low fidelity and completeness reflect the minimal contribution of the features to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting they do not influence the prediction. However, the explanation lists these features as top factors, which contradicts their zero contribution, leading to potential hallucinations. Clarity is good due to concise language, but the explanation lacks detail on why these features are considered top factors despite zero SHAP values. Completeness is low because it does not justify the 'Normal' prediction or discuss key drivers or caveats, especially given the zero contributions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but shows all zeros, indicating no influence on the prediction. This contradicts the provided top features, which include small but non-zero values for 'id' and 'service', suggesting some influence. The explanation is concise and SOC-ready but lacks detail on how these features justify the 'Generic' label or any caveats. Overall, it partially aligns with the features but fails to fully justify the prediction or address potential nuances.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero importance, which aligns with the provided SHAP values. However, it does not specify how these features relate to the 'Generic' prediction or why they are considered key drivers, leading to low completeness. The clarity is good as it is concise, but the lack of detail reduces overall informativeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all features have near-zero or zero SHAP values, it does not effectively justify the 'Normal' prediction. The mention of features like 'id' with a positive value is not clearly connected to the prediction outcome, and the explanation lacks discussion of how these features support normality or any caveats. Overall, it provides minimal insight into the decision rationale, leading to moderate clarity but low fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal'. However, it does not explicitly connect how these features collectively support the normal label or mention potential caveats. The features listed are straightforward and SOC-ready, but the explanation could better justify why these features lead to a normal classification and note any limitations or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but does not clearly connect how these features justify the 'Exploits' prediction. The features provided show minimal variation and do not strongly support the label, especially since the protocol is ospf and other features are zero or negligible. The explanation lacks detail on how these features contribute to the anomaly, and it does not address potential caveats or alternative explanations, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes the top features and their signs, aligning with the prediction of 'Exploits.' However, it lacks detail on how these features specifically justify the label, especially given the minimal variation in feature values and the absence of explicit causal reasoning. The explanation is concise and SOC-ready but does not sufficiently cover key drivers or caveats, leading to a moderate completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero contribution scores, which contradicts the prediction of 'Exploits' that should be driven by certain feature patterns. The explanation lacks detail on how these features relate to the label, making it ambiguous and incomplete. While concise, it does not justify the prediction or cover key drivers, leading to a low completeness score. The fidelity is low due to the contradiction between the zero contributions and the predicted exploit label.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero contributions, which aligns with the prediction of 'Normal' but provides no insight into the actual factors influencing the decision. It lacks detail on how these features relate to the label, making it somewhat ambiguous and incomplete. The explanation is concise but does not justify the prediction or cover key drivers, resulting in a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but all feature contributions are zero or near-zero, which does not align with the actual instance data indicating a DNS UDP traffic. The explanation lacks detail on how these features influence the 'Generic' prediction and does not justify the label or note potential caveats. It is concise but insufficiently informative or accurate regarding the instance's characteristics.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP contribution, which aligns with the prediction of 'Normal' but provides no insight into the actual factors influencing the decision. It is concise and SOC-ready but lacks detail on how features support the 'Normal' label or any caveats. The low fidelity score reflects the absence of feature influence explanation, making it insufficient to justify the prediction fully.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their signs, matching the provided top features, but it does not specify how these features influence the prediction of 'Fuzzers' or relate to the instance details. It also omits any discussion of the actual feature values or their relevance, leading to limited justification of the label. The explanation is concise and SOC-ready but lacks depth in connecting features to the prediction, reducing its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all feature contributions are zero, which does not align with the actual instance data that shows a DNS service and high source load. The explanation lacks detail on how these features influence the 'Generic' prediction and does not justify the label or note potential caveats. It is concise but not sufficiently informative or aligned with the instance specifics.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not clarify how these features influenced the 'Generic' prediction. The explanation lacks detail on why the prediction is labeled as such, and does not connect feature values to the label or note any caveats. Overall, it is concise and SOC-ready but insufficiently informative and does not justify the prediction effectively.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features and their signs, aligning with the prediction of 'Normal' and the provided feature importances. It clearly states the key drivers without contradictions. However, it omits discussion of how these features collectively support the 'Normal' label and does not mention potential caveats or other factors that could influence the prediction, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all feature contributions are zero or near-zero, which does not align with the actual instance data indicating a DNS UDP traffic. The explanation does not justify the 'Generic' prediction or highlight key drivers, and it lacks caveats or context. Clarity is good, but the explanation's content is insufficient for full understanding.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features with their signs, notably 'id' which has a positive contribution, aligning with the top features. However, it omits mention of the actual prediction ('Normal') and how these features support this label, reducing completeness. The explanation is concise and SOC-ready, but could clarify the absence of other potential factors and caveats for full transparency.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero or near-zero SHAP values, suggesting minimal influence on the prediction. However, it does not clearly connect these features to the 'Generic' label nor explain why they are considered key drivers or lack thereof. The explanation is concise and SOC-ready but lacks detail on how these features justify the prediction or address potential caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the provided SHAP values. However, it does not explicitly connect these features to the 'Normal' prediction or justify why these features support the normal label, lacking context on how they influence the decision. The explanation is concise and SOC-ready but misses coverage of key drivers and caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the label 'Exploits' that typically involves specific feature patterns. The explanation is concise and SOC-ready but fails to justify the label or cover key drivers, especially since it does not address the high rate or other potential indicators. It also lacks caveats or discussion of other factors that might influence the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their SHAP values, matching the prediction of 'Normal' and indicating minimal influence from these features. However, it does not explicitly connect how these features support the 'Normal' label or discuss the absence of other influential features. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, leading to moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but shows all values as zero, which does not align with the actual feature values or the prediction of 'Generic.' It lacks detail on how these features influence the prediction and does not justify why the instance is labeled as 'Generic.' The explanation is concise but not sufficiently informative or accurate, leading to a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all feature contributions are zero, which does not align with the prediction of 'Generic' or the instance's characteristics. It lacks justification for why these features influence the label, especially given the minimal feature impact. The explanation is concise but does not sufficiently justify the prediction or cover key drivers, and it overlooks the actual network context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but provides no connection to the prediction 'Analysis' or how these features justify the label. All features are marked as zero impact, which contradicts the idea of explaining a prediction. The explanation lacks detail on how these features influence the outcome, reducing clarity and completeness. It does not clarify the role of each feature or note any caveats, leading to a low score in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting no influence on the prediction. However, the features listed in the explanation do not align with the actual instance data, which shows non-zero values for features like duration, packet counts, and bytes. This contradiction reduces fidelity. The explanation is concise and SOC-ready but fails to justify why the prediction is 'Normal' based on the features, leading to low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 1.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which contradicts the prediction of 'Exploits' that typically involves specific feature influences. The explanation lacks detail on how features justify the label, and the features listed do not align with the prediction or provide meaningful insight. Clarity is limited due to the minimal and vague description, and completeness is low because it does not justify the anomaly or note caveats.",
+      "overall": 1.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the top features and their signs, aligning with the prediction of 'Normal' by emphasizing minimal impact from each feature. However, it lacks detail on how these features collectively support the normal classification and does not mention potential caveats or the absence of other influential factors, limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting no influence on the prediction. This aligns with the prediction of 'Normal' and the features' values, but it does not justify why the instance is normal or highlight key drivers. The explanation is concise and SOC-ready but lacks detail on how features support the normal label or any caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 1.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the expectation that features influence the prediction. It does not justify why the model predicts 'Fuzzers' despite zero feature contributions, nor does it connect features to the label. The clarity is limited as it simply lists features without context. Overall, the explanation lacks alignment with the model's behavior and does not sufficiently justify the prediction.",
+      "overall": 1.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 1.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which contradicts the model's output of 'Exploits.' It fails to justify the label or highlight key drivers, and the explanation is overly generic and lacks detail. The features' signs are all zero, but the prediction suggests exploitation, so the explanation should reflect relevant features and their influence. Overall, it does not align well with the prediction or the feature importance, leading to low scores in fidelity, clarity, and completeness.",
+      "overall": 1.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features but provides no rationale linking them to the 'Exploits' prediction. It does not clarify how the features contribute to the label or address potential caveats. The mention of features with zero impact suggests limited insight, reducing fidelity and completeness. Clarity is good, but the explanation lacks depth and justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal' since all features have near-zero contributions indicating no strong anomalies. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of other influential factors. The explanation is concise and SOC-ready, but could improve in completeness by explicitly connecting feature contributions to the normal classification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all feature contributions are zero, it does not effectively justify the 'Exploits' prediction. The mention of features aligns with the SHAP top features, but the explanation lacks detail on how these features influence the label, and it does not address potential caveats or the absence of feature impact, limiting its completeness and depth.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but the features have negligible or zero values in the instance, making the attribution weak and potentially misleading. It does not clearly connect how these features drive the 'Exploits' prediction, especially given the unusual protocol and high rate. The explanation lacks detail on how these features justify the label, and it does not note any caveats or uncertainties.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates no significant feature contributions, which aligns with the prediction 'Generic' and the near-zero SHAP values. However, it lacks detail on how these features relate to the label or anomaly, and does not justify why the instance is considered 'Generic.' The clarity is good, but the completeness is limited as it does not discuss key drivers or caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero SHAP values, indicating no contribution to the prediction. This contradicts the prediction of 'Reconnaissance,' which typically involves specific feature patterns. The explanation is concise and SOC-ready but fails to justify the label or cover key drivers, making it incomplete. It does not acknowledge the absence of feature influence or potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no influence on the prediction. This contradicts the prediction labeled 'Exploits,' which typically involves specific feature patterns. The explanation lacks detail on how features relate to the label, making it ambiguous whether it justifies the prediction. Clarity is good due to concise language, but the explanation's completeness is low because it does not justify the label or discuss key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 0.5,
+      "clarity": 4,
+      "completeness": 2,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which contradicts the label 'Exploits' that typically involves specific patterns. It lacks detail on how the features relate to the prediction and does not justify why the instance is considered an exploit. While concise and SOC-ready, it fails to justify the label or cover key drivers, resulting in low completeness.",
+      "overall": 1.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all feature contributions are zero or negligible, it does not effectively justify the 'Exploits' prediction. The explanation lacks detail on how these features influence the label, and it does not address potential caveats or the context of the features. Clarity is good due to concise wording, but the overall justification is weak, leading to a low completeness score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it does not explicitly connect how these features support the 'Normal' label or discuss potential caveats. The features listed have minimal impact on the prediction, which is consistent, but the explanation could better justify why these features lead to a normal classification and note any limitations or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero contribution scores, which contradicts the prediction of 'Exploits' that should be driven by specific feature influences. The explanation is concise and SOC-ready but fails to justify the label or cover key drivers, especially given the lack of feature contributions. It also does not note any caveats or uncertainties, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which contradicts the prediction 'Exploits' that typically involves specific feature patterns. It does not justify why the model predicts exploitation despite zero feature contributions, nor does it mention key factors like protocol anomalies or unusual packet sizes. The explanation is concise but lacks detail on how features relate to the label, leading to low completeness. The clarity is good, but the fidelity is compromised by the contradiction between the zero contributions and the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features with their signs, but since all features have near-zero SHAP values, it does not convincingly justify the 'Normal' prediction. The explanation is concise and SOC-ready but lacks depth in connecting features to the prediction, resulting in limited completeness and some potential misalignment with the actual feature importance.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates no influential features (all zero SHAP values), which aligns with the prediction 'Generic' but provides minimal insight into the actual factors driving the classification. It mentions features but does not clarify how they relate to the label or why they are considered neutral. The explanation lacks detail on the key drivers or caveats, reducing its completeness. Clarity is good, but the overall justification is weak due to the lack of substantive connection between features and the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction ('+0.000'), which aligns with the provided feature values being all zero or neutral. However, it does not justify why the prediction is 'Generic' given the instance's specific attributes, such as the DNS service and high source load. The explanation is concise and SOC-ready but lacks detail on how these features influence the label, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their signs, but all feature contributions are zero, which does not align with the prediction of 'Exploits' that typically involve specific feature patterns. The explanation lacks detail on how these features justify the label, and it does not address potential caveats or the absence of feature influence, leading to limited completeness. Clarity is good, but the explanation's content does not sufficiently support the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal' since all features have negligible or zero contributions. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of other influential factors. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature contributions to the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not clarify how these features influence the 'Generic' prediction. The explanation lacks detail on why the instance is labeled as such, especially given the minimal feature impact. It is concise and SOC-ready but does not sufficiently justify the prediction or address potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but does not clearly connect how these features influence the 'Normal' prediction. The features' contributions are minimal or zero, yet the explanation suggests they are key drivers, which is contradictory. It lacks detail on how these features justify the label or cover key factors, reducing its completeness. Overall, the explanation is concise but insufficiently aligned with the model's reasoning.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed significantly (+0.000 or -0.001), which aligns with the prediction 'Generic' and the feature values. However, it lacks detail on how these features relate to the label or anomaly, and does not justify why the instance is considered generic. The explanation is concise and SOC-ready but misses coverage of key drivers or caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it lacks detail on how these features influence the label, especially given the instance's specific attributes. The explanation is concise and SOC-ready but could better justify why these features lead to a normal classification and note potential caveats or other contributing factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal' since all features have near-zero contributions, indicating no strong drivers of an anomaly. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of significant feature influence. The explanation is concise and SOC-ready but could improve in explicitly connecting feature contributions to the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction 'Exploits' only if these features are indeed non-informative in this case. However, it does not justify why the model predicts 'Exploits' despite the lack of feature influence, nor does it discuss other potential drivers or caveats. The explanation is concise and SOC-ready but lacks depth and coverage of key factors, leading to a low completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their SHAP values, but all are zero or near-zero, indicating minimal influence. It does not clarify how these features justify the 'Normal' prediction, nor does it address potential caveats or the absence of other influential factors. The explanation is concise but lacks depth in linking features to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are relevant to the 'Fuzzers' prediction or discuss the absence of feature influence, leading to low completeness. Clarity is good, but the explanation could be more explicit about the lack of feature impact and its implications.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs but does not clearly connect them to the 'Exploits' prediction. It omits how these features influence the label, especially given the negative id feature and zero contributions from others. The explanation is concise and SOC-ready but lacks depth in justifying the prediction and noting potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their contributions, but the predicted label is 'Normal' while the explanation emphasizes features with positive contributions, which could suggest an anomaly. The features listed do not strongly justify the 'Normal' label, and the explanation lacks details on how these features collectively support the normal classification. It also omits caveats or context that could clarify the decision.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the label 'Exploits' that typically involves specific feature patterns. The features listed are all zero or neutral, providing no justification for the prediction. While the explanation is concise and SOC-ready, it lacks coverage of key drivers and does not clarify why the model predicted an exploit despite the absence of feature contributions. The fidelity score is low because the explanation does not align with the expected influence of features for this prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it lacks detail on how these features justify the label, especially given the instance's characteristics (e.g., UDP protocol, high rate). It also omits caveats or potential nuances, reducing completeness. Clarity is good, but the explanation could be more explicit about the absence of significant drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features but provides minimal detail on how each influences the 'Exploits' prediction, especially given the negative id feature. It does not clarify why the protocol or other features are considered neutral or how they contribute to the label. The explanation is concise but lacks depth to fully justify the prediction or address potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all feature contributions are zero, which does not align with the actual data indicating a DNS UDP transaction. The explanation lacks detail on how these features influence the 'Generic' prediction and does not justify the label or note any caveats. It is concise but not sufficiently informative or accurate.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the SHAP values provided. However, it does not specify how these features relate to the 'Exploits' prediction or justify why the instance is classified as such. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all feature contributions are zero or negligible, it does not effectively justify the 'Exploits' prediction. The explanation's mention of features with zero impact contradicts the prediction, leading to low fidelity. It is concise and SOC-ready, but lacks depth in covering key drivers or caveats, resulting in moderate clarity and low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction 'Exploits' only if these features are truly non-informative. However, it does not justify why these features are considered irrelevant or how the model arrived at the 'Exploits' label given the features' values. The explanation is concise and SOC-ready but lacks detail on key drivers or caveats, resulting in low completeness. The fidelity is high because the explanation accurately reflects the provided SHAP contributions, but it does not address potential contradictions or the context of the features.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all are zero or near-zero, which does not align with the prediction of 'Fuzzers' that typically involve specific feature patterns. The explanation does not justify the label or highlight key drivers, nor does it note any caveats. It is concise and clear but lacks depth and alignment with the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all features have near-zero SHAP values, it does not effectively justify the 'Normal' prediction. The explanation lacks detail on how these features influence the label, and it does not address potential caveats or the overall context, limiting its completeness. The clarity is good, but the fidelity and completeness are compromised by the minimal feature contributions and lack of interpretive detail.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists all top features with zero contributions, which aligns with the prediction of 'Normal' and the feature values. However, it does not specify how these features support the normal classification or address potential caveats. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the normal label and does not justify why these features are key drivers or note any uncertainties.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting no influence on the prediction. This contradicts the prediction of 'Fuzzers,' which typically involves specific feature patterns. The explanation lacks detail on how features relate to the label, making it ambiguous whether it justifies the prediction. While concise, it does not cover key drivers or caveats, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their SHAP values but does not specify how these features influence the 'Normal' prediction or their directions. It lacks detail on how each feature contributes to the label, making it somewhat ambiguous. The explanation is concise but does not justify the prediction thoroughly or note any caveats, leading to moderate scores in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but the provided features and instance details do not support the 'Exploits' prediction, especially since 'id' is negative and others are zero. The explanation lacks justification for why these features lead to an exploit label, and it does not address the absence of key features like protocol or application that might be more indicative. Overall, it partially aligns with the features but does not convincingly justify the label, leading to moderate fidelity and low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Exploits' only if these features are indeed non-contributory. However, it does not justify why the model predicts 'Exploits' despite the lack of feature influence, nor does it discuss potential caveats or other factors. The explanation is concise and SOC-ready but lacks depth and justification for the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their contributions, but the predicted label is 'Normal,' and the features show minimal deviation from typical values. The explanation does not clarify how these features justify the 'Normal' label or address potential caveats. It also overstates the importance of features with near-zero contributions, leading to potential contradictions with the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a positive driver (+0.020), which aligns with the top features, but the other features are either zero or not relevant to the prediction of 'Normal'. The explanation does not clarify why 'id' influences the label or how the other features contribute, leading to partial completeness. The description is concise and SOC-ready, but the low fidelity score reflects the weak connection between the features and the predicted label, especially given the minimal impact of the features on the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their SHAP signs but does not clearly connect these features to the 'Normal' prediction or justify why they support this label. The features' contributions are minimal or neutral, yet the explanation lacks detail on how these features collectively justify the normal classification. It also omits caveats or potential uncertainties, reducing completeness. Overall, the explanation is concise and SOC-ready but insufficiently detailed to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all features have zero or near-zero contributions, making the explanation largely uninformative. It does not clearly connect these features to the 'Generic' prediction or justify why the instance is considered normal or anomalous. The lack of detail and context reduces fidelity and completeness, though the explanation is concise and SOC-ready.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not specify how these features relate to the 'Generic' prediction or why they are considered key drivers, leading to limited completeness. The clarity is good, but the explanation lacks detail on the reasoning behind the label assignment and does not address potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features with their signs, but all features have zero or near-zero SHAP values, indicating minimal contribution. The explanation's mention of features aligns with the provided top features, but it does not clarify how these features justify the 'Fuzzers' prediction or the anomaly. It also omits discussion of the actual feature values or how they influence the label, limiting its completeness. Overall, the explanation is concise and SOC-ready but lacks depth in justifying the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the model's output of 'Exploits.' This suggests a contradiction or hallucination, reducing fidelity. The explanation is concise and clear but lacks detail on how features relate to the label, affecting completeness. It does not justify why the instance is classified as 'Exploits' or note any caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction 'Generic' and the feature values. However, it provides no justification for why these features are considered key drivers or how they relate to the label. The explanation is concise and SOC-ready but lacks detail on the reasoning process and caveats, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction 'Generic' and the feature values. However, it does not justify why these features are considered key drivers or how they influence the label, nor does it note any caveats or uncertainties. The clarity is good, but the completeness is lacking, as it fails to connect features to the prediction meaningfully.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are considered key drivers for the 'Fuzzers' prediction, nor does it discuss the absence of feature influence or potential caveats. The explanation is concise and SOC-ready but lacks depth in covering the rationale behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal' since all features have negligible or neutral contributions. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of significant drivers. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature contributions to the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but the features listed (id, protocol, service, TTL, packet size) do not align well with the provided instance attributes, which are mostly zero or very small values. The explanation does not clarify how these features justify the 'Exploits' label, nor does it address the specific instance details or potential caveats. Overall, it partially aligns with the features but lacks detailed justification and clarity regarding the instance context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all features have zero or near-zero importance, making the connection to the 'Generic' prediction weak. The explanation does not clarify how these features justify the label or anomaly, nor does it address potential caveats. Clarity is good, but the lack of meaningful feature influence reduces overall quality.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero importance scores, which does not align with the 'Exploits' prediction that typically involves specific feature contributions. It fails to connect the features to the label or provide any justification for why the instance is classified as exploit. The clarity is good, but the completeness is lacking as it does not justify the label or discuss key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Exploits' despite the features showing no influence, nor does it discuss key drivers or potential caveats. The explanation is concise and SOC-ready but lacks depth to fully justify the label or address possible uncertainties.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Exploits' despite the lack of feature influence, nor does it discuss the instance's characteristics or potential caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers and reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which aligns with the provided feature values being zero or neutral. However, it does not justify why the prediction is 'Generic' or discuss the actual feature values, missing key insights into the instance's characteristics. The explanation is concise and SOC-ready but lacks depth and coverage of key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the main driver with a positive contribution (+0.061), aligning with the feature's importance. However, it neglects the other features' contributions, which are all zero, and does not clarify how these features influence the prediction. The explanation is concise and SOC-ready but lacks detail on how the features justify the 'Analysis' label or anomaly, and does not address potential caveats or the overall reasoning process.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting no influence on the prediction. However, it does not clarify that the features are neutral or irrelevant, nor does it justify why the prediction is 'Normal' based on the features. The explanation is concise and SOC-ready but lacks detail on how these features support the 'Normal' label or address potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features with their SHAP values, but all features have near-zero contributions, which aligns with the 'Normal' prediction. However, it does not explicitly justify why these features lead to a normal label or discuss the absence of significant drivers. The explanation is concise and SOC-ready but lacks depth in covering key drivers or caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, indicating no influence on the prediction. This contradicts the prediction of 'Exploits,' which should be driven by relevant features. The explanation is concise and SOC-ready but fails to justify the label or cover key drivers, leading to a low completeness score. The fidelity is low because the explanation does not align with the model's feature importance.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it lacks detail on how these features collectively support the normal classification, and does not mention potential caveats or the absence of other influential features. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature values to the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly reflects the top features and their signs, aligning with the prediction of 'Normal'. However, it does not explicitly justify why these features lead to a normal classification or discuss potential caveats. The clarity is good, but the explanation could be more concise and explicitly connect features to the normal label for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero contribution scores, which aligns with the provided features but does not specify how these features influence the prediction of 'Fuzzers.' It lacks detail on the actual feature values or directions, making it somewhat ambiguous. The explanation is concise but does not justify why these features lead to the 'Fuzzers' label or discuss potential caveats, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the high importance of features like duration, packet counts, and sizes in the instance. This contradiction reduces fidelity significantly. The explanation is concise and SOC-ready, but it fails to justify the label or cover key drivers, resulting in low completeness. Overall, the explanation does not align well with the provided features and prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not clarify how these features influenced the 'Generic' prediction. The explanation lacks detail on the actual decision process, making it somewhat ambiguous and incomplete in justifying the label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all features have zero or near-zero SHAP values, it does not clearly justify why 'Reconnaissance' is predicted. The explanation lacks detail on how these features collectively support the label, and it does not address potential caveats or the absence of significant feature influence, leading to a moderate fidelity score. Clarity is good due to concise language, but completeness is limited because it does not explain the absence of influential features or the reasoning behind the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which aligns with the provided feature importances. However, it lacks detail on how the features relate to the 'Generic' label or anomaly, and does not justify why these features are non-contributory. The explanation is concise and SOC-ready but insufficiently comprehensive to fully justify the prediction or highlight key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately reflects the top features and their signs, aligning with the prediction of 'Normal.' It clearly states the features considered and their contributions, avoiding contradictions. However, it does not explicitly justify why these features lead to a normal label or discuss potential caveats, slightly limiting completeness. Overall, the explanation is concise, SOC-ready, and mostly aligns with the feature importance.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which contradicts the typical expectation that features influence the model's decision. Given the prediction is DoS, key features such as packet size, rate, or protocol should have shown some influence. The explanation's lack of detail and failure to justify the label or mention key drivers results in low completeness. Clarity is good, but the explanation's content is insufficient to fully justify the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it lacks detail on how these features collectively support the 'Normal' label, such as typical ranges or thresholds. It also omits caveats or potential nuances, like the significance of the id feature or the absence of other influential factors. Overall, it is clear and mostly aligned but could benefit from more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all are zero or near-zero, which does not align with the prediction of 'Exploits' that typically involves notable feature contributions. The explanation lacks detail on how these features justify the label, and does not address potential key drivers or caveats. Clarity is good, but the overall justification is weak and inconsistent with the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Fuzzers' despite the lack of feature influence, nor does it discuss the instance's characteristics or potential caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers and reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not specify how these features relate to the 'Generic' prediction or why they are considered key drivers, leading to low completeness. The clarity is good, as the explanation is concise and straightforward, but it lacks detail on the reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are relevant or not relevant to the 'Fuzzers' prediction, nor does it connect the features to the label. The explanation is concise and clear but lacks depth and coverage of key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all features have near-zero contributions, it does not effectively justify the 'Normal' prediction. It lacks discussion of how these features influence the label or any caveats, leading to limited completeness. The clarity is good, but the fidelity is low because the explanation does not align with the minimal feature impacts and does not address potential contradictions or the overall context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all feature contributions are zero or negligible, it does not effectively justify the 'Exploits' prediction. The explanation lacks detail on how these features influence the label, and it does not address the specific instance attributes or potential caveats. The clarity is good, but the completeness and fidelity are limited due to the minimal feature impact and absence of contextual reasoning.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of 'Exploits' only if these features are indeed non-contributory. However, it does not justify why the model predicts 'Exploits' despite the lack of feature influence, nor does it discuss other potential drivers or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers or reasoning behind the prediction, leading to a low completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with zero contributions, which aligns with the prediction of 'Normal' but provides no insight into the actual factors influencing the decision. It lacks detail on how these features relate to normal behavior, making it somewhat ambiguous and incomplete. The clarity is good due to concise formatting, but the explanation does not justify the label or cover key drivers, resulting in a low completeness score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 1.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction ('+0.000'), which contradicts the instance's characteristics (e.g., DNS service, high rate, specific TTL). It fails to justify why the prediction is 'Generic' based on the features, and does not mention key drivers or caveats. The explanation is overly simplistic and uninformative, reducing its clarity and completeness.",
+      "overall": 1.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed significantly to the prediction, which aligns with the prediction 'Generic' and the near-zero feature importances. However, it lacks detail on how these features relate to the label or potential reasons for the classification, reducing its completeness. The explanation is concise and SOC-ready, but it does not clarify why the features are uninformative or how they support the 'Generic' label, leading to a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features with their signs, but all are zero or near-zero, which does not align with the prediction of 'Exploits' that typically involves specific feature patterns. The explanation lacks detail on how these features justify the label, and it does not address potential caveats or other drivers. Clarity is good, but the justification's relevance and completeness are limited.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction ('+0.000'), which aligns with the features' values being zero or neutral. However, it fails to justify why the prediction is 'Generic' despite the features' values, lacking reasoning about the instance's characteristics or potential anomalies. The explanation is concise and SOC-ready but does not sufficiently cover key drivers or caveats, leading to a moderate completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their signs, but all feature contributions are zero, which does not align with the prediction of 'Fuzzers' that typically involve specific feature patterns. The explanation lacks detail on how these features justify the label, and does not address potential caveats or other key drivers. Clarity is good, but the overall justification is weak and does not convincingly support the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of 'Exploits' that typically involves specific feature patterns. It lacks detail on how features relate to the label, making it ambiguous and incomplete in justifying the prediction. While concise, it does not effectively connect features to the anomaly, reducing overall clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the label 'Exploits' suggesting an attack. It fails to justify the label or highlight key drivers, and the features provided are all zero or negligible, making the explanation ambiguous and incomplete. While concise, it does not clarify the reasoning behind the prediction or address potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which aligns with the prediction of 'Normal' and indicates no apparent contradictions. However, it does not specify how these features relate to the normal label or why they are considered key drivers, nor does it mention any caveats or context. The explanation is concise and SOC-ready but lacks depth in justifying the prediction thoroughly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their signs, but since all features have near-zero SHAP values, it does not effectively justify the 'Normal' prediction. The explanation lacks detail on how these features influence the label, and it does not address potential caveats or the overall context, leading to limited completeness. Clarity is good, but fidelity and completeness are compromised by the minimal feature contributions and lack of interpretive insight.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, which aligns with the prediction of 'Exploits' not being driven by these features. However, it does not justify why the model predicts 'Exploits' despite the absence of feature influence, nor does it discuss other potential drivers or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers or reasoning behind the prediction, leading to a moderate completeness score.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their contributions, but since all features have near-zero SHAP values, it does not convincingly justify the 'Normal' prediction. The explanation's focus on features with negligible impact may mislead users about the actual drivers of the prediction. It lacks discussion of other relevant features or caveats, reducing its completeness. Overall, it is somewhat clear but does not fully justify the prediction's rationale.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features significantly contributed to the prediction, which aligns with the prediction 'Generic' and the near-zero SHAP values. However, it lacks detail on how the features relate to the label, and does not justify why the features are non-contributory or discuss potential caveats. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature values to the 'Generic' prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Exploits.' However, it only mentions the 'id' feature with a negative contribution, which is consistent with the data, but it neglects to discuss how the other features are neutral or contribute minimally. The explanation is concise and SOC-ready but lacks detail on how these features justify the 'Exploits' label or address potential caveats, such as the extremely short duration or unusual protocol. Overall, it aligns with the features but could improve in explaining the rationale behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists the top features with their signs but does not clearly connect how these features justify the 'Exploits' prediction, especially given the instance's unusual protocol ('unas') and the negative weight on 'id'. The explanation lacks detail on how these features influence the label and does not address potential caveats or the relevance of the features in this context. Overall, it provides minimal insight into the reasoning behind the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of 'Exploits' that typically involves specific feature patterns. It does not justify why these features are relevant or how they support the label, nor does it address potential caveats. The clarity is good, but the lack of alignment with the prediction and features reduces overall completeness and fidelity.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why these features are relevant or not relevant to the 'Generic' prediction, nor does it discuss the instance's characteristics or potential caveats. The explanation is concise and SOC-ready but lacks depth to fully justify the label or address key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features and their contributions, but it does not clarify how these features justify the 'Normal' prediction or address potential caveats. The positive id feature (+0.016) is noted, but without context on its typical range or significance, the explanation's connection to the prediction remains weak. The absence of discussion on other features or potential contradictions reduces overall fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs but does not align with the prediction 'Exploits,' which typically involves anomalies or suspicious activity. The features provided are mostly neutral or minimal in influence, and the explanation lacks detail on how these features justify the 'Exploits' label. It also omits discussion of key drivers or potential caveats, reducing its completeness. Clarity is good, but fidelity and completeness are limited due to the weak connection between features and the predicted label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but all feature contributions are zero, which does not align with the actual instance data indicating UDP protocol and other attributes. It lacks detail on how these features influence the 'Fuzzers' prediction and does not justify why the instance is classified as such. The explanation is concise but misses key drivers and does not address potential caveats or the relevance of features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting no influence on the prediction. However, the prediction is 'Reconnaissance,' which typically involves specific patterns or features. The explanation does not justify why these features are irrelevant or how the model arrived at this label, leading to low completeness. The clarity is decent, but the lack of detail reduces overall understanding. The fidelity is high in that it aligns with the features' zero contribution, but it does not explain the reasoning behind the prediction itself.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Exploits' only if these features are indeed non-contributory. However, it does not justify why the model predicts 'Exploits' despite the lack of feature influence, nor does it discuss other potential drivers or caveats. The explanation is concise and SOC-ready but lacks depth in covering key drivers and reasoning behind the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction of 'Exploits' only if these features are indeed non-informative in this case. However, it does not justify why the model predicts 'Exploits' despite the lack of feature influence, nor does it discuss key drivers or potential caveats. The explanation is concise and SOC-ready but lacks depth and justification for the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs but provides no rationale linking these features to the 'Generic' prediction. The features' values are mostly zero or negligible, and the explanation does not clarify how these features influence the label. The lack of connection between feature importance and the prediction reduces fidelity and completeness. Clarity is good, but the explanation's brevity and lack of detail limit its usefulness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a top feature with a positive contribution, aligning with the prediction 'Exploits'. However, the feature 'id' alone is insufficient to justify the label, especially since other top features show zero contribution and the provided features do not strongly indicate exploitation. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the anomaly. It also does not address potential caveats or the absence of other influential features, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all features have zero or near-zero SHAP values, indicating minimal influence. The explanation does not justify the 'Generic' prediction or discuss key factors like protocol or service, which are relevant given the instance details. It lacks detail on how these features relate to the label, and does not note any caveats or uncertainties, limiting its completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features but provides no justification for the 'Exploits' prediction, especially given the instance's unusual attributes (e.g., very high rate, zero dttl). The top features' contributions are minimal or neutral, and the explanation does not clarify how these features support the 'Exploits' label or address potential caveats. Overall, it lacks sufficient detail to confidently justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it offers no insight into why the prediction is 'Generic' or how these features influence the label. The explanation is concise and SOC-ready but lacks depth in justifying the prediction or discussing potential caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, suggesting they do not influence the prediction. However, the explanation's mention of these features as top factors contradicts their zero contribution, which is inconsistent. It does not justify why the prediction is 'Normal' nor discusses other potential drivers or caveats. Clarity is good, but the lack of justification and the contradiction in feature importance reduce overall quality.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their contributions, but the features listed (id, protocol, service, TTL, packet size) do not strongly or clearly relate to the prediction of 'Shellcode'. The explanation lacks detail on how these features justify the label, and the top features' contributions are all zero or negligible, which reduces confidence in the explanation's alignment with the model's reasoning. Clarity is good, but the explanation does not sufficiently justify the prediction or cover key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not effectively justify the 'Generic' prediction. The explanation lacks detail on how these features influence the label, especially given the instance's specific attributes. Clarity is good, but the explanation's completeness is limited due to the absence of reasoning connecting features to the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP contributions, which aligns with the prediction of 'Normal' and suggests no key drivers indicating an anomaly. However, it lacks detail on how these features support the normal classification, does not mention the absence of contradictory signals, and omits caveats or potential nuances. The clarity is good, but the completeness is limited due to the absence of justification or context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all feature contributions are zero or near-zero, it does not convincingly justify the 'Reconnaissance' prediction. The explanation lacks detail on how these features relate to reconnaissance activities, and it does not address the specific instance attributes or potential caveats. Overall, it aligns somewhat with the features but fails to provide a comprehensive or clear rationale.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 1.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, which contradicts the prediction of 'Exploits' that typically involves significant feature contributions. The explanation lacks detail on how these features relate to the label, making it ambiguous and incomplete. It does not justify the prediction nor notes any caveats, resulting in low clarity and completeness scores.",
+      "overall": 1.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their contributions, but since all contributions are zero, it does not justify the 'Normal' prediction effectively. The features identified do not align with the prediction, and the explanation lacks detail on how these features support the normal label. Clarity is good, but the completeness is limited as it does not explain why the instance is normal or address key drivers or caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which aligns with the provided feature importances. However, it lacks detail on how the features relate to the 'Generic' label, and does not justify why these features are non-contributory or address potential caveats. The explanation is concise and SOC-ready but insufficiently comprehensive to fully justify the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with their signs, but all feature contributions are zero, which does not align with the actual prediction of 'Generic' or the instance details. It lacks justification for the label and does not explain how these features influence the prediction. The explanation is concise but misses key drivers and caveats, leading to a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the prediction 'Generic' and the feature values. However, it does not justify why these features are considered key drivers or how they relate to the 'Generic' label. The explanation is concise and clear but lacks depth in covering the rationale behind the prediction, resulting in low completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all top features have near-zero SHAP values, aligning with the prediction of 'Normal' and indicating no strong drivers for an anomaly. It accurately reflects the signs and magnitudes of the features, avoiding contradictions. However, it lacks detail on how these features relate to the label and does not mention potential caveats or the absence of other influential features, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of the overall feature context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all are zero or near-zero, which does not align with the prediction of 'Fuzzers' that typically involve anomalies in traffic patterns or specific protocols. The features provided do not justify the label, and the explanation lacks detail on how these features contribute to the anomaly. Clarity is good, but the completeness and fidelity are limited due to the lack of meaningful connection between features and the predicted class.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero contribution scores, which contradicts the prediction of 'Exploits' that should be driven by certain features. The explanation lacks detail on how these features relate to the label, making it ambiguous and incomplete in justifying the prediction. While the clarity is decent, the lack of feature contributions and reasoning reduces fidelity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features but provides no reasoning or connection to the 'Exploits' prediction. It does not clarify how these features support the label or address potential caveats. The absence of feature impact interpretation reduces clarity and completeness, and the explanation's generic nature limits fidelity.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the label 'Exploits' that typically involves specific feature patterns. The explanation is concise and SOC-ready but fails to justify the label or cover key drivers, especially given the instance's unusual rate and load metrics. It also does not note any caveats or potential reasons for the prediction, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Normal.' However, it does not explicitly connect how these features influence the normal classification or mention the absence of key drivers or potential caveats. The explanation is concise and SOC-ready but could benefit from more detail on how these features collectively support the 'Normal' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying they do not influence the prediction. This contradicts the prediction of 'Fuzzers,' which typically involves specific feature patterns. The explanation lacks detail on how these features relate to the label, and it does not justify why these features are considered top drivers or acknowledge potential caveats. Clarity is good, but the explanation's completeness and fidelity are compromised by the contradiction and lack of context.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the top features and their signs, aligning with the prediction of 'Exploits' by highlighting the negative contribution of 'id' and neutral impact of other features. However, it lacks detail on how these features specifically relate to exploit behavior, and does not justify why the 'id' feature's negative value indicates exploitation. The explanation is concise and SOC-ready but insufficiently comprehensive to fully justify the label or cover key drivers, especially given the instance's unusual protocol (ospf) and other features.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which contradicts the typical role of features in SHAP explanations. It lacks detail on how features relate to the 'Exploits' label and does not justify the prediction with key drivers. While concise and SOC-ready, it fails to provide sufficient justification or acknowledge potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with signs but does not connect them to the prediction 'Fuzzers' or explain how these features support this label. The features provided are mostly neutral or minimal in magnitude, and the explanation lacks details on how these features justify the anomaly. It also does not address potential caveats or the significance of the features, leading to limited fidelity and completeness. Clarity is good due to concise presentation.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the top features with zero influence, aligning with the prediction of 'Normal' and the instance details. It is concise and SOC-ready. However, it could improve by explicitly noting that the features' negligible influence supports the normal classification, providing a slightly more complete justification.",
+      "overall": 4.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their signs, but since all features have zero or near-zero SHAP values, it does not effectively justify the 'Exploits' prediction. The explanation lacks detail on how these features contribute to the label, and it does not address potential caveats or other drivers. The clarity is good, but the completeness and fidelity are limited by the minimal feature influence and lack of contextual reasoning.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes the top features and their signs, which align with the prediction 'Generic' by indicating minimal influence from these features. However, it lacks detail on how these features collectively justify the label or anomaly, and does not discuss potential caveats or other relevant factors. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature values to the 'Generic' classification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights the top features with their signs, but since all feature contributions are zero or near-zero, it does not convincingly justify the 'Exploits' prediction. The features listed do not align with typical exploit indicators, and the explanation lacks detail on how these features support the label. Clarity is good, but the explanation is incomplete and does not sufficiently justify the prediction or note potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the assigned label 'Reconnaissance' that typically involves specific feature patterns. The explanation lacks detail on how features relate to the label, making it ambiguous whether the explanation accurately reflects the model's reasoning. While concise, it does not justify the prediction or cover key drivers, resulting in low completeness. The fidelity is low because it does not align with the expected feature contributions for reconnaissance activities.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 0.5,
+      "clarity": 4,
+      "completeness": 2,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no influence on the prediction. This contradicts the prediction of 'Fuzzers,' which typically involves specific feature patterns. The explanation does not justify the label nor covers key drivers, and it lacks caveats or detailed reasoning. Clarity is good, but the lack of alignment with the prediction reduces overall fidelity and completeness.",
+      "overall": 1.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their SHAP values, but the features do not align with the instance details\u2014many features are zero or irrelevant, and the top features do not provide meaningful insight into the 'Normal' prediction. The explanation lacks justification for why these features support a normal label, and it does not address potential caveats or the absence of key drivers. Clarity is good, but fidelity and completeness are low due to the disconnect between features and the instance context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a positive driver, aligning with the top feature, but it does not address the other features or their signs. It claims no influence from protocol, service, TTL, or packet size, which may be inaccurate given the data context. The explanation is concise and SOC-ready but lacks detail on how these features relate to the 'Normal' prediction or potential caveats, reducing overall completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features and their contributions, but it does not clearly connect these features to the 'Exploits' prediction or justify why these factors lead to this label. The absence of discussion on how the features influence the prediction reduces fidelity and completeness. Clarity is good, but the explanation lacks depth and context to be fully SOC-ready.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Exploits' despite the lack of feature influence, nor does it discuss key factors or caveats. The explanation is concise and SOC-ready but lacks depth to fully justify the label or address potential uncertainties.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists top features with their signs, but all are zero or near-zero, providing no meaningful insight into the prediction. It does not clarify how these features influence the 'Generic' label, nor does it justify the decision or note any caveats. The explanation is concise but lacks depth and context necessary for SOC readiness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which contradicts the prediction of 'Exploits' that should be driven by certain features. It lacks detail on how features influence the label and does not justify the prediction. While concise, it fails to clarify the reasoning behind the prediction or cover key drivers, leading to low completeness. The clarity is acceptable but the fidelity and completeness are significantly lacking.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a key feature with a positive contribution, aligning with the top features list. However, it does not address the other features, especially the protocol 'unas' which is not in the top features, nor does it clarify how these features collectively justify a 'Backdoor' prediction. The explanation is concise and SOC-ready but lacks comprehensive justification and acknowledgment of potential caveats, reducing overall completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which conflicts with the provided features and instance details that suggest potential relevance. The explanation is concise and SOC-ready but fails to justify the 'Generic' label or discuss key drivers, making it incomplete. It also does not address possible caveats or the actual feature impacts.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies 'id' as a key driver with a positive contribution, aligning with the top features. It accurately notes the neutral contributions of other features. However, it does not explicitly connect how these features influence the 'Normal' prediction or mention the absence of contradictory signals, slightly limiting its completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of the overall context or caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not specify how these features relate to the 'Generic' prediction or why they are considered neutral, leading to limited completeness. Clarity is good, but the explanation could better clarify the reasoning behind the label assignment and the significance of the features.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Generic' despite the features being neutral or uninformative. The explanation is concise and SOC-ready but lacks detail on how these features relate to the label or potential caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references top features with zero or near-zero contributions, which aligns with the prediction 'Generic' and the feature importances. However, it does not explicitly connect how these features influence the 'Generic' label or clarify their roles in the decision. The explanation lacks detail on key drivers or caveats, and the minimal feature contributions suggest limited justification for the prediction, reducing its completeness. Overall, it is somewhat clear but insufficiently detailed to fully justify the label or provide meaningful insight.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP contribution, which contradicts the prediction of 'Fuzzers' that should be driven by specific feature influences. The explanation lacks detail on how features relate to the label, making it ambiguous and incomplete. While concise, it does not justify the prediction or acknowledge potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero contribution scores, which contradicts the prediction of 'Exploits' that should be driven by specific feature influences. The explanation lacks detail on how these features relate to the label, making it incomplete. While the explanation is concise and clear, it does not justify the prediction effectively, especially given the absence of feature contributions.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the top features with their signs, but since all feature contributions are zero or near-zero, it does not effectively justify the 'Reconnaissance' prediction. The explanation lacks detail on how these features relate to reconnaissance behavior, and it does not address the specific instance attributes or potential caveats. Overall, it aligns somewhat with the features but fails to provide a comprehensive or clear justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that all top features have zero SHAP values, which contradicts the prediction of 'Fuzzers' that should be driven by specific feature influences. It lacks detail on how features relate to the label and does not justify why these features are relevant or not. The clarity is good, but the explanation is incomplete and does not align with the prediction or feature importance.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not provide meaningful insight into the prediction. The explanation is concise and SOC-ready, but it lacks depth in justifying the 'Generic' label or discussing key drivers or caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP values, implying no influence on the prediction. This contradicts the prediction of 'Fuzzers,' which typically involves specific feature patterns. The explanation lacks detail on how features relate to the label, making it ambiguous whether it justifies the prediction. Clarity is good, but the explanation's completeness is low due to missing reasoning and caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero contribution, which aligns with the provided SHAP values. However, it does not justify why the prediction is 'Generic' or how these features influence the label. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, resulting in moderate completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation lists features with zero SHAP values, indicating no contribution to the prediction. It aligns with the prediction of 'Normal' since none of the features suggest anomalies. However, it lacks detail on how these features support the 'Normal' label explicitly and does not mention potential caveats or the absence of influential factors. The explanation is concise and SOC-ready but could improve in justifying the prediction more thoroughly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references all top features with their signs, but since all feature contributions are zero, it does not clarify how these features influence the 'Generic' prediction. The explanation lacks detail on why the prediction is 'Generic' and does not connect feature values to the label, reducing its completeness. Clarity is good due to concise language, but the overall justification is weak.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction, which contradicts the typical role of features in SHAP explanations. It lacks detail on how features relate to the 'Reconnaissance' label and does not justify why these features are considered neutral or irrelevant. While concise and SOC-ready, it fails to justify the prediction adequately or acknowledge potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation indicates that none of the top features contributed to the prediction ('+0.000'), which aligns with the provided feature importances. However, it does not specify how these features relate to the 'Generic' label or why they are considered neutral. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the prediction and does not discuss potential caveats or the absence of feature influence, limiting its completeness.",
+      "overall": 2.0
+    }
+  ],
+  "summary": {
+    "fidelity": 1.82,
+    "clarity": 3.96,
+    "completeness": 2.09,
+    "overall": 2.422
+  }
+}

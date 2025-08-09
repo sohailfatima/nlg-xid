@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "bleu": 0.006328030109527785,
+    "shap_fidelity": 0.46,
+    "judge_overall": 3.701
+  },
+  "metadata": {
+    "model_type": "xgb",
+    "dataset": "nsl-kdd",
+    "test_samples": 200,
+    "explanation_method": "llm",
+    "experiment_name": "exp_2_llm_openrouter_full_meta_llama_llama_3.1_8b_instruct"
+  }
+}

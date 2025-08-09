@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature list. It accurately notes the negligible impact of protocol, service, and byte features, consistent with their zero contributions. However, it does not explicitly connect the features to the 'Generic' label or discuss how the features collectively support this classification. The explanation is concise and SOC-ready but could better justify the label and mention potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. However, it does not clarify how 'id' relates to exploitation or why the other features are irrelevant, leading to ambiguity. The explanation is concise but lacks detail on key drivers and caveats, reducing its completeness. It also overlooks the fact that the 'id' feature alone may not sufficiently justify the exploit prediction without context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the primary factor with a positive contribution, aligning with the top feature. However, it does not clarify what 'id' represents or how it relates to exploitation, nor does it address the other features or potential caveats. The explanation is concise and SOC-ready but lacks detail to fully justify the 'Exploits' prediction or cover key drivers beyond 'id'.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the 'Normal' prediction and does not discuss potential caveats or the overall context, limiting completeness. Clarity is good but could be more explicit about the connection between features and the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features collectively support the 'Normal' prediction, and does not mention potential caveats or the context of the features. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature contributions to the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as a top feature with a positive contribution, aligning with the prediction 'Generic'. However, it neglects the other features, which have zero or negligible impact, and does not clarify how these features influence the label. The explanation lacks detail on how the features justify the 'Generic' label or address potential caveats, reducing overall completeness. Clarity is good, but the explanation could be more explicit about the reasoning process.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes that other features have negligible impact. However, it does not explicitly address the absence of features contradicting the 'Normal' label or discuss potential caveats, such as the high packet rate or other network metrics that could influence the prediction. Overall, it is mostly consistent and clear but could benefit from a more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not clarify how 'id' influences the label or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the prediction or address potential caveats, resulting in moderate completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a positive driver aligning with the prediction of 'Normal,' and notes that other features have neutral or zero contributions, consistent with the top features. However, it omits mention of the absence of contradictory features that could suggest anomalies, and does not explicitly justify why the positive 'id' contribution supports a 'Normal' label. The explanation is concise and SOC-ready but could better clarify how these features collectively justify the prediction and note potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leading to ambiguity. The explanation is concise but lacks detail on how the features justify the label or address potential caveats, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the prediction being 'Normal' and how the identified features support this label, especially considering the ARP protocol and minimal traffic metrics. The explanation is concise and SOC-ready but could better justify why these features lead to a normal classification and acknowledge potential caveats such as the unusual protocol or traffic pattern.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes that other features have negligible impact. However, it omits discussion of the negative or neutral contributions of other features and does not explicitly justify why these features support a 'Normal' label, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more explicit reasoning about how these features collectively support the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes the top feature 'id' with a positive contribution, aligning with the prediction of Reconnaissance, which often involves scanning activities associated with high id importance. It accurately notes the neutral contributions of other features. However, it lacks detail on how these features collectively support the Reconnaissance label and does not mention potential caveats or other key drivers, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection to the anomaly context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a top feature with a positive contribution, aligning with the prediction of 'Normal' if higher 'id' values are associated with normal behavior. However, it does not clarify how the other features, which have zero contribution, support the 'Normal' label, nor does it address potential caveats or the overall feature interplay. The explanation is concise and SOC-ready but lacks depth in justifying the prediction comprehensively.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal.' It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the normal label, such as the significance of the 'id' feature or the context of the network traffic. The explanation is concise and SOC-ready but could better justify why these features support the 'Normal' prediction and mention potential caveats or other relevant factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction primarily to 'id' with a positive contribution, but does not clarify how this feature influences the 'Generic' label or relate it to the instance's characteristics. The other features are assigned zero impact without explanation, which may be misleading given the instance's high rate and unusual load metrics. The explanation lacks detail on why 'id' is influential and does not justify the label or note potential caveats, reducing overall completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which may be influenced by id-related factors. However, it neglects the actual instance details, such as protocol 'udp' and high source load, which are relevant for understanding the prediction. The mention of features with zero contribution adds clarity but does not justify the label or address key drivers like protocol or traffic characteristics. Overall, the explanation is somewhat aligned but lacks depth and coverage of critical factors, leading to moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It notes zero contributions from other features, consistent with the data. However, it lacks detail on how these features collectively support the 'Normal' prediction and does not mention potential caveats or the absence of negative drivers. Overall, it is accurate and concise but could improve in providing a more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features collectively support a 'Normal' prediction, such as typical ranges or thresholds. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature values to the normal label and mentioning potential caveats or the context of the features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Exploits.' However, it neglects the fact that the 'id' feature alone may not be sufficient to justify the label, especially given the context of the network traffic. The mention of other features with zero contribution adds clarity but does not justify the anomaly or exploit prediction comprehensively. The explanation is concise and SOC-ready but lacks depth in covering key drivers and caveats, leading to moderate scores in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it does not explicitly connect how the 'id' feature's value or nature relates to the DoS prediction, nor does it mention the unusual protocol 'unas' or the extremely high rate, which are key contextual factors. The explanation is concise and SOC-ready but could better justify the anomaly prediction by referencing the instance's characteristics.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary feature influencing the 'Exploits' prediction, aligning with the top feature importance (+0.775). It appropriately notes that other features have negligible impact (+0.000). However, it lacks detail on how 'id' contributes to the exploit prediction, such as specific behaviors or patterns. The explanation is concise and SOC-ready but could better justify the label by discussing key drivers and potential caveats, such as the context of the connection or other subtle indicators.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as a significant positive factor aligning with the prediction of 'Normal,' and notes neutral contributions from other features. It avoids contradictions and is concise. However, it lacks detail on how these features collectively support the 'Normal' label, and does not mention potential caveats or the absence of other influential features, slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes 'id' as the primary driver, aligning with the top feature importance and its positive sign. It accurately notes that other features have negligible impact, consistent with their zero importance scores. However, it does not explicitly connect the features to the 'Generic' label or discuss the context of the instance, such as the UDP protocol and DNS service, which could be relevant for completeness. The explanation is concise and clear but could benefit from a brief mention of how these features relate to the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal.' However, it does not clarify how the other features, which are zero or negligible, support the normal classification. The explanation lacks detail on how these features collectively justify the label, especially given the instance's high packet rate and specific protocol, which could be relevant. Overall, it is somewhat clear but insufficiently comprehensive and slightly overstates the importance of 'id' without contextual reasoning.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the feature values to the 'Fuzzers' label, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature impact and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which may be influenced by id-related factors. However, it does not clarify how 'id' influences the label or why other features are irrelevant, leading to ambiguity. The explanation lacks details on how the features justify the 'Generic' label or address potential caveats, reducing its completeness. Overall, the explanation is somewhat aligned but insufficiently detailed for full SOC readiness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction primarily to 'id' with a positive contribution, but does not clarify how this feature influences the 'Generic' label or relate it to the instance specifics. It neglects the actual protocol (udp) and service (dns), which are relevant given the instance's features. The explanation lacks detail on why 'id' is significant and does not justify the label or mention potential caveats, reducing its completeness. Clarity is good, but the explanation's limited scope affects overall interpretability.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes that other features have negligible impact. However, it omits discussion of the actual feature values and how they support the 'Normal' label, and does not address potential caveats or the context of the features, which would improve completeness and clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the primary driver with a positive contribution, aligning with the top features. However, it does not clarify what 'id' represents or how it influences the prediction, nor does it address the actual network context (e.g., DNS over UDP, small packet sizes). The mention of other features with zero contribution is clear but not elaborated upon, and the link between features and the 'Generic' label is weakly justified. Overall, the explanation is somewhat aligned but lacks depth and context to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a significant positive driver aligning with the prediction of 'Normal.' It accurately notes zero contributions from other features, consistent with the top features. However, it lacks discussion of the actual feature values and how they support the 'Normal' label, and does not mention potential caveats or the context of the instance. Overall, it aligns well but could be more detailed and explicit in justifying the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how the 'id' feature influences the prediction and does not explicitly connect the features to the 'Generic' label, which could improve completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature relevance and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it does not explicitly connect how these features support the 'Normal' prediction or mention potential caveats, such as the high rate or specific instance details, which could improve completeness and clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it does not explicitly connect how the 'id' feature's value or nature suggests exploitation, nor does it discuss the context or potential caveats, such as the unusual protocol or traffic pattern. The explanation is concise and SOC-ready but could better justify why 'id' indicates exploitation and address potential ambiguities.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a positive driver aligning with the prediction of 'Normal,' and notes that other features have neutral contributions, consistent with the top features. However, it omits discussion of the negative contributions or lack thereof from other features, and does not explicitly justify why the positive 'id' feature leads to a 'Normal' prediction, which would improve completeness. Clarity is good but could be more concise in emphasizing the main drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not clarify how 'id' influences the label or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the 'Generic' label, and it overlooks potential caveats or the context of the instance, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic'. It accurately notes that other features have negligible impact. However, it does not explicitly connect how the 'id' feature influences the 'Generic' label or discuss the context of the instance, such as the UDP protocol and DNS service, which could be relevant. The explanation is concise and SOC-ready but could better justify the label by linking feature contributions to the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Analysis'. However, it neglects the other features' contributions and does not clarify how 'id' influences the label. The explanation is concise and SOC-ready but lacks detail on key drivers and caveats, reducing its completeness. It also does not address potential contradictions or the role of other features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature. It accurately notes zero contributions from other features, consistent with the data. However, it does not explicitly justify why the positive 'id' contribution indicates a 'Normal' prediction or discuss the absence of other influential features, leaving some gaps in completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of how these features collectively support the 'Normal' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks explicit mention of how the 'id' feature's high value correlates with exploitation behavior, and does not discuss the context or potential caveats, such as the very short duration or unusual load metrics, which could be relevant for full understanding.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes the neutral impact of other features. However, it omits discussion of the absence of negative features or potential caveats, and could be more explicit about how these features collectively support the 'Normal' label. Overall, it is clear and mostly aligns with the feature contributions, but slightly lacks in comprehensive justification.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature (id) with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes the neutral contributions of other features. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of negative drivers. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature contributions to the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of the negative or neutral nature of other features and does not clarify how these factors collectively support the 'Fuzzers' prediction. The explanation is concise and SOC-ready but could better justify why 'id' alone indicates fuzzing activity and address potential caveats or other contributing factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive sign, aligning with the top feature. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it does not explicitly connect how 'id' influences the 'Exploits' prediction or discuss the potential significance of the high source load or other features, which could be relevant for completeness. The explanation is concise and clear but could benefit from more context on why 'id' is influential.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it does not explicitly connect how the 'id' feature's value or nature contributes to the 'Exploits' prediction, nor does it mention the context of the instance or potential caveats. The explanation is concise and SOC-ready but could improve in detailing the link between features and the label for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the 'Normal' prediction and does not discuss potential caveats or the overall context, limiting completeness. The explanation is concise and clear but could benefit from more explicit connection to the prediction outcome.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive sign, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their zero SHAP values. However, it does not explicitly mention the absence of contradictory signals or potential caveats, such as the context of the connection or other features that might influence the prediction. The explanation is concise and SOC-ready but could improve in covering the full reasoning behind the 'Exploits' label and noting any limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary feature influencing the 'Exploits' prediction, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' specifically contributes to the label, such as whether high 'id' values are associated with exploitation patterns. The explanation is concise and SOC-ready but could better justify the label by discussing the feature's role in the context of the instance and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly connect the features to the 'Generic' prediction or discuss how the features collectively support this label. The explanation is concise and SOC-ready but could better justify why these features lead to a 'Generic' classification and mention potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as a top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it neglects the other features' contributions and does not clarify how these features collectively support the label. The absence of discussion on the significance of the 'id' feature value or how the features relate to fuzzing activity reduces clarity and completeness. The explanation is concise but lacks depth to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it lacks discussion of how the features collectively support the 'Exploits' prediction, such as the extremely high rate and small duration indicating suspicious activity. The explanation is concise and SOC-ready but could better justify why these features lead to an exploit classification and mention potential caveats like the unusual protocol or short duration.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction towards 'Exploits' and does not discuss the potential role of other features or caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature implications.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of how these features collectively justify the 'Exploits' prediction, especially considering the context of the instance (e.g., very short duration, high rate, and specific protocol). The explanation is concise and SOC-ready but could better clarify the connection between feature contributions and the anomaly label, as well as note potential caveats such as the unusual protocol or the extremely short duration.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a top feature with a positive contribution, aligning with the prediction of 'Normal'. However, it does not address the other features, which are all zero and thus less relevant. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the 'Normal' label or discuss potential caveats. It also does not clarify why features like protocol or bytes are not influential, which could improve completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the primary driver with a positive contribution, aligning with the top feature. However, it does not explicitly connect the features to the 'Exploits' prediction or discuss how the features support this label. The absence of reasoning about the other features and their relevance reduces completeness. Clarity is good, but the explanation lacks detail on why 'id' influences exploitation, leading to moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of how these features collectively justify the 'Exploits' prediction, such as the unusually high source load or packet rate, which are relevant for completeness. The explanation is concise and SOC-ready but could benefit from more context on how these features support the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features collectively support the 'Normal' prediction, and does not mention potential caveats or the overall context, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection to the prediction outcome.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the SHAP value (+0.361). However, it does not clarify how 'id' influences the 'Generic' prediction or its significance in this context. The other features are assigned zero contribution, which matches the SHAP top features, but the explanation lacks detail on why these features are irrelevant or how they support the prediction. The explanation is concise and SOC-ready but insufficiently detailed to fully justify the label or cover key drivers, especially considering the instance's characteristics (e.g., DNS protocol, high rate). Overall, it partially aligns with the features but could improve in explaining the rationale behind the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it does not clarify how 'id' influences the 'Generic' prediction or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the label, especially given the instance's characteristics (e.g., UDP protocol, DNS service, low packet count). It also overlooks potential caveats, such as the minimal impact of other features and the nature of the 'Generic' label, which limits interpretability and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction towards 'Exploits' and does not explicitly connect the features to the label, reducing completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature implications.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of the negative or neutral contributions of other features, which could clarify why the prediction is 'Normal.' The explanation is concise and SOC-ready but could improve in completeness by discussing how these features collectively support the normal classification and noting potential caveats or uncertainties.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it lacks discussion of the specific instance attributes (e.g., high rate, short duration, protocol) that support the 'Generic' label, and does not mention potential caveats or the context of the features. Overall, it is clear and mostly faithful but could be more comprehensive in justifying the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it does not explicitly connect how these features influence the 'Normal' prediction or mention potential caveats, such as the low magnitude of some features or the context of the instance. The explanation is concise and SOC-ready but could improve in detailing the justification for the 'Normal' label and acknowledging limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. It accurately notes that other features have negligible impact, consistent with their SHAP scores. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance, such as the UDP protocol and DNS service, which could be relevant for completeness. The explanation is concise and clear but could benefit from a brief mention of the instance's characteristics to enhance understanding.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as a positive contributor aligning with the prediction of 'Normal', and notes zero influence from other features, consistent with the top features. However, it omits discussion of the negative or neutral contributions of other features, which could be relevant for full understanding. The explanation is concise and SOC-ready but could better justify why these features lead to a 'Normal' label and mention potential caveats or other factors not captured.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a significant positive feature influencing the prediction towards 'Normal', aligning with the SHAP value. It accurately notes zero contributions from other features, consistent with their SHAP scores. However, it lacks explicit mention of how these features collectively support the 'Normal' prediction and does not discuss potential caveats or the broader feature context, limiting completeness. The explanation is concise and SOC-ready, but could benefit from clearer articulation of the overall reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks explicit mention of how the 'id' feature's positive value supports the 'Exploits' prediction, such as indicating suspicious activity or anomaly. The explanation is concise and SOC-ready but could better justify the label by connecting feature contributions to the anomaly context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes that other features have negligible impact. However, it omits discussion of the absence of negative drivers or potential caveats, and could be more explicit about how these features collectively support the 'Normal' label. Overall, it aligns well with the features and directions but lacks some depth for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the label and does not address potential caveats or alternative explanations, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the directionality of 'id' (positive influence) and does not clarify how this contributes to the 'Exploits' prediction. The explanation is concise and SOC-ready but could better justify why 'id' indicates exploitation and include caveats about other potential factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal' since no features strongly suggest an anomaly. It accurately notes the zero contributions of other features. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the absence of contradictory signals, which would improve completeness and clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits.' However, it does not clarify how 'id' relates to exploitation or why other features are irrelevant, leaving ambiguity about the causal reasoning. The explanation is concise but lacks detail on key drivers and caveats, reducing its completeness. It also does not address the nature of the 'id' feature or its typical association with exploitation, which could lead to hallucinations or misinterpretations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal'. However, it neglects the other features which are all zero or unspecified, and does not clarify how these features collectively support the 'Normal' label. The mention of features like protocol and bytes does not directly connect to the instance's details, leading to potential ambiguity. Overall, the explanation is somewhat concise but lacks comprehensive justification and does not address potential caveats or the influence of other features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the prediction 'Exploits' and how the 'id' feature's high value supports this label, which would improve completeness. Clarity is good but could be more concise in emphasizing the key driver.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features. However, it does not explicitly connect the features to the 'Generic' prediction or discuss how the features collectively support this label. The explanation is concise and SOC-ready but could better justify why these features lead to a 'Generic' classification and mention potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of how the 'id' feature's positive value supports the 'Exploits' prediction, such as indicating unusual or suspicious activity associated with the id. The explanation is concise and SOC-ready but could better justify why 'id' drives the label and acknowledge potential caveats, such as the id alone not being definitive.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Exploits.' It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' specifically indicates exploitation and does not discuss the context of the instance or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection between feature influence and the exploit prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes the high importance of the 'id' feature, aligning with the prediction of 'Exploits.' It accurately notes the negligible impact of other features. However, it lacks explicit reasoning connecting the 'id' feature's value or behavior to the exploit prediction, and does not mention potential caveats or the context of the instance, which would improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it omits mention of the specific prediction 'Fuzzers' and does not explicitly connect the 'id' feature's influence to the anomaly type, which would improve completeness. The explanation is concise and clear, suitable for SOC contexts, but could benefit from a brief note on how 'id' relates to fuzzing activity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features. However, it lacks detail on how these features influence the 'Normal' prediction and does not discuss potential caveats or the context of the features, limiting completeness. The explanation is concise and SOC-ready, supporting clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it does not explicitly connect how the high 'id' value influences the 'Normal' prediction or discuss the context of the instance (e.g., ARP protocol, minimal traffic), which would improve completeness. The explanation is concise and clear, suitable for SOC review, but could benefit from a brief mention of the feature's role in the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction to 'id' with a positive contribution, aligning with the top feature. However, it neglects the other features, especially the protocol and byte counts, which are zero and could be relevant. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the 'Fuzzers' label or address potential caveats, reducing overall completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as a significant positive feature influencing the prediction towards 'Normal,' aligning with the SHAP value. It accurately notes zero contributions from other features, consistent with their SHAP scores. However, it does not explicitly address the negative or neutral nature of other features or potential caveats, such as the context of the instance or the overall feature interactions. The explanation is concise and SOC-ready but could improve in covering the rationale behind the absence of other feature impacts and clarifying how these features collectively support the 'Normal' prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it does not explicitly connect how the high 'id' value relates to the 'Exploits' prediction or discuss the context of the instance (e.g., very short duration, unusual protocol), which would improve completeness. The explanation is concise and SOC-ready, but could benefit from more explicit reasoning about why 'id' influences the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of how the 'id' feature's positive value supports the 'Exploits' prediction, such as indicating unusual or suspicious activity associated with that id. The explanation is concise and SOC-ready but could better justify why 'id' is indicative of exploitation and note potential caveats like the id alone not confirming malicious intent.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features influence the prediction and does not discuss potential caveats or the overall context, limiting completeness. The explanation is concise and clear but could benefit from more explicit connection to the instance's characteristics.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features influence the 'Normal' prediction and does not discuss the context or potential caveats, such as the high traffic rates or protocol specifics, which could be relevant for full understanding.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the actual feature values or how they relate to the 'Normal' prediction, and does not discuss potential caveats or the overall context, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic'. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly connect how the 'id' feature influences the 'Generic' label or discuss the context of the instance (e.g., protocol, traffic volume), which would improve completeness. The explanation is concise and clear but could benefit from a brief mention of the instance's characteristics to enhance understanding.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as a top feature with a positive contribution, aligning with the prediction 'Generic'. However, it neglects the other features, which have zero or negligible impact, and does not clarify how 'id' influences the label. The explanation is concise and SOC-ready but lacks detail on the reasoning behind the label, reducing its completeness. It also does not address potential caveats or the context of the features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Fuzzers'. It notes that other features have zero or negligible impact, which is consistent with the top features list. However, it lacks detail on how 'id' specifically relates to fuzzing activity and does not discuss the absence of other influential features or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection to the anomaly type.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits' which often involves specific identifiers. However, it does not clarify how 'id' relates to exploitation or why other features are irrelevant, leading to potential ambiguity. The explanation lacks detail on how the features collectively justify the 'Exploits' label, especially given the instance's protocol (ospf) and other network metrics. It also overlooks caveats such as the protocol mismatch or the low feature values, which are important for comprehensive understanding.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic'. It accurately notes that other features have negligible impact. However, it does not explicitly connect how the 'id' feature influences the 'Generic' label or discuss the context of the instance (e.g., high rate, UDP protocol, DNS service) which could be relevant for completeness. The explanation is concise and SOC-ready but could benefit from more detail on how these features justify the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it neglects the other features that are zero or negligible, and does not clarify how 'id' influences the label. The absence of discussion on the protocol or other features limits understanding. The explanation is concise but lacks detail on how features justify the prediction, reducing completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how the 'id' feature influences the prediction towards fuzzers, such as specific behaviors or patterns. The explanation is concise and SOC-ready but could better justify why 'id' is indicative of fuzzing activity and mention potential caveats or other contributing factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as a positive driver, aligning with the top feature, but it does not clarify how this contributes to the 'Normal' prediction or address the other features. The mention of 'Transaction protocol' and other features with zero impact is accurate but lacks detail on their relevance. Overall, the explanation is concise and SOC-ready but insufficiently comprehensive to justify the normal label fully, especially given the high 'id' value which might suggest an anomaly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction 'Exploits' primarily to the 'id' feature with a positive contribution (+0.767), which aligns with the top features. However, it neglects the other features, which have zero contribution, and does not clarify how 'id' influences the label. The instance's unusual protocol ('unas') and high rate are not discussed, limiting understanding. The explanation is concise and SOC-ready but lacks detail on key drivers and potential caveats, reducing overall completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. It accurately notes that other features have negligible impact, consistent with their SHAP scores. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance (e.g., high rate, short duration, UDP protocol) that supports the label. The explanation is concise and SOC-ready but could better justify the label by referencing key drivers and potential caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of DoS. However, it neglects the other features' contributions and does not clarify how they support or contradict the prediction. The mention of features with zero contribution adds ambiguity, and the explanation does not justify why 'id' alone indicates DoS or discuss potential caveats. Overall, it is somewhat concise and clear but lacks depth and comprehensive justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Exploits.' It accurately notes the zero contributions of other features, consistent with the SHAP values. However, it lacks detail on how 'id' specifically indicates exploitation and does not discuss the context or potential caveats, such as the role of protocol or other features. The explanation is concise and SOC-ready but could improve in providing a more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the feature values to the 'Exploits' label, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature implications.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance, such as the UDP protocol and DNS service, which are relevant for understanding the prediction. The explanation is concise and SOC-ready but could better justify why these features lead to a 'Generic' label and mention potential caveats like the unusual high rate or specific protocol behavior.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of the negative or neutral nature of the other features and does not connect these factors to the 'Exploits' prediction explicitly. The explanation is concise and SOC-ready but could better justify why 'id' is indicative of exploitation and note potential caveats such as the unusual 'id' value or the context of the features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the 'Normal' prediction, such as the typical ranges or thresholds, and does not mention potential caveats or the context of the features. The explanation is concise and SOC-ready but could improve in providing more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it does not explicitly connect how these features influence the 'Normal' prediction or mention potential caveats, such as the context of the features or the absence of other influential factors. Overall, it is clear and mostly complete but could better justify the label with more detailed reasoning.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible or zero contributions, consistent with the SHAP values. However, it does not explicitly connect how the high 'id' value relates to exploitation or specify the nature of the anomaly, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of why 'id' is significant in this context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal.' It accurately notes the neutral impact of other features. However, it omits discussion of the absence of negative features or potential caveats, and could be more explicit about how these features collectively support the 'Normal' label, thus slightly limiting completeness and clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal'. It accurately notes the zero contributions of other features, consistent with the instance data. However, it omits discussion of the other features' values and their typical influence, which could help justify the 'Normal' label more comprehensively. The explanation is concise and SOC-ready but could improve in completeness by addressing how these features collectively support the prediction and noting potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value (+0.852). It accurately notes that other features have negligible impact (+0.000). However, it does not explicitly connect how 'id' influences the 'Fuzzers' prediction or mention the absence of other key drivers, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief note on the context or caveats regarding feature influence.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of reconnaissance. However, it neglects to mention the other features' contributions or lack thereof, and does not clarify how these features justify the label. The explanation is concise and SOC-ready but lacks detail on the absence of other influential features, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it lacks detail on how the features collectively support this label, especially given the instance's high rate and unusual load metrics. The mention of other features with zero contribution is clear but does not justify the label thoroughly. The explanation could improve by explicitly connecting feature values to the 'Generic' prediction and noting any potential caveats or uncertainties.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. However, it does not specify how 'id' relates to exploitation or why it indicates malicious activity, nor does it clarify the roles of other features. The mention of features with zero contribution adds ambiguity, and the explanation lacks details on how these features collectively justify the label. Overall, it is somewhat clear but insufficiently detailed and potentially misleading regarding the causal factors.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their zero SHAP values. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance (e.g., protocol, traffic volume), which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of why 'id' is influential in this case.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks detail on how these features influence the 'Normal' prediction and does not explicitly address the absence of contradictions or hallucinations. The explanation is concise and SOC-ready but could better justify why the features lead to a 'Normal' label and mention potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of DoS. However, it neglects the other features' contributions and does not specify how 'id' influences the label, leading to potential ambiguity. The explanation is concise but lacks detail on key drivers and caveats, reducing its completeness. It also does not clarify the nature of 'id' or its specific role in indicating DoS, which affects clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features collectively support the 'Normal' prediction, and does not mention potential caveats or the absence of negative drivers. Overall, it is clear and mostly complete but could better contextualize the feature impacts.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes the 'id' feature with a positive contribution, aligning with the top features, but it neglects to mention the other features that have zero or negligible impact, which are also part of the top features list. The explanation is concise and SOC-ready but lacks detail on how the features collectively justify the 'Exploits' prediction, especially given the absence of information about key drivers like protocol or application. It also does not note potential caveats or the limited influence of other features, reducing its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it does not explicitly connect the 'id' feature to the 'Fuzzers' prediction or discuss how the feature values support this label, which would improve completeness. The explanation is concise and clear but could benefit from more context on why 'id' indicates fuzzing activity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes that other features have negligible impact, consistent with their zero SHAP values. However, it does not explicitly connect the features to the 'Generic' label or discuss how the features collectively support this classification. The explanation is concise and SOC-ready but could better justify why these features lead to a 'Generic' prediction and mention potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leading to ambiguity. The explanation is concise but lacks detail on how the features justify the label or address potential caveats, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of the negative or neutral nature of the other features, which could clarify why they do not influence the prediction. The explanation is concise and SOC-ready but could better justify why these features do not impact the 'Normal' prediction, thus slightly reducing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it lacks explicit mention of the actual feature values or how they contribute to the 'Exploits' prediction, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief note on why 'id' is influential in this context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction 'Exploits' primarily to the 'id' feature with a positive contribution, which aligns with the top features. However, it neglects the other features that are zero and provides no context or reasoning about why 'id' influences exploitation detection. The explanation is concise and SOC-ready but lacks detail on how the features collectively justify the label or address potential caveats, leading to moderate scores in fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the 'Normal' prediction, such as why the positive 'id' score does not indicate an anomaly. The explanation is concise and SOC-ready but could better justify the normal label by discussing the absence of anomalous indicators and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it neglects the other features, especially the protocol (udp) and high rate, which are relevant indicators of unusual activity. The explanation's focus solely on 'id' and ignoring the protocol and traffic characteristics reduces fidelity. Clarity is good, but the explanation lacks detail on how features collectively support the prediction. Completeness is limited; it does not justify why the instance is labeled 'Generic' or discuss potential caveats such as the high rate or protocol specifics that could influence the decision.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it states that other features have zero contribution, which is consistent with the top features list. The explanation is concise and SOC-ready, but it lacks detail on how these features justify the 'Generic' prediction, especially considering the instance's characteristics such as high rate and specific protocol. It also does not mention potential caveats or the context of the features, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Exploits.' It accurately notes that other features have negligible impact. However, it does not explicitly connect how 'id' or other features contribute to the exploit prediction, nor does it mention potential caveats or the context of the features. The explanation is concise and SOC-ready but could benefit from more detail on feature influence and reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it does not clarify how 'id' influences the 'Generic' prediction or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the label, especially given the instance's characteristics (e.g., high rate, small duration, DNS protocol). It also does not mention potential caveats or the context of the features, limiting its completeness. Overall, it is somewhat clear but insufficiently detailed and partially misaligned with the feature contributions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers'. However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leading to ambiguity. The explanation is concise but lacks detail on how the features justify the label or address potential caveats, resulting in limited completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature. It accurately notes zero contributions from other features, consistent with the data. However, it does not explicitly connect how the 'id' feature's high value relates to the DoS prediction or discuss the context of the instance (e.g., high rate, small duration) that supports the anomaly. The explanation is concise and SOC-ready but could better justify why 'id' alone indicates DoS and mention potential caveats such as the unusual 'id' value or other factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly connect the 'id' feature's positive contribution to the 'Exploits' prediction or discuss how the instance's characteristics (e.g., high rate, unusual protocol) support the label. The explanation is concise and SOC-ready but could better justify the anomaly by referencing key instance attributes.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a positive driver consistent with the prediction of 'Normal', and notes neutral contributions from other features. However, it omits discussion of the absence of negative drivers or potential caveats, and does not explicitly connect how these features collectively support the 'Normal' label, slightly limiting completeness. Clarity is good, but could be more concise in summarizing the overall reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of the prediction being 'Normal' and how these features support that label, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from clearer context on how these features justify the normal prediction and any caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of DoS. It accurately notes that other features have negligible impact, which is consistent with the data. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the feature's value to the DoS label. The explanation is concise and SOC-ready but could improve in completeness by discussing the significance of the 'id' feature and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal'. It notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of how these features collectively support the 'Normal' label, and does not discuss potential caveats or the absence of other influential features, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection to the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic'. However, it does not address the specific instance details, such as the protocol being UDP and the DNS service, which are relevant for understanding the prediction. The mention of other features with zero contribution adds clarity but does not justify why the label is 'Generic' or discuss potential caveats. Overall, the explanation is somewhat aligned but lacks depth and context to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes the high importance of 'id' with a positive sign, aligning with the top feature. It accurately notes the negligible impact of other features. However, it does not explicitly connect the 'id' feature's high value to the exploit prediction or discuss how the instance's characteristics (e.g., very short duration, high rate, zero destination bytes) support the label. Including these details would improve completeness and clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of how the 'id' feature's high value correlates with the DoS prediction, and does not discuss the context or potential caveats, such as the unusual protocol or the extremely high rate, which could be relevant for full understanding.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it does not explicitly connect how the 'id' feature's value or nature contributes to the 'Exploits' prediction, nor does it mention the context of the instance or potential caveats. The explanation is concise and SOC-ready but could improve in detailing the reasoning behind the label justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not clarify how 'id' influences the label or why other features are irrelevant, leading to limited completeness. The explanation is concise and SOC-ready, but it lacks detail on the reasoning process and caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as a key driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of how these features collectively support the 'Normal' prediction, and does not discuss potential caveats or the absence of other influential factors. Overall, it is clear and mostly aligned but could be more comprehensive in justifying the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the data. However, it lacks explicit mention of how these features collectively support the DoS prediction, especially considering the high rate and source load, which are key indicators. The explanation is concise and SOC-ready but could better justify the anomaly by discussing the context of the features and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' relates to fuzzing activity, such as whether high 'id' values are typical in fuzzing scenarios or if other features could support this conclusion. The explanation is concise and SOC-ready but could better justify the anomaly detection by connecting feature contributions to known fuzzing behaviors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' relates to reconnaissance activities and does not explicitly connect the features to the prediction label. The explanation is concise and SOC-ready but could better justify why 'id' indicates reconnaissance and mention potential caveats or other contributing factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes the high importance of 'id' with a positive sign, aligning with the top feature. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the actual feature values or how they contribute to the 'Exploits' prediction, and does not discuss potential caveats or the context of the instance. Overall, it is clear and mostly faithful but could be more comprehensive.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the neutral impact of protocol, service, and byte features. However, it lacks detail on how the 'id' feature influences the 'Exploits' prediction and does not explicitly connect the instance's characteristics (e.g., high load, short duration) to the anomaly. The explanation is concise and SOC-ready but could better justify the label by discussing key drivers and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their zero SHAP values. However, it does not explicitly connect the features to the 'Generic' label or discuss how the features collectively support this classification. The explanation is concise and SOC-ready but could improve in completeness by elaborating on how these features justify the prediction and noting potential caveats or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. It notes that other features have negligible impact, which is consistent with the SHAP values. However, it does not explicitly connect how the high 'id' value indicates exploitation or discuss the context of the instance (e.g., unusual protocol 'xtp', high rate) that could further justify the label. The explanation is concise and SOC-ready but could improve in completeness by addressing key drivers and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not clarify how 'id' influences the label or why other features are irrelevant, leaving ambiguity about the reasoning process. The explanation lacks detail on how the features collectively justify the prediction and does not address potential caveats or the context of the instance, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the instance's characteristics (e.g., high rate, protocol 'unas') to the 'Exploits' label. The explanation is concise and SOC-ready but could better justify the label by discussing the context or potential anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic'. It accurately notes that other features have negligible impact, consistent with their zero SHAP values. However, it does not explicitly connect how the 'id' feature influences the 'Generic' label or discuss the context of the instance (e.g., high rate, small duration) that might support the prediction. The explanation is concise and SOC-ready but could better justify the label by referencing key drivers and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction of 'Normal.' It accurately notes the neutral impact of other features. However, it omits discussion of the actual feature values and their typical influence on the label, and does not address potential caveats or the overall context, limiting completeness. Clarity is good but could be more concise by explicitly stating that the features collectively support the 'Normal' prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Shellcode' which often involves specific identifiers. However, it neglects the other features, especially protocol and bytes, which are relevant indicators in network traffic analysis. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the label. It also does not mention potential caveats or the absence of other influential features, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction primarily to 'id' with a positive contribution, but it does not clarify what 'id' represents or how it influences the 'Generic' label. The other features are assigned zero contribution without explanation, which may be misleading given the instance details. The explanation lacks context on why 'id' is significant and does not connect the features to the 'Generic' prediction explicitly. Overall, it provides a minimal and somewhat ambiguous rationale, reducing its fidelity and completeness scores, though it is concise and SOC-ready.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it does not explicitly connect how the high 'id' value influences the 'Normal' prediction or discuss the absence of other feature impacts, which would improve completeness. The explanation is concise and clear but could benefit from a brief mention of how these features collectively support the 'Normal' label and any potential caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of how these features relate to the 'Reconnaissance' prediction, such as the significance of the high rate or the context of the 'id' feature. The explanation is concise and SOC-ready but could better justify why 'id' indicates reconnaissance and discuss potential caveats or other factors influencing the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the features to the exploit behavior, reducing completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature relevance and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights 'id' as a significant positive feature influencing the prediction towards 'Normal,' aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or the context of the instance, such as high packet rates or other network metrics. Overall, it is clear and mostly faithful but could improve in completeness by elaborating on the reasoning behind the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it neglects the significant protocol (UDP) and other features like high rate and source load, which are relevant indicators. The explanation's focus on 'id' alone oversimplifies the factors influencing the prediction, leading to potential contradictions with the feature data. Clarity is good, but the explanation lacks coverage of key drivers and caveats, resulting in moderate completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it does not clarify how 'id' influences the 'Generic' prediction or why other features are irrelevant, leading to ambiguity. The explanation lacks detail on how the features collectively justify the label, especially given the instance's characteristics (e.g., UDP protocol, DNS service, small packet size). It also does not mention potential caveats or the context of the features, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction primarily to 'id' with a positive contribution, but does not clarify how this feature influences the 'Generic' label or relate it to the instance's characteristics. The other features are assigned zero impact without explanation, which may be misleading given the high rate and source load. The explanation lacks details on why 'id' is influential or how the features collectively justify the label, reducing its completeness. Clarity is good, but the explanation's lack of context and reasoning diminishes overall interpretability.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction towards 'Normal' and does not mention the absence of other significant features or potential caveats. The explanation is concise and SOC-ready but could improve in providing more context on feature interactions and the overall reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it does not explicitly connect how the high 'id' value relates to fuzzing activity or the specific instance characteristics, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of how 'id' influences the prediction to enhance clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of reconnaissance. However, it does not specify how 'id' relates to reconnaissance behaviors or why other features are irrelevant, leading to potential ambiguity. The explanation is concise but lacks detail on how the features justify the label or cover key drivers, and it does not mention any caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary feature influencing the prediction, aligning with its high SHAP value and positive sign. It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' contributes to 'Exploits'\u2014e.g., whether the specific id pattern indicates malicious activity\u2014and does not mention the context or potential caveats, such as the unusual protocol or traffic characteristics. Overall, it is clear and mostly aligned but could be more comprehensive in justifying the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction and does not explicitly connect the feature values to the 'Exploits' label, reducing completeness. The explanation is concise and SOC-ready, but could benefit from more context on feature implications.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the prediction of 'Normal.' It accurately notes the neutral impact of other features. However, it does not explicitly justify why these features lead to a 'Normal' label or discuss potential caveats, such as the high packet rates or specific protocol details, which could be relevant for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leading to ambiguity. The explanation is concise but lacks detail on how these features justify the label, especially given the absence of context about the instance or feature importance thresholds. It also overlooks potential caveats, such as the low contribution of other features, which could be relevant for a comprehensive understanding.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. However, it does not clarify what 'id' represents or how it indicates exploitation, leading to ambiguity. The explanation neglects the other features, which have zero contribution, and does not justify why the 'id' feature alone suggests exploitation. It also lacks caveats or context, reducing completeness. Overall, the explanation is somewhat aligned but insufficiently detailed and clear for SOC purposes.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of DoS. However, it does not specify how 'id' relates to the attack or its directionality, nor does it clarify why other features are irrelevant or contribute minimally. The absence of details on how these features justify the label or any caveats reduces completeness. The explanation is concise and SOC-ready but lacks depth to fully justify the prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' It accurately notes that other features have negligible impact. However, it does not explicitly connect how the 'id' feature's value or behavior indicates fuzzing activity, nor does it discuss potential caveats or the absence of other influential features. The explanation is concise and SOC-ready but could benefit from more detail on why 'id' is a key driver for this prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes the negligible impact of other features. However, it lacks explicit mention of the actual feature values or the context that supports the 'Normal' prediction, such as the low packet rate or the nature of the ARP protocol, which could improve completeness. The explanation is concise and SOC-ready, but could benefit from clearer connection between feature contributions and the final label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of DoS. However, it neglects the other features' contributions and does not clarify how 'id' influences the label, nor does it address the absence of other relevant features like packet rate or size. The explanation is concise but lacks detail on the key drivers and caveats, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not address the nature of the features or how they support the label, nor does it clarify why other features are irrelevant or contribute nothing. The explanation is concise but lacks detail on how the features justify the prediction or cover key drivers, and it does not note any caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly connect the 'id' feature's positive contribution to the 'Exploits' prediction or discuss how the instance's characteristics (e.g., high rate, small duration) support the label. The explanation is concise and SOC-ready but could better justify the label by referencing key instance attributes and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' relates to reconnaissance activity and does not explicitly connect the features to the label or potential caveats, limiting completeness. The explanation is concise and SOC-ready, but could benefit from more context on why 'id' is significant.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction towards fuzzers, and does not mention the absence of other key features or potential caveats. The explanation is concise and SOC-ready but could improve in providing more context on feature relevance and the overall reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks explicit mention of the negative or neutral contributions of other features, which could be relevant for full completeness. The explanation is concise and SOC-ready, but could benefit from a brief note on how these features collectively support the 'Normal' prediction and any caveats regarding feature interactions or thresholds.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Normal' since high 'id' values are associated with normal traffic patterns. However, it does not clarify how the other features, which are zero or minimal, support the 'Normal' label, nor does it address potential contradictions or caveats. The explanation is concise but lacks detail on how these features collectively justify the prediction, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Exploits'. However, it neglects the other features' contributions, which are all zero, and does not clarify how 'id' influences the label. The explanation is concise and SOC-ready but lacks detail on how the features justify the prediction or address potential caveats, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the prediction primarily to 'id' with a positive contribution, aligning with the top feature. However, it neglects the other features, especially the protocol 'ipcomp' which has a neutral contribution, and the instance's characteristics such as high rate and source load that could suggest exploitation. The explanation is concise and SOC-ready but lacks detail on how the features collectively justify the 'Exploits' label and does not address potential caveats or the influence of other features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature list. It accurately notes the negligible impact of other features. However, it does not explicitly connect the features to the 'Generic' label or discuss how the features support the classification, which would improve completeness. The explanation is concise and clear but could benefit from more detail on how these features justify the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the primary feature influencing the prediction, aligning with the top feature's positive contribution. However, it neglects the other features, especially the protocol and bytes, which are relevant in the context. The explanation is concise and SOC-ready but lacks detail on how these features collectively justify the 'Exploits' label, reducing its completeness. It also does not address potential caveats or the absence of other feature influences, leading to a moderate fidelity score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it does not explicitly address the unusual values or the context of the prediction 'Analysis,' nor does it mention potential caveats such as the extremely high rate or the unusual protocol 'unas,' which could be relevant for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. It accurately notes that other features have negligible or zero impact, consistent with the provided SHAP scores. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance (e.g., UDP protocol, DNS service, small packet size), which limits completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of the instance's characteristics to improve clarity and completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top features. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how these features relate to the 'Normal' prediction, such as the typical behavior of 'id' or the significance of the protocol and packet sizes. The explanation is concise and SOC-ready but could better justify why these features lead to a normal classification and mention potential caveats or context.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature list. It accurately notes the negligible impact of other features. However, it lacks detail on how the features relate to the 'Generic' prediction, such as why 'id' influences this label or potential caveats regarding the high rate and small duration. The explanation is concise and SOC-ready but could improve in providing more context on the anomaly justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it does not clarify how 'id' influences the label or why other features are irrelevant, nor does it address the actual instance details such as protocol (udp) and service (dns). The explanation's brevity and lack of context reduce its clarity and completeness. It also overlooks the fact that the features' contributions are minimal or zero, which could be important for understanding the prediction. Overall, the explanation partially aligns with the features but lacks depth and explicit justification for the 'Generic' label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it neglects the other features' contributions, which are zero, and does not clarify how these features influence the 'Generic' prediction. The explanation is concise and SOC-ready but lacks detail on the overall reasoning and potential caveats, such as the significance of the 'id' feature or the context of the instance.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it does not explicitly connect how the 'id' feature's high value influences the 'Fuzzers' prediction, nor does it mention potential caveats or the context of the instance. The explanation is concise and SOC-ready but could benefit from a brief justification of why 'id' is relevant for fuzzing detection.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the top feature 'id' with a positive contribution, aligning with the prediction 'Exploits'. It accurately notes the negligible impact of other features. However, it lacks detail on how 'id' influences the prediction and does not discuss the absence of other feature contributions or potential caveats, limiting its completeness. The explanation is concise and SOC-ready, but could benefit from more explicit connection between features and the exploit prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes the negligible impact of other features. However, it lacks explicit mention of how the 'id' feature's high value suggests reconnaissance activity, and does not clarify the connection between the features and the predicted label. The explanation is concise and SOC-ready but could better justify why 'id' indicates reconnaissance and address potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the prediction of 'Fuzzers.' However, it does not clarify how 'id' relates to fuzzing activity or why other features are irrelevant, leaving ambiguity about the causal reasoning. The explanation is concise but lacks detail on key drivers and caveats, reducing its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it neglects the actual instance details, such as the protocol being UDP and the high rate, which are relevant for understanding the prediction. The explanation is concise and SOC-ready but lacks depth in justifying why the label is 'Generic' and does not address potential caveats or the significance of other features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' influences the prediction towards 'Fuzzers' and does not explicitly connect the features to the anomaly context. The explanation is concise and SOC-ready but could better justify the label by discussing the role of 'id' and the absence of other feature impacts.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. It accurately notes that other features have negligible impact, consistent with their SHAP scores. However, it does not explicitly connect how the 'id' feature influences the 'Generic' prediction or discuss the context of the instance (e.g., high rate, small duration, DNS service) that supports the label. The explanation is concise and SOC-ready but could better justify the label by mentioning key drivers and potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the prediction of 'Normal.' It notes that other features have negligible impact, consistent with their SHAP values. However, it does not explicitly address the absence of features indicating anomalies or discuss the context of the instance (e.g., ARP protocol, low packet count), which could improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of why the features support a 'Normal' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes 'id' as the top feature with a positive contribution, aligning with the prediction 'Generic' which suggests no specific anomaly. However, it neglects the actual instance details, such as the high rate and unusual source load, which are relevant for understanding the prediction. The mention of other features with zero contribution adds clarity but does not justify the label thoroughly. Overall, the explanation is somewhat aligned but lacks depth and coverage of key drivers, leading to moderate scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights 'id' as the primary driver with a positive contribution, aligning with the top feature importance. It accurately notes zero contributions from other features, consistent with the SHAP values. However, it lacks detail on how 'id' relates to reconnaissance behavior, and does not explicitly justify why the prediction is 'Reconnaissance' based on these features. The explanation is concise and SOC-ready but could better connect feature contributions to the predicted label, improving completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation highlights 'id' as the top feature with a positive contribution, aligning with the SHAP value. However, it neglects the other features which have zero or negligible contributions, and does not clarify how these features influence the 'Generic' prediction. The explanation is concise and SOC-ready but lacks detail on how the features justify the label or address potential caveats, resulting in moderate fidelity and completeness scores.",
+      "overall": 2.5
+    }
+  ],
+  "summary": {
+    "fidelity": 3.35,
+    "clarity": 4.005,
+    "completeness": 2.712,
+    "overall": 3.354
+  }
+}

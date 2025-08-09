@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, including 'id' and 'mean packet size sent by source', but the top features show only 'id' with a positive contribution (+0.332) and others at zero. The mention of 'Transaction protocol' and 'Application/service' increasing confidence is inconsistent with their zero SHAP values, indicating hallucination or misinterpretation. The explanation does not clarify why these features are considered influential, reducing clarity and completeness. Overall, the explanation partially aligns with the features but overstates their influence, leading to moderate fidelity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.425), while others like 'Transaction protocol', 'Application/service', and 'Mean packet size' are marked as increasing confidence but have zero or unspecified contributions. This inconsistency reduces fidelity. Clarity is high due to concise language. Completeness is limited; it mentions key features but does not specify their actual contributions or how they justify the 'Exploits' label, nor does it note potential caveats or the absence of contradictory evidence.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the provided top features, notably mentioning 'Count of same source address & destination port' which is not listed, and 'Transaction protocol' which has a zero SHAP value. The mention of 'id' increasing confidence contradicts its near-perfect SHAP value (+0.999), but the explanation does not clarify the sign or its impact. Overall, the explanation lacks coherence with the top features and their signs, reducing fidelity. It is somewhat concise but could be clearer about how each feature influences the prediction. It also omits caveats or limitations, affecting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive signs, aligning with the prediction of 'Normal'. It highlights key drivers such as 'id' and 'Application/service', consistent with the top features. However, it mentions 'Source\u2192destination time-to-live' as increasing confidence, which is not among the top features provided, indicating a slight inconsistency. The explanation is concise and SOC-ready, but could improve clarity by explicitly connecting the features to the 'Normal' label and noting that no contradictory features are present. Overall, it accurately captures the main drivers without hallucinating features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive signs, aligning with the prediction of 'Normal'. It mentions key factors such as id and application/service, which are consistent with the features' importance. However, it introduces additional factors like TTL and retransmissions that are not highlighted among the top features, potentially overstating their influence. The explanation is concise and SOC-ready but could better specify how these features collectively justify the 'Normal' label and acknowledge potential caveats or feature interactions.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while 'proto', 'service', 'sbytes', and 'dbytes' are zero or not indicated as influential. This contradicts the stated key factors. The explanation is somewhat concise but lacks clarity in linking features to the 'Generic' label explicitly. It also does not justify why these features lead to a 'Generic' classification or note any caveats, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'id' feature's positive SHAP value. However, it mentions 'Transaction protocol' and 'time-to-live' as key factors, which are not among the top features provided, leading to some inconsistency. The explanation is concise and generally clear but could better specify how each feature influences the 'Normal' prediction and note that some features (e.g., protocol, bytes) have zero or negligible SHAP impact, which might affect completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation lacks specific details linking features to the 'Generic' label and does not address potential caveats or the absence of supporting features. Overall, it partially aligns but overstates the influence of features not reflected in the top features, reducing fidelity and completeness. Clarity is good, but the explanation could be more precise.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'benign traffic characteristics' but does not clearly connect the top features and their signs to the 'Normal' prediction. It mentions 'id increased confidence' and 'Bytes from source to destination increased confidence,' aligning with positive feature contributions, but the mention of retransmissions and dropped packets is inconsistent with the top features provided, which show zero contribution from packet counts or retransmission indicators. The explanation lacks clarity and completeness in justifying why the features lead to a 'Normal' classification, and it introduces details (e.g., retransmissions) not supported by the top features or the data provided.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not part of the top features used for the prediction, such as transaction protocol and mean packet size, which contradicts the provided top features list. It also mentions multiple factors that are not reflected in the top features, leading to potential hallucinations. While the explanation is relatively concise and clear, it lacks alignment with the actual model features and does not sufficiently justify the 'Fuzzers' label based on the given top features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, including 'id' and 'Mean packet size sent by source,' aligning with the top features. However, it also references 'Source\u2192destination time-to-live,' which is not among the top features and was not provided in the instance data, indicating hallucination. The explanation is somewhat verbose and not very concise, reducing clarity. It also does not explicitly justify why these features lead to a 'Normal' classification or note potential caveats, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top features identified (id, protocol, service, bytes, packet size) and mentions factors like TTL and retransmissions that are not highlighted in the top features. The description is somewhat vague and does not clearly connect the features to the 'Normal' prediction, leading to potential contradictions and ambiguity. Overall, it lacks alignment with the provided top features and does not thoroughly justify the label or cover key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features that contributed to the classification, including id, mean packet size, bytes from source to destination, and application/service, aligning with the top features. However, it incorrectly states that application/service increased confidence, despite the top features showing zero contribution (+0.000), indicating a contradiction. The mention of 'Count of same service & destination address' is vague and not directly supported by the provided top features or SHAP values. The explanation lacks detail on how these features collectively justify the 'Reconnaissance' label and does not address potential caveats or uncertainties, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims the flow is 'benign' based on features increasing confidence, but it references 'Transaction protocol' and 'time-to-live' as key factors, which are not among the top features or their signs. The top features show only 'id' with a positive contribution; others are zero or unspecified. The explanation introduces features not supported by the top features or the instance data, leading to contradictions and incomplete justification of the 'Normal' prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence towards a 'Normal' classification, aligning with the top features identified. However, the top features show only 'id' with a positive contribution (+1.537), while others like protocol, service, bytes, and mean packet size are zero, indicating they did not influence the prediction. The mention of 'Source\u2192destination time-to-live' as a key factor is inconsistent with the provided top features, which do not include TTL. The explanation is somewhat verbose and could be clearer by directly linking features to their contributions and clarifying the absence of influence from certain features. Overall, it partially aligns with the features but contains contradictions and lacks clarity and completeness in justifying the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation is somewhat clear but lacks precise linkage between features and the 'Generic' label, and it does not address potential caveats or the limited feature influence.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Mean packet size' conflicts with the top features, which do not indicate these as influential. The explanation lacks specific details linking features to the 'Generic' label and does not address potential caveats or the low importance of most features, leading to moderate clarity and limited completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Normal'. It mentions key drivers such as id and application/service, which are consistent with the features' signs. However, it introduces additional factors like source\u2192destination TTL that are not part of the top features, potentially implying a causal link not supported by the provided data. The explanation is concise and SOC-ready but could better specify how each feature influences the classification and acknowledge potential caveats or the limited scope of the top features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, notably 'id' and 'Application/service', which are identified as key drivers. However, the mention of 'Source\u2192destination time-to-live' is inconsistent with the provided top features, which do not include TTL or related metrics, leading to some contradiction. The explanation is concise and SOC-ready but could better specify how each feature influences the 'Normal' prediction and acknowledge potential caveats, such as the limited feature set.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features and their influence on the 'Exploits' prediction, aligning with the provided SHAP values. However, it mentions multiple features as key drivers, including application/service and mean packet size, which have zero SHAP value, leading to potential overstatement. The explanation is concise and SOC-ready but could better justify why these features are considered key drivers despite their zero contribution, and it does not explicitly note potential caveats or limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of DoS. It highlights the elevated sender load and the importance of 'id' and 'Bytes from source to destination,' which are consistent with the features' signs. However, it mentions 'Transaction protocol' and 'Mean packet size' as increasing confidence, but these features have zero or ambiguous values in the instance, which could be misleading. The explanation is concise and SOC-ready but could better clarify how the features specifically support the DoS classification and note potential caveats regarding feature values.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It emphasizes the importance of 'id' and 'Bytes from source to destination', which matches the SHAP top features. However, it mentions 'Transaction protocol' as increasing confidence, but the feature value is zero, which contradicts the SHAP sign. The explanation also lists 'Application/service' and 'Mean packet size' as increasing confidence, but their values are zero, indicating a potential hallucination or misinterpretation. Overall, it is clear and covers key drivers but could better clarify the actual feature values and their influence.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'benign traffic characteristics' but does not clearly connect the top features and their signs to the 'Normal' prediction. It mentions factors like 'id increased confidence' and 'Bytes from source to destination increased confidence,' which align with the top features, but the explanation lacks explicit detail on how these features support the 'Normal' label and does not address potential contradictions or caveats. The description is somewhat vague and not SOC-ready in terms of clarity or thoroughness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation lacks specific details linking features to the 'Generic' label and does not address potential caveats or the low significance of some features, reducing overall clarity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, aligning with the top features identified. However, the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which have zero contribution for these. Additionally, 'Mean packet size' is noted as increasing confidence, but it is also zero in the top features. The explanation is somewhat vague and does not specify how these features collectively justify the 'Normal' label or address potential caveats. Overall, the explanation partially aligns with the features but contains contradictions and lacks clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes the importance of 'id' and the increased mean packet size sent by source, aligning with the top feature 'id' (+0.848). It mentions packet loss and retransmissions, which are relevant to fuzzing activity, but does not explicitly connect these to the features or the model's confidence. The explanation covers key drivers such as 'id' and packet size, but omits details about the other features' contributions and potential caveats, slightly limiting completeness. Overall, it is concise and SOC-ready, with good alignment to the top features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably mentioning 'Transaction protocol' and 'Mean packet size' as increasing confidence, but these are not among the top features listed. The top features indicate 'id' as the primary driver, but the explanation's mention of 'Transaction protocol' and 'application/service' conflicts with the actual features and their signs. The explanation is somewhat concise but lacks clarity due to inconsistent feature references. It also does not sufficiently justify why these features lead to a 'Generic' label or note potential caveats, reducing completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation lacks detail on how the features relate to the 'Generic' label and does not address potential caveats or the low significance of most features, leading to moderate clarity and limited completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the top features identified by SHAP, notably mentioning 'id' and 'Application/service' as increasing confidence, but the top features show 'id' with a positive contribution and 'Application/service' with zero contribution. The explanation also discusses source packets retransmitted/dropped, which is not among the top features. The rationale is somewhat vague and does not clearly justify the 'Normal' prediction based on the key drivers, nor does it address potential caveats or feature interactions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not aligned with the top features provided, which are id and transaction protocol, both with positive contributions. It mentions application/service and mean packet size, but these are not part of the top features. The explanation also suggests that the transaction protocol increased confidence, which contradicts the top feature's zero contribution. Overall, the explanation lacks alignment with the actual feature importance, reducing fidelity. It is somewhat clear but not fully concise or comprehensive, especially regarding the key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, aligning with the top features identified. However, the top features show only 'id' with a positive contribution (+1.567), while others like protocol, service, bytes, and mean packet size are zero, indicating they did not influence the prediction. The mention of 'Source\u2192destination time-to-live' as a key factor is inconsistent with the provided top features, which do not include TTL. This introduces hallucination and reduces fidelity. The explanation is somewhat concise but lacks clarity in connecting features to the prediction and does not sufficiently justify why the flow is normal, especially given the minimal feature contributions. It also omits caveats or limitations, affecting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation lacks clarity about how these features influence the prediction and does not justify the 'Generic' label thoroughly, especially given the minimal feature contributions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Normal' prediction. It emphasizes key drivers such as 'id' and 'Mean packet size,' which are consistent with benign traffic. However, it mentions all features as increasing confidence without noting that some features (e.g., protocol, service) have zero SHAP values, which could be clarified for completeness. The explanation is concise and SOC-ready, but could better specify that features with zero SHAP contributions do not influence the classification, enhancing clarity and completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It mentions key drivers such as 'id' and 'Bytes from source to destination', which are consistent with the features' signs. However, it redundantly states that multiple features increased confidence without clarifying their specific influence or potential contradictions. The explanation is concise and SOC-ready but could improve by explicitly connecting feature signs to the 'Exploits' label and noting any caveats or uncertainties.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features that contributed to the 'Normal' prediction, such as 'id' and 'Bytes from source to destination', aligning with the top features. However, it references features like 'Count of same source address & destination port' and 'Application/service' which are not listed among the top features, indicating hallucination or inconsistency. The explanation is somewhat concise but could clarify how these features influence the prediction more explicitly. It also lacks caveats or discussion of potential uncertainties, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not aligned with the top features provided. For example, it mentions 'Transaction protocol' and 'Application/service' as increasing confidence, but the top features show 'id' as the only positive contributor, with others at zero. Additionally, the explanation suggests that 'Bytes from source to destination' and 'Mean packet size' increased confidence, but these are not among the top features. The mention of 'Count of same service & destination address' is also inconsistent with the provided features. Overall, the explanation lacks alignment with the actual feature importance and does not clearly justify the 'Generic' prediction based on the key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not part of the top features provided (e.g., transaction protocol, application/service, mean packet size, bytes from source to destination), leading to contradictions and hallucinations. While it mentions key factors increasing confidence, it does not accurately reflect the actual features influencing the prediction, reducing fidelity. The explanation is relatively concise and SOC-ready, but it lacks detail on how these features justify the 'Generic' label and does not discuss potential caveats or alternative explanations, limiting completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as 'id' and 'Application/service (http)', which align with the top features, but it introduces additional factors like 'Source\u2192destination time-to-live' that are not among the top features, leading to potential contradictions. The description is somewhat verbose and lacks precise, SOC-ready language, reducing clarity. It also does not explicitly justify why these features indicate an 'Analysis' label or discuss caveats, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'benign traffic characteristics' but does not clearly connect the top features and their signs to the 'Normal' prediction. It mentions 'id increased confidence' and 'Bytes from source to destination increased confidence,' which aligns with the top features, but the mention of retransmissions and dropped packets is inconsistent with the provided top features, which show zero contribution from bytes and packet size. The explanation lacks clarity and completeness in justifying why these features lead to a 'Normal' classification, and it introduces details not supported by the top features or the instance data.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the model's prediction of 'Exploits'. It mentions key drivers such as id and bytes from source to destination, which are consistent with the SHAP values. However, it slightly overstates the influence of features like transaction protocol and application/service, which have zero SHAP values, leading to minor contradictions. The explanation is concise and clear, covering the main factors and their roles, but could improve by explicitly noting the absence of negative feature contributions or caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references several features (id, bytes from source to destination) that align with the top features, but it mentions additional factors (retransmissions, TTL) not highlighted in the top features list, leading to potential contradictions. The description is somewhat verbose and includes details that are not directly tied to the top features, reducing clarity. It also does not explicitly connect how these features justify the 'Normal' label or note potential caveats, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing that increased id and application/service contribute positively to the 'Normal' prediction. It mentions key drivers like bytes and packet size, consistent with the features. However, it references 'Source\u2192destination time-to-live' as increasing confidence, which is not among the top features listed, indicating a slight inconsistency. The explanation is concise and SOC-ready, covering main drivers and noting benign characteristics, but could improve by explicitly connecting all top features and clarifying the role of TTL.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the provided top features, notably mentioning 'Application/service' and 'Time between SYN and SYN-ACK,' which are not part of the top features or the instance data. The mention of 'id' increasing confidence is consistent with the top feature, but the other factors are either misrepresented or hallucinated. The explanation lacks clarity due to inconsistent feature references and does not sufficiently justify the 'Fuzzers' label or cover key drivers comprehensively. Overall, it partially aligns with the prediction but contains contradictions and omissions that reduce its fidelity, clarity, and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that application/service and mean packet size increased confidence, but the top features show both are zero, indicating no contribution. The only top feature with a positive sign is id, which aligns with the explanation. However, the mention of source\u2192destination TTL increasing confidence is not supported by the top features or the explanation provided. Overall, the explanation partially aligns with the features but contains contradictions and lacks detail on key drivers, reducing fidelity and completeness. Clarity is moderate but could be more concise.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. It overstates the influence of features like transaction protocol and application/service, which are not highlighted as top features. The explanation lacks specific details on how each feature's sign aligns with the 'Exploits' prediction, leading to potential contradictions and reduced fidelity. Clarity is good, but the completeness is limited, as it does not justify why these features collectively support the 'Exploits' label or note any caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and factors that are not present or relevant in the provided top features and instance data. It mentions 'id' and 'Bytes from source to destination' which align somewhat, but discusses additional factors like TTL and retransmissions that are not highlighted as key drivers. The explanation lacks clarity and does not fully justify the 'Normal' prediction based on the given features, leading to a moderate score across all criteria.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as 'id' and 'Application/service' which align with the top features, but it incorrectly states that 'Mean packet size sent by source' increased confidence, whereas the top feature indicates it has zero contribution. Additionally, it mentions 'Source\u2192destination time-to-live' as a key factor, which is not among the top features, leading to potential hallucination. The explanation lacks detail on how these features justify the 'Exploits' label and does not address caveats or alternative explanations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature influences the model's confidence. However, it mentions 'Transaction protocol' and 'Application/service' as increasing confidence, but these features are zero in the instance, which could be misleading. The explanation could be more explicit about the actual feature values and their impact, and note that some features did not contribute in this case. Overall, it is concise and covers key drivers but could improve in explicitly connecting feature values to the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their signs, aligning with the prediction 'Generic'. It emphasizes the contribution of features like transaction protocol, application/service, mean packet size, and bytes from source to destination, which are consistent with the top features provided. However, it mentions 'transaction protocol increased confidence' without specifying the sign, which could be clearer. The explanation is concise and SOC-ready, covering key drivers and noting the main features influencing the classification, but it could improve by explicitly connecting feature signs to the 'Generic' label and mentioning potential caveats or uncertainties.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features such as mean packet size, bytes from source to destination, and id, which align with the top features and their positive signs. However, it mentions application/service and TCP timing factors that are not part of the top features, leading to potential hallucinations. The reasoning about packet loss and retransmissions is relevant but not directly tied to the specified features, reducing clarity and completeness. Overall, the explanation partially aligns with the features but introduces unsupported details, limiting fidelity, clarity, and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Exploits' prediction. However, it mentions the application/service as increasing confidence despite the feature value being '-', which contradicts the feature data and reduces fidelity. Clarity is good but could specify the feature values more explicitly. Completeness is moderate; it covers key drivers but does not discuss the absence of certain features or potential caveats, such as the unusual protocol or the very short duration.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features like application/service and mean packet size, but incorrectly states that application/service increased confidence; in fact, it was not a top feature with a positive sign. The mention of id as a driver aligns with the top feature, but other features like bytes from source to destination are not highlighted as top features. The explanation lacks clarity on how these features collectively justify the 'Exploits' label and does not address potential caveats or alternative explanations, leading to moderate fidelity and completeness scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature increased confidence, matching the SHAP top features and their signs. However, it slightly overstates the importance of features like transaction protocol and application/service, which have zero SHAP value in this case, leading to a minor inconsistency. The explanation is concise and SOC-ready, covering key drivers and noting the features that influenced the classification, but it could improve by explicitly mentioning the lack of negative feature contributions or caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top features provided (id, protocol, service, bytes, mean packet size), leading to a mismatch and potential hallucination. It mentions source/destination TTL and retransmissions/drops, which are not listed in the top features or the instance data, reducing clarity and completeness. The explanation does not clearly connect the top features to the 'Normal' prediction or justify why these features support the classification, resulting in moderate fidelity and limited clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes multiple features increasing confidence but does not specify the signs of their influence, especially for features like id which has a high positive SHAP value. It mentions retransmissions and dropped packets as increasing confidence but does not clarify their directionality or how they relate to exploitation. The explanation lacks explicit connection between features and the 'Exploits' label, and does not address potential caveats or alternative explanations, limiting its completeness and fidelity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits.' It clearly states how each feature influences the model's confidence, matching the SHAP top features. However, it does not explicitly address the absence of negative feature contributions or potential caveats, and some features like protocol and application are marked as increasing confidence despite their values not being explicitly detailed in the instance. Overall, it is accurate and concise but could improve in explicitly noting the absence of contradictory features and providing more context on feature values.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, including 'id' and 'Bytes from source to destination', aligning with the top features. However, it references 'Source\u2192destination time-to-live' which is not among the top features, indicating a potential hallucination or irrelevant detail. The explanation does not clarify how these features collectively justify the 'Normal' label or address potential caveats, limiting its completeness. Overall, the explanation is somewhat aligned and clear but lacks full coverage of key drivers and precise justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while 'proto', 'service', 'sbytes', and 'mean packet size' are zero or unspecified. This contradicts the stated key factors, especially since 'proto' is 'udp' and 'service' is 'dns', which are not indicated as increasing confidence. The explanation lacks clarity in linking features to the 'Generic' label and does not sufficiently justify the classification or note potential caveats. Overall, it partially aligns with the features but overstates their influence and lacks precision.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while 'proto', 'service', 'sbytes', and 'mean packet size' are zero or unspecified. This contradicts the assertion that these features contributed positively. The explanation is somewhat concise but lacks clarity in linking features directly to the 'Generic' label, and it does not address potential caveats or alternative explanations. Overall, it overstates the influence of features not supported by the top features list, reducing fidelity and completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the 'Exploits' prediction primarily to 'id' and application/service features, but the top features indicate 'id' has a positive contribution while others are zero or not highlighted. The mention of 'Source\u2192destination time-to-live' increasing confidence is inconsistent with the top features, which show 'dttl' (destination TTL) as a feature with no contribution. Additionally, 'Mean packet size' is not among the top features, yet is claimed to increase confidence. The explanation lacks clarity in connecting features to the label and does not sufficiently justify the anomaly, especially given the contradictory or unsupported feature contributions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'id' and 'Bytes from source to destination' as key factors, aligning with the top features. However, it mentions 'time-to-live' and retransmissions/drops, which are not among the top features provided, indicating hallucination or missing key drivers. The explanation is somewhat verbose and not entirely SOC-ready, lacking concise justification and caveats. Overall, it partially aligns with the features but introduces unsupported details, limiting fidelity and clarity.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while 'proto', 'service', 'sbytes', and 'mean packet size' are zero or not specified as increasing. This contradicts the stated key factors, leading to a low fidelity score. The explanation is concise and SOC-ready, but it lacks detailed justification for the 'Generic' label and does not address potential caveats or alternative drivers, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, including 'id' and 'application/service', but it does not specify the directions of their influence or how they relate to the 'Normal' prediction. It also references 'Source\u2192destination time-to-live' as a key factor, which is not among the top features provided, indicating a possible hallucination. The explanation is concise and SOC-ready but lacks detailed justification for the label and does not address potential caveats or the role of features with zero SHAP values.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.336), while 'proto', 'service', 'sbytes', and 'mean packet size' are zero or not indicated as contributing. This contradicts the explanation's emphasis on these features. The explanation also mentions 'transaction protocol' and 'application/service' as increasing confidence, but the top features do not support this. The rationale is somewhat ambiguous and lacks detail on how these features influence the 'Generic' label, leading to moderate clarity and low completeness. Overall, the explanation does not align well with the feature contributions, reducing fidelity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features not listed among the top SHAP features, such as 'Bytes from source to destination' and 'time-to-live', which are not indicated as influential in the provided top features. Additionally, it mentions retransmissions/drops, which are not part of the top features or the provided data. The explanation lacks alignment with the actual top features and their signs, leading to potential contradictions and ambiguity. Overall, it provides some justification but does not fully align with the model's key drivers or offer a clear, comprehensive rationale.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top features influencing the prediction (id, protocol, service, bytes, mean packet size). It mentions factors like time-to-live and retransmissions, which are not highlighted in the top features, leading to potential contradictions. The explanation is somewhat vague and lacks specific details linking features to the 'Normal' prediction, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature influences the model's confidence, supporting the label. However, it slightly overstates the importance of features like transaction protocol and application/service, which have zero SHAP values, leading to minor contradictions. The explanation is concise and SOC-ready but could better specify the magnitude of each feature's impact and note potential caveats such as the absence of negative feature contributions.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, emphasizing 'id' and 'Application/service' as key drivers, consistent with their positive SHAP values. It correctly states that these features increased the model's confidence in a 'Normal' classification. However, it mentions 'Bytes from source to destination' and 'Mean packet size sent by source' as increasing confidence, which matches their positive SHAPs, but the explanation could clarify the specific influence of each feature more explicitly. The mention of 'Count of same source address & destination port' is somewhat vague, as this feature isn't listed among the top features, leading to potential confusion. Overall, the explanation is concise and SOC-ready, but could improve in explicitly connecting all features to the prediction and noting that some features had negligible or zero SHAP impact.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple factors increasing confidence, such as 'id' and packet size, but does not clearly connect these to the 'Fuzzers' label or specify how they indicate fuzzing activity. It references packet loss and retransmissions but does not explicitly link these to fuzzing behavior. The mention of 'key factors' is vague, and the explanation lacks concise, SOC-ready language that directly justifies the prediction with the top features and their signs.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. It contradicts the top features list, which indicates only 'id' is a significant driver. The explanation also mentions application/service increasing confidence, but the data shows service='-'. The reasoning is somewhat ambiguous and does not fully justify the 'Exploits' label based on the provided features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top features identified (id, protocol, service, bytes, mean packet size), and mentions factors like TTL and retransmissions that are not highlighted in the top features. The description is somewhat vague and lacks specific alignment with the provided top features and their signs. It does not clearly justify the 'Normal' prediction based on the key drivers, nor does it address potential caveats or contradictions explicitly.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution; other features have zero or unspecified impact. The mention of 'Bytes from source to destination' and 'Mean packet size' increasing confidence contradicts the top features, which do not indicate their importance. Additionally, the explanation references 'Count of same source & destination addresses,' which is not listed among the top features, leading to hallucination. Overall, the explanation lacks alignment with the provided feature importance and does not clearly justify the 'Exploits' prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Normal' prediction. However, it mentions 'Transaction protocol' and 'time-to-live' as increasing confidence, but these features are either zero or not highlighted as top features, which could cause some inconsistency. The explanation is concise and SOC-ready but could better justify why these features support the 'Normal' label and note potential caveats, such as the absence of negative feature contributions or detailed context.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature influences the model's confidence, avoiding contradictions. However, it slightly overstates the importance of features with zero SHAP values (e.g., protocol, service, bytes from source to destination), which may not be contributing significantly. The explanation is concise and SOC-ready but could better specify the magnitude of each feature's impact and note potential caveats, such as the unusual feature values or the low duration.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.345), while 'proto', 'service', 'sbytes', and 'mean packet size' are all zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these as drivers. The explanation lacks clarity about how these features influence the prediction and does not justify why the label is 'Generic' or note any caveats. Overall, it overstates the influence of features not reflected in the top features and lacks precise, SOC-ready justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It mentions key drivers such as 'id' and 'Bytes from source to destination', which are supported by the SHAP values. However, it redundantly states that multiple features increased confidence without clarifying their individual impact or potential interactions. The explanation is concise and SOC-ready but could better specify how these features collectively justify the label and note any caveats or uncertainties.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Exploits' prediction. It clearly states how each feature increased confidence, matching the model's reasoning. However, it slightly overstates the importance of features like transaction protocol and application/service, which have zero SHAP values in this case, leading to minor contradictions. The explanation is concise and SOC-ready but could better emphasize the actual feature contributions and note potential caveats regarding feature importance.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence in 'Exploits', but the top features show only 'id' with a strong positive contribution; others are zero or unspecified. The mention of 'application/service' increasing confidence contradicts the top features, which indicate no such contribution. The explanation lacks clarity about the actual feature contributions and does not sufficiently justify the label or cover key drivers, especially given the minimal feature influence indicated by the top features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in classifying the flow as 'Fuzzers', but the top features indicate 'id' with a positive contribution and 'service' as '-', which conflicts with the mention of application/service increasing confidence. Additionally, the explanation references packet retransmissions/drops as key factors, but these are not among the top features or their signs, leading to contradictions. The explanation is somewhat verbose and not entirely clear about how features contribute, and it does not explicitly justify why these factors lead to the 'Fuzzers' label or note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features that contributed to the 'Normal' prediction, such as id and application/service, aligning with the top features. However, it mentions source packets retransmitted/dropped and TTL as increasing confidence, which are not among the top features and are not explicitly indicated by the provided feature values, leading to potential contradictions. The explanation is concise and SOC-ready but lacks detailed justification for why these features support the 'Normal' label and does not address caveats or alternative drivers, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the top features provided, notably mentioning 'Source\u2192destination time-to-live' and 'Application/service' as increasing confidence, but these are either not in the top features or have conflicting indications. The mention of 'id' and 'Mean packet size' increasing confidence is consistent, but overall, the explanation introduces features not supported by the top features list, leading to contradictions and reduced fidelity. Clarity is moderate, as the explanation is somewhat verbose and includes features not highlighted, and completeness is limited because it does not fully justify the 'Normal' prediction with key drivers or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions packet retransmissions and drops, which are relevant to fuzzing activity, but the top features indicate that 'id' is the primary driver, and other features are zero or not discussed. The explanation does not clearly connect the features to the 'Fuzzers' label, nor does it address the sign of the features or how they align with the prediction. It also introduces details about packet loss that are not reflected in the top features, leading to potential hallucinations. Overall, the explanation is somewhat ambiguous and lacks direct linkage to the key features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features like 'id' and 'Bytes from source to destination' which align with the top features, but it introduces additional factors such as 'time-to-live' and retransmissions that are not part of the top features list. The explanation also states 'Benign traffic characteristics' without explicitly connecting these to the features' signs or the prediction, leading to some ambiguity. Overall, it partially aligns with the top features but lacks clarity and completeness in justifying the 'Normal' label based solely on the provided top features.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Exploits' prediction. It clearly states how each feature influences the model's confidence, avoiding contradictions. However, it mentions all features as increasing confidence, even though only 'id' and 'Bytes from source to destination' are explicitly listed as positive contributors; the inclusion of 'Transaction protocol' and 'Application/service' as increasing confidence is consistent with the top features. The explanation is concise and SOC-ready, but could improve by explicitly noting that other features had negligible or no impact, and by clarifying the role of the instance's specific attributes.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the provided top features, notably mentioning 'Source\u2192destination time-to-live' which is not listed, and 'Transaction protocol' which has zero importance in the top features. The mention of 'id' increasing confidence is consistent, but overall, the explanation introduces unsupported or irrelevant features, reducing fidelity. Clarity is moderate, as the explanation is concise but somewhat vague. Completeness is limited, as it does not fully justify the 'Exploits' label with key drivers or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'benign traffic characteristics' but does not clearly connect the top features or their signs to the 'Normal' prediction. It mentions factors like 'id increased' and 'Bytes from source to destination increased,' but the top features show 'id' with a positive contribution and others with zero, which is somewhat consistent, yet the explanation introduces additional factors (e.g., retransmissions, TTL) not reflected in the top features or SHAP values. The reasoning is somewhat vague and lacks explicit linkages between features and the prediction, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, aligning with the top features identified. However, the top features listed (id, protocol, service, bytes, mean packet size) are not explicitly connected to the source\u2192destination TTL, which is mentioned as a key factor but not listed among top features. Additionally, the explanation suggests all features increased confidence, but the provided top features show only positive contributions, and some features (like protocol and bytes) have zero contribution, indicating potential contradictions. The explanation is somewhat concise but lacks detailed justification for how each feature influences the prediction, and it does not address potential caveats or feature interactions. Overall, it is somewhat clear but could be more precise and comprehensive.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, aligning with the top features (id, Bytes from source to destination, Mean packet size sent by source). However, it references source retransmissions/drops, which are not among the top features and are not provided in the instance data, leading to potential hallucination. The explanation does not clarify the absence of other features or how they influence the prediction, limiting completeness. Clarity is moderate; the explanation is somewhat verbose and could be more concise and SOC-ready by explicitly linking features to the 'Normal' prediction without extraneous details.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, accurately reflecting their contribution to the 'Generic' prediction. It clearly states that all listed features increased confidence, matching the SHAP top features. However, it could improve by explicitly noting that the features' contributions are positive and by mentioning the low values of some features (e.g., dpkts=0) to provide a more comprehensive understanding. The explanation is concise and SOC-ready, but a slight elaboration on the absence of contradictory features would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references the top features but does not clearly connect their signs or contributions to the 'Generic' prediction. It mentions 'Transaction protocol' and 'Application/service' as increasing confidence, yet the top features show minimal or zero impact for these, leading to potential contradictions. The explanation is concise and SOC-ready but lacks detailed justification of how each feature influences the label, especially given the instance's specifics. It notes key drivers but omits caveats or limitations, resulting in moderate completeness.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increase confidence, such as 'id' and 'Bytes from source to destination', aligning with the top features. However, it references packet loss and retransmissions as key factors, which are not among the top features provided. The mention of application/service as increasing confidence contradicts the top feature data indicating '-' (none). The explanation lacks clarity in connecting features to the 'Fuzzers' label explicitly and does not sufficiently justify why these factors lead to this classification. Overall, it partially aligns but contains contradictions and insufficient detail for full completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.821), while others are zero or unspecified. It mentions 'Transaction protocol' and 'Mean packet size' as increasing confidence, but these are not among the top features with positive SHAP values. The explanation also states 'Bytes from source to destination' and 'Application/service' increased confidence, yet these are not listed as top features with positive signs. This inconsistency suggests hallucination or lack of precise alignment, reducing fidelity. Clarity is good, but the explanation lacks specificity about how each feature influences the prediction. It does not justify why the model predicts 'Exploits' beyond vague statements, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the provided top features, notably mentioning 'Transaction protocol' and 'Bytes from source to destination' as increasing confidence, but these are marked as zero or not highlighted in the top features. Additionally, the explanation suggests that 'Transaction protocol' increased confidence, which contradicts the top feature data where proto=udp (not typically associated with 'transaction' protocols). The mention of 'application/service' and 'mean packet size' aligns with the top features, but the explanation lacks detail on how these contribute to the 'Generic' label or potential anomalies. Overall, the explanation is somewhat vague and does not fully justify the prediction or cover key drivers comprehensively.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.351), while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which have no contribution from protocol or service. The explanation also references features not listed among the top features, leading to potential hallucinations. Clarity is good, but the completeness is limited as it does not justify why the 'Generic' label was assigned based on the features or address caveats.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features increasing confidence, but the top features indicate only 'id' has a significant positive contribution (+0.890), while others are zero or unspecified. The explanation's references to packet loss and retransmissions are not reflected in the top features or their signs, leading to contradictions. The explanation is somewhat verbose and lacks clarity about the direct influence of features, reducing overall clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive signs, aligning with the prediction of 'Normal'. It highlights key drivers such as 'id' and 'Application/service', consistent with the SHAP features. However, it mentions 'Source\u2192destination time-to-live' as increasing confidence, which is not among the top features listed, indicating a slight inconsistency. The explanation is concise and SOC-ready but could better specify the features it references for full clarity. Overall, it adequately justifies the label with relevant drivers, but some minor details could improve fidelity and completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature influences the model's confidence, supporting the label. However, it mentions 'Transaction protocol' as increasing confidence despite its zero SHAP value, which could be misleading. The explanation is concise and SOC-ready but could better clarify the role of features with negligible SHAP values.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation lacks specific details on how each feature influences the 'Generic' prediction and does not address potential caveats or the absence of feature signs for some key features. Overall, it partially aligns but overstates the influence of features not supported by the top features list, reducing fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their influence on the prediction, aligning with the provided feature signs. It highlights key factors such as TTL, application/service, data size, retransmissions, and packet size, which are consistent with the features and their importance. However, it could improve clarity by explicitly linking each feature to the prediction outcome and noting potential caveats, such as the role of high data volume or retransmissions in benign scenarios. Overall, it provides a solid, SOC-ready summary with minor room for increased explicitness and nuance.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple factors that influence the prediction, such as application/service and id, but incorrectly states that application/service increased confidence, despite the top feature being id. It also references source/destination retransmissions and dropped packets, which are not among the top features or explicitly highlighted in the explanation. The reasoning lacks clarity and does not fully justify why the flow is classified as 'Exploits,' especially given the absence of direct evidence from the top features. Caveats about the limited feature influence and potential other factors are missing.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It clearly states how each feature influences the model's confidence, avoiding contradictions. However, it could improve clarity by explicitly linking feature signs to the 'Exploits' label and providing a brief note on the significance of the 'id' feature. The explanation covers key drivers but does not mention potential caveats or uncertainties, which would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while 'proto', 'service', 'sbytes', and 'dbytes' are zero or not indicated as contributing positively. This contradicts the stated key factors, leading to a mismatch in fidelity. The explanation is concise and mostly clear but lacks specific details about how each feature influences the prediction, affecting completeness. Overall, the explanation does not fully align with the SHAP features and their signs, reducing fidelity and completeness scores.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation claims all listed features increased confidence, but the top features show only 'id' with a positive contribution (+1.015), while others like 'Bytes from source to destination' and 'Transaction protocol' are zero, indicating no contribution. The mention of 'Application/service' increasing confidence is inconsistent with its value ('-'), which suggests no influence. This creates contradictions and hallucinations, reducing fidelity. Clarity is good, but completeness is moderate because it does not acknowledge the zero contributions or potential limitations in the explanation.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features that contributed to the 'Normal' classification, such as id, mean packet size, bytes from source to destination, and application/service, aligning with the top features. However, it mentions 'Time between SYN and SYN-ACK' which is not among the top features and is not provided in the instance data, leading to a contradiction and reducing fidelity. The explanation is concise and clear but lacks detail on how these features specifically support the 'Normal' label and does not discuss potential caveats or alternative explanations, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not part of the top features provided (e.g., retransmissions, dropped packets), leading to contradictions and hallucinations. It mentions 'destination packets retransmitted/dropped' and 'source packets retransmitted/dropped,' which are not included in the top features or the instance data. The explanation also states that the key factors increased confidence, but does not clearly connect these to the features or their signs, reducing clarity. The coverage of key drivers is limited, and caveats or uncertainties are not addressed, impacting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as id and packet retransmissions, aligning with the top features and their signs. However, it mentions source/destination TTL and dropped packets as key factors, which are not among the top features provided, indicating hallucination or omission. The explanation does not clearly connect the features to the 'Exploits' label or discuss potential caveats, limiting its completeness. Overall, the explanation partially aligns with the model's features but introduces unsupported details, reducing fidelity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'id' and 'Bytes from source to destination' as key factors, aligning with the top features. However, it mentions 'time-to-live' and retransmissions/drops, which are not among the top features provided, indicating hallucination or missing key drivers. The explanation is somewhat vague and lacks specific details about how these features influence the 'Normal' prediction, reducing clarity and completeness. Overall, it partially aligns with the features but introduces unsupported details, limiting fidelity.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top SHAP features (id, protocol, service, bytes, mean packet size), leading to potential contradictions. It mentions retransmissions and dropped packets, which are not highlighted as key drivers, and does not clearly connect the features to the 'Normal' prediction. The explanation is somewhat concise but lacks explicit alignment with the top features and their signs, reducing fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top feature 'id' with a positive sign, aligning with the model's confidence increase. It mentions 'Mean packet size sent by source' and 'Bytes from source to destination,' which are consistent with the features and their signs. However, it introduces additional factors like retransmissions and packet loss that are not part of the top features or their SHAP explanations, leading to some hallucination. The explanation is concise and SOC-ready but could better specify how these factors directly relate to the 'Fuzzers' prediction and clarify the role of the 'id' feature.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the provided top features, notably mentioning 'Bytes from source to destination' and 'Application/service' as increasing confidence, but these are marked as zero in the top features. Additionally, 'id' is correctly identified as influential. The explanation lacks detail on how these features collectively justify the 'Reconnaissance' label and does not address potential caveats or alternative explanations. Overall, it partially captures some key drivers but contains contradictions and insufficient justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation lacks specific details on how each feature influences the 'Generic' label and does not address potential caveats or the low importance of most features, reducing overall clarity and completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the 'Exploits' prediction primarily to the 'id' feature and mentions other features as increasing confidence. However, the top features show 'id' with a strong positive contribution (+0.755) and the 'Application/service' feature with zero contribution, which contradicts the explanation stating that 'Application/service' increased confidence. Additionally, the explanation references features like 'Bytes from source to destination' and 'Mean packet size' as increasing confidence, but these have zero SHAP values, indicating they did not influence the prediction. This inconsistency reduces fidelity. The explanation is somewhat concise and SOC-ready but lacks detail on how each feature influences the prediction, affecting clarity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.324), while 'proto', 'service', 'bytes from source to destination', and 'mean packet size' are all zero or unspecified. This contradicts the assertion that these features increased confidence. The explanation lacks clarity in linking features to the 'Generic' label explicitly and does not mention potential caveats or the limited influence of other features. Overall, it partially aligns with the features but overstates their impact, leading to moderate scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features and their positive contributions aligning with the 'Normal' prediction, consistent with the top features provided. It emphasizes the benign nature of the traffic and notes the key drivers. However, it overstates the role of some features (e.g., application/service) without specifying their actual values, and it does not mention potential caveats or the influence of features with zero SHAP values. The explanation is concise and SOC-ready but could improve clarity by explicitly linking feature signs to the prediction and noting the absence of contradictory features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple factors increasing confidence, but it incorrectly states that application/service and mean packet size sent by source/destination increased confidence, which contradicts the top features indicating only 'id' has a positive contribution. It also omits the key feature 'id' that strongly influences the prediction. The mention of source\u2192destination TTL is inconsistent with the provided features, which do not include TTL values. Overall, the explanation lacks alignment with the top features and does not fully justify the 'DoS' prediction.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased model confidence, including 'id' and 'Mean packet size sent by source,' aligning with the top features. However, it also references 'Source packets retransmitted/dropped,' which is not among the top features provided, indicating hallucination. The explanation lacks detail on how these features collectively justify the 'Normal' label and does not address potential caveats or the absence of features that could contradict the prediction. Clarity is moderate; the explanation is somewhat verbose and could be more concise and SOC-ready.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features influencing the prediction, notably 'id' and 'Bytes from source to destination', aligning with the top features. However, it incorrectly states that 'Application/service' increased confidence, despite the top feature showing zero contribution; additionally, it references 'Time between SYN and SYN-ACK', which is not among the top features, indicating hallucination. The explanation lacks clarity in connecting features to the 'Exploits' label and does not sufficiently justify the prediction or note caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Fuzzers'. It clearly states the key factors influencing the model's decision. However, it slightly overstates the importance of features like 'Transaction protocol' and 'Mean packet size' without explicitly noting their actual values or the absence of contradictory features. The explanation is concise and SOC-ready but could benefit from a brief mention of potential caveats or the absence of negative feature influences.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the top features provided, which are id (+0.359) and others with zero or negligible importance. It mentions 'Transaction protocol' and 'Application/service' as increasing confidence, but these are not among the top features. Additionally, the explanation suggests that multiple features increased confidence, but the actual top features do not support this. The explanation lacks clarity in connecting features to the 'Generic' label and does not sufficiently justify why these features lead to that classification. It also omits caveats or limitations, such as the low importance of most features or the potential for misclassification.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references packet loss and retransmissions, which are relevant to fuzzing activities, but the top features highlight 'id' and 'Bytes from source to destination' as key drivers, with 'id' positively influencing the prediction. The mention of source packets retransmitted/dropped aligns with the features but is not explicitly connected to the top features or their signs. The explanation introduces additional factors like jitter and windowed counts that are not part of the top features, leading to potential hallucinations. Overall, the explanation is somewhat ambiguous and lacks clarity in linking features to the 'Fuzzers' label, reducing its fidelity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence but includes inaccuracies and contradictions. It mentions 'id increased confidence,' yet 'id' has a positive SHAP value, aligning with the prediction, but the explanation also states 'Key factors' that are not reflected in the top features or their signs. The mention of 'Bytes from source to destination' increasing confidence aligns with the top feature, but other factors like 'time-to-live' and retransmissions are not among the top features and are not supported by the provided SHAP data. The explanation lacks clarity and completeness in justifying the 'Normal' prediction solely based on the top features and their signs.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. It overstates the influence of features like Bytes and protocol, which are not highlighted as top features. The explanation lacks detail on how each feature's sign aligns with the 'Exploits' prediction, leading to potential contradictions and insufficient justification of the label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It emphasizes key drivers such as 'id' and 'Bytes from source to destination', which are consistent with the features' signs. However, it mentions 'Transaction protocol' and 'Application/service' as increasing confidence, despite their SHAP values being zero, which could be misleading. The explanation is concise and SOC-ready but could better justify why these features are considered influential despite zero SHAP values, and it omits caveats about the low feature values or the unusual instance characteristics.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'benign traffic characteristics' but does not clearly connect the top features or their signs to the 'Normal' prediction. It mentions 'id increased confidence' and 'Bytes from source to destination increased confidence,' which aligns with the top features, but it introduces additional factors like TTL and retransmissions not listed among the top features, leading to potential hallucinations. The explanation is somewhat concise but lacks explicit detail on how each feature influences the prediction, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation is somewhat clear and covers key drivers, but it overstates the influence of features not reflected in the top features, leading to moderate fidelity. It justifies the label as 'Generic' but lacks detailed caveats or nuanced reasoning.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation is somewhat clear but lacks precise linkage between features and the 'Generic' label, and it does not address potential caveats or the limited feature influence.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the 'Exploits' prediction to multiple features, but the top feature (id) with a positive sign does not align with the provided features, which are mostly zero or unrelated. The mention of application/service and packet metrics is vague and not directly supported by the top features or the data. The explanation lacks specific details linking key features to the label, and it introduces contradictions (e.g., application/service increased confidence despite being zero). Overall, it partially references relevant features but lacks clarity and full justification, leading to moderate scores.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation is somewhat clear and covers key drivers, but it overstates the influence of features not reflected in the top features list, leading to moderate fidelity. It justifies the 'Generic' label but lacks precise linkage between features and the prediction.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references packet retransmissions and packet loss, which are not among the top features (id, protocol, service, bytes, mean packet size). The mention of 'Bytes from source to destination' and 'Bytes from destination to source' increasing confidence contradicts the top features, which show zero importance for these. The explanation also suggests retransmissions/drops as key factors, but these are not highlighted in the top features. Overall, the explanation lacks alignment with the provided feature importance and does not sufficiently justify the 'Fuzzers' prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the top features contributing to the DoS prediction, including 'id' and 'Bytes from source to destination,' aligning with the SHAP features. It mentions the increased confidence from features like mean packet size and application/service, which are consistent with the top features. However, it slightly overstates the influence of 'Transaction protocol' (which has zero SHAP value) and does not explicitly address the extremely high rate or the potential caveats of the unusual source load. Overall, it provides a clear and mostly complete justification aligned with the features, with minor room for clarification regarding feature importance and potential limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign; others are zero or unspecified. The mention of 'transaction protocol' and 'application/service' increasing confidence contradicts the top features, which have zero or no clear influence. The explanation lacks detail on how each feature contributes and does not address the actual feature signs or their impact, reducing fidelity. Clarity is good, but completeness is limited due to missing justification for the label and lack of caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased model confidence, aligning with the top features (id, application/service, bytes from source to destination). However, it references 'Source\u2192destination time-to-live' as a key factor, which is not among the top features and was not highlighted in the SHAP explanation, leading to potential contradiction. The explanation is concise and SOC-ready but lacks detailed justification for why these features support a 'Normal' classification and does not address caveats or uncertainties, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation mentions several features that increased model confidence, such as 'id' and retransmissions, aligning with the top feature 'id (+1.515)'. However, it references other factors like 'Destination packets retransmitted/dropped' and 'Time-to-live' which are not among the top features or provided features, leading to potential hallucinations. The explanation is relatively concise and SOC-ready but lacks explicit connection between the features and the predicted 'Normal' label, and does not thoroughly justify why these factors confirm normalcy or note caveats.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features that contributed to the DoS prediction, such as source load, bytes transferred, and protocol. It aligns with the top features and their signs, though it mentions 'transaction protocol' and 'application/service' as increasing confidence, which matches the top features' positive contributions. However, it does not explicitly address the contradiction of the protocol being 'eigrp' with a positive feature, nor does it clarify the significance of the source load in relation to the prediction. The explanation is concise and SOC-ready but could improve in explicitly connecting feature signs to the prediction and noting potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased model confidence, such as 'id' and 'Mean packet size sent by source', aligning with the top features. However, it references 'Bytes from source to destination' and 'Count of same source address & destination port' which are not explicitly listed among the top features, leading to potential confusion. The mention of 'Application/service' increasing confidence is consistent with the top features, but the explanation lacks detail on how these features collectively justify the 'Normal' prediction. The rationale could be clearer and more comprehensive, especially regarding the absence of contradictory features and caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Generic'. It clearly states each feature's role in increasing confidence, matching the SHAP top features and their signs. However, it could improve by explicitly noting that the features with zero SHAP values (e.g., protocol, service, packet sizes) did not influence the prediction, avoiding potential ambiguity. The explanation is concise and SOC-ready, but adding a brief note on the absence of contradictory features would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence in 'Exploits', but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Mean packet size' as increasing confidence is inconsistent with their zero SHAP values. Additionally, the instance's features (e.g., 'proto=unas', 'sbytes=200') do not strongly suggest exploitation, and the explanation lacks details on how these features justify the label. Overall, the explanation is somewhat ambiguous and does not fully justify the prediction or cover key drivers clearly.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of DoS. It mentions elevated sender load and the importance of 'id' and 'Bytes from source to destination,' which are consistent with the features' signs. However, it includes some features (like protocol and packet size) that have zero or negligible impact, which may be misleading. The explanation is concise and SOC-ready but could better justify why these features drive the classification and note potential caveats, such as the low duration and unusual protocol, to improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign; others are zero or unspecified. The mention of 'Bytes from source to destination' and 'Mean packet size' as increasing confidence is inconsistent with their zero SHAP values. The explanation overstates the influence of features not supported by the top features list, leading to contradictions. Clarity is good, but completeness is limited as it does not accurately reflect the feature contributions or note potential caveats.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or not specified as contributing. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which have no such contributions. The explanation lacks clarity on how these features influence the prediction and does not justify the 'Generic' label thoroughly. It also omits caveats or limitations, reducing completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top features identified (id, protocol, service, bytes, mean packet size), leading to a mismatch and potential hallucination. It mentions 'Bytes from source to destination' and 'Mean packet size sent by source' which align with top features, but also references 'time-to-live' and retransmissions/drops, which are not highlighted in the top features. The explanation is somewhat vague and lacks specific details about how these features justify the 'Normal' label, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their signs, aligning with the prediction of DoS. It highlights the elevated sender load and the increased values of key features, consistent with the model's confidence. However, it overstates the importance of some features (e.g., protocol and application) without explicitly discussing the absence of other potential drivers or caveats. The explanation is concise and SOC-ready but could better clarify the specific contribution of each feature to the classification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Fuzzers'. It mentions all relevant features and their influence, avoiding contradictions. However, it could improve clarity by explicitly linking the features to fuzzing behavior and noting that some features (e.g., protocol=udp, small duration) are typical in fuzzing activities. The explanation covers key drivers but lacks discussion of potential caveats or alternative explanations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive signs, aligning with the prediction of reconnaissance. It emphasizes the importance of 'id' and packet size, which are consistent with the features' contributions. However, it mentions 'Bytes from source to destination' and 'Application/service' as increasing confidence, but the top features show their signs as zero or positive, which could be clarified further. The explanation covers key drivers but could specify how these features collectively support the label, and it notes the relevant features without overgeneralization.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the top features provided, notably mentioning 'Transaction protocol' and 'Mean packet size' as increasing confidence, but these are not among the top features listed. Additionally, the top feature 'id' has a positive contribution, which is correctly noted, but the explanation's mention of 'Bytes from source to destination' and 'Application/service' as increasing confidence is inconsistent with their zero contributions. The explanation lacks clarity due to these inaccuracies and does not sufficiently justify the 'Exploits' prediction or discuss potential caveats, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Exploits' prediction. It clearly states how each feature influences the model's confidence. However, it mentions 'Application/service' as a factor increasing confidence, but the instance's service is '-', which contradicts this, indicating a potential hallucination or oversight. Clarifying this discrepancy would improve fidelity. The explanation is concise and covers key drivers, but could briefly note that some features (like protocol and bytes) are more influential than others, and mention any caveats or uncertainties.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these as key drivers. The explanation lacks specific details linking features to the 'Generic' label and does not address potential caveats or the absence of other influential features. Overall, it partially aligns but overstates the contribution of features not supported by the top features list, reducing fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features indicate only 'id' has a positive contribution (+1.050), while others (transaction protocol, application/service, bytes) are zero or unspecified. The explanation's mention of all features increasing confidence contradicts the top features data, leading to a moderate fidelity score. Clarity is good, but the explanation lacks detail on how each feature influences the label. Completeness is limited; it does not justify why these features lead to 'Exploits' or discuss potential caveats, such as the unusual 'xtp' protocol or the extremely high rate.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably mentioning 'Transaction protocol' and 'Application/service' as increasing confidence, but these are marked as zero in the top features. Additionally, the explanation suggests that multiple features increased confidence, yet the top features indicate minimal or no contribution from most of these. The mention of 'Bytes from source to destination' and 'Mean packet size' aligns with the top features, but the overall justification lacks clarity and coherence, especially given the contradictory feature importance. The explanation does not sufficiently justify the 'Generic' label or note potential caveats, reducing its completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive contribution (+0.792), while others are zero or unspecified. The mention of 'Bytes from source to destination' and 'Transaction protocol' increasing confidence is inconsistent with their zero SHAP values. The explanation is somewhat clear but lacks precise attribution of feature contributions and does not address the contradiction with the top features. It also does not justify why these features lead to an 'Exploits' classification or note potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation is somewhat vague about how these features influence the prediction and does not clarify the role of the 'id' feature. Overall, it partially aligns with the features but overstates their impact and lacks detail on key drivers, affecting fidelity and completeness. Clarity is good, but the explanation could be more precise.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and factors that are not aligned with the provided top features and their signs. It mentions 'id increased confidence' and 'Bytes from source to destination increased confidence,' which partially match the top features but lack clarity on how these influence the prediction. The mention of 'time-to-live' and retransmissions/drops are not among the top features and are not discussed in the explanation, leading to incomplete coverage. The explanation also contains ambiguous phrasing and does not clearly justify why the flow is classified as 'Normal,' reducing clarity and completeness. Overall, the explanation does not fully align with the top features or provide a clear, comprehensive rationale consistent with the model's decision.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably mentioning 'Bytes from source to destination' and 'Application/service' as increasing confidence, which contradicts their zero SHAP values. Additionally, the mention of 'Count of same source & destination addresses' is not supported by the provided features. The explanation lacks clarity in connecting features to the 'Shellcode' prediction and does not sufficiently justify the label or note potential caveats. Overall, it partially captures some key drivers but contains contradictions and omissions that reduce fidelity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation lacks specific details on how each feature influences the 'Generic' label and does not address potential caveats or the low importance of most features. Overall, it partially aligns with the features but overstates their impact, reducing fidelity. Clarity is good, but completeness is limited due to insufficient justification and mismatch with top features.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features that increased confidence, including 'id' and 'Mean packet size sent by source', aligning with the top features. However, it states that 'Bytes from source to destination' increased confidence, which contradicts the top feature's zero coefficient, indicating no influence. The mention of 'Application/service' increasing confidence is consistent with the top feature. The explanation also references 'Count of same source & destination addresses', which is not among the top features, leading to some hallucination. Overall, the explanation is somewhat clear but lacks precise attribution of feature effects and omits caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of reconnaissance, which often involves short, probing connections. It emphasizes key drivers like id and transaction protocol, consistent with the features. However, it overstates the role of application/service, which is marked as '-' and thus not contributing; this introduces a slight contradiction. The explanation is concise and SOC-ready but could clarify the absence of application/service influence. Overall, it accurately captures the main drivers without hallucinating features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that do not align with the provided top features, notably mentioning 'Destination packets retransmitted/dropped' and 'Size of data returned by server\u2019s HTTP service,' which are not among the top features. The top features indicate that only 'id' has a positive contribution, while others are zero, and the explanation's key factors are inconsistent with the feature importance data. This leads to contradictions and hallucinations, reducing fidelity. The explanation is somewhat concise but could be clearer in explicitly linking features to the 'Exploits' prediction. It also lacks detailed justification of how these features collectively justify the label, affecting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top SHAP features, notably 'id' and 'Bytes from source to destination', but does not specify their SHAP signs or how they influence the prediction. It mentions additional factors like TTL and retransmissions that are not highlighted in the top features, leading to potential contradictions. The explanation is somewhat verbose and lacks clarity in linking features to the 'Normal' prediction explicitly. It also omits caveats or uncertainties, reducing completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features with positive signs are id (+0.186) and transaction protocol (+0.000). The mention of application/service, mean packet size, and bytes from source to destination as increasing confidence contradicts their zero or minimal SHAP contributions. This inconsistency reduces fidelity. The explanation is concise and mostly unambiguous, supporting clarity. However, it does not sufficiently justify why these features lead to a 'Generic' label or discuss potential caveats, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features indicate only 'id' with a positive sign, while others are zero or not specified as increasing confidence. The mention of 'Transaction protocol' and 'Application/service' contradicts the top features, which show no contribution from these. The explanation lacks clarity on how the features relate to the 'Generic' label and does not sufficiently justify the classification or note potential caveats.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not present or relevant in the instance (e.g., protocol is UDP, not TCP; service is DNS, not HTTP/FTP/SSH). The top features listed (id, protocol, application, bytes, mean packet size) do not align with the features used in the explanation, leading to contradictions. The explanation suggests multiple factors increased confidence, but given the features and their values, these claims are not fully supported. Clarity is good, but the explanation lacks specificity about how each feature influences the 'Generic' label and does not address potential caveats or the absence of key drivers.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims all listed features increased confidence, aligning with the top features and their signs. However, the top features show only 'id' with a positive contribution, while 'Bytes from source to destination' and 'Mean packet size sent by source' are zero, indicating no influence. The mention of 'Application/service' increasing confidence is inconsistent, as its contribution is zero. The explanation does not clarify the role of features with zero contribution or address potential contradictions, limiting its completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the key features influencing the model's classification, notably 'id' and 'Bytes from source to destination', aligning with the top features and their positive signs. It mentions packet loss as a behavior associated with fuzzers, providing context. However, it slightly overstates the role of application/service and mean packet size, which have zero or negligible SHAP values, risking minor contradictions. The explanation is concise and SOC-ready but could clarify the absence of other features' influence for full completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation emphasizes features that increased confidence, notably application/service, bytes from source to destination, and id, aligning with the top features. However, it mentions 'Count of same source & destination addresses' which is not listed among the top features, indicating a potential hallucination. The explanation is concise and SOC-ready, but it could better justify why these features specifically point to reconnaissance and note any caveats or limitations.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features that influence the model's 'Exploits' prediction, such as 'id' and 'Bytes from source to destination.' However, it mentions additional factors like 'Count of same source address & destination port' and 'Application/service' that are not part of the provided top features, leading to potential hallucinations. The explanation is somewhat concise but could clarify how these features contribute to the label. Overall, it partially aligns with the top features but introduces inaccuracies and lacks detail on how each feature drives the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the 'Exploits' prediction. It clearly states how each feature influences the model's confidence, though it could specify the directionality of features like id more explicitly. The explanation covers key drivers and notes the features that contributed, but it does not mention potential caveats or the absence of negative feature contributions, which would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not among the top SHAP features, notably 'id' and retransmission-related metrics, which contradicts the provided top features list. It also mentions 'Bytes from source to destination' and 'time-to-live' as increasing confidence, aligning with some top features, but overall, the explanation introduces features not highlighted by SHAP, leading to potential hallucinations. Clarity is good, but the explanation lacks direct correspondence to the top features and does not fully justify the 'Normal' prediction based on key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references several features that do not align with the provided top features, notably mentioning 'Bytes from source to destination' and 'Mean packet size sent by source' as increasing confidence, which matches the top features. However, it also mentions 'Count of same source address & destination port' and 'Destination TCP sequence number,' which are not among the top features, leading to potential hallucinations. The explanation is somewhat verbose and contains ambiguous references, reducing clarity. It does not explicitly connect how these features collectively justify the 'Fuzzers' label or note caveats, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign (+0.356), while others are zero or unspecified. The mention of 'Bytes from source to destination' and 'Mean packet size' as increasing confidence is inconsistent with their zero SHAP values. Additionally, the explanation suggests all listed features contributed positively, which contradicts the actual feature importance signs and magnitudes. The explanation lacks clarity in linking features to the 'Exploits' prediction and does not sufficiently justify why these features indicate exploitation, nor does it note potential caveats or limitations.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features increasing confidence, but it incorrectly states that 'Bytes from source to destination' increased confidence, which contradicts the top feature 'id' being the primary driver. It also omits the significance of 'id' explicitly, and the mention of 'Source\u2192destination time-to-live' is not among the top features. Overall, the explanation lacks precise alignment with the top features and their signs, leading to moderate fidelity. Clarity is good, but completeness is limited as it does not fully justify the label or note caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increase confidence, but it incorrectly states that 'id' increased confidence, which contradicts the top feature 'id (+0.296)' indicating a positive contribution. It also references packet loss and retransmissions, which are not among the top features or directly supported by the provided features. The explanation lacks clarity and does not clearly justify the 'Fuzzers' label based on the key drivers, nor does it note potential caveats or alternative interpretations.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the instance (e.g., protocol, application/service, time-to-live), and the top features indicate a strong influence of 'id' but do not mention the actual feature values or directions. The mention of 'mean packet size' aligns with the top features, but the explanation's focus on features not observed reduces fidelity. Clarity is moderate due to vague references and lack of specific feature values. Completeness is limited as it does not explicitly connect feature values to the 'Normal' prediction or discuss potential caveats, such as the low rate or the specific instance characteristics.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features increasing confidence but only explicitly highlights 'Application/service' as a key driver, which conflicts with the top feature 'id' having the highest SHAP value. It omits the significant role of 'id' and does not clarify how features like 'dur' or 'sttl' influence the prediction. The mention of 'Source\u2192destination time-to-live' increasing confidence is inconsistent with the features provided, which do not include 'ttl' or 'duration'. Overall, the explanation lacks clarity and completeness in justifying the 'DoS' prediction based on the top features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that all top features increased confidence, but the top features list shows only 'id' with a positive contribution (+0.404), while 'Transaction protocol', 'Application/service', 'Bytes from source to destination', and 'Mean packet size sent by source' are all zero or unspecified. This contradicts the stated influence of these features, reducing fidelity. The explanation is concise and mostly clear but could specify how each feature influences the prediction more explicitly. It justifies the label as 'Generic' by emphasizing feature contributions but lacks detailed reasoning or caveats, limiting completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Exploits'. It mentions the key features that increased confidence, including 'id' and 'Bytes from source to destination', and notes the transaction protocol and application/service as factors. However, it does not explicitly address the specific signs of the features or how they support the label, nor does it discuss potential caveats or the absence of contradictory features. The explanation is concise and SOC-ready but could improve clarity by explicitly linking feature signs to the prediction and providing a brief note on limitations or uncertainties.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features that contributed to the 'Reconnaissance' prediction, including id, application/service, and bytes from source to destination, aligning with the top features and their signs. It explicitly states the features that increased confidence, avoiding contradictions. However, it could improve clarity by explicitly mentioning the positive signs of features and how they relate to the label. The explanation covers main drivers and notes the features used, but it lacks discussion of potential caveats or other influential features, slightly limiting completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions packet retransmissions/drops as key factors, but the top features indicate 'id' as the primary positive contributor, with other features having zero or negligible influence. The explanation's focus on retransmissions and dropped packets does not align with the top features or their signs, leading to contradictions. It also lacks clarity in connecting features to the 'Fuzzers' label explicitly and does not sufficiently justify the classification or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references 'id' and 'Bytes from source to destination' as key factors, aligning with the top features. However, it mentions 'time-to-live' and retransmissions/drops, which are not among the top features or their signs, leading to potential contradictions. The explanation is somewhat concise but includes details that are not directly supported by the top features, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence in a 'Normal' classification, aligning with the top features identified. However, the top features provided include 'id' (+1.599) and 'Application/service' (+0.000), which are consistent, but the explanation also mentions 'Transaction protocol' and 'Mean packet size' as increasing confidence, though these are marked as zero in the top features. Additionally, the explanation references 'Source\u2192destination time-to-live' as a key factor, which is not among the top features, indicating a discrepancy. Overall, the explanation is somewhat aligned but contains contradictions and introduces features not highlighted in the top features, reducing fidelity. It is fairly clear and concise but lacks full coverage of the key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased the model's confidence in the 'Exploits' prediction, aligning with the top features identified. However, the top features show only 'id' with a positive contribution (+0.815), while others like 'Bytes from source to destination', 'Transaction protocol', and 'Mean packet size sent by source' are at 0.000, indicating no contribution or a neutral effect. The explanation overstates the influence of features not supported by the top features list, leading to contradictions and reducing fidelity. Clarity is moderate, as the explanation is concise but somewhat verbose and could specify the actual contribution signs. Completeness is limited because it does not mention the lack of contribution from some features or note potential caveats, such as the low importance of other features or the specific context of the flow. Overall, the explanation needs better alignment with the feature importance data.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. It contradicts the top features list, which indicates only 'id' is a significant driver. The explanation is somewhat clear but lacks detail on how each feature influences the prediction. It does not sufficiently justify why these features lead to 'Exploits' or note potential caveats, such as the low feature importance of others.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably 'Transaction protocol' and 'Application/service,' which are marked as zero in importance. The mention of 'Bytes from source to destination' and 'Mean packet size' is consistent with the top features, but the explanation overstates their influence. The rationale does not clearly justify why the flow is labeled 'Generic' and lacks discussion of the actual feature values or potential caveats. Overall, the explanation's contradictions and lack of detail reduce its fidelity and completeness, though it remains fairly clear.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the 'id' feature as increasing confidence, which aligns with the top feature 'id (+0.852)'. However, it incorrectly states that application/service and bytes from source to destination increased confidence; in fact, both are zero in the top features, indicating no contribution. The mention of retransmissions/dropped and TTL as confidence factors is not supported by the top features or the provided SHAP values. Overall, the explanation partially aligns with the features but contains inaccuracies and lacks detail on key drivers, limiting its completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of 'Analysis'. It emphasizes key drivers such as 'id', 'Transaction protocol', 'Bytes from source to destination', and 'Mean packet size', which are consistent with the SHAP features. However, it mentions 'Application/service' as increasing confidence despite the instance having service='-'; this is a contradiction and reduces fidelity. The explanation is concise and clear but could better specify how each feature influences the prediction and acknowledge potential caveats or limitations, such as the unusual feature values or the absence of negative contributions.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references the top features but does not clearly specify how each feature's sign influences the 'Generic' prediction, especially since the top features have mostly zero or positive SHAP values. The mention of 'Transaction protocol' and 'Mean packet size' increasing confidence conflicts with the top features indicating minimal or no contribution. The explanation lacks detail on how these features collectively justify the label and does not address potential caveats or the absence of negative feature contributions. Overall, it provides some context but falls short in aligning with the feature contributions and fully justifying the prediction.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, but it incorrectly states that 'id' increased the model's confidence; in the top features, 'id' has a positive SHAP value, supporting this. However, it also claims 'Transaction protocol' and 'Application/service' increased confidence, but both have zero SHAP values, indicating no contribution. The mention of 'Source\u2192destination time-to-live' increasing confidence is inconsistent with the provided top features, which do not include TTL. The explanation lacks clarity about these discrepancies and does not sufficiently justify why the flow is classified as 'Normal' based on the features, nor does it note potential caveats or limitations.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support these claims. The explanation is somewhat clear but lacks precise linkage between features and the 'Generic' label, and it does not address potential caveats or the limited feature influence. Overall, the fidelity is low due to contradictions, clarity is moderate, and completeness is limited by insufficient justification.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution; others are zero or not specified as contributing. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which have no positive contribution from these. The explanation lacks clarity in connecting features to the 'Generic' label and does not specify how these features justify the classification. Overall, it partially aligns but overstates the influence of features not supported by the top features list, leading to moderate fidelity and low completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not aligned with the provided top features, notably mentioning 'Transaction protocol' and 'Application/service' as increasing confidence, but the top features show 'id' as the only positive contributor. The explanation also suggests multiple features increased confidence, whereas the top features indicate only 'id' with a positive sign. This inconsistency reduces fidelity. The explanation is somewhat concise but could clarify how each feature influences the prediction more explicitly, improving clarity. It also lacks discussion of caveats or the absence of negative features, limiting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references packet retransmissions and drops, which are not among the top features (id, protocol, service, bytes, packet size). It also suggests that retransmissions/drops increase confidence, contradicting the top feature signs that do not support this. The explanation lacks clarity in connecting features to the 'Fuzzers' label and does not sufficiently justify the prediction with key drivers aligned to the top features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references multiple factors such as TTL, packet size, and retransmissions, which align with the features influencing the prediction. However, it mentions application/service as increasing confidence despite the top feature being zero and the explanation's focus on retransmissions and TTL not clearly matching the top features or their signs. The rationale is somewhat vague and does not explicitly connect the features to the 'Exploits' label or address potential caveats, reducing overall clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the top features and their positive contributions, aligning with the prediction of reconnaissance, which often involves short, probing connections. It emphasizes key drivers such as id and transaction protocol, consistent with the SHAP features. However, it overstates the role of application/service, which is zero in this case, and does not explicitly mention the absence of contradictory features or potential caveats like the very short duration or high rate that also support the classification. Overall, it is clear and mostly complete but could better clarify the absence of certain features and caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple features influencing the prediction, including 'id' and packet size, but it introduces additional factors like packet loss and timing that are not reflected in the top features or their SHAP signs. The mention of 'Time between SYN and SYN-ACK' is inconsistent with the provided features, which do not include this metric. Overall, the explanation lacks precise alignment with the top features and their signs, leading to potential contradictions and ambiguity, thus limiting fidelity and clarity. It also does not thoroughly justify why these features lead to a 'Fuzzers' classification or note caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably mentioning 'Transaction protocol' and 'Application/service' as increasing confidence, but the top features show 'id' as the primary driver with a positive sign, and others like 'proto', 'service', and 'sbytes' have zero or no impact. The explanation also suggests that 'Mean packet size' and 'Bytes from source to destination' increased confidence, which contradicts the top features indicating minimal or no contribution. The explanation lacks clarity in connecting features to the 'Generic' label and does not sufficiently justify the prediction or note potential caveats.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as 'id' and 'Bytes from source to destination' which align with the top features, but it incorrectly states that 'Bytes from destination to source' and 'Source packets retransmitted/dropped' increased confidence, whereas these features are not among the top features with positive SHAP values. Additionally, the mention of packet loss and retransmissions is vague and not directly tied to the top features or the model's reasoning. The explanation lacks specificity about how these features contribute to the 'Fuzzers' prediction and does not clarify the absence of other key features like 'Transaction protocol' or 'Application/service'. Overall, it partially aligns but contains contradictions and lacks clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are not aligned with the top features provided, notably mentioning 'Transaction protocol' and 'Application/service' as increasing confidence, but these are marked as zero or not significant in the top features. Additionally, the explanation suggests that 'Bytes from source to destination' and 'Mean packet size' increased confidence, which contradicts their zero or minimal SHAP values. The explanation lacks clarity in connecting features to the 'Generic' label and does not sufficiently justify the classification or note caveats, reducing overall completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that increased confidence, including id, mean packet size, transaction protocol, and application/service, aligning with the top features. However, it references 'Source\u2192destination time-to-live' as increasing confidence, which is not among the top features provided, indicating a contradiction or hallucination. The explanation is somewhat concise but lacks detailed justification of how these features collectively support the 'Normal' prediction and does not address potential caveats or limitations. Overall, it partially aligns with the top features but introduces unsupported information, reducing fidelity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features and their signs, aligning with the prediction 'Generic'. It emphasizes the contribution of 'id' and other features that increased confidence, consistent with the SHAP values. However, it does not explicitly mention the absence of contradictory features or potential caveats, and could be more concise for SOC standards. Overall, it provides a clear and reasonably complete justification aligned with the features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions multiple factors increasing confidence, but the top features indicate only 'id' with a positive sign, while others are zero or unspecified. The mention of 'Bytes from source to destination' and 'Mean packet size' as increasing confidence contradicts the top features, which show zero coefficients for these. Additionally, 'Source jitter' is not among the top features, making the explanation somewhat hallucinated. The explanation could be clearer about which features truly drive the prediction and avoid contradictions.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation claims that multiple features increased confidence, but the top features show only 'id' with a positive contribution, while others are zero or unspecified. The mention of 'Transaction protocol' and 'Application/service' increasing confidence contradicts the top features, which do not support this. The explanation lacks detail on how the features relate to the 'Generic' label and does not address potential caveats or the low importance of most features, reducing completeness. Overall, the explanation is somewhat aligned but overstates the influence of features not supported by the top features list, leading to moderate fidelity and clarity.",
+      "overall": 2.625
+    }
+  ],
+  "summary": {
+    "fidelity": 2.5,
+    "clarity": 3.525,
+    "completeness": 2.545,
+    "overall": 2.768
+  }
+}

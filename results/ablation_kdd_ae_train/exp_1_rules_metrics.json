@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "rule_coverage": 0.935,
+    "bleu": 0.027428997507595563,
+    "shap_fidelity": 0.97,
+    "judge_overall": 2.666
+  },
+  "metadata": {
+    "model_type": "ae",
+    "dataset": "nsl-kdd",
+    "test_samples": 200,
+    "explanation_method": "rules",
+    "experiment_name": "exp_1_rules"
+  }
+}

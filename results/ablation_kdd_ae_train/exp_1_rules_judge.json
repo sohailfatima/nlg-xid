@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features influencing the 'DoS' prediction, such as SYN errors and service consistency, aligning with the top features. It accurately describes the impact of these features on the model's confidence, avoiding contradictions. The explanation is concise and SOC-ready, clearly linking features to the prediction. However, it could improve by explicitly stating how each feature's sign influences the prediction and noting potential caveats or limitations, such as the absence of certain features or the context of the data.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references features that influence the 'Normal' classification, noting that decreases in certain percentages and application/service on destination contribute to the model's confidence in normal traffic. However, it mentions 'Connection status at summary time (normal/error states)' which is not explicitly listed among top features, potentially causing some ambiguity. The explanation is concise and covers key drivers but could clarify the absence of certain features and explicitly connect them to the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how they support the classification. It references features like application/service and percentage to the same service, but their signs are zero, indicating no impact, which conflicts with the explanation's emphasis on their influence. The mention of guest login and successful login is inconsistent with the provided features and instance data, leading to ambiguity. Overall, the explanation lacks precise, SOC-ready clarity and comprehensive justification for the 'Normal' label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or not directly relevant to the provided top features, leading to potential contradictions. It mentions factors like application/service and login status that are not highlighted as influential in the top features, reducing fidelity. The explanation is somewhat verbose and contains ambiguous phrasing, affecting clarity. It also lacks specific details on how these factors justify the 'Normal' prediction or cover key drivers comprehensively, limiting completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, aligning with the prediction of 'Normal'. However, it emphasizes decreases in these features' confidence without explicitly connecting how these decreases support the 'Normal' label, leading to some ambiguity. The explanation mentions multiple features but does not clearly justify why their decreases confirm the normal classification or note potential caveats, limiting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references key features such as 'Percentage to the same service' and 'Application/service on destination,' aligning with the top features that influence the prediction. It correctly indicates that decreases in these features' values contribute to a 'Normal' classification, consistent with their positive SHAP signs. However, it mentions 'Percentage to the same service' decreasing confidence twice, which could be clearer. The explanation does not explicitly mention the other features with zero SHAP values, but this is acceptable as they are not influential. Overall, it provides a mostly accurate and understandable rationale but could improve clarity and completeness by explicitly connecting all relevant features and their signs.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided features, emphasizing decreases in key drivers that support a 'Normal' classification. It correctly notes the decreased confidence associated with application/service, percentage to same service, and source port features, consistent with the top features. However, it mentions 'Connection status at summary time' and 'Connections to the same destination host' as decreasing confidence, which are not explicitly reflected in the top features or the instance details, leading to slight ambiguity. Overall, it is clear and mostly complete but could better specify how these factors influence the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how these factors support normal traffic. It also introduces some features (e.g., application/service, source port percentage) that are not prominent in the top features list, leading to potential contradictions. The reasoning is somewhat ambiguous and lacks detail on key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as REJ errors, application/service, and SYN errors, which are relevant to the prediction. However, it incorrectly states that REJ errors increased confidence, contradicting the top features which show zero REJ errors. The mention of 'connection status at summary time' and 'guest login' is vague and not directly supported by the features provided. Overall, the explanation partially aligns with the features but contains contradictions and lacks clarity and depth to fully justify the 'Normal' prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decrease confidence, but the features' actual values do not support this, leading to contradictions. The explanation mentions factors that are not present or relevant in this instance, reducing fidelity. It is somewhat concise but lacks clarity in connecting features to the 'Normal' prediction explicitly. The coverage of key drivers is minimal, and it does not sufficiently justify why the connection is classified as normal, nor does it note potential caveats or other influential features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and unclear statements. It mentions that certain features decreased confidence while others increased it, but the overall connection to the 'DoS' prediction is not clearly articulated. The mention of login success and connection status is irrelevant given the features and context, leading to potential hallucinations. The explanation could be clearer and more focused on the key drivers directly supporting the 'DoS' classification.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the instance (e.g., application/service on destination, percentage with SYN errors), leading to contradictions. It mentions increased confidence from features not indicated by the top features or the instance data. The explanation is somewhat concise but lacks clarity in connecting features to the 'Probe' label, and it does not sufficiently justify why the connection is classified as a probe or note caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their signs but contains contradictions, such as stating that certain features decreased confidence while also emphasizing their importance for the DoS classification. The mention of decreased percentages conflicting with the model's high confidence in DoS predictions reduces fidelity. Clarity is moderate due to complex phrasing and mixed signals. Completeness is limited; it notes some key factors like SYN errors and connection flags but does not fully justify the label or discuss potential caveats or alternative explanations.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that are all zero or indicate decreased confidence, aligning with the 'Normal' prediction. However, it mentions multiple features decreasing confidence without explicitly connecting these to the 'Normal' label or clarifying that these decreases support normal traffic. The explanation is somewhat verbose and could be more concise, but it covers key drivers and notes that the features contribute to the normal classification. Overall, it aligns reasonably well but lacks explicit detail on how these features collectively justify the 'Normal' label.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that are all zero and states they decreased the model's confidence, aligning with the 'Normal' prediction. However, it introduces multiple factors (application/service, percentage to same service, login success, compromised conditions) that are not explicitly reflected in the top features or their signs, leading to some inconsistency. The explanation is somewhat verbose and could be clearer about how these features influence the prediction. Overall, it partially aligns with the features and their directions but lacks clarity and comprehensive coverage of key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but does not directly align with the top features' values, which are all zero, indicating no strong feature contributions. The mention of decreased confidence due to certain features contradicts the top features' zero importance, leading to potential hallucinations. The explanation is somewhat verbose and lacks clarity in connecting features to the 'DoS' prediction explicitly. It also omits key drivers like high connection rates or specific attack indicators, reducing completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features and their directions but contains contradictions: it states that certain features decreased the model's confidence while also indicating they increased confidence, leading to confusion. The mention of application/service increasing confidence conflicts with the top features showing no impact. The explanation covers some key drivers like flag S0 and SYN errors but lacks clarity on how these collectively justify the DoS prediction. Caveats about the absence of feature impacts and the specific context are missing, limiting completeness.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that align with the prediction of 'Normal' traffic, such as decreased percentages of REJ errors and consistent service usage, which support the classification. However, it mentions features like application/service and percentage to same service as decreasing confidence, which contradicts the top features showing zero importance and may cause confusion. The explanation covers key drivers but lacks explicit caveats or detailed feature contributions, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features not present in the instance (e.g., percentage to the same service, REJ errors), leading to contradictions. It mentions the length of the connection increasing confidence, but the instance duration is zero, which is inconsistent. The explanation attempts to justify the 'DoS' prediction but lacks direct alignment with the provided features and instance data, reducing fidelity and completeness. Clarity is relatively good but could be more concise.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing scanning behavior indicated by multiple services and hosts, as well as the short connection duration. It correctly highlights the increased confidence from REJ errors, same service, and source port percentages. However, it mentions 'Application/service on destination' as increasing confidence, which is not reflected in the top features (all zero), representing a slight inconsistency. The explanation covers key drivers and notes the typical short connection length, but could be more explicit about the absence of certain features and potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation claims that multiple features increased confidence in classifying the connection as a 'Probe,' but the top features all have zero SHAP values, indicating they did not influence the prediction. This contradiction reduces fidelity. The explanation is concise and SOC-ready, but it does not clearly justify why the model predicted 'Probe' based on the features, nor does it discuss potential caveats or other drivers, limiting completeness.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation references key features such as 'flag=S0' and mentions the influence of 'Percentage to the same service' and 'Percentage with SYN errors,' aligning with the top features and their signs. It correctly associates S0 with incomplete handshakes typical of DoS attacks. However, it introduces some ambiguity by mentioning 'decreased the model's confidence' for features that actually increase the likelihood of DoS, which could be clearer. Overall, it covers the main drivers and provides a reasonable justification, but could improve clarity and explicitly connect feature effects to the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions. It states that certain features 'decreased the model's confidence' while also indicating they increased the likelihood of a DoS, which conflicts with the top features showing no variation. The explanation lacks clarity in connecting features to the 'DoS' prediction explicitly and does not sufficiently justify why these features lead to the label. It also omits discussion of key features like 'flag=S0' which are critical for this prediction. Overall, it partially aligns with the features but needs clearer, consistent reasoning and coverage of key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions. It states that 'Application/service on destination' decreased confidence, yet the top feature shows a zero coefficient, indicating no influence. Similarly, 'Percentage to the same service' is zero, so its mention as a key factor is misleading. The explanation mentions features not reflected in the top features and does not clearly connect how these factors lead to a 'Normal' classification. Overall, it partially aligns but lacks precise, consistent justification and omits caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, which conflicts with the top features showing no variation in that feature. It also mentions 'Percentage to different services' decreasing confidence, but this feature is not listed among top features. The explanation is somewhat ambiguous and lacks clarity in describing how features drive the 'DoS' prediction, and it does not sufficiently justify the label or note caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, indicating they do not significantly influence the prediction. It mentions decreases in confidence related to these features but does not clearly connect how these factors collectively support the 'Normal' classification. The rationale is somewhat ambiguous and lacks explicit linkages between features and the predicted label, reducing fidelity. It is concise and SOC-ready but could better justify the decision with more explicit reasoning and caveats.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with signs that contradict the provided top features, which are all zero, indicating no influence. The explanation mentions decreases in certain features' confidence, but these are not supported by the top features data. The reasoning is somewhat ambiguous and lacks clarity about how these features influence the 'Normal' prediction, reducing overall fidelity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they influence the 'DoS' prediction, which contradicts the feature values. It mentions changes in feature confidence without aligning these with the actual feature values, leading to confusion. The explanation is somewhat concise but lacks clarity in connecting feature effects to the prediction. It also omits key details about how the features' values impact the label, reducing completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as SYN errors, repeated connections, and the connection flag S0, aligning with the model's top features and their signs. It accurately describes how these factors contribute to the DoS prediction. However, it mentions that the percentage with SYN errors decreased the model's confidence, which contradicts the top feature sign indicating increased confidence; this inconsistency slightly reduces fidelity. The explanation is concise and SOC-ready, covering main drivers and noting the role of specific features, with minor room for clearer articulation of how each feature influences the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and irrelevant details. It mentions decreasing confidence due to SYN errors and application/service features, which aligns with the model's features, but also introduces unrelated factors like guest login and successful login, which are not part of the top features or the instance. The explanation lacks clarity and does not fully justify the 'DoS' prediction with key drivers or caveats, reducing its overall quality.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in importance, aligning with the prediction of 'Normal'. However, it emphasizes decreases in feature values as factors decreasing the model's confidence, which is consistent with the features' signs. Nonetheless, it does not explicitly connect how these decreases support the 'Normal' classification or mention potential caveats. The explanation is somewhat verbose and could be clearer about the direct link between feature changes and the 'Normal' label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with signs that do not match the provided top features, which are all zero, indicating no influence. The explanation mentions factors affecting confidence but does not clearly connect them to the 'Normal' prediction or specify how these features support the classification. It also introduces contradictory statements, such as both increased and decreased confidence from different features without clarifying their combined effect. Overall, it lacks precise alignment with the actual feature importance and is somewhat ambiguous.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that have zero SHAP importance, suggesting they do not influence the prediction, yet it states they decreased confidence. The rationale is somewhat inconsistent and lacks clarity about how these features impact the 'Normal' classification. It also omits discussion of other relevant features and potential caveats, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that certain features decreased confidence (e.g., same source port, SYN errors, number of root accesses), which conflicts with the model predicting a DoS attack typically associated with SYN errors and incomplete handshakes. The explanation also mentions features (e.g., successful login, root accesses) that are not prominent in the top features or relevant to a SYN flood scenario. The description is somewhat verbose and lacks clear, SOC-ready language, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features influencing the 'DoS' prediction, such as the service type and connection flags, aligning with the top features provided. It accurately describes how certain factors increase or decrease confidence, consistent with the features' signs. However, it mentions 'Percentage with SYN errors decreased confidence,' which contradicts the top features indicating SYN errors are zero; this could be clarified further. The explanation is concise and SOC-ready but could benefit from explicitly noting the absence of certain features and potential caveats regarding the low feature values.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the given instance (e.g., application/service, source port percentage), leading to potential contradictions. It mentions factors decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how these features influence the classification. The explanation lacks specificity about the actual feature values and their impact, reducing clarity and completeness. Overall, it partially aligns with the prediction but contains hallucinated details and insufficient detail to fully justify the label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references SYN errors and connection flags consistent with DoS behavior, but incorrectly states that the percentages with SYN errors decreased the model's confidence, which contradicts the top features indicating these factors increased confidence. The mention of application/service increasing confidence is aligned, but overall, the explanation contains contradictions and lacks clarity in describing the feature impacts. It also omits discussion of key features like destination service and source port percentages, which are important drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as source port percentage and service, but incorrectly states that increased source port similarity increases confidence, which contradicts the top features showing zero importance. It also mentions login status and application service as decreasing confidence, but these are not reflected in the top features. The explanation lacks clarity in describing how these features influence the prediction and does not fully justify the 'Normal' label with key drivers or caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, which suggests they do not significantly influence the prediction. It mentions decreases in confidence related to these features, but since their SHAP values are zero, this contradicts the model's attribution. The explanation lacks clarity in connecting features to the 'Normal' prediction and does not sufficiently justify why the connection is classified as normal. It also omits discussion of other potential key drivers or caveats, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references multiple features and behaviors associated with scanning activity but contains inaccuracies and contradictions. It mentions 'Application/service on destination' as increased confidence, yet the top feature value is zero, indicating no such evidence. The mention of 'Percentage to different hosts' and 'connections to the same destination host' is inconsistent with the provided features, which are all zero. The explanation is verbose and somewhat ambiguous, lacking precise linkage between features and the 'Probe' label. Overall, it partially aligns with the features but overstates evidence and lacks clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that did not have significant SHAP importance, leading to potential contradictions. It mentions increased confidence from features with zero SHAP value, which reduces fidelity. The explanation is concise and mostly unambiguous, but it could better justify the label by explicitly connecting key features to probe characteristics and noting any limitations or uncertainties.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features that increase confidence in the 'Probe' classification, such as protocol type and percentage to the same service, aligning with the top features. However, it incorrectly states that application/service on destination increased confidence, which contradicts the top features showing zero importance for that factor. The explanation lacks detail on how these features collectively justify the label and does not address potential caveats or the absence of negative features, limiting its completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references features that influence the 'Normal' prediction, emphasizing that decreases in certain key features (e.g., percentage to the same service, application/service on destination, same source port) support the normal classification. It aligns with the top features, which are all zero and thus indicate no anomalies. The explanation is concise and highlights the main drivers, but could improve clarity by explicitly connecting how each feature's decrease contributes to the normal label. It covers key factors and notes that the features decreased confidence, providing a reasonable justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Percentage with the same source port' increased confidence, yet the feature's SHAP value is zero, indicating no influence. Similarly, it mentions 'Application/service on destination' decreasing confidence, but the feature's SHAP value is zero, suggesting no effect. The explanation also introduces factors like successful login and guest login that are not reflected in the provided features or SHAP values. Overall, the explanation lacks precise alignment with the features and their signs, reducing fidelity, clarity, and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions features that influence the model's confidence but does not clearly connect these to the 'Normal' prediction or specify how they support the classification. It references features with zero SHAP values, which suggests they have no impact, yet the explanation states they increased or decreased confidence, creating contradictions. The explanation lacks detail on how these features justify the 'Normal' label and does not address potential caveats or the overall reasoning process, limiting its completeness and clarity.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references key features that influence the 'Normal' classification, noting their decreasing effect on confidence. However, it mentions multiple features decreasing confidence without explicitly aligning their signs with the top features, which are all zero and thus have no direct impact. The explanation is concise and SOC-ready but could better clarify the absence of influential features and explicitly connect feature signs to the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references key features such as SYN errors and service, aligning with the top features. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, contradicting the positive SHAP signs indicating increased confidence. The mention of application/service increasing confidence is consistent, but overall, the explanation lacks clarity in explicitly connecting feature signs to the prediction and omits details about the significance of the flag S0. It covers some key drivers but could better clarify the influence of each feature and address the contradictory statements.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features but contains contradictions and inaccuracies. It states that application/service on destination decreased confidence, yet the top features show no variation in this feature. It also mentions 'Percentage to the same service decreased confidence,' but the feature is zero and not discussed in the explanation. The mention of '1 if guest login' is irrelevant to the provided features and instance. Overall, the explanation lacks precise alignment with the SHAP features and the instance details, reducing its fidelity, clarity, and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references features that influence the 'Normal' classification, emphasizing decreases in certain key features that support normal traffic. However, it mentions 'decreased confidence' multiple times without explicitly linking these decreases to the 'Normal' label, and it does not clarify how these feature changes collectively justify the prediction. The explanation is concise and SOC-ready but could better articulate the connection between feature directions and the 'Normal' outcome, and it omits caveats or potential uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the features to scanning behavior, emphasizing key drivers such as service contact patterns and error rates. It accurately reflects the model's reliance on these features, including the increased confidence from the application/service on destination and specific error percentages. However, it mentions 'Transport protocol' increasing confidence, which is inconsistent with the top features showing protocol_type=udp with zero contribution, slightly reducing fidelity. Overall, the explanation is clear and covers main drivers but could clarify the protocol's role.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, suggesting no significant drivers for the 'Normal' prediction. However, it emphasizes features like REJ errors and application/service, which are not present or impactful here, leading to potential contradictions. The explanation is somewhat verbose and not very concise, reducing clarity. It also lacks explicit connection between the features and the predicted label, limiting completeness. Overall, it partially aligns with the features but overstates their influence given the data, and could be clearer and more comprehensive.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, indicating they do not contribute to the prediction. However, it suggests these features decreased confidence, which contradicts their zero SHAP values. The explanation lacks clarity and does not sufficiently justify the 'Normal' classification or cover key drivers, especially given the absence of feature influence.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as successful login and connection patterns, aligning with the prediction of 'Normal.' However, it mentions 'decreased confidence' for several features without clearly linking these to the positive prediction, and it introduces some features (e.g., destination host connections) not listed among the top features. The explanation lacks explicit mention of the signs and their impact, and it does not sufficiently justify why the model predicts 'Normal' based on the features provided. Overall, it is somewhat ambiguous and incomplete in connecting features to the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references multiple features and their influence on the prediction but contains contradictions and inaccuracies. It states that features like 'Percentage with the same source port' and 'Percentage to different services' increase confidence, yet the top features show zero importance, indicating no contribution. The mention of 'successful login' and 'connection status' as key factors is inconsistent with the provided features and the 'Probe' label, which typically relates to scanning behavior rather than login success. The explanation is somewhat verbose and not entirely SOC-ready, lacking clear linkage between features and the 'Probe' prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features influencing the model's prediction, such as SYN errors, service, and source port percentages, aligning with the top features and their signs. It accurately links the flag S0 to incomplete handshakes typical in DoS attacks. However, it mentions that certain features decreased confidence without explicitly quantifying their impact or clarifying how these features collectively lead to the DoS classification. The explanation is concise and SOC-ready but could improve clarity by explicitly stating the overall reasoning process and noting potential caveats, such as the low feature values in this specific instance.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references SYN errors and connection flags consistent with DoS, but incorrectly states that the percentage with SYN errors decreased the model's confidence, which contradicts the top features indicating SYN errors support the DoS prediction. It also mentions application/service and bytes sent as key factors, but these are not highlighted in the top features. The explanation lacks clarity in linking features to the label and omits caveats or alternative explanations, reducing overall completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence, aligning with the top features' signs. However, it mentions 'decreased the model's confidence' for several features, which contradicts the top features all being zero and the prediction being 'Normal'\u2014implying no strong feature influence. The explanation also introduces factors like 'Connection status at summary time' not listed among top features, leading to hallucinations. Clarity is moderate, but the explanation could be more concise and explicitly connect features to the 'Normal' prediction. Overall, it partially aligns but contains contradictions and extraneous details.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references key features such as SYN errors, service, and flags, aligning with the 'DoS' prediction. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, which contradicts the top features indicating SYN errors increase confidence. The explanation is somewhat verbose and could be clearer in linking features to the prediction. It covers some key drivers but lacks explicit mention of how each feature influences the label, and does not discuss potential caveats or limitations.",
+      "overall": 2.375
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their effects on the model's confidence but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, yet the top features show it as zero, and the explanation's narrative does not align with the feature values or the prediction of R2L. The reasoning is somewhat ambiguous and lacks clarity, and it does not thoroughly justify the label or cover all key drivers.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with signs that contradict the top features provided, which all have zero impact, leading to potential inconsistency. It mentions increased confidence from 'Percentage with the same source port' and 'Percentage with SYN errors,' but these features are not highlighted as influential in the top features. The explanation also introduces features like application/service and percentage to the same service as decreasing confidence, which are not part of the top features. Overall, the explanation lacks alignment with the actual feature importance and is somewhat ambiguous, affecting clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their effects but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, yet the top feature shows no impact (+0.000). Similarly, the mention of 'Percentage with the same source port' increasing confidence conflicts with the feature's zero impact. The explanation does not clearly connect the features to the R2L prediction, and some factors are misrepresented or lack detail, reducing overall fidelity and completeness. Clarity is moderate but could be improved with more precise language.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly states that key features decreased the model's confidence, aligning with the top features' signs and their influence on the 'Normal' prediction. It covers multiple key drivers and notes that these factors contributed positively to the classification. However, it could improve clarity by explicitly linking each feature's decrease to the 'Normal' label and mentioning potential caveats, such as the absence of other features or context that might influence the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how these factors support the classification. It also repeats the idea that features decreased confidence without explaining the overall reasoning or key drivers behind the 'Normal' label. The explanation lacks explicit alignment with the top features and their signs, and does not address potential caveats or the absence of positive indicators for anomalies.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that decreased the model's confidence, aligning with the top features which are all zero and thus not contributing positively. However, it references features like 'Application/service on destination' and 'Percentage to the same service' as decreasing confidence, which is consistent with their zero SHAP values. The mention of 'successful login' and 'SYN errors' as decreasing confidence is somewhat ambiguous, as these features are not explicitly listed among the top features with signs. The explanation could be clearer and more directly tied to the features' contributions, and it does not sufficiently justify why the model predicts 'Normal' beyond stating that key factors decreased confidence. Overall, it is somewhat accurate but lacks clarity and full coverage of key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that key features decreased the model's confidence, aligning with the 'Normal' prediction and the top features showing zero importance. However, it introduces vague references to 'Percentage to different hosts' and 'Percentage to different services,' which are not part of the provided top features, leading to potential hallucinations. The explanation is somewhat concise but lacks specificity about how each feature influences the prediction. It also does not explicitly mention the absence of anomalies or caveats, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as REJ flag and SYN errors, aligning with the 'DoS' prediction. However, it inconsistently discusses features like source port and destination host connections, which are marked as having zero importance in the top features, leading to contradictions. The reasoning is somewhat convoluted and lacks clarity, with ambiguous statements about feature impacts. It covers some key drivers but does not clearly justify the label or note potential caveats, resulting in moderate scores across all criteria.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but contains contradictions and unclear phrasing, such as 'decreased the model's confidence' associated with features that increased confidence (e.g., SYN errors). It also lacks explicit connection to the predicted label 'Normal' and does not clearly justify why the connection is classified as normal, nor does it sufficiently cover key drivers or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, which aligns with the 'Normal' prediction. However, it mentions several factors (application/service, percentage to same service, login success, connection status, protocol) that are not explicitly reflected in the top features or their signs, leading to some hallucination. The explanation is somewhat verbose and could be clearer about how these factors influence the prediction. It justifies the label but lacks detail on the magnitude of influence and caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation references key features such as REJ errors, service, and SYN errors, aligning with the top features and their signs. It correctly interprets the REJ flag and its relation to DoS attacks like SYN floods. However, it mentions that certain features decreased confidence without explicitly clarifying how these features' signs influence the prediction, and some statements about feature effects could be more precise. Overall, it provides a clear and mostly complete justification consistent with the model's features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and hallucinations. It states that application/service decreased confidence, yet the top features show no variation in this feature. It also mentions factors like successful login and percentage to same service increasing confidence, but these are not supported by the provided feature data or SHAP values. The explanation is somewhat ambiguous and lacks clarity in linking features to the 'DoS' prediction, and it does not thoroughly justify the label or note caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references multiple features that influence the 'Probe' classification, such as increased percentages to different services and the application/service on destination, aligning with the model's focus. However, the explanation mentions 'Percentage to different services' multiple times without specifying their signs or how they contribute positively, which could be clearer. It also notes 'Transport protocol' increasing confidence, but this feature is not listed among the top features, leading to some ambiguity. Overall, it captures key drivers but could improve in specificity and completeness regarding feature contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as the TCP protocol, flag S0, and SYN errors, aligning with the 'DoS' prediction. It accurately describes how these features contribute to the classification, with appropriate mention of decreasing and increasing factors. However, it could improve clarity by explicitly linking each feature's sign to its impact on the prediction and providing a more structured summary. The explanation covers the main drivers and notes some caveats, such as the influence of source port percentage, but could be more explicit about the overall reasoning process.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, indicating they do not contribute to the prediction. However, it states these features decreased confidence, which aligns with their zero values, but the explanation also mentions connection status and login success as factors, which are not reflected in the top features. The explanation is somewhat ambiguous and lacks detail on how these factors influence the 'Normal' classification, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that the model indicates as key drivers but states they 'decreased the model's confidence,' which contradicts the expectation that these features support the DoS prediction. The explanation lacks clarity in how these features justify the label and does not sufficiently cover all key drivers, such as the flag S0, which is a strong indicator of DoS attacks. Overall, the explanation is somewhat ambiguous and does not fully justify the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that decreased the model's confidence, aligning with the prediction of 'Normal'. However, it references features like application/service and percentage to the same service, which are zero in this instance, leading to potential contradictions or hallucinations. The explanation is somewhat verbose and could be clearer by explicitly linking feature values to the 'Normal' prediction. It covers some key drivers but lacks detailed caveats or discussion of other possible factors.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased the model's confidence, which aligns with the 'Normal' prediction. However, it mentions multiple features decreasing confidence without specifying their individual signs or how they relate to the normal class, leading to some ambiguity. The explanation is somewhat verbose and could be more concise, and it does not explicitly justify why the combination of decreased confidence across these features supports the 'Normal' label or notes potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that certain features decreased confidence while others increased it, without clear justification or consistent logic. The mention of 'Percentage with the same source port' and 'Percentage with REJ errors' as key drivers conflicts with the top features which all have zero SHAP values, indicating minimal contribution. The explanation also introduces unrelated factors like connection status at summary time, which are not part of the provided features. Overall, it lacks clarity and does not fully justify the 'DoS' prediction based on the given features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, indicating they do not contribute to the prediction. It mentions decreases in these features' confidence, but since their SHAP values are zero, this contradicts the model's attribution. The explanation lacks clarity in connecting features to the 'Normal' prediction and does not sufficiently justify why the connection is considered normal. It also omits discussion of other potential key drivers or caveats, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as SYN errors, source port percentage, and service percentage, aligning with the model's top features. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, which contradicts the positive SHAP sign indicating increased confidence. The mention of 'compromised' conditions is inconsistent with the top features, which show zero values, leading to some hallucination. The explanation is somewhat concise but could clarify the feature impacts more explicitly.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as percentage to different services, connection status, and SYN errors, aligning with the model's top features and their positive signs. It accurately links these features to scanning behavior indicative of a probe. However, it mentions 'Application/service on destination' as increasing confidence, which is not reflected in the top features (all zero), suggesting a slight inconsistency. The explanation is concise and SOC-ready but could clarify the absence of certain features and explicitly note potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features influencing the prediction but contains contradictions and inaccuracies. It states that 'Percentage with the same source port' increased confidence, yet the feature's sign is zero, indicating no contribution. Similarly, it claims that 'Application/service on destination' decreased confidence, but this feature's contribution is also zero. The explanation references multiple features decreasing confidence without specifying their signs or relevance, leading to ambiguity. Overall, it lacks precise, SOC-ready language and does not fully justify the 'Normal' classification with clear, consistent reasoning.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references features that influence the 'Normal' prediction, emphasizing decreases in key features that support normal traffic. It aligns with the top features, which all have zero or negative influence, and avoids contradictions. However, it mentions 'connection status at summary time' as a factor, which is not explicitly reflected in the top features or data provided, introducing some ambiguity. The explanation is concise and SOC-ready but could better specify how these features collectively justify the label and note potential caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that align with the top features (all indicating decreased confidence in anomalies), supporting the 'Normal' prediction. However, it mentions features like application/service and percentage with the same source port, which are zero in the top features, leading to some inconsistency. The explanation is concise and mostly clear but could better specify how these features influence the prediction and note that all key features decreased confidence, providing a more complete justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they influenced the model's confidence in classifying as 'Normal'. The mention of 'Percentage with REJ errors' and other features decreasing confidence contradicts the actual feature values, indicating hallucination. The explanation is somewhat concise but lacks clarity in connecting features to the prediction, and it does not sufficiently justify why the model predicted 'Normal' given the features.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation references the key features influencing the 'DoS' prediction, such as SYN errors and service consistency, aligning with the top features and their signs. It correctly interprets the role of flag S0 and the impact of specific error percentages. However, it mentions some features decreasing confidence without explicitly linking their signs to the prediction, and the overall narrative could be more concise and SOC-ready. The explanation covers the main drivers and notes the influence of error rates, providing a reasonable justification for the label.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references features that influence the 'Normal' prediction, noting that decreases in application/service, percentage to same service, and REJ errors contribute to the normal classification. However, it mentions some features (e.g., REJ errors) decreasing confidence without explicitly aligning their signs with the top features, which are all zero and thus not contradicting but could be clearer. The explanation covers key drivers but lacks detailed caveats or explicit connection to the zero-valued features, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references SYN errors and connection flags relevant to DoS detection but contains contradictions, such as stating that the percentage with SYN errors decreased the model's confidence while also citing SYN errors as a key factor indicating DoS. It mentions features not highlighted in the top features list, leading to potential hallucinations. The explanation is somewhat concise but could clarify the conflicting points better. It covers some key drivers but lacks detailed justification for the prediction and notes limited caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and unclear statements. It mentions 'decreased confidence' for features that are not present or relevant in the instance, and the description of key factors is inconsistent with the provided features and top SHAP features. The explanation lacks precise linkage between features and the 'DoS' prediction, reducing its fidelity. It also does not clearly justify why the connection is classified as DoS, nor does it sufficiently cover key drivers or caveats, impacting clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features that influence the 'Probe' classification, such as application/service and error percentages, aligning with the top features. However, it introduces additional factors like guest login and bytes sent, which are not part of the provided top features and are not supported by the data, leading to contradictions. The explanation is somewhat verbose and contains ambiguous phrasing, reducing clarity. It also lacks detail on how these features collectively justify the label or mention potential caveats, limiting completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not highlighted as top SHAP features and suggests they decrease confidence, which contradicts the top features showing zero impact. It also mentions factors like successful login and file creation, which are not part of the provided features or top features. The explanation lacks direct alignment with the model's features and SHAP insights, reducing fidelity. Clarity is acceptable but could be more concise. Completeness is limited as it does not fully justify the 'Normal' prediction with key drivers or caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, which aligns with the model's 'Normal' prediction. However, it mentions 'decreased confidence' without explicitly linking these features to the positive class, leading to some ambiguity. The explanation lacks detail on how these features collectively justify the 'Normal' label and does not address potential caveats or other key drivers, limiting its completeness. Overall, it is somewhat aligned but could be clearer and more comprehensive.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in importance, which aligns with the prediction of 'Normal' but provides limited detail on how these features influence the model's decision. It mentions several factors decreasing confidence but does not clearly connect these to the actual feature values or their signs. The explanation is somewhat verbose and contains contradictions (e.g., 'Connections to the same destination host decreased confidence' is repeated with different features), reducing clarity. Overall, it partially aligns with the features but lacks specificity and coherence to fully justify the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their directional influence but contains contradictions and inaccuracies. It states that application/service decreased confidence while the top features show no variation in that feature, and mentions SYN errors increasing confidence, which aligns with the top features. However, it also claims the protocol decreased confidence, which is inconsistent with the features provided. The explanation is somewhat verbose and not fully SOC-ready, lacking clarity and precise justification for the 'DoS' label.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation references key features such as the TCP protocol, service type, and connection flags, aligning with the top features and their signs. It correctly associates S0 flag with incomplete handshakes typical of DoS attacks. However, it mentions features like 'Percentage with SYN errors' and 'Percentage to the same service' as influencing confidence, but these are not explicitly detailed in the top features list, leading to slight ambiguity. The explanation covers the main drivers but could clarify how each feature's sign impacts the prediction more explicitly.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, yet the top features show no such influence, and the explanation's mention of 'Percentage to the same service' increasing confidence conflicts with the provided feature signs. The reasoning about 'Percentage with the same source port' decreasing confidence is not supported by the feature's zero contribution. Overall, the explanation lacks precise alignment with the model's feature impacts and does not clearly justify the 'DoS' prediction or cover all key drivers comprehensively.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features such as REJ errors and service, which are relevant to the 'DoS' prediction, but it contains contradictions and unclear statements. It mentions that REJ errors decreased confidence, which conflicts with the typical indication of rejected connections in DoS attacks. The mention of 'Percentage with REJ errors for the same service' decreasing confidence is confusing and not well-explained. The explanation also includes irrelevant details about guest login, which do not pertain to the prediction. Overall, it lacks clarity, precise justification, and a coherent connection to the features and the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, which contradicts the claim that these features increased confidence. It also mentions 'connections to different hosts' and 'connections to the same destination host,' but the instance shows no such activity. The explanation is somewhat vague and not fully aligned with the instance data, leading to low clarity and completeness scores. The fidelity is low because the key features cited do not match the instance's feature values, and the explanation appears hallucinated.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, yet the top feature shows a zero contribution, and the explanation's mention of 'connections to the same host' increasing confidence is not supported by the features provided. The explanation lacks precise linkage between features and the 'Normal' prediction, reducing fidelity. Clarity is moderate, but the explanation could be more concise and clearer in describing how features influence the prediction. Completeness is limited as it does not fully justify why the connection is classified as 'Normal' or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as SYN errors, source port percentage, service, and flag, aligning with the top features. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, contradicting the top features which show SYN errors as a positive indicator. The explanation also mentions application/service on destination as increasing confidence, which is consistent. Overall, it partially aligns but contains contradictions and lacks detail on how features drive the prediction, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and hallucinations. It states that application/service on destination decreased confidence, yet the top features show no such influence. Similarly, it mentions 'Connections to the same service' decreasing confidence, but the features indicate increased confidence from percentage with SYN errors. The explanation lacks clarity and does not fully justify the 'DoS' label with consistent reasoning or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but contains contradictions and inaccuracies. It mentions 'Percentage with SYN errors' increasing confidence, yet the top feature shows a zero contribution, and the explanation's reasoning about 'decreased confidence' from certain features does not align with the feature importance. The explanation is somewhat vague and lacks clarity and detail about how features justify the 'Normal' prediction, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features with their signs, indicating that decreases in these features contributed to a 'Normal' classification, aligning with the top features provided. However, it mentions '1 if successful login' and 'else 0' decreasing confidence, which is inconsistent with the provided features and their zero values; this introduces hallucination. The explanation is generally clear and concise but could better emphasize the absence of anomalies and explicitly connect features to the 'Normal' label. It covers main drivers but lacks discussion of potential caveats or the absence of other contributing factors.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Percentage with REJ errors decreased the model's confidence' twice, which is inconsistent. Additionally, the mention of 'Application/service on destination' decreasing confidence conflicts with the top features showing it as neutral (+0.000). The explanation does not clearly justify why the connection is classified as DoS, especially given the features' values and their signs. Overall, it lacks coherence and precise linkage between features and the predicted label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features influencing the 'DoS' prediction, such as SYN errors and source port percentages, aligning with the top features and their signs. It accurately describes how these features impact the model's confidence, avoiding contradictions. The explanation is concise and SOC-ready, clearly linking features to the prediction. However, it could improve by explicitly noting the absence of certain features or potential caveats, such as the low feature values or the specific context of the connection, to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their directions but contains inaccuracies: it states that certain features decreased confidence when they actually increased it, contradicting the top features which show positive signs for some. The explanation also mentions application/service on destination decreasing confidence, but the top features indicate it has no impact (+0.000). The coverage of key drivers is limited, and caveats are not clearly articulated. Overall, it partially aligns but has notable contradictions and lacks comprehensive justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features increasing confidence but includes contradictory or irrelevant points, such as 'Percentage to different hosts' which is not listed among top features. It also states that features increased confidence without specifying how they relate to the 'Probe' label, leading to ambiguity. The explanation lacks clarity and does not fully justify the prediction with precise feature contributions or caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features and their signs, indicating that decreases in these features contributed to the 'Normal' classification, aligning with the model's logic. However, it mentions 'Percentage to different services' decreasing confidence, which is not among the top features provided, introducing a potential hallucination. The explanation is concise and SOC-ready but could better specify how these features collectively justify the label and note that all features decreased, supporting the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the 'S0' flag and repeated connections to the same host/service as key drivers for the DoS prediction, aligning with the top features. It notes the decrease in confidence from SYN errors and same source port percentages, which is consistent with the feature signs. The explanation is concise and SOC-ready, covering main factors and their influence on the prediction. Minor improvements could include explicitly stating the absence of certain features or potential caveats, but overall it accurately reflects the model's reasoning.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as service, source port, and connection patterns, aligning with the top features that have zero importance. However, it introduces factors like guest login and successful login that are not part of the provided top features or the instance data, leading to contradictions. The reasoning is somewhat ambiguous and lacks clarity about how these factors influence the 'Normal' prediction. It also does not explicitly justify why the features' contributions support the 'Normal' label or note potential caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the instance (e.g., application/service, source port percentage, protocol type, login success/guest status), which contradicts the actual features and top SHAP features. It does not accurately connect the features to the 'Normal' prediction nor clarify how these factors influence the classification. The explanation is vague and contains hallucinated details, reducing clarity and completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their effects on the prediction but contains contradictions and unclear statements. It mentions both decreases and increases in confidence related to the same features without clear context, and the rationale does not clearly justify the 'Normal' label based on the features. The explanation could be more concise and explicitly connect features to the prediction.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that decrease the model's confidence, aligning with the 'Normal' prediction, but it introduces some inaccuracies such as 'Percentage to different services' which is not listed among top features. The rationale is somewhat verbose and could be clearer about how these features influence the prediction. It notes key drivers but lacks detail on the actual feature values and their impact, and it does not address potential caveats or uncertainties.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how they influence the model's decision. It also references features not highlighted as top features, and the rationale is somewhat vague, leading to potential contradictions with the provided top features which are all zero. The explanation could better specify the key drivers and their impact on the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes that features decreased the model's confidence, aligning with the 'Normal' prediction. However, it mentions multiple features decreasing confidence without specifying their signs or direct influence, leading to some ambiguity. The explanation lacks detail on how these features collectively justify the 'Normal' label and does not address potential caveats or the overall feature contributions explicitly. Overall, it partially aligns with the features but could be clearer and more comprehensive.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 3.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references key features influencing the 'Probe' classification, such as increased percentage to different services and connection behaviors. However, it mentions 'Application/service on destination' as increasing confidence, which aligns with the top features, but the explanation's wording is somewhat ambiguous and lacks explicit mention of the signs and their directions. It also notes '1 if successful login' as increasing confidence, but the instance shows 'logged_in=0', which contradicts this point, indicating a potential hallucination. The explanation covers main drivers but could be clearer and more precise in linking features to the prediction.",
+      "overall": 3.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references key features such as SYN errors, service, and root accesses, aligning with the prediction of DoS. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, contradicting the top features indicating they increased confidence. The mention of root accesses and application/service as key drivers is somewhat relevant but not directly supported by the top features, which show zero values for many. The explanation could be clearer and more focused on the actual feature contributions, and it lacks caveats or acknowledgment of the limited feature signals.",
+      "overall": 2.375
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions features that are all zero in the instance, which do not support the 'Normal' prediction. It references changes in feature confidence levels (decreased or increased) without clearly linking these to the actual feature values or how they influence the prediction. The description is somewhat ambiguous and lacks specific details about how these features justify the 'Normal' label, leading to low clarity and completeness scores. The fidelity is low because the explanation contradicts the feature values and does not accurately reflect the model's reasoning based on the provided features.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as the connection flag S0 and the application/service, aligning with the model's features and their signs. It mentions the role of SYN errors and other features, though it inaccurately states that the percentage with SYN errors decreased the model's confidence; the top features show zero values, so their influence is minimal or neutral. The explanation covers the main drivers for the DoS prediction and notes relevant caveats about feature influence, making it clear and mostly complete.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references features that influence the model's confidence, aligning with the top features which all have zero contribution and indicating no strong signals for anomalies. It emphasizes decreases in key feature values that support the 'Normal' prediction. However, it does not explicitly mention the actual feature values or how they compare to typical normal patterns, nor does it address potential caveats or uncertainties. The language is mostly clear and concise, suitable for SOC contexts.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence but contains contradictions, such as stating that features decreased confidence while the prediction is DoS, which typically involves certain features like SYN errors. The mention of decreasing confidence does not align with the positive indicators of DoS, leading to confusion. The explanation is somewhat concise but lacks clarity in connecting features to the label, and it omits key drivers like the flag S0 and its significance in DoS detection. Overall, it partially aligns with the features but does not fully justify the label or cover all key drivers clearly.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the provided instance, such as application/service on destination and percentage with SYN errors, which are all marked as zero in the instance. The mention of increased confidence based on features that do not vary contradicts the actual feature values, leading to low fidelity. The explanation is somewhat concise but lacks clarity due to mismatched feature references and does not sufficiently justify the 'Probe' label with key drivers from the instance. It also omits caveats or limitations regarding the features' relevance to this specific case.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence but does not clearly connect these to the 'Normal' prediction or specify how these factors support the classification. It also repeats that features decreased confidence without explicitly aligning these with the model's decision process. The explanation lacks concise language and does not cover potential caveats or the overall justification for the 'Normal' label, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, suggesting no impact on the prediction, which aligns with the 'Normal' classification. However, it mentions decreases in confidence related to features that are not present or relevant in this specific case, leading to some ambiguity. The explanation attempts to justify the 'Normal' label but lacks detail on how the features collectively support this, and it introduces some vague references (e.g., 'Connection status at summary time') without clear linkage to the features provided. Overall, it is somewhat clear but could better connect features to the prediction and cover key drivers more explicitly.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or not relevant to the prediction of 'Normal', but it incorrectly states that some features decreased the model's confidence, which contradicts the top features indicating no suspicious activity. The explanation also mentions 'hot' indicators increasing confidence, which is inconsistent with the features provided. Overall, it lacks clarity and does not fully justify the 'Normal' prediction or cover key drivers accurately.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features with negative signs, aligning with the model's prediction of 'Normal'. It emphasizes that decreases in these features contribute to the normal classification, consistent with the provided top features. The explanation is concise and SOC-ready, covering the main drivers and noting the overall pattern. However, it could improve slightly by explicitly stating that these decreases support the 'Normal' label and clarifying that no contradictory features are present.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation contains contradictions and hallucinations: it states that the application/service decreased confidence, but the top features show all zero contributions, indicating no impact. It also mentions increased confidence from REJ errors and compromised conditions, which are not reflected in the feature importance. The explanation is somewhat ambiguous and not fully aligned with the features or the prediction, reducing clarity and completeness.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating decreased likelihood of an anomaly, consistent with the 'Normal' prediction. It correctly notes that decreases in application/service, same service percentage, and source port percentage contribute to the normal classification, with no contradictions or hallucinations. However, it mentions 'connections to the same destination host' decreasing confidence, which is not directly reflected in the provided top features, slightly reducing fidelity. The explanation is concise and SOC-ready, but could better emphasize how these features collectively support the normal label and mention potential caveats or other features that might influence the decision for completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, which aligns with the prediction of 'Normal.' However, it mentions 'decreased confidence' multiple times without explicitly connecting these decreases to the 'Normal' label or clarifying that these features support normal traffic. The explanation is somewhat verbose and could be clearer about how these factors justify the normal classification. It covers key drivers but lacks explicit caveats or detailed reasoning.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features with their signs, indicating that decreases in these features contributed to the 'Normal' classification. It aligns with the features' impact on the model's confidence, avoiding contradictions. The explanation is concise and highlights key drivers, though it could specify how these decreases collectively support the 'Normal' label more explicitly. Overall, it effectively justifies the prediction with relevant details.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation references key features such as REJ errors, service, source port percentage, and SYN errors, aligning with the top features and their signs. It correctly interprets the impact of these features on the 'DoS' prediction, noting decreases and increases in confidence accordingly. However, it mentions 'Bytes sent from destination to source' which is not among the top features, slightly reducing fidelity. The explanation is concise and SOC-ready, covering the main drivers and providing some context, but could improve clarity by explicitly linking features to the prediction more directly.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that certain features decreased confidence when they actually increased it (e.g., percentage with SYN errors), and mentions features (application/service, same source port, same service) decreasing confidence without aligning with the top features' signs. The explanation also lacks clarity in describing how these features collectively justify the DoS prediction and does not sufficiently note caveats or the overall reasoning process.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims the connection is 'Normal' based on decreased confidence from features like application/service, percentage to same service, and REJ errors. However, the provided top features all have zero importance and do not support the assertion that these factors influenced the model's decision. The explanation introduces factors (e.g., file creation operations) not reflected in the top features, leading to potential hallucinations. Clarity is moderate, but the explanation lacks direct linkage to the specific features and their signs. Overall, it partially aligns with the features but overstates their impact and introduces unsupported details, reducing fidelity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or not relevant for this instance, yet it discusses their impact on confidence, which is inconsistent with the actual feature values. The mention of login success and guest login is irrelevant here, as the instance shows no failed logins or guest login indicators. The explanation does not clearly justify the 'Normal' prediction based on the key features, and the rationale is somewhat ambiguous and not SOC-ready.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions. It states that 'Application/service on destination' decreased confidence, yet this feature's SHAP value is zero, indicating no influence. Similarly, it mentions 'Bytes sent from source to destination' decreasing confidence, but this feature is not among the top features. The explanation also mixes feature effects with vague statements, reducing clarity and completeness. Overall, it partially aligns with the features but lacks precise, consistent justification for the 'Normal' prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that key features with positive SHAP values (indicating increased likelihood of anomaly) are decreased, aligning with the 'Normal' prediction. However, it mentions features decreasing confidence without explicitly linking their signs to the normal classification, which could cause some ambiguity. The explanation covers several key drivers but lacks explicit mention of how these features collectively support the 'Normal' label and does not address potential caveats or the absence of features with positive contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but contains contradictions and unclear statements. It mentions both increases and decreases in confidence related to SYN errors and service percentages without clear causal links. The mention of 'Application/service on destination decreased confidence' conflicts with the top features showing zero importance, and the explanation's structure is somewhat ambiguous, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their effects but contains contradictions and inaccuracies. It states that 'Percentage with the same source port' increased confidence, yet the feature's sign is zero, indicating no contribution. Similarly, it claims 'Application/service on destination' decreased confidence, which conflicts with the feature's zero contribution. The explanation also mentions 'Connections to the same destination host decreased confidence,' but this feature is not listed among the top features. Overall, the explanation lacks clarity and misses key drivers, reducing its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references key features such as the REJ flag and SYN errors, aligning with the model's top features and their signs. However, it mentions features like 'percentage to the same service' and 'same source port' decreasing confidence, which contradicts the top features indicating these features have zero contribution; this introduces some ambiguity. The explanation covers the main drivers for a DoS classification but could be more concise and explicitly connect feature signs to the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating decreased likelihood of anomalies, consistent with a 'Normal' prediction. It correctly notes that decreases in application/service, same service percentage, and source port percentage contribute to normalcy. However, it mentions 'connections to the same destination host' decreasing confidence, which isn't directly reflected in the provided features, slightly reducing fidelity. Clarity is good but could be more concise. Completeness covers key drivers but lacks mention of potential caveats or other features that might influence the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and unclear statements. It mentions that application/service decreased confidence, yet the top feature value is zero, which aligns with the explanation. The mention of SYN errors increasing confidence conflicts with the feature's zero value. The explanation's phrasing is somewhat ambiguous and lacks explicit connection to the prediction of 'Normal.' Overall, it partially aligns but lacks clarity and full coverage of key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references features that are all zero in the instance, aligning with the model's prediction of 'Normal' and indicating decreased confidence. However, it mentions 'decreased the model's confidence' multiple times without explicitly linking these decreases to the 'Normal' classification or providing a clear causal chain. The explanation is somewhat verbose and could be more concise, and it lacks discussion of potential caveats or other key drivers. Overall, it aligns with the features but could improve in clarity and completeness.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that did not actually influence the prediction, such as application/service and percentage with SYN errors, which are all zero in this instance. It mentions increased confidence due to these features, but since they are zero, this contradicts the actual data. The explanation is somewhat vague and includes irrelevant details, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Percentage to the same service' increased confidence while also saying it decreased confidence, which is inconsistent. Additionally, the mention of 'Percentage to different hosts' is not supported by the provided top features, which do not include such a metric. The explanation is somewhat verbose and could be clearer in linking features to the 'DoS' prediction, but it covers key drivers like REJ flag and service-related features. Overall, it partially aligns with the features but lacks precision and coherence.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that all key features decreased the model's confidence, aligning with the prediction of 'Normal.' It references the relevant features and their impact, avoiding contradictions. However, it lacks explicit mention of the signs of the features and how they directly influence the model's decision, which would improve clarity and completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key factors such as 'hot' indicators and application/service, which align with the features. However, it incorrectly states that these factors decreased confidence, whereas the features are actually neutral or not contributing to the prediction of 'Normal'. The mention of 'percentage to different hosts' is inconsistent with the provided features, which show zero values. The explanation is somewhat ambiguous and lacks clarity in describing how features influence the prediction, and it does not fully justify why the connection is classified as normal.",
+      "overall": 1.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their signs but contains contradictions: it states that 'Percentage to the same service' increased confidence while the top features show it as zero, indicating no contribution. Similarly, it mentions 'Percentage with SYN errors' decreased confidence, which aligns with the negative sign, but overall the explanation lacks clarity on how these features drive the 'DoS' prediction. It notes some key factors but does not fully justify the label or cover all relevant drivers, and the mention of 'hot' indicators is vague without context.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing the model's confidence but does not clearly connect these to the 'Normal' prediction or specify how these factors support the classification. It also references features (e.g., percentage to different hosts) not listed among the top features, leading to potential hallucinations. The explanation is somewhat verbose and lacks focus on key drivers directly linked to the prediction, reducing clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation suggests that key features decreased the model's confidence, aligning with the 'Normal' prediction. However, it inconsistently references features (e.g., application/service, source port, percentage to same service) that are all zero and thus unlikely to influence the model. The rationale does not clearly connect feature signs to the 'Normal' label nor notes potential caveats, reducing overall completeness and clarity.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, which suggests they have minimal impact on the prediction. The explanation emphasizes decreases in certain error percentages and login success, but these are not directly supported by the feature values or their SHAP importance. The reasoning is somewhat inconsistent with the provided feature data, leading to a moderate fidelity score. Clarity is acceptable but could be more concise and explicit. Completeness is limited as it does not clearly justify why the connection is classified as 'Normal' or discuss other potential key drivers or caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating decreased confidence in the 'Normal' prediction, consistent with the model's output. It mentions key drivers such as application/service, percentage to same service, and source port, which match the features with zero importance. However, it introduces the 'transport protocol' as a factor, which is not listed among the top features, leading to a slight inconsistency. The explanation is concise and clear but could better specify how each feature influences the prediction and note that no contradictory features are present. Overall, it provides a reasonable justification but could improve in completeness by explicitly linking features to the 'Normal' label and clarifying the role of the protocol.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, aligning with the prediction of 'Normal' and indicating decreased confidence when these features are low. However, it mentions several features (application/service, percentage to same service, REJ errors, connection status) that are either not directly provided or not clearly linked to the features in the instance. The explanation also introduces some features (e.g., application/service decrease, connection status) not explicitly detailed in the top features or the instance, leading to potential hallucinations. Overall, it is somewhat clear but lacks explicit connection to the specific feature values and does not fully justify why the model predicts 'Normal' beyond general statements.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not present or relevant in the instance (e.g., application/service on destination, SYN errors), leading to contradictions with the actual feature values. It mentions increased confidence from source port and SYN errors, but these are not supported by the data. The explanation lacks clarity due to inconsistent feature references and does not adequately justify the 'DoS' prediction based on the provided features. It also omits key details such as the protocol type (icmp) and the specific features influencing the classification.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation suggests multiple features decreased the model's confidence, aligning with the 'Normal' prediction. However, it mentions features that have zero SHAP importance, which is contradictory and indicates hallucination. The explanation is somewhat concise but could clarify the relationship between feature changes and the prediction better. It does not explicitly justify why these decreases lead to a 'Normal' classification or note potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, aligning with the 'Normal' prediction. However, it mentions key factors decreasing confidence without explicitly connecting these to the normal label or emphasizing that these features support normal traffic. The explanation is somewhat verbose and could be clearer in linking features to the normal classification. It covers some key drivers but lacks explicit caveats or detailed justification for the normal label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that certain features decreased the model's confidence (e.g., application/service and SYN errors) while simultaneously indicating they increased confidence, which is inconsistent. The explanation also lacks clarity in describing how features contribute to the 'DoS' prediction and does not sufficiently justify the label or note caveats. Overall, it partially aligns with the features but needs clearer, consistent reasoning and more comprehensive coverage of key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating decreases in their respective values, which supports the 'Normal' classification. It clearly states the key factors and their impact on confidence, avoiding contradictions. However, it could be more explicit about how these decreases collectively support the 'Normal' label and mention potential caveats such as the absence of other features or context that might influence the decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence but contains contradictions: it states that certain features decreased confidence while also indicating they contributed to the 'DoS' classification, which is inconsistent. The mention of file creation operations and the connection flag S0 aligns with DoS behavior, but the explanation lacks clarity and does not fully justify the label or cover all key drivers comprehensively.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, all indicating decreased likelihood of anomalies, consistent with a 'Normal' prediction. It correctly notes that these features decrease the model's confidence, matching their positive signs. However, it mentions some features (e.g., application/service, percentage to same service, source port) as decreasing confidence, which is consistent with their positive SHAP values. The mention of successful login decreasing confidence is less relevant here, as the feature is binary and not explicitly highlighted in the top features, but it does not contradict the explanation. The explanation could be clearer and more concise, explicitly linking each feature to the prediction, and noting that no features strongly suggest an anomaly. Overall, it is fairly complete but could better emphasize the absence of key anomaly drivers.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their directional impacts but contains contradictions: it states that 'Application/service on destination' decreased confidence while the top features show a zero impact, indicating no influence. Similarly, it mentions 'Percentage with REJ errors' decreased confidence, but the feature's sign is zero, implying no effect. The explanation also mixes confidence increases and decreases without clear justification. Clarity is moderate due to somewhat verbose phrasing, and completeness is limited as it does not fully justify the 'Normal' label or discuss potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, suggesting no significant deviations. However, it mentions changes in feature confidence levels (decreases or increases) without clearly linking these to the current feature values or how they influence the 'Normal' prediction. The explanation also introduces features like application/service and percentage to different services, which are not part of the top features or the instance's data, leading to potential hallucinations. Overall, it partially aligns with the features but lacks clarity and full justification of the label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as SYN errors and connection flags, aligning with the DoS prediction. However, it incorrectly states that the percentage with SYN errors decreased the model's confidence, whereas the top features show these are zero, which supports the DoS classification. The mention of application/service decreasing confidence is inconsistent with the top features, which are all zero and thus not influential. The explanation lacks clarity in articulating how each feature influences the prediction and does not sufficiently justify the label or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features like REJ flags and connection patterns relevant to DoS detection, but it incorrectly states that percentages with REJ errors decreased confidence, which contradicts the top features indicating increased likelihood. The explanation also overemphasizes the role of certain features without clearly connecting them to the prediction, reducing fidelity. Clarity is good, but the incomplete justification and contradictions lower the overall score.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that have zero SHAP importance, suggesting they do not influence the prediction, yet it states they decreased the model's confidence. This contradiction reduces fidelity. The explanation is somewhat concise but includes redundant phrases and unclear references to 'decreased confidence' without quantifying or clarifying how features impact the prediction. It mentions key factors but lacks detailed justification for the 'Normal' label, and notes no caveats or uncertainties.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links multiple features to scanning behavior characteristic of probes, aligning with the prediction. It mentions key drivers such as service contact, destination host connections, and REJ errors, which are relevant indicators. However, it overstates the influence of 'Application/service on destination' and 'Percentage with REJ errors' as key factors without quantifying their importance, and it could clarify how these features collectively support the 'Probe' classification. Overall, it is accurate and mostly clear but could improve in emphasizing the relative significance of each feature.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their impact on the model's confidence but contains contradictions and inaccuracies. It mentions that decreased values of certain features increase confidence, which conflicts with the top features showing zero impact. The explanation is somewhat vague and lacks clarity about how these features influence the 'Normal' prediction. It also omits key details about the actual feature values and their relation to the prediction, limiting its completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references features that influence the 'Normal' classification, emphasizing that decreases in certain features (e.g., percentage to same service, protocol type) contribute to the normal label. It aligns with the provided top features, which all have zero importance and thus support the normal prediction. The explanation is concise and highlights key drivers, though it could specify how these decreases relate to the features' signs for full clarity. It notes the main factors but could mention potential caveats or other features that might influence the decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all key features decreased the model's confidence, aligning with the prediction of 'Normal'. However, it mentions 'Application/service on destination' and 'Percentage with the same source port' as decreasing confidence, but these features have zero SHAP values, indicating no influence. This inconsistency reduces fidelity. The explanation is concise and clear but lacks detail on how these features influence the prediction, limiting completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references SYN errors and connection flags as key indicators, aligning with the 'DoS' prediction. However, it incorrectly states that the percentages with SYN errors decreased the model's confidence, which contradicts the top features indicating SYN errors increase confidence. The mention of application/service on destination as increasing confidence is consistent, but overall, the explanation lacks clarity and misses some key drivers like the significance of the S0 flag. It also does not sufficiently note caveats or alternative explanations, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, suggesting no significant drivers for deviation from normal. However, it mentions decreases in certain percentages as key factors, which are not supported by the provided feature values. The explanation also introduces factors like successful login and protocol type, but these are not explicitly linked to the features or their signs. Overall, it somewhat aligns with the features but contains contradictions and lacks detail on how these factors influence the prediction, limiting its clarity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as SYN errors, service, and source port percentages, aligning with the model's top features and their signs. It accurately links the S0 flag and SYN errors to DoS behavior, though it notes that some feature contributions are decreasing confidence, which is consistent with the provided feature signs. The explanation is concise and SOC-ready, covering the main drivers and their implications. Minor improvements could include explicitly stating the positive contribution of the S0 flag and clarifying the impact of feature signs on the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the R2L prediction but contains contradictions and hallucinations. It mentions 'Percentage with SYN errors' increasing confidence, yet the top features show it as zero, and the explanation's wording about decreased confidence due to 'hot' indicators and application/service features is inconsistent. The explanation is somewhat verbose and unclear, lacking precise connections between features and the label. Overall, it partially aligns with the features but introduces inaccuracies and ambiguity.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation references key features such as SYN errors, connection flags, and service consistency, aligning with the model's top features and their signs. However, it mentions that certain features (e.g., percentage with SYN errors) both increased and decreased confidence, which introduces some ambiguity. The explanation covers the main drivers for a DoS classification but could improve clarity by explicitly linking each feature's sign to the prediction and avoiding contradictory statements. Overall, it provides a reasonable justification but could be more precise and comprehensive.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references features that are all zero in the instance, aligning with the model's 'Normal' prediction. However, it emphasizes decreases in feature values as key drivers, which is consistent with the features' signs. The explanation is mostly clear and concise but could better specify how these decreases directly support the 'Normal' classification. It notes some caveats by mentioning decreased confidence but lacks detailed justification of how these features collectively justify the label.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased the model's confidence, which aligns with the prediction of 'Normal'. However, it introduces terms like 'Percentage to different hosts' that are not part of the top features or data, leading to potential hallucinations. The explanation is somewhat verbose and could be clearer and more focused on key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Application/service on destination' decreased confidence, yet the top features show it as zero, and the explanation's reasoning about 'Percentage with SYN errors' decreasing confidence conflicts with the top features indicating no such errors. The explanation does not clearly connect the features to the 'DoS' prediction, and it omits key details about the connection flag S0 and its significance. Overall, it lacks precise, SOC-ready clarity and comprehensive justification.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the instance, yet claims they increased confidence, which contradicts the data. It also mentions application/service decreasing confidence, but the feature value is zero, making this assertion unsupported. The explanation does not clearly connect the features to the 'Normal' prediction or specify how these factors collectively justify the label, leading to ambiguity and incomplete reasoning.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features decreasing confidence, aligning with the 'Normal' prediction, but it introduces some inaccuracies, such as referencing 'Transport protocol' decreasing confidence, which is not among the top features. It also states '1 if successful login; else 0 decreased confidence,' which is misleading since 'logged_in=1' is present, but the explanation suggests it decreases confidence, conflicting with the top features. The explanation is somewhat verbose and could be clearer and more directly tied to the features and their signs. Overall, it partially aligns with the features but contains contradictions and lacks coverage of all key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 3.0,
+      "clarity": 3.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references key features such as REJ flag and SYN errors, aligning with the prediction of DoS via SYN flood. However, it incorrectly states that the application/service decreased the model's confidence, which contradicts the top features indicating increased confidence from REJ errors and same service percentage. The explanation covers main drivers but contains contradictions and lacks detail on how these features specifically support the DoS classification, affecting clarity and completeness.",
+      "overall": 3.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, all indicating decreased confidence in anomalies, consistent with a 'Normal' prediction. It clearly states the key drivers and their impact on the model's confidence. However, it could be more explicit about how each feature's decrease supports the 'Normal' classification and mention potential caveats such as the absence of other features or context.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references key features such as SYN errors and the connection flag S0, aligning with the 'DoS' prediction. It notes the influence of features decreasing confidence, consistent with the top features' signs. However, it mentions the application/service decreasing confidence, which conflicts with the top features indicating it increased confidence; this contradiction slightly reduces fidelity. The explanation is concise and covers main drivers but could clarify the net effect of features more explicitly for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation references key features and their influence on the 'Normal' prediction, aligning with the provided top features and their signs. It correctly notes that increased percentage with the same source port increases confidence, while application/service and other features decrease confidence, consistent with the feature signs. However, it mentions 'connections to the same destination host' and 'hot indicators' as decreasing confidence, which are not explicitly listed among the top features, potentially introducing hallucinations. The explanation is concise and SOC-ready but could better specify the features it references for completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions several features that decrease the model's confidence, aligning with the 'Normal' prediction. However, it introduces additional factors like 'Percentage to different services' which is not listed among the top features, leading to potential hallucination. The explanation also emphasizes decreased confidence without explicitly stating how these features support the 'Normal' label, reducing clarity and completeness. Overall, it partially aligns with the top features but lacks precision and comprehensive justification.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but does not clearly connect these to the 'Normal' prediction. It mentions factors decreasing or increasing confidence without explicitly stating how they support the 'Normal' label. The key factors listed do not align well with the top features provided, which are all zero, leading to potential contradictions. The explanation lacks detail on how these features justify the classification and does not address potential caveats or the overall reasoning process, limiting its clarity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references key features such as SYN errors and connection flags consistent with a DoS attack, aligning with the prediction. However, it incorrectly states that 'Percentage with SYN errors' decreased confidence, which contradicts the top features indicating increased confidence from SYN errors. The mention of 'Application/service' decreasing confidence is inconsistent with the model's positive contribution. The explanation covers some key drivers but lacks clarity in articulating the feature impacts and does not fully address all relevant features or caveats.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features with their signs, indicating that all features decreased the model's confidence in the 'Normal' prediction, aligning with the top features provided. It clearly states the factors influencing the classification and their impact. However, it could improve clarity by explicitly linking each feature to its effect on the prediction and summarizing how these factors collectively support the 'Normal' label. The explanation covers the main drivers but lacks mention of potential caveats or additional context, slightly limiting completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, which aligns with the 'Normal' prediction. However, it mentions multiple factors decreasing confidence without clarifying how these collectively support the 'Normal' label, and some details (like 'Percentage to different services') are vague or not directly supported by the features. The explanation could be clearer and more focused on key drivers, with explicit links to the features' signs and their impact.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or indicate normal behavior, aligning with the 'Normal' prediction. However, it mentions decreases in confidence based on features that are not active or relevant in this instance, which may be misleading or hallucinated. The explanation lacks specific details about the actual feature values and how they support the 'Normal' label, reducing clarity and completeness.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly states that key features decreased the model's confidence, aligning with the top features' zero values and their negative influence. It mentions relevant factors such as application/service, percentage to same service, and source port, consistent with the features. However, it could improve clarity by explicitly linking each feature's decrease to the 'Normal' prediction and noting that no contradictory or hallucinated factors are present. The explanation covers main drivers and notes that the connection appears typical, but it lacks explicit mention of caveats or potential uncertainties.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, which aligns with the 'Normal' prediction. However, it mentions factors like application/service and connection patterns that are not reflected in the top features or the instance data, leading to potential hallucinations. The reasoning is somewhat vague and lacks specific details about how these features influence the prediction, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero in the top SHAP features, which suggests they do not significantly influence the prediction. However, it mentions several factors decreasing confidence without clearly linking them to the prediction of 'Normal.' The explanation includes details about login success and guest login, which are not reflected in the features or the top SHAP features, leading to potential hallucinations. Overall, it provides some context but lacks precise alignment with the model's feature importance and does not fully justify the 'Normal' label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references multiple features and their influence on the 'Probe' classification but contains contradictions and hallucinations. It mentions 'Percentage to different services' and 'guest login' as key factors, which are not supported by the top features or instance data. The explanation is somewhat verbose and not entirely clear or focused, reducing clarity. Overall, it partially aligns with the features but introduces inaccuracies, limiting fidelity and completeness.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions and inaccuracies. It states that 'Percentage with REJ errors' both decreased and increased confidence, which is inconsistent. Additionally, it mentions features like 'Application/service on destination' decreasing confidence without aligning with the top features' signs, which are all zero, leading to potential hallucinations. The explanation is somewhat concise but lacks clarity in how features influence the prediction and does not fully justify the 'DoS' label or note caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references key features such as the REJ flag and the increased confidence from certain features like service and same service percentages, aligning with the model's top features. It notes the decrease in confidence from the same source port feature, consistent with the SHAP signs. However, it mentions features (e.g., application/service on destination, connections to the same host) that are not present or relevant in the provided top features, leading to some hallucination. The explanation is generally clear and concise but could better specify how each feature influences the prediction and acknowledge potential caveats, such as the absence of explicit feature values or the influence of other unmentioned factors.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are not highlighted as top features with significant impact, and mentions decreases in confidence without clearly linking them to the 'Normal' prediction. It also introduces factors like successful login and transport protocol, which are not among the top features or explicitly supported by the provided SHAP features. The reasoning is somewhat vague and lacks direct alignment with the model's key drivers, leading to moderate scores in fidelity and completeness. Clarity is acceptable but could be more concise and focused.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or default, yet it discusses decreases in confidence related to application/service, source port, and service percentages, which are not reflected in the provided feature values. It also mentions login success and connection status, but these are not explicitly detailed in the explanation or features. The explanation is somewhat ambiguous and does not clearly justify the 'Normal' prediction based on the actual feature values, leading to moderate scores in clarity and completeness, and a low fidelity due to contradictions.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns with the top features indicating decreased confidence in certain traffic patterns, consistent with the 'Normal' prediction. However, it mentions 'Percentage to different services,' which is not listed among the top features, leading to some inconsistency. The explanation is concise and SOC-ready but could better justify how these features collectively support the 'Normal' label and note potential caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero and states they decreased confidence, aligning with the 'Normal' prediction. However, it mentions multiple factors (application/service, percentage to same service, different services, different hosts, connection status) that are not explicitly supported by the top features or the instance data, leading to potential hallucinations. The explanation is somewhat verbose and could be clearer in linking features to the prediction. Overall, it partially aligns but introduces unsupported details, limiting fidelity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the model's confidence but contains contradictions: it states that application/service decreased confidence while other features increased it, which is inconsistent with the prediction of 'Normal'. The explanation lacks clarity due to complex phrasing and does not explicitly justify why the overall classification is 'Normal' based on the features. It also omits caveats or detailed reasoning connecting feature effects to the final label, limiting its completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features and their influence on the prediction but contains contradictions. It states that 'Percentage with SYN errors' decreased confidence, yet this feature is typically indicative of DoS attacks like SYN floods, which conflicts with the classification. Similarly, it mentions 'Percentage to the same service' increasing confidence, but the service 'whois' is uncommon for DoS, and the features do not strongly support the 'DoS' label given the provided feature values. The explanation lacks clarity in connecting features to the prediction and does not sufficiently justify the label or note potential caveats.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the top features, all indicating decreases that support the 'Normal' classification, with no contradictions. It mentions key drivers such as application/service, percentage to same service, SYN errors, and source port, which are consistent with the features. However, it references 'length of the connection' decreasing confidence, which is not among the top features provided, introducing a minor hallucination. The explanation is concise and SOC-ready but could better specify the features it references for completeness.",
+      "overall": 3.75
+    }
+  ],
+  "summary": {
+    "fidelity": 2.5,
+    "clarity": 3.165,
+    "completeness": 2.498,
+    "overall": 2.666
+  }
+}

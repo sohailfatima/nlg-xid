@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features do not indicate suspicious activity and aligns with the 'Generic' label. It accurately notes the benign nature of the DNS over UDP and the lack of significant SHAP contributions. However, it could improve by explicitly mentioning that the features' near-zero SHAP values support the classification and by clarifying that the absence of anomalies is a key driver. The explanation is concise and SOC-ready but could better justify the label with a brief note on caveats or potential edge cases.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the neutral features indicated by the SHAP values, emphasizing the benign nature of the UDP DNS activity and the lack of suspicious indicators. It correctly notes that the features are inconclusive and supports the 'Generic' label without contradictions. The explanation is concise and clearly states the key drivers, though it could briefly mention potential caveats such as rare benign anomalies or the need for contextual data to fully confirm normalcy. Overall, it aligns well with the provided features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features (protocol, service, state) and their typical association with normal traffic, aligning with the top features' zero importance and the 'Normal' prediction. It avoids contradictions and is clear. However, it lacks explicit mention of the other features (e.g., packet sizes, load, packet rates) that could further justify the normal classification, and it does not discuss potential caveats or edge cases where these features might be misleading.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the top features, all of which are neutral or typical for normal DNS traffic, supporting the 'Normal' prediction. It correctly interprets the use of UDP and DNS as normal behaviors and notes the neutrality of packet size. The explanation is clear and covers key drivers without hallucinations. Slight improvement could be made by explicitly mentioning the neutral or non-contributory nature of the features, but overall it is consistent and comprehensive.",
+      "overall": 4.125
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately states that all top features have zero SHAP values, indicating no significant impact on the classification, aligning with the 'Generic' label. It correctly notes that features like protocol and service are not inherently malicious and do not drive the decision. However, it could improve clarity by explicitly linking the lack of feature influence to the 'Generic' outcome and mentioning that the explanation covers key drivers and caveats. The completeness score is slightly lower because it does not fully detail the absence of other potential indicators or discuss the implications of zero SHAP values in depth.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the FIN state, high packet rate, and byte imbalance, aligning with the top features and their signs. It logically connects these features to exploit behavior, avoiding contradictions. The reasoning is clear and covers the main drivers, though it could briefly mention potential caveats like benign reasons for high packet rates or FIN states to improve completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the connection state 'INT' and high source bit rate as key indicators, aligning with the features provided. However, it does not explicitly connect the features' signs or values to the 'Exploits' label, nor does it clarify how the features collectively justify the classification. The mention of 'connection state' and 'bit rate' is somewhat ambiguous without explicitly linking to the top features and their signs. The explanation also lacks discussion of potential caveats or alternative interpretations, reducing its completeness. Overall, it provides some relevant context but falls short in fully aligning features with the prediction and offering a clear, comprehensive justification.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as protocol and service, but states they are neutral or unspecified, which conflicts with the classification as 'Analysis' that suggests some suspicion. It lacks specific details on how these features contribute to the label, and the reasoning about potential risks is vague. The explanation is somewhat concise and SOC-ready but does not fully justify the label or cover all key drivers, especially given the neutral feature values.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features like protocol and service, aligning their SHAP signs with their influence on the classification. It clearly explains the significance of UDP and DNS in the context of the 'Generic' label. However, it does not fully justify why these features lead to a 'Generic' label rather than a more specific class, nor does it discuss potential caveats or the role of other features. The explanation is concise and SOC-ready but could improve in completeness by elaborating on how these features collectively contribute to the decision.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as the application/service being FTP-data and the connection state FIN, which align with the 'Normal' prediction. However, it does not explicitly address the SHAP values or their signs, nor does it discuss potential caveats or other features that could influence the prediction. The reasoning is mostly clear but could be more concise and SOC-ready by summarizing the main drivers more directly. Completeness is moderate; it justifies the label with relevant features but lacks discussion of other possible factors or limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features involved (protocol and application/service) have negligible SHAP values, aligning with the prediction of 'Normal.' It clearly describes the features and their minimal contribution, supporting the classification. However, it lacks discussion of other features that support normality, such as packet counts or durations, and does not explicitly mention potential caveats or the overall justification for the label, which affects completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies the DNS protocol as a common reconnaissance vector and notes the low packet count from source to destination, aligning with typical reconnaissance behavior. The mention of the mean packet size being zero adds context, though its relevance is somewhat limited. The explanation avoids contradictions and is mostly clear and comprehensive. Minor improvements could include explicitly linking the features to the label and discussing potential caveats, such as benign DNS queries or false positives.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the FIN flag and high packet rate as key features aligned with the prediction of 'Exploits.' It notes the unusual FIN state and high traffic volume, which are consistent with exploit behaviors. However, it does not explicitly mention the signs of malicious activity in the context of the features or address potential caveats such as benign reasons for high packet rates or FIN packets. The explanation is concise and SOC-ready but could improve clarity by explicitly linking features to the exploit label and noting possible false positives.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns with the top features, emphasizing the unknown service and stable packet patterns as normal indicators, with no contradictions. It clearly states the features' implications for normal traffic. However, it lacks detailed coverage of other potential key drivers (e.g., duration, packet counts) and does not explicitly mention caveats or alternative explanations, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the top features, emphasizing the UDP protocol, DNS service, low packet volume, and successful transmission as key normal indicators. It avoids contradictions and clearly states the normal nature of the event. However, it could be more concise and explicitly mention that the features' signs support the normal classification, and note that other features (like packet size and jitter) further reinforce this. Overall, it provides a solid, SOC-ready justification with minor room for increased clarity and completeness.",
+      "overall": 4.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the 'INT' state and non-standard protocol 'dgp' as drivers of the 'Exploits' classification, aligning with the top features provided. It clearly describes why these features are suspicious and relevant. However, it could improve by explicitly linking the signs of features (e.g., 'dgp' being unusual) and noting that some features (like transaction protocol and application/service) are not directly reflected in the top features list, which may cause slight ambiguity. Overall, it provides a concise, comprehensive justification consistent with the model's reasoning.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol (UDP), service (DNS), and connection state (INT) as normal indicators, aligning with the top features' signs. It avoids contradictions and hallucinations, maintaining factual accuracy. However, it lacks explicit mention of the feature signs for some attributes like packet size and traffic rate, which are zero and thus neutral, but clarifying their role would improve fidelity. The explanation is concise and SOC-ready, but it could better justify why these features collectively support a 'Normal' classification and note potential caveats, such as the high traffic rate, which might warrant further context for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features influencing the 'Normal' classification, such as DNS protocol and lack of unusual patterns, aligning with the SHAP values. However, it overemphasizes the significance of features with zero SHAP contribution, which may be misleading. The reasoning is generally clear and concise, but it could better emphasize the absence of anomalies and explicitly note that the features' contributions are minimal or neutral, providing a more complete justification for the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the missing application/service and the interrupted connection state as indicators supporting the 'Backdoor' prediction. It also notes the high connection rate as a potential sign of malicious activity. However, the explanation could better clarify how these features collectively justify the label, and it should explicitly address the signs that might contradict or weaken the conclusion. The description is mostly clear and SOC-ready but could be more concise in summarizing the key drivers and caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have SHAP values of zero, indicating neutrality and no influence on the classification. It correctly aligns the features with the 'Normal' label, but it lacks detail on how these features collectively support the 'Normal' prediction. The explanation does not discuss other potential features or caveats, and the reasoning is somewhat superficial, leading to a moderate completeness score. Clarity is good but could be more concise and focused.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the key features supporting the 'Normal' classification, such as the DNS protocol and small packet counts, aligning with the top features and their signs. However, it does not explicitly address the zero SHAP feature values or discuss potential caveats, such as the absence of other features that could influence the decision. The explanation is clear and concise but could better justify the label with more comprehensive coverage of key drivers.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the top features, emphasizing UDP protocol, DNS service, low packet count, and successful exchange as key normal indicators. It avoids contradictions and clearly links features to the normal classification. However, it could briefly mention potential caveats, such as rare benign anomalies, to improve completeness. Overall, it is concise and SOC-ready.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the connection state (FIN) and retransmission count as key features, aligning with the top features that include protocol and packet metrics. However, it introduces additional details like 'destination jitter' not listed among the top features, which could be misleading or hallucinated. The connection to exploit detection is somewhat implied but not explicitly justified by the provided features, leading to moderate fidelity. The explanation is somewhat verbose and could be more concise, affecting clarity. It also lacks a comprehensive discussion of all key drivers and caveats, limiting completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, indicating they do not influence the classification, aligning with the 'Normal' prediction. It accurately describes the features and their typical benign roles. However, it lacks explicit mention of how these features collectively support the 'Normal' label, and does not address potential caveats or other factors that might influence the decision. The explanation is clear and concise but could improve in completeness by explicitly connecting the features to the normal classification and noting that other unmentioned features or context may also be relevant.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns with the features and their signs, emphasizing normal DNS traffic characteristics such as UDP protocol, DNS service, symmetric packet counts, and typical packet sizes. However, it does not explicitly address the prediction 'Normal' in relation to the features or mention potential caveats, such as the high rate or packet sizes that could be anomalous in other contexts. The explanation is clear and concise but could better justify why these features collectively support a 'Normal' classification and note that some features are zero, indicating limited feature influence.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. It clearly describes the features and their lack of contribution, supporting the classification. However, it does not explicitly connect how these features collectively justify the 'Normal' label or mention potential caveats, such as the possibility of other unconsidered factors or the model's limitations. The explanation is concise and SOC-ready but could improve in completeness by explicitly linking feature absence to the normal classification and noting any caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes the application/service as 'http' and the connection state as 'FIN', aligning with the top features and their signs. It appropriately notes that these features are typical of normal traffic, supporting the 'Normal' prediction. However, it does not explicitly address the other features with zero SHAP values, nor does it mention potential caveats or the absence of contradictory signals. Overall, it provides a clear and mostly complete justification consistent with the features, but could improve by explicitly linking all features and acknowledging limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing typical protocol and service usage, and low packet counts. However, it does not explicitly address the signs of the top features or how they support the classification, nor does it mention potential caveats or edge cases. The description is mostly clear and concise but could better justify why these features collectively confirm normality, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with SHAP values close to zero, aligning with the 'Normal' prediction and avoiding contradictions. However, it lacks detail on how these features collectively support the classification and does not explicitly mention potential caveats or other relevant factors. The description is mostly clear but could be more concise and SOC-ready by summarizing the main points more directly.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing that ARP protocol and lack of application activity are typical for benign events. It accurately interprets the low packet count and mean packet size as normal behavior. However, it could improve by explicitly stating that the features' SHAP values are near zero, reinforcing their minimal contribution and avoiding potential hallucinations. Overall, it provides a clear and comprehensive justification consistent with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 3.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as high destination load and packet loss, which align with the prediction of 'Exploits.' However, it incorrectly interprets the FIN state as a red herring without clearly connecting how the other features justify the label. The explanation lacks clarity in describing the feature contributions and does not sufficiently note caveats or alternative explanations, leading to moderate scores across all categories.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 3.0,
+      "clarity": 3.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references the 'id' feature with a positive sign, aligning with the top feature importance, and correctly associates the 'INT' state with exploit behavior. However, it overemphasizes the significance of the 'id' feature, which is likely a unique identifier rather than a causal factor, risking hallucination. The mention of connection state and packet asymmetry is relevant but lacks detailed connection to the specific features listed, and the explanation does not sufficiently cover other key drivers such as packet size or rate. Caveats about the non-causal nature of some features and the limited scope of the explanation reduce its completeness.",
+      "overall": 2.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the features contributing to the 'Generic' classification, emphasizing the benign nature of UDP and DNS, and the low volume of data transfer. It aligns well with the top features provided, avoiding contradictions or hallucinations. The explanation is clear and covers key drivers, though it could briefly mention potential caveats or uncertainties for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the absence of a specific service and the FIN flag as indicators of reconnaissance activity, aligning well with the model's top features. However, it overemphasizes the significance of the protocol being '-' without considering the context of other features like TTL or packet sizes. The explanation is mostly clear and concise but could better integrate the feature signs and their implications. It justifies the label reasonably but lacks detailed caveats or discussion of potential false positives, slightly reducing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 1.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "heuristic-stub",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features such as connection state (FIN), retransmission counts, and jitter, which are relevant to the prediction of 'Exploits'. However, the top features provided do not include protocol, id, or application/service, and their signs do not align with the explanation's emphasis. The explanation introduces concepts like FIN packets and jitter as indicators, but these are not supported by the top features or their signs, leading to contradictions. The reasoning is somewhat detailed but lacks direct alignment with the provided feature importance and signs, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as UDP protocol, DNS service, and high packet rate as indicators of fuzzing activity, aligning with the prediction. It accurately describes how these features relate to fuzzers without contradictions. The explanation is concise and SOC-ready, clearly linking features to the label. It covers the main drivers and notes typical fuzzing behaviors, though it could briefly mention potential caveats or alternative explanations for high traffic or DNS usage to improve completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the protocol and service as features influencing the classification, but it overstates the significance of UDP and DNS in this context without considering the specific feature SHAP values or the overall feature importance. The top features show negligible contribution (+0.000 or +0.010), indicating minimal influence on the prediction, which conflicts with the detailed reasoning provided. The explanation lacks clarity in connecting the features to the 'Generic' label and does not sufficiently justify why these features lead to this classification, nor does it note potential caveats or the low feature impact scores.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, particularly emphasizing the absence of a specific service ('-') and the FIN state, which are relevant indicators for fuzzing activity. It correctly interprets the significance of these features and their typical association with fuzzers. However, the explanation could improve by explicitly connecting the feature signs (e.g., the '-' service) with the prediction, and by discussing the other features' contributions or lack thereof. The coverage of key drivers is adequate but could be more comprehensive, and some caveats or alternative explanations are not addressed, slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns with the features indicating normal DNS traffic, such as UDP protocol, DNS service, and typical connection state. It avoids contradictions and hallucinations, providing a clear rationale for the normal classification. However, it could improve by explicitly referencing the zero or low feature values and noting that the absence of anomalous indicators supports the normal label, enhancing completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the top features, correctly emphasizing the benign nature of ARP protocol and the lack of suspicious activity indicated by the features. It accurately describes the absence of conflicting signals. However, it could better clarify how the features collectively support the 'Normal' prediction and explicitly mention the absence of any caveats or additional drivers, slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol and service, aligning with the SHAP values indicating no significant impact. It appropriately supports the 'Normal' classification based on common DNS over UDP activity. However, it does not explicitly address the other features with zero impact or discuss potential caveats, such as unusual traffic volume or timing, which could be relevant for completeness. The explanation is clear and concise, suitable for SOC review, but could benefit from a brief mention of the negligible impact of other features for full coverage.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 0.0,
+      "clarity": 5.0,
+      "completeness": 3.25,
+      "rationale": "heuristic-stub",
+      "overall": 2.062
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features such as protocol and service, aligning with the 'Normal' prediction and SHAP signs. However, it does not explicitly address the absence of contradictory features or potential caveats, and some details (e.g., packet sizes, packet counts) are mentioned but not directly linked to the classification decision. Overall, it provides a mostly accurate and clear justification but could improve in completeness by explicitly connecting all features to the 'Normal' label and noting any uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies DNS traffic as a key indicator aligned with the top feature 'Application/service (dns)', supporting the reconnaissance label. It mentions the connection state 'INT' as consistent with probing activity, and notes the small packet count as characteristic of reconnaissance. However, it does not explicitly address the signs or directions of the top features (which are all zero or near-zero), nor does it clarify how these features collectively justify the prediction. The explanation is concise and SOC-ready but could improve in explicitly connecting feature signs to the classification and noting potential caveats or alternative interpretations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the use of the CRUDP protocol, absence of a specific service, and high connection rate as drivers for the 'Exploits' prediction, aligning with the provided top features and their signs. However, it overemphasizes the significance of the protocol and service features, which have zero SHAP contribution, potentially implying a stronger influence than supported. The mention of connection state 'INT' as suspicious is reasonable but not directly supported by the SHAP data. The explanation could be clearer by explicitly linking the features' contributions to the prediction and noting that some features have negligible impact, thus improving clarity and completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation emphasizes source jitter as a key indicator, aligning with the top feature (source jitter) but incorrectly attributes it as the primary driver, whereas the top feature listed is 'id' with a SHAP value of +0.041, which is minimal and not indicative of exploitation. The explanation also introduces 'source jitter' as the main feature, which is not among the top features provided, leading to a contradiction. The description of jitter as a critical indicator is somewhat plausible but not supported by the provided feature importance data. Clarity is limited due to inconsistent terminology and lack of concise focus. Completeness is moderate but misses the key point that the top features do not strongly support the 'Exploits' label, and it overstates the significance of features not listed among the top contributors.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the DNS service and the zero count of repeated source-destination pairs, aligning with the normal prediction. It accurately interprets the features' implications for typical DNS traffic. However, it does not explicitly address the other features like packet sizes, rates, or connection states, nor does it mention potential caveats or the absence of contradictory features. Overall, it provides a mostly accurate and clear justification consistent with the model's top features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant feature influence. It accurately describes the features and their lack of contribution, avoiding contradictions. However, it lacks explicit mention of how these features collectively support the 'Normal' classification and does not discuss potential caveats or other factors that might influence the decision. The explanation is mostly clear and concise but could benefit from a brief summary of why zero contributions imply normalcy and a note on the limitations of relying solely on these features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the neutral nature of the top features and their alignment with a normal classification, avoiding contradictions. It clearly describes the significance of each feature in supporting the 'Normal' label. However, it could improve completeness by explicitly noting that no features indicate anomalies or suspicious activity, and mentioning potential caveats such as the limited scope of features considered.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with their SHAP values and relates them to the 'Normal' classification, emphasizing the minimal impact of these features. However, it lacks detailed reasoning on how these features collectively support the normal label, especially given the absence of other potentially relevant features or anomalies. The description is clear and concise but could better justify why no other features influence the decision, and note potential caveats such as unconsidered features or data limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as DNS protocol and high connection rate, aligning with the top features and their signs. It appropriately links DNS usage and connection state to reconnaissance behavior. However, it could better clarify how the features' signs support the classification and explicitly mention the absence of contradictory features. The explanation is concise and SOC-ready but could include more detail on caveats or other potential drivers to improve completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that the top features have SHAP values of zero, indicating they do not influence the classification, aligning with the 'Normal' prediction. It appropriately interprets the features such as application/service and connection state as typical for normal traffic. However, the explanation does not explicitly address the high rate or other features that could be relevant, and it lacks discussion of potential caveats or edge cases. Overall, it provides a clear and mostly accurate justification but could improve in completeness by covering more key drivers and caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns with the top features, emphasizing the normality of ARP protocol usage, absence of specific services, low packet count, and typical packet size, which collectively support the 'Normal' prediction. It avoids contradictions and clearly states the rationale. However, it could improve by explicitly mentioning the zero or near-zero feature values and noting that the features' values are consistent with normal behavior, thus enhancing completeness. Clarity is good but could be slightly more concise.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as OSPF protocol and absence of specific services, aligning with the 'Analysis' prediction and their typical benign implications. However, it overemphasizes the benign nature without discussing potential caveats or the context of the network environment. The description is concise and SOC-ready but could better justify why these features lead to the 'Analysis' label and address possible uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the key features supporting the 'Normal' classification, such as the TCP protocol, empty application/service field, and FIN connection state, aligning with the top features and their signs. However, it does not explicitly address the signs of the other features or how they reinforce the normalcy, nor does it mention potential caveats or the limited contribution of some features. The explanation is clear and concise but could better justify the absence of other features' influence, thus slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately describes the features and their contributions, aligning with the top features and their SHAP values. It correctly interprets the protocol and application fields as neutral, supporting the 'Normal' prediction. However, it lacks explicit mention of how these features collectively justify the normal label and does not discuss potential caveats or other drivers that could influence the classification, limiting completeness. The language is clear and concise, suitable for SOC contexts.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as protocol (UDP), service (DNS), connection state (CON), and small packet sizes, which align with the top features and support the 'Normal' classification. It avoids contradictions and hallucinations, providing a clear rationale. However, it could improve by explicitly mentioning the zero SHAP feature values and noting that these features collectively support the normal label, as well as acknowledging any potential caveats such as the limited feature set or unusual traffic volume that might warrant further review.",
+      "overall": 4.125
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the connection state (FIN) and retransmission metrics as key features, aligning with the prediction of 'Exploits.' However, it suggests that FIN state indicates an exploit, which is not necessarily accurate, as FIN can be part of normal connection termination. The mention of retransmissions and jitter as signs of exploitation is plausible but not explicitly supported by the provided top features, which show zero importance for protocol, source, or destination features. The explanation is somewhat verbose and contains speculative reasoning, reducing clarity and completeness. Overall, the explanation partially aligns with the features but overinterprets their significance and lacks precise justification for the label.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the top features with their signs, emphasizing the absence of specific application protocols, low pattern of repeated source-destination traffic, and normal packet sizes\u2014all aligning with the 'Normal' prediction. It avoids contradictions and clearly states how these features support the classification. The explanation is concise and SOC-ready, covering key drivers and providing rationale for the normal label. Minor improvements could include explicitly noting the lack of anomalous values in other features or potential caveats, but overall it aligns well with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the features used in the prediction and their signs, aligning with the 'Generic' label. However, all feature contributions are marked as zero, which does not clearly justify why the event is classified as 'Generic' rather than an anomaly. The reasoning about UDP and DNS is generic and does not explicitly connect how these features lead to the 'Generic' classification, nor does it address potential caveats or alternative interpretations. The explanation could be clearer and more comprehensive in linking features to the label.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 3.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the significance of the FIN flag, high packet count, and size imbalance, aligning with the features and their signs. However, it overemphasizes the FIN flag's role as a malicious indicator, which can also occur in normal terminations, and does not explicitly connect the features to the 'Exploits' label in a definitive manner. The explanation is mostly clear but could be more concise and explicitly state how these features justify the classification. It notes some caveats but lacks detailed discussion on potential false positives or normal behavior, limiting its completeness.",
+      "overall": 3.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights key features such as protocol and application/service status, aligning with the top features and their signs. It accurately interprets the TCP protocol and absence of specific service as indicative of normal activity, consistent with the prediction. However, it does not explicitly address the other top features (e.g., packet counts, mean packet size) or how they support the 'Normal' classification, which affects completeness. The explanation is clear and SOC-ready but could be more concise and explicitly connect all key features to the prediction for full completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately references the top features and their signs, such as the TCP protocol and connection state, aligning with the model's predictions. It correctly interprets the absence of specific application/service as indicative of normal traffic and notes the significance of the FIN state. However, it does not explicitly address the negligible feature values or potential caveats, such as the low feature importance scores or the fact that some features are zero, which could be relevant for a comprehensive understanding. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with zero contribution scores, aligning with the prediction of 'Normal.' It accurately interprets the protocol, application, packet count, and mean packet size, avoiding contradictions. However, it lacks explicit mention of how these features collectively support the 'Normal' classification and does not discuss potential caveats or other factors that could influence the decision, limiting completeness. The explanation is concise and SOC-ready, but could benefit from clearer linkage between features and the final label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the SMTP application protocol and FIN connection state, which align with the normal prediction. It appropriately notes the high connection rate as typical for email traffic and mentions TTL as normal. However, it does not explicitly address the zero SHAP feature importance scores, which suggest these features did not strongly influence the model's decision, nor does it clarify that the explanation is primarily interpretative rather than based on feature contributions. Overall, it aligns well with the features and prediction, but could improve clarity and explicitly acknowledge the limited feature impact.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features (packet retransmissions, jitter) that are not included in the provided top features, leading to a disconnect between the explanation and the model's key drivers. The description of features like source/destination jitter and retransmissions does not align with the top features (mostly zeros and no mention of retransmission counts). The explanation also introduces concepts like high packet loss and fuzzing techniques without directly tying them to the actual top features, resulting in contradictions and incomplete justification of the 'Fuzzers' label. The explanation could be clearer and more directly linked to the provided features, but it does attempt to justify the label based on observed behaviors.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the key features have low SHAP values and are not significant drivers for the 'Generic' classification, aligning with the features provided. It clearly describes each feature's role and the reasoning behind their insignificance. However, it does not explicitly connect how these features collectively support the 'Generic' label or mention potential caveats, such as the possibility of other unconsidered factors influencing the prediction. Overall, it is accurate and clear but could be more comprehensive in justifying the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies UDP protocol usage, lack of specific application/service, and high connection rate as key indicators aligned with the features. However, it does not explicitly mention the zero values of other features or how they support the classification, nor does it address potential caveats such as benign high-rate UDP traffic. The reasoning is clear and concise but could benefit from a more comprehensive coverage of all relevant features and potential limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with their SHAP signs and relates them to the 'Normal' prediction, aligning the absence of specific application protocols and insignificant feature contributions with normal traffic. However, it overemphasizes the lack of strong indicators without discussing other potential factors or caveats, and the explanation could be more concise and SOC-ready by focusing directly on the main drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly links the absence of a specific service and the unusual FIN flag to fuzzing activity, aligning with the top features and their signs. It appropriately interprets the asymmetrical packet counts as indicative of fuzzing. However, it overstates the significance of the FIN flag without acknowledging that such flags can appear in other contexts, and it could better emphasize the key drivers from the top features rather than focusing mainly on the protocol and flags. The explanation is clear and concise but could include more explicit caveats about potential false positives.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features have SHAP values of zero, aligning with the top features provided. It accurately describes the significance of the TCP protocol and FIN state in indicating normal behavior, supporting the 'Normal' prediction. However, the explanation lacks detail on how these features collectively justify the classification and does not address potential caveats or other influential factors, leading to a slightly lower completeness score. Clarity is good but could be more concise and focused on key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features influencing the 'Normal' classification, such as the use of TCP, absence of specific application/service, and low activity patterns. However, it overemphasizes the importance of features with zero SHAP values, which do not contribute to the decision, and does not explicitly address potential caveats or other features that might influence the prediction. The explanation is mostly aligned with the features and their signs but could be clearer about the non-contributing features and provide a more comprehensive justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the minimal impact of the features on the 'Generic' classification, aligning with the SHAP values indicating near-zero contributions. It clearly states that the features are typical and non-indicative of malicious activity, supporting the label. The description is concise and SOC-ready, covering key drivers and noting that the features do not suggest specific threats. Minor improvements could include explicitly mentioning the absence of anomalies or unusual patterns to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values (+0.000), which do not contribute to the classification, leading to potential contradictions. It mentions the presence of HTTP traffic as a key indicator, aligning with the feature 'Application/service,' but does not clearly connect how this alone justifies 'Reconnaissance.' The mention of consistent source/destination patterns and small packet sizes is vague and not directly supported by the SHAP values or the data provided. Overall, the explanation lacks precise linkage between features and the prediction, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately states that the features do not strongly influence the 'Generic' classification and correctly notes the lack of distinctive or suspicious activity. It aligns with the features' signs and their minimal impact. The reasoning is clear and covers key drivers, mentioning the benign nature of protocol and service, and appropriately notes that no significant features suggest malicious activity. Minor improvements could include explicitly addressing the zero SHAP values and emphasizing the absence of contradictory signals, but overall it provides a balanced and SOC-ready explanation.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies DNS protocol usage and connection state as key indicators aligned with the model's features, supporting the 'Reconnaissance' label. It appropriately emphasizes the significance of DNS queries and connection states. However, it overstates the importance of packet count without explicitly noting the low packet volume as a typical reconnaissance trait, and it does not mention potential caveats such as benign DNS activity or other factors that could lead to false positives. Overall, the explanation aligns well with the features and prediction but could be more concise and explicitly address limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Fuzzers' label, emphasizing UDP protocol, absence of specific service, intermediate connection state, and high packet rate\u2014all typical fuzzing traits. However, the top features' SHAP values are zero, which weakens the direct attribution. The explanation covers key drivers but could better address the lack of feature importance signals and note potential caveats, such as benign high-rate UDP traffic or false positives.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately describes the neutral impact of the top features with SHAP values of zero, aligning with the 'Normal' prediction. It clearly states the features involved and their interpretations. However, it lacks explicit mention of how these features collectively support the 'Normal' label or address potential caveats, such as the absence of other influential features or context. Overall, it provides a solid, SOC-ready summary but could improve in explicitly connecting features to the classification rationale.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the neutral SHAP values and the features' roles in the classification, aligning well with the 'Normal' prediction. It clearly states the features considered and their impact, avoiding contradictions. However, it lacks discussion of other potential key drivers or caveats that could influence the classification, such as the overall feature values or additional context, which would improve completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns with the top features, emphasizing the use of UDP, DNS service, and normal connection state as key drivers for a 'Normal' classification. It avoids contradictions and clearly states the typicality of the observed activity. However, it could improve by explicitly mentioning the negligible feature values and their contribution to the normal label, and by noting potential caveats such as rare but benign anomalies that might share similar features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the DNS service, initial connection state, and high packet rate to reconnaissance activity, aligning with the features and their signs. It clearly states how each feature contributes to the classification. However, it could improve by explicitly addressing the absence or neutrality of other features and noting potential caveats, such as benign high-rate DNS traffic or initial connection states in legitimate contexts. Overall, it provides a solid, SOC-ready justification with minor room for clarification and completeness enhancements.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol and service, aligning with the 'Generic' label. It notes that UDP and DNS are common but can be used maliciously, which supports the classification. However, the explanation does not explicitly address the signs or the absence of contradictory features, nor does it fully justify why these features lead to a 'Generic' label rather than benign or suspicious. It covers main drivers but lacks detailed caveats or explicit feature sign interpretation, slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol and connection state that support the 'Normal' classification, aligning with the SHAP values indicating minimal impact. However, it does not explicitly address the other features with zero SHAP impact or discuss potential caveats, such as the absence of application/service details or the significance of other traffic metrics. The explanation is concise and SOC-ready but could improve in covering all relevant drivers and clarifying the reasoning behind the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all key features have zero SHAP value, implying they did not influence the classification. However, it claims the event was classified as 'Generic' due to these features, which is inconsistent. The explanation lacks detail on other potential drivers or caveats, and the reasoning is somewhat superficial. Overall, it aligns partially with the features but does not convincingly justify the label or provide comprehensive coverage.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with neutral SHAP values and their minimal impact on the 'Normal' classification, aligning with the provided features and prediction. It clearly states the features considered and their interpretations. However, it lacks explicit mention of how these features collectively support the normal label, and does not discuss potential caveats or other factors that could influence the decision, slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns the features with typical fuzzing behaviors, such as use of UDP, DNS targeting, short-lived connections, and high connection rate. It avoids hallucinations and clearly states the key drivers. However, it could improve by explicitly noting that the features are not definitive on their own and mentioning potential caveats, such as benign high-rate DNS traffic or legitimate UDP use, which are not discussed.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 3.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes the negligible impact of protocol and application features, and the negative SHAP value for id aligns with the classification as 'Generic.' However, it lacks clarity due to incomplete sentences and insufficient emphasis on how these features collectively justify the label. The explanation covers key drivers but does not explicitly connect them to the 'Generic' label or mention potential caveats, such as the limited feature importance or the nature of the instance.",
+      "overall": 3.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing the use of UDP and DNS, low packet volume, and absence of issues, which are consistent with normal DNS traffic. However, it does not explicitly address the top features' zero values or discuss potential caveats such as atypical but benign traffic patterns. The explanation is clear and concise but could better justify why other features are not contributing to an anomaly, thus slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns the DNS protocol and the incomplete connection state with reconnaissance activities, matching the top features and their signs. It notes the low packet count and small data transfer as indicative of probing behavior. However, it could improve by explicitly referencing the signs of features (e.g., protocol being 'dns') and clarifying how these features collectively support the classification. The explanation is concise and SOC-ready but could include a brief caveat about potential false positives in similar low-traffic DNS events.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as the TCP protocol and absence of specific application/service as contributing to the 'Normal' classification, aligning with the SHAP signs. However, it overemphasizes the significance of the 'Application/service' feature without noting that its SHAP value is zero, indicating minimal influence. The mention of 'Mean packet size' as not significant is consistent with the near-zero SHAP value, but the explanation could clarify that this feature's contribution is negligible. The explanation is concise and SOC-ready but could better justify how these features collectively support the prediction and acknowledge potential caveats, such as the limited feature set or the possibility of other unconsidered factors.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately reflects the features and their SHAP values, emphasizing the neutral impact of the top features on the 'Normal' classification. It correctly notes the absence of significant feature contributions and aligns with the prediction. However, it could improve by explicitly connecting the features' values to the 'Normal' label and mentioning that the explanation does not address potential caveats or other less prominent features that might influence the decision. Overall, it is clear and mostly complete but slightly lacking in depth regarding the justification for the 'Normal' label.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol and application/service, aligning with the SHAP values indicating neutrality (+0.000). It appropriately interprets the low packet count and short duration as typical for normal traffic. However, it does not explicitly address the potential caveats, such as the limited feature impact or the fact that some features have zero SHAP value, which could be relevant for completeness. Overall, the explanation is consistent and clear but could better emphasize the absence of strong abnormal indicators.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features like 'id', 'application/service', 'state', and 'rate', which are present in the top features, but it misinterprets 'id' as indicative of communication patterns rather than a unique identifier. The mention of 'application/service' being '-' aligns with the top feature, but the explanation suggests this trait indicates custom protocols, which is a plausible but not definitive indicator of backdoors. The high packet rate is correctly identified as suspicious. However, the explanation lacks clarity in connecting these features directly to the backdoor prediction and does not sufficiently justify why these features collectively support the label. It also introduces some ambiguity about the significance of 'id' and 'state' without clear reasoning, and it does not note potential caveats or alternative explanations.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the key features influencing the 'Normal' classification, such as the use of TCP and absence of specific application/services, aligning with the provided SHAP values. However, it does not explicitly address the zero SHAP values for all features, which suggests they had negligible impact, and the explanation could clarify that these features did not contribute significantly to the decision. The mention of the count feature is incomplete, and the caveats about the model's reliance on these features could be more explicit. Overall, the explanation is clear and mostly accurate but could improve in completeness and explicitness regarding feature contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as the SMTP protocol, FIN connection state, and moderate connection rate, aligning with the 'Normal' prediction. However, it does not explicitly address the zero SHAP feature values, which suggest these features had no influence, nor does it discuss potential caveats or other drivers. The explanation is concise and SOC-ready but could better justify the label by integrating the feature contributions more explicitly.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features supporting the 'Fuzzers' classification, such as UDP protocol, DNS service, and high packet rate, aligning with the top features and their signs. However, the top features are all zero, indicating no direct feature contribution, which is not addressed explicitly. The explanation could clarify that these features are typical but not necessarily active drivers in this specific instance. The description is concise and SOC-ready but could better emphasize caveats, such as the absence of feature importance signals or potential alternative explanations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as application/service and port activity, aligning with the prediction of reconnaissance. However, it emphasizes the absence of specific protocols and low port reuse, which are only partial indicators and may not fully justify the label. The SHAP values are all zero, suggesting minimal feature influence, yet the explanation attributes significance to these features without clear evidence. The rationale lacks detail on how these features collectively support the classification and does not address potential caveats or alternative explanations, reducing overall clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the key features influencing the 'Normal' prediction, such as the TCP protocol and FIN state, aligning with the SHAP top features and their signs. It accurately interprets the neutral or benign nature of these features. However, it does not explicitly address the absence of features like application/service or packet counts, nor does it mention potential caveats or the limited impact of the other features, which could enhance completeness. The explanation is concise and SOC-ready, but could benefit from a brief summary of how these features collectively justify the prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the absence of specific application/service protocol and neutral feature contributions with the 'Normal' prediction, avoiding contradictions. It clearly states that these features suggest typical behavior. However, it lacks detail on how these features collectively support the classification and does not mention potential caveats or other factors that could influence the decision, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as DNS protocol usage, connection state, and high connection rate that align with the model's top features and their signs. It appropriately links these features to reconnaissance behavior. However, it could improve by explicitly mentioning the signs of the features (e.g., DNS being positive, high rate indicating scanning) and clarifying how the features collectively justify the label. The explanation is concise and SOC-ready but could include more caveats or alternative explanations for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the FIN flag and high data transfer volumes, aligning with the top features and their signs. It logically connects these features to exploit behavior, avoiding contradictions. However, it could be more explicit about how the features directly support the 'Exploits' label and mention potential caveats, such as benign reasons for high data transfer or connection termination anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the absence of specific application/service protocols and negligible impact of the count and mean packet size features with a 'Normal' classification, consistent with the provided SHAP values. It clearly states that these features do not contribute to anomalies, supporting the prediction. However, it does not explicitly address the other features (e.g., duration, packet counts, TTLs) that may also support normal behavior, nor does it mention potential caveats or the overall feature context, which would improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the 'INT' state and high packet rate to exploit behavior, aligning with the features and their signs. It notes the high TTL as a potential indicator of spoofing, which supports the exploit classification. However, it could improve by explicitly connecting the negative feature signs (e.g., id=-0.005) and clarifying how the features collectively justify the 'Exploits' label. The explanation is concise and SOC-ready but could better emphasize the key drivers and potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol and application/service, aligning with the SHAP values indicating no significant deviations. It clearly states that these features support a 'Normal' classification. However, it lacks explicit mention of how the other features (e.g., packet counts, bytes, jitter) influence the decision, and does not address potential caveats or the overall confidence level. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting all features to the classification rationale.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant contribution from these features. It avoids contradictions and is straightforward, but it lacks detail on how these features collectively support the 'Normal' classification and does not discuss potential caveats or other influential features. The incomplete sentence at the end also slightly hampers clarity and completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol, service, connection state, and high connection rate, aligning with the prediction of 'Fuzzers.' It appropriately links UDP, DNS, and abrupt connection termination to fuzzing behavior. However, the explanation could better emphasize how these features collectively support the label, and it should explicitly mention the absence of contradictory features or hallucinations. The clarity is good but could be more concise, and the completeness is adequate but would benefit from noting potential caveats or alternative explanations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the high connection rate, TTL, and data rate as key indicators aligned with the 'Exploits' prediction, matching the features' signs and typical exploit behavior. It notes the absence of specific application protocol, supporting the anomaly. However, it could improve by explicitly connecting the features' signs to the exploit classification and mentioning potential caveats, such as benign reasons for high rates or TTL anomalies, to enhance completeness and clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights key features such as the TCP protocol and the absence of specific application/service, aligning with the 'Normal' prediction. It accurately interprets the low packet counts and standard connection attributes, avoiding contradictions. However, it does not explicitly address the other features like packet sizes or timing metrics, nor does it mention potential caveats or limitations of the explanation. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies the key features (protocol UDP, service DNS, state INT) and their typical benign nature, aligning with the 'Generic' label. It avoids contradictions and hallucinations, providing a clear rationale. However, it could better emphasize that these features are common in normal traffic and that their presence alone does not imply maliciousness, thus improving completeness. Clarity is good but could be slightly more concise.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the key features have SHAP values near zero, indicating minimal impact on the 'Normal' classification, aligning with the prediction. It mentions relevant features like protocol and application, and notes their lack of influence, which is consistent with the model's output. However, it does not explicitly address potential caveats or the overall reasoning behind the 'Normal' label beyond feature contributions, and some details (e.g., specific feature values) could be clearer for SOC readiness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, emphasizing the TCP protocol, absence of specific services, and FIN state, which support the 'Normal' prediction. It correctly interprets the signs and relevance of features, avoiding contradictions. However, it does not explicitly address the negligible feature values or potential caveats, such as the low feature magnitudes or other subtle indicators that could influence the prediction. The explanation is clear and SOC-ready but could benefit from more explicit mention of how the feature signs and magnitudes contribute to the classification, and a brief note on limitations or uncertainties.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing benign indicators such as UDP protocol and absence of specific application/service. It correctly interprets the low packet count and short duration as typical for normal activity. However, it could improve by explicitly addressing the very high rate and the potential caveats of relying solely on these features, ensuring a comprehensive justification for the 'Normal' prediction.",
+      "overall": 4.125
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the FIN packet and high data transfer features to the exploit prediction, aligning with the top features' signs and typical attack indicators. It avoids contradictions and provides a clear rationale. However, it could improve clarity by explicitly connecting the feature signs to the explanation and noting potential caveats, such as benign reasons for FIN packets or high traffic, to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately states that the top features have zero SHAP values, indicating they did not influence the 'Generic' classification, aligning with the provided feature values. It clearly describes each feature's role and the model's reasoning. However, it lacks explicit mention of how these features collectively support the 'Generic' label or address potential caveats, such as the possibility of other unmentioned features influencing the decision. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting features to the label justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as application/service (smtp), protocol (tcp), and connection state (FIN) as supporting the 'Normal' prediction, aligning with the top features and their signs. However, it does not explicitly address the signs of the features or how they support the classification, nor does it mention potential caveats or other features that could influence the decision. The explanation is concise and SOC-ready but could improve in covering all key drivers and clarifying the feature contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing TCP protocol, absence of specific application, and FIN state as normal indicators. It avoids contradictions and clearly states the key drivers. However, it could improve by explicitly connecting the features' signs and their typical interpretations, and by noting potential caveats such as the limited feature scope or the neutral impact of some features. Overall, it provides a solid, SOC-ready justification with minor room for clarity and completeness enhancements.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns with the top features and their SHAP values, emphasizing the benign nature of UDP protocol, absence of specific application, and normal packet counts. However, it does not explicitly address the zero SHAP values for features like transaction protocol, id, and service, nor does it clarify that these features contribute minimally to the prediction. The explanation is concise and SOC-ready but could better justify why these features support a 'Normal' classification and note potential caveats such as the limited feature influence.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the key features such as UDP protocol and DNS service, which align with the 'Generic' label and are typical for benign DNS queries. It avoids contradictions and hallucinations, maintaining fidelity. Clarity is good but could be more concise; the explanation is somewhat verbose and cuts off mid-sentence, affecting overall clarity. Completeness is moderate; it justifies the label based on the features but lacks discussion of potential caveats or other drivers that could influence the classification, such as unusual traffic volume or timing patterns.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the FIN flag anomaly, high packet rate, and large packet size to exploit indicators, aligning with the top features and their signs. It avoids hallucinations and maintains clarity. However, it could better emphasize how these features collectively justify the exploit label and mention potential caveats, such as benign reasons for high traffic or FIN flags.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as TCP protocol and FIN state, which support the 'Normal' classification, aligning with the top features and their signs. It avoids contradictions and hallucinations, providing a clear rationale. However, it does not explicitly address the absence of certain features or potential caveats, such as the significance of the 'service' being empty or the low feature importance scores, which could enhance completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing the use of UDP and DNS as typical, legitimate behaviors. It accurately describes the observed traffic pattern and its normalcy. However, it does not explicitly address the other features with zero values or potential caveats, such as the high rate or the absence of response packets, which could be relevant in some contexts. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with SHAP values of zero, suggesting they have minimal or no contribution to the prediction, which conflicts with the claim that they are key drivers. The mention of asymmetry in packet counts as indicative of analysis activity is plausible but not strongly supported by the provided features, especially given their negligible SHAP impact. The explanation lacks detail on how these features justify the 'Analysis' label and does not address potential caveats or alternative interpretations. Overall, it partially aligns with the features but overstates their significance and clarity.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol and service, aligning with the 'Generic' label. It notes the benign nature of DNS and UDP but also mentions potential attack vectors, which is appropriate. However, the explanation could better clarify why the low packet count and other features lead to a 'Generic' classification, and it does not explicitly address the absence of contradictory features or hallucinations. Overall, it provides a solid, SOC-ready summary but could improve on completeness and explicitness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features like protocol and service but does not clearly connect their signs or values to the 'Generic' prediction. It discusses potential implications but lacks explicit reasoning on how these features support the label, and the top features are all zero, making the explanation less aligned with the model's actual feature importance. The description is somewhat verbose and could be more concise for SOC readiness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features have SHAP values of zero, indicating no impact on the classification, which aligns with the 'Normal' prediction. It accurately describes the features and their typical behavior in normal traffic, avoiding contradictions. However, it does not explicitly connect how these features collectively support the 'Normal' label or mention potential caveats, such as the limited feature impact or the possibility of other unconsidered factors. Overall, it is clear and mostly complete but could better justify the classification with more explicit reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights key features such as the application/service (http), connection state (FIN), and mean packet size, aligning with the prediction of 'Normal.' It accurately interprets these features in the context of typical web traffic. However, it does not explicitly address the zero SHAP feature contributions or discuss potential caveats, such as the low feature importance scores or other subtle indicators that might influence the model's decision. The explanation is clear and concise but could benefit from a more explicit connection between the features and the 'Normal' label, as well as noting that the features' contributions are minimal, which supports the prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.5,
+      "rationale": "The explanation references key features such as connection state, packet count, bytes transferred, and connection rate, aligning with the prediction of 'Exploits.' However, it overemphasizes the significance of the high connection rate without sufficient context or caveats, and it does not clearly address the signs that might contradict the exploit hypothesis. The description is somewhat verbose and could be more concise for SOC readiness, especially regarding the interpretation of features like protocol and state. Overall, it captures some key drivers but lacks nuanced justification and clarity in linking features to the label.",
+      "overall": 2.625
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the missing application/service indicator and the FIN flag as indicative of fuzzing activity, aligning with the top features and their signs. However, it overemphasizes the absence of a protocol as a strong indicator without considering that some legitimate traffic may also lack protocol info. The mention of connection termination and packet counts supports the label but lacks detailed caveats or discussion of potential false positives. Overall, the explanation is mostly consistent with the features and prediction, but could improve in clarity and completeness by explicitly connecting all features to the 'Fuzzers' label and noting possible limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns with the features and their signs, emphasizing the normal protocol (UDP), application (DNS), and connection state (INT). It accurately reflects the typical behavior of DNS queries, supporting the 'Normal' prediction. However, it does not explicitly address the other features like packet counts, sizes, or potential caveats, which could enhance completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of why these features collectively justify the normal label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol (tcp), connection state (FIN), and absence of specific application/service as contributing to the 'Normal' classification, aligning with the provided SHAP signs. However, it does not explicitly address the negative SHAP values for id (-0.006) or the other features with zero SHAP impact, nor does it mention potential caveats or the influence of less prominent features. The explanation is concise and SOC-ready but could improve in completeness by covering all relevant drivers and noting that some features have negligible impact.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the FIN flag, high packet count/rate, and large packet sizes, aligning with the prediction of 'Exploits.' It interprets the FIN flag as potentially malicious, consistent with exploit behavior, and notes the unusual packet sizes and rates. However, it overemphasizes the FIN flag's significance without considering that it might be part of normal connection termination, which could lead to some ambiguity. The explanation covers major drivers but could better clarify caveats and explicitly connect features to the exploit hypothesis.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately references the key features identified by SHAP as contributing to the 'Normal' prediction, such as the absence of a specific application/service and the low count of same source/destination port pairs, aligning with the features' signs. It correctly interprets these features as indicative of normal traffic, avoiding contradictions. The explanation is mostly clear and concise, though it could be more explicit about how these features collectively justify the normal label. It covers the main drivers but could improve by explicitly noting that other features (e.g., packet sizes, connection state) support the classification and mentioning potential caveats, such as the limited feature set or edge cases where these indicators might be misleading.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns with the top features, noting the unspecified application/service, the FIN state indicating normal connection termination, and the low packet/byte counts as typical of normal traffic. It avoids contradictions and hallucinations, maintaining factual consistency. However, it could improve clarity by explicitly linking the features to the 'Normal' prediction and providing a more comprehensive justification of why these features collectively support the normal label. The coverage of key drivers is adequate but could be expanded to include additional features or caveats for a more complete explanation.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 3.0,
+      "completeness": 3.0,
+      "rationale": "The explanation references the FIN flag and high packet rate, which align with the features and their signs, supporting the exploit prediction. However, it attributes the FIN flag to the destination, whereas the top features indicate the protocol and id are more influential, and the explanation does not explicitly connect these features to the model's top features. The description is somewhat verbose and could be more concise for SOC readiness. It covers key drivers like connection state and packet rate but lacks discussion of caveats or alternative explanations, limiting completeness.",
+      "overall": 3.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with their SHAP values and relates them to the 'Normal' classification, aligning with the provided top features. It clearly states the minimal impact of each feature, which supports the prediction. However, the explanation is somewhat verbose and lacks explicit mention of how these features collectively justify the 'Normal' label, especially considering the absence of other potentially relevant features. It also notes caveats about the unspecified feature values, but could be more explicit about the overall reasoning process.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 3.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the unusual use of SCTP and the unknown service as potential indicators of a backdoor, aligning with the features highlighted. However, it overemphasizes protocol rarity without considering the actual feature values (which are near zero) and does not clearly connect how these features directly justify the 'Backdoor' label. The explanation lacks explicit mention of the model's reliance on these features and does not address potential caveats or alternative interpretations, limiting its completeness. Clarity is good, but the justification could be more concise and directly tied to the features.",
+      "overall": 3.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly links high packet rate, FIN flag, retransmissions, and jitter to fuzzing activity, aligning with the top features and their signs. However, it overemphasizes certain aspects like high jitter without explicitly connecting it to fuzzing behavior, and it could better clarify how each feature supports the label. The explanation is mostly clear and concise but could benefit from more explicit mention of how the features collectively justify the 'Fuzzers' classification and noting potential caveats such as benign causes for some behaviors.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol, application, and connection state that support the 'Normal' classification, aligning with the SHAP top features and their signs. It avoids contradictions and is generally clear. However, it lacks explicit mention of how the other features (e.g., id, count, mean packet size) contribute or do not contradict the normal label, and does not discuss potential caveats or edge cases, slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as TCP protocol and absence of specific service as supporting the 'Normal' classification, aligning with the SHAP top features. However, it overemphasizes the significance of features with zero SHAP value, which do not contribute to the decision, and does not explicitly address the other features or potential caveats. The explanation is clear and concise but could better justify the label with more comprehensive coverage of key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly emphasizes the high packet count and large bytes sent from source to destination, aligning with the features indicating a DoS attack. However, it does not explicitly address the signs of the top features (which are mostly zero or negative) or how they support the classification, nor does it mention potential caveats such as benign high traffic scenarios. The explanation is concise and SOC-ready but could improve in covering all key drivers and clarifying the reasoning behind the label.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features used (protocol UDP, DNS service, connection state INT) are typical and not suspicious, aligning with the 'Generic' label. It emphasizes the absence of malicious indicators, which supports the classification. However, it does not explicitly connect how each feature's SHAP value influences the decision, nor does it mention potential caveats such as benign anomalies or the limitations of the features provided. The explanation is concise and SOC-ready but could improve in detailing the key drivers and their impact on the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features (UDP protocol, unspecified service, connection state) and their typical benign interpretations, aligning with the prediction of 'Normal.' It avoids contradictions and hallucinations, maintaining consistency with the top features. However, it does not explicitly mention the zero values for features like transaction protocol, id, and count features, which are relevant given their importance in the top features list. The explanation is clear and concise but could better justify why these features are not contributing to suspicion, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features such as connection state, packet counts, and byte counts, aligning with the top features and their signs. It accurately interprets the asymmetry and connection state as indicators of exploitation. However, it could improve clarity by explicitly linking the features to the 'Exploits' label and noting potential caveats, such as benign reasons for similar patterns. Overall, it aligns well with the features and prediction, but some minor elaboration would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as UDP protocol, absence of specific service, and connection state as drivers for the 'Fuzzers' prediction, aligning with the top features and their signs. However, it overemphasizes UDP as a strong indicator without considering the low feature importance (0.000) assigned to protocol and service, which suggests these features have minimal influence. The explanation could be clearer about the actual feature contributions and should mention the low importance of some features to avoid hallucinations. It also lacks discussion of caveats or alternative explanations, impacting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies high packet rate, source bits per second, and UDP protocol as key indicators aligned with the prediction of a Fuzzer attack. It emphasizes the significance of these features and their typical association with fuzzing activities, aligning well with the top features provided. However, the explanation does not explicitly mention the signs or directions of the features (e.g., high values) or address the fact that the top features are all zero-valued in this instance, which could be confusing. It also lacks discussion of potential caveats or alternative explanations, slightly limiting completeness. Overall, it is clear and mostly faithful to the features and prediction, but could improve in explicitly connecting feature signs and addressing the zero feature values.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that the 'Application/service' feature being empty aligns with normal traffic patterns, consistent with the model's top feature. It accurately states that the other features have zero SHAP impact, supporting the 'Normal' classification. However, it lacks detail on how the other features' values relate to normal behavior and does not explicitly mention potential caveats or the absence of other key drivers. Overall, it aligns well with the features and prediction but could be more comprehensive.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the SSH protocol, FIN flag, balanced packet counts, and connection rate, aligning with the 'Normal' prediction. It avoids contradictions and hallucinations, providing a clear rationale. However, it lacks explicit mention of how these features collectively justify the normal label and does not discuss potential caveats or unusual patterns that might warrant further scrutiny, slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights key features such as protocol (TCP), application (HTTP), symmetric packet counts, and mean packet size, aligning with the model's top features and their signs. It appropriately interprets these features as indicative of normal traffic, consistent with the prediction. However, it lacks explicit mention of how these features collectively justify the 'Normal' label and does not address potential caveats or other features that could influence the decision. The explanation is mostly clear and concise but could benefit from a more explicit connection between features and the classification outcome for full completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol, state, and service as drivers for the backdoor prediction, aligning with the top features provided. However, it overemphasizes the 'INT' state as indicative of backdoors without considering that 'INT' may also be normal in some contexts, and the explanation does not explicitly address the signs or directions of the features. Clarity is good but could be more concise; completeness is moderate as it covers main drivers but lacks discussion of caveats or alternative explanations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features with their signs and aligns with the prediction of 'Normal.' It clearly states that the application/service is HTTP, which supports normal traffic, and notes the absence of repeated source/destination port activity, indicating no scanning behavior. The mention of mean packet size further supports typical communication patterns. However, the explanation could improve by explicitly connecting these features to the 'Normal' label and discussing potential caveats or other features that reinforce the classification, thus enhancing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have SHAP values of zero, indicating they do not influence the classification, aligning with the prediction of 'Normal.' It clearly describes the features involved and their minimal contribution. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention other potential key drivers or caveats, such as the absence of anomalous patterns in packet sizes or flow rates. Overall, it is accurate and clear but could be more comprehensive in justifying the normal classification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as DNS service usage and connection count, aligning with the model's top features and their signs. It appropriately links these features to reconnaissance behavior. However, it does not explicitly address the zero values for other features or potential caveats, and some details are truncated, slightly affecting clarity and completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that the features have minimal SHAP contributions and that the classification is 'Generic' due to lack of distinctive indicators. It aligns the moderate 'id' feature with the decision, and correctly states that the DNS service is legitimate, matching the features. However, it overemphasizes the 'id' feature's importance without clarifying that the low SHAP values indicate minimal influence overall. The explanation is concise and SOC-ready but could better emphasize the low feature impact and explicitly mention that the features do not strongly support any specific threat, justifying the 'Generic' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly links the FIN flag and packet counts to fuzzing behavior, aligning with the top features and their signs. It clearly describes how these features suggest fuzzing activity. However, it overemphasizes the FIN flag as a primary indicator, which can be ambiguous since FIN packets are common in normal connection termination. The mention of asymmetrical packet counts and byte sizes supports the fuzzer hypothesis but could be more explicitly connected to the features. The explanation covers key drivers but lacks discussion of potential caveats or alternative explanations, slightly reducing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as application/service (http) and connection state (FIN) that support the 'Analysis' classification, aligning with the SHAP features and their signs. However, it overemphasizes the benign nature of HTTP and FIN flags without discussing potential caveats or the influence of other features like packet sizes or traffic rates. The explanation is mostly clear but could be more concise and explicitly connect features to the label justification for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns the features with the normal classification, emphasizing the use of UDP, DNS service, and normal connection state, which are consistent with typical DNS traffic. It avoids contradictions and clearly states the normal patterns observed. However, it could improve by explicitly mentioning the negligible feature values and their role in supporting the 'Normal' label, as well as noting any potential caveats such as atypical but benign traffic patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, aligning with the prediction of 'Normal' and indicating no significant impact from these features. It accurately describes the features involved, such as protocol and application/service, and their neutrality. However, it does not explicitly mention other potential key drivers or caveats, such as the overall feature values or additional context that support the normal classification. The explanation is concise and SOC-ready but could improve in completeness by addressing other relevant features or uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, highlighting key drivers such as connection state, packet counts, and byte differences that are indicative of fuzzing activity. It correctly interprets the asymmetry and retransmission patterns. However, it could improve by explicitly connecting the features to fuzzing behaviors and noting potential caveats, such as benign reasons for similar patterns or the influence of other attack types.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the top features, emphasizing the UDP protocol and DNS service as normal, and correctly interprets low packet counts as typical for DNS traffic. It avoids contradictions and hallucinations, providing a clear and concise rationale. However, it could improve by explicitly noting that the features' zero SHAP contributions indicate they are neutral drivers, and by mentioning any caveats such as the limited feature set or context.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the unknown protocol 'unas', empty application/service, and internal state 'INT' as indicators of suspicious activity, aligning with the prediction of 'Analysis'. It appropriately interprets the implications of these features. However, it does not explicitly address the signs of potential covert channels or clarify how these features collectively justify the 'Analysis' label, leaving some room for more detailed justification. The explanation is concise and SOC-ready, but could benefit from a brief mention of caveats or alternative interpretations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly associates the use of UDP and absence of specific service with fuzzing activity, aligning with the prediction. It notes the high packet rate as a key indicator. However, the top features show negligible SHAP values (+0.000), which suggests limited contribution from these features, and the explanation could clarify how these features influence the model's decision. The reasoning is concise and SOC-ready but could better emphasize caveats, such as the possibility of false positives or other benign reasons for similar patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the low SHAP feature contributions and the benign nature of the features, aligning with the 'Generic' prediction. It clearly states that no distinctive or suspicious features are present, supporting the classification. However, it could improve by explicitly noting that the minimal feature impacts and common protocol usage justify the 'Generic' label, and by mentioning any potential caveats regarding the limited feature influence.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the FIN flag, packet counts, and byte differences, aligning with the top features and their signs. It logically connects these features to exploit behavior. However, it could improve clarity by explicitly stating how each feature's sign influences the prediction and by summarizing the overall reasoning more concisely. The explanation covers major drivers but could mention potential caveats or alternative interpretations for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly states that the features do not strongly influence the 'Generic' classification and emphasizes the lack of distinctive indicators. It accurately describes the features involved and their typical interpretations. However, it could better clarify how the features' values contribute to the decision, especially regarding the minimal impact of the features, and explicitly mention that the features' near-zero SHAP values support the 'Generic' label. The explanation is mostly clear but could be more concise and SOC-ready by removing redundant details and explicitly connecting feature impacts to the classification.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately states that the key features (protocol and service) have minimal impact on the 'Normal' classification, aligning with the SHAP values. It clearly describes the features and their contributions, making it understandable. However, it does not explicitly justify why these features support the 'Normal' label or discuss other potential drivers or caveats, limiting its completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as UDP protocol, unspecified service, and intermediate connection state as indicative of fuzzing activity, aligning well with the top features and their signs. However, it overstates the significance of some features (e.g., small packet count) without explicitly discussing how these features collectively support the label. The explanation is clear and concise but could better emphasize how each feature contributes to the classification and note potential caveats, such as benign reasons for some features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features such as protocol and application/service, aligning with the prediction of 'Normal.' It accurately interprets the SHAP values and their implications. However, it lacks detailed discussion of the other features and their contributions, and does not explicitly address potential caveats or uncertainties, which would improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing the benign nature of UDP protocol and lack of suspicious activity. It accurately interprets the absence of specific service and low connection count as typical for normal traffic. However, it could improve by explicitly connecting the features to the prediction and noting that the features' values do not contradict the 'Normal' label, while also mentioning potential caveats such as the limited feature scope and the possibility of benign anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features such as application/service being '-' and the connection state 'FIN', aligning with the prediction of 'Normal'. It appropriately interprets the high packet rate as potentially normal, and notes the typical connection termination. However, it does not explicitly address the signs of the top features (which are all zero, indicating no strong feature influence), nor does it mention the absence of contradictory signals. The explanation is clear and concise but could better justify why the features collectively support a 'Normal' label and note potential caveats, such as the lack of feature influence or other subtle indicators.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the features and their contributions, emphasizing the benign nature of the observed network activity. It correctly notes that the features are neutral or typical for DNS traffic, aligning with the 'Generic' classification. However, it could better clarify how the features collectively support the label and mention potential caveats, such as unusual packet sizes or rates, which are not discussed here.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately states that the features have negligible impact on the classification, aligning with the zero SHAP values. It correctly interprets the use of UDP and DNS as benign, consistent with the 'Generic' label. The description is clear and covers the main drivers, noting the absence of suspicious activity indicators. Minor improvements could include explicitly mentioning the low feature values and their role in the classification, but overall it provides a balanced and SOC-ready summary.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the absence of a specific application/service and repeated source-destination port usage as indicative of reconnaissance activity. It aligns with the SHAP features and their signs, avoiding contradictions. However, it could better clarify how these features collectively justify the label and explicitly mention potential caveats, such as benign reasons for some behaviors or the limited impact of features with zero SHAP value.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the use of FTP service, FIN flag, and symmetric packet counts, which align with fuzzing behaviors. However, it does not explicitly address the signs of the features or how they support the classification, nor does it mention potential caveats or alternative explanations. The description is concise and SOC-ready but could benefit from clearer linkage between features and the fuzzing label to improve completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features (protocol, service, state, packet size) with neutral SHAP values, aligning with the prediction of 'Normal'. It avoids contradictions and clearly states the features' roles. However, it lacks discussion of the other features (e.g., counts, load, timing metrics) that could further justify the normal classification, and does not explicitly mention potential caveats or edge cases. Overall, it provides a solid, SOC-ready summary but could improve in completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the neutral nature of the TCP protocol and the absence of specific malicious services, aligning with the features provided. It appropriately notes the low packet count as a sign of normal activity. However, it does not explicitly address the other features with zero or near-zero SHAP values, such as id, application/service, and packet sizes, which are relevant for full completeness. The explanation is clear and concise but could better emphasize how these features collectively support the 'Normal' prediction and mention potential caveats or limitations, such as the possibility of subtle anomalies not captured by these features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that the features (protocol UDP, service DNS, connection state CON) are typical for normal DNS traffic and aligns with the prediction. However, it emphasizes the minimal SHAP contributions (+0.000) without discussing the overall feature values or their context, which could clarify why the model predicts 'Normal.' The explanation covers key drivers but lacks detail on how these features collectively support the normal classification and does not address potential caveats or unusual patterns that might challenge the label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions the FIN state and packet counts but does not clearly connect these features to the 'Exploits' label, especially given the top features show minimal influence and no direct feature-direction alignment. The reasoning about retransmissions and high packet counts suggests DoS activity but does not explicitly justify the exploit classification. The explanation is somewhat ambiguous and lacks focus on key drivers, reducing clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the presence of DNS traffic, connection state, and low packet count to reconnaissance activity, aligning with the features and their signs. It avoids contradictions and clearly states how each feature supports the classification. However, it could improve by explicitly addressing the signs of the features (e.g., the sign of the features in the model) and noting potential caveats, such as benign uses of DNS or low packet counts in legitimate traffic.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing the benign nature of ARP protocol and the absence of suspicious activity. It accurately interprets the empty application/service field and the zero count feature. However, it could improve by explicitly connecting the features to the absence of anomalies and noting that the low activity levels support the normal classification. The explanation is mostly clear and concise but could be more succinct in summarizing the key drivers. It covers the main features but lacks discussion of potential caveats or edge cases that might affect the classification.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the high packet rate, source bits per second, and low TTL as key indicators aligned with the 'Exploits' prediction, matching the features' signs and their relevance to malicious activity. However, the top features provided (all zeros) do not support the explanation's focus on these metrics, indicating a discrepancy between the model's actual feature importance and the explanation. The explanation is clear and concise but could better justify why these features are considered top drivers given their zero importance in the provided data. It notes some caveats by mentioning other features are less significant, but it does not explicitly address the contradiction with the top features or clarify the basis for emphasizing certain metrics over the provided feature importance data.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the key features with their SHAP values and aligns them with the 'Normal' prediction, emphasizing the typical use of UDP and absence of suspicious services. However, it lacks explicit discussion of how these features collectively support the classification and does not address potential caveats or edge cases. The description is mostly clear but could be more concise and SOC-ready by summarizing the key points more directly.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with neutral SHAP values and aligns with the 'Normal' prediction, avoiding contradictions. It clearly states the significance of protocol and application fields, though it could better emphasize that these features do not drive anomalies. The coverage of key drivers is adequate but lacks detailed caveats about the minimal impact of features with zero SHAP values. Overall, it is concise and SOC-ready, but could improve in explicitly connecting feature impacts to the classification outcome for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features (protocol, application/service, connection state) and their SHAP values as neutral (+0.000), aligning with the 'Normal' prediction. It appropriately emphasizes the typicality of TCP and FIN states. However, it lacks explicit mention of how these features collectively support the normal classification and does not address potential caveats or other features that might influence the decision. The explanation is mostly clear but could be more concise and SOC-ready by avoiding redundant phrasing and focusing on the main drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the key features influencing the 'Normal' classification, such as the application protocol and packet counts, aligning with the provided feature signs. However, it overemphasizes the mean packet size without discussing its actual value or potential caveats. The explanation is clear and concise but could better justify why these features lead to a normal label and acknowledge possible limitations or other contributing factors.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features with their signs and aligns with the prediction of 'Normal.' It accurately interprets the neutral or benign nature of UDP protocol, absence of specific application/service, and typical packet counts, which support the normal classification. However, it does not explicitly address the other top features (transaction protocol, id, count, mean packet size) with their signs, nor does it mention potential caveats or limitations, such as the low feature importance or the fact that some features are zero, which could be relevant for a comprehensive understanding. Overall, the explanation is clear and mostly complete but could improve in explicitly connecting all features and discussing caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol, application, and connection state as typical for normal traffic, aligning with the prediction. However, it emphasizes the minimal impact of features with zero SHAP values, which may be misleading, and does not explicitly address the absence of features indicating anomalies. The description is clear and concise but could better justify why these features support a 'Normal' classification and note potential caveats, such as the lack of feature variability or other subtle indicators.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the high packet rate and high TTL as key indicators supporting the 'Exploits' prediction, aligning with the features' signs. However, it does not address the negative or neutral features, such as the protocol or service, which are not contributing to the prediction, nor does it explicitly mention potential caveats or alternative explanations. The explanation is concise and SOC-ready but could benefit from a more comprehensive coverage of all relevant features and their roles.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly notes that the features used (protocol, service, counts) are neutral and do not strongly support a specific threat, aligning with the 'Generic' label. However, it overstates the impact of features by suggesting they have 'no substantial impact,' which may not be fully accurate given the zero SHAP values; this could be clarified. The explanation is concise and SOC-ready but could better emphasize that the model's decision is primarily due to the lack of indicative features, and it notes the neutral nature of the features, supporting completeness.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the unknown protocol 'unas', missing application/service, and high connection rate as drivers for the 'Analysis' label. It aligns feature signs with the prediction, avoiding contradictions. The description is concise and SOC-ready, clearly linking features to potential malicious behavior. However, it could improve by explicitly noting that the features' signs support the classification and by mentioning any caveats or uncertainties, such as the limited feature set or potential false positives.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that the key features have negligible SHAP values, aligning with the 'Normal' prediction and avoiding contradictions. It clearly states the features considered and their impact. However, it lacks detail on how these features collectively support the classification, and it does not mention potential caveats or other factors that could influence the decision. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature values to the 'Normal' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the presence of FIN packets, high packet count, and large data transfer to exploit activity, aligning with the features and their signs. It emphasizes key drivers like connection state and throughput, which are relevant indicators. However, it could improve by explicitly addressing the signs of features (e.g., high packet count and size) and clarifying how these support the 'Exploits' label. The explanation is concise and SOC-ready but could benefit from a brief note on potential caveats or alternative interpretations, such as benign high-volume traffic.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features such as connection state, packet counts, and byte transfer, aligning with the model's top features and their signs. It interprets the FIN state and asymmetric data transfer as potential exploitation indicators, consistent with the prediction. However, it introduces some speculative reasoning about FIN manipulation and attack patterns without explicitly connecting the feature signs to the model's top features, which are all zero in this case. The explanation is mostly clear and concise but could better emphasize the absence of direct feature influence and note potential caveats, such as benign reasons for high packet counts.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as connection state, high packet rate, and TTL as drivers for the 'Exploits' classification, aligning with the top features and their signs. It clearly describes how these features relate to exploitation behavior. However, it could improve by explicitly linking the features' signs to the prediction and providing a brief note on potential caveats or limitations, such as the unusual protocol or the absence of other typical exploit indicators.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the absence of a specific application/service protocol and zero SHAP values for the top features support the 'Normal' classification, aligning with the provided features and their signs. However, it overemphasizes the significance of the 'Application/service' feature without noting that all top features have zero SHAP values, indicating minimal contribution. The explanation does not sufficiently justify why these features lead to a 'Normal' label or discuss potential caveats, such as other unconsidered features or the model's reliance on non-top features. Overall, it is mostly aligned but could improve clarity and completeness by explicitly connecting the zero SHAP values to the normal classification and acknowledging limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol (UDP), service (DNS), and connection state as supporting the 'Normal' classification, aligning with the SHAP features that show neutral or zero contributions. However, it does not explicitly address the negligible SHAP values or potential caveats, such as the presence of minimal traffic volume or the fact that zero SHAP contributions imply these features are not driving the prediction. The explanation is concise and SOC-ready but could improve in explicitly connecting the feature contributions to the prediction outcome for completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing standard behaviors such as TCP protocol, FIN state, and absence of specific application service. It avoids contradictions and clearly states the normality of these features. However, it could better justify how these features collectively support the normal label and mention potential caveats, such as the limited feature set or unusual but benign patterns.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features have minimal importance and that the event appears benign, aligning with the 'Generic' label. However, it overemphasizes the lack of distinctive features without explicitly connecting how the features' signs and values support the classification. The mention of minimal importance is consistent with SHAP values near zero, but the explanation could better clarify that the features do not contribute positively or negatively toward any specific class, thus justifying the 'Generic' label. Clarity is good, but the completeness could be improved by explicitly noting that the features do not indicate any anomalies or threats, and by mentioning potential caveats such as the possibility of benign DNS activity that might sometimes be misclassified.",
+      "overall": 2.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the SHAP values and the features' contributions, emphasizing that key features do not significantly influence the 'Normal' classification. It clearly states the features considered and their impact, aligning well with the model's reasoning. However, it lacks discussion of potential caveats or other less prominent features that might also support the classification, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of the overall context or limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as protocol, application, and connection state as normal, aligning with the prediction of 'Normal.' It accurately notes the minimal SHAP impact of these features. However, it lacks detailed discussion of other features (e.g., packet sizes, rates) that support the normal classification, and does not explicitly address potential caveats or borderline cases. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 3.875
+    }
+  ],
+  "summary": {
+    "fidelity": 3.745,
+    "clarity": 3.94,
+    "completeness": 3.281,
+    "overall": 3.678
+  }
+}

@@ -1,0 +1,1410 @@
+{
+  "cases": [
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing key factors such as short duration, TCP protocol, FTP service, and byte transfer patterns, which support the 'Normal' classification. It avoids contradictions and clearly states the rationale behind the prediction. However, it could improve clarity by explicitly connecting each feature to the prediction and noting potential caveats, such as the possibility of benign anomalies or atypical behavior that might not be captured.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing that zero bytes sent from source to destination and the S0 flag are indicative of probing activity. It clearly states how these features contribute to the 'Probe' classification. However, it could improve by explicitly connecting the features to the absence of data transfer and the nature of reconnaissance, and by noting potential caveats such as benign reasons for similar patterns.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing low data transfer, UDP protocol, and legitimate service usage, which support the 'Normal' classification. It avoids contradictions and is concise. However, it could better highlight the absence of suspicious activity indicators and note potential caveats, such as rare legitimate UDP use cases, to improve completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references key features such as bytes transferred, service type, protocol, and connection flags, aligning with the prediction of 'Normal.' It avoids contradictions and hallucinations, providing a clear rationale for normality. However, it does not explicitly mention the other features like src_bytes, dst_bytes, or the absence of suspicious flags, which could enhance completeness. The explanation is concise and SOC-ready, but could benefit from a brief note on potential caveats or the absence of anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as zero bytes sent from source to destination and immediate connection termination as indicative of a DoS attack, aligning with the prediction. However, it references 'connection length' which is not among the provided top features, leading to some inconsistency. The explanation is generally clear and concise but could better emphasize the relevance of the listed features and note potential caveats, such as benign reasons for zero bytes or quick disconnects.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as low bytes sent, the presence of a standard service (POP3), and connection status as contributing to the 'Normal' classification. It aligns with the provided SHAP values, which are all zero, indicating no feature strongly influenced the prediction. However, the explanation could be more explicit about the absence of contradictory signals and clarify that the features collectively support normal behavior. It also notes caveats minimally, as it does not discuss potential edge cases or limitations of the features used.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features such as application type (HTTP), protocol (TCP), and connection flags (SF) that support the 'Normal' classification, aligning with the top features provided. However, it does not explicitly address the signs or directions of the features, nor does it mention the negligible feature values, which are crucial for full fidelity. The explanation is concise and clear but could better justify why these features lead to a normal label, including caveats or limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features such as high src_bytes and long duration, which support the DoS classification. It aligns with the features' signs and the typical characteristics of DoS attacks. However, it does not explicitly address the other features with zero values, which could be relevant for completeness. The explanation is concise and SOC-ready, but could improve clarity by explicitly connecting all features to the DoS rationale and noting potential caveats, such as benign reasons for high traffic.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as protocol type and application service, which align with the 'Normal' prediction. However, it discusses connection duration (0 seconds) that is not explicitly included in the provided features, leading to some ambiguity. The explanation covers main drivers like protocol and service but lacks explicit mention of the features with zero SHAP importance, which could clarify why they are not contributing to the prediction. Overall, it aligns well with the features and prediction but could improve clarity and completeness by explicitly referencing the provided features and their contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values (bytes sent, destination service, source port, connections to host), which do not support the classification as they are neutral or irrelevant in this context. The mention of S0 state is relevant but incomplete, and the explanation suggests a DoS but does not clearly connect the features to the attack type or provide sufficient justification. Overall, the explanation lacks alignment with the feature contributions and does not fully justify the prediction.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately references the key features and their signs, aligning with the 'Normal' prediction and SHAP values, and avoids contradictions. It clearly states the features' relevance to normal traffic. However, it lacks explicit mention of how these features collectively justify the label or note potential caveats, such as the limited scope of features considered or the absence of other possible contributing factors. Overall, it provides a solid, SOC-ready summary but could improve in completeness by explicitly connecting features to the classification decision.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing typical web activity and normal connection states. It accurately interprets the features like application type, byte transfer, and connection flags without contradictions. However, it could improve by explicitly mentioning the absence of anomalies or caveats, and by clarifying how the features collectively support the normal classification. The explanation is concise and SOC-ready but slightly lacks detail on other potential key drivers or caveats.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as zero bytes sent from source to destination and zero connection duration, which align with the top features indicating no data transfer and short connections typical of DoS attacks. However, it mentions 'connection length' as a feature, which is not listed among the top features, and does not explicitly address the other top features like application/service or port percentage, which are all zero and support the classification. The explanation is clear and concise but could better justify the label by integrating all relevant features and noting potential caveats, such as the possibility of false positives in zero-traffic scenarios.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, indicating they do not influence the 'Normal' classification, aligning with the prediction. It clearly identifies the features and their non-contribution, supporting the normal label. However, it lacks explicit mention of key features like duration, protocol, or other context-specific factors that justify the 'Normal' label, and does not discuss potential caveats or alternative explanations. Overall, it is accurate and mostly clear but could be more comprehensive in covering all relevant drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the DoS prediction primarily to features indicating no data transfer and zero connection duration. However, the top features show all zero values, which do not support the explanation's emphasis on 'bytes sent' or 'connection duration.' The explanation introduces features like 'connection length' not present in the top features, leading to potential hallucinations. While the reasoning about zero bytes and short connections aligns with DoS characteristics, the lack of direct feature support reduces fidelity. Clarity is good, but the explanation could be more concise. Completeness is limited, as it does not discuss other key drivers or caveats, and relies on features not highlighted in the top features.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the ICMP protocol, zero duration, and minimal bytes sent, which align with typical probing behavior. It clearly describes how these features contribute to the 'Probe' classification. However, it does not explicitly address the other features or potential caveats, such as the lack of other suspicious indicators or the possibility of benign ICMP activity, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of how these features collectively support the label.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as zero duration, HTTP service, and byte transfer directions, aligning with the 'Normal' prediction. It avoids contradictions and is clear and concise. However, it lacks explicit mention of the other top features (e.g., source port percentage, connections to same host) and does not discuss potential caveats or the full feature set influencing the prediction, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, correctly interpreting small byte counts, the use of HTTP, and the connection flag as indicators of normal traffic. It avoids contradictions and clearly states how each feature supports the 'Normal' label. However, it could improve by explicitly mentioning the absence of anomalous features or caveats, and by summarizing how these features collectively justify the classification.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent in both directions and zero connection duration as key indicators supporting a DoS classification, aligning with the top features. However, it does not explicitly mention the other features listed (e.g., application/service, port percentage, host connections), which are all zero and reinforce the anomaly. The reasoning is clear and concise, but it could better justify how these features collectively support the label and note potential caveats such as the possibility of false positives in zero-traffic scenarios.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly references the key features influencing the 'Probe' classification, such as the asymmetric bytes transfer and RSTO flag, aligning with the SHAP top features. It avoids contradictions and hallucinations, clearly connecting features to the label. However, it could improve clarity by explicitly stating how each feature supports the probe hypothesis and noting that the features' SHAP values are near zero, which may suggest limited influence. Overall, it provides a solid, SOC-ready justification with minor room for more explicit linkage.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the high bytes sent from source to destination and the short connection duration as key indicators aligned with the prediction of DoS. It references relevant features and their typical association with DoS attacks, avoiding contradictions. However, it does not explicitly mention the signs of the top features (which are all zero in this case), nor does it discuss potential caveats or alternative explanations, slightly limiting completeness. Overall, the explanation is clear and aligns well with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that the top features had negligible SHAP values, aligning with the 'Normal' prediction. It highlights relevant features like application type and source port behavior, which are typical indicators. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or other features that could influence the decision. The explanation is mostly clear but could be more concise and explicit about the overall justification.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as connection duration, protocol, and destination service, which align with the prediction of DoS. However, it mentions 'Connection Length' as a key feature, which is not listed among the top features provided. The explanation also discusses attack characteristics like short-lived connections and targeted services, but these are not directly supported by the given top features or their signs. There are contradictions and hallucinations regarding feature importance and their relation to DoS, leading to a moderate score across all criteria.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as connection length and protocol, which align with the prediction of DoS. However, it does not explicitly connect the features to their signs or clarify how they support the label, especially given that all top features are zero and the explanation focuses on duration and protocol. The reasoning is somewhat vague and lacks detail on how the features drive the classification, leading to moderate scores across all categories.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the zero bytes sent in both directions as key indicators supporting the DoS prediction, aligning with the features and their signs. However, it overemphasizes the absence of data exchange as a primary driver without explicitly connecting other features or potential caveats. The explanation is concise and SOC-ready but could better justify the label by discussing additional features or typical attack patterns, and noting limitations such as the lack of other contributing features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing legitimate and common protocols like FTP and TCP, which support the 'Normal' classification. It correctly interprets the features without contradictions. The explanation is concise and SOC-ready, clearly stating the key drivers and their implications. However, it could improve by explicitly noting that the features' values are neutral or typical, and by mentioning any potential caveats or limitations, such as the absence of features indicating anomalies or the reliance on typical feature signs.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low bytes, legitimate service, and short duration, which support the 'Normal' prediction. It avoids contradictions and clearly states key drivers. However, it could improve by explicitly mentioning the absence of suspicious activity indicators and noting that all features are consistent with normal behavior, enhancing completeness and clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features such as application/service (http), protocol (tcp), connection flag (SF), and bytes sent, aligning with the 'Normal' prediction. It accurately interprets these features as indicative of typical, legitimate activity. However, it does not explicitly address the other top features with zero importance, nor does it mention potential caveats or the absence of contradictory features. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation states that all top features have zero SHAP value, implying they did not influence the classification. However, it does not clarify how the model arrived at 'Normal' given the features, nor does it justify why these features are considered non-contributory. The explanation is somewhat verbose and lacks specific connection to the instance details, reducing clarity and completeness. Overall, it aligns with the features but does not sufficiently justify the prediction or highlight key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the presence of typical HTTP traffic, small data transfer amounts, and successful connection status, all supporting a 'Normal' classification. However, it does not explicitly address the negligible feature values (all zeros) from the top features list, nor does it mention potential caveats such as the absence of other features that could influence the decision. The explanation is concise and SOC-ready but could benefit from a brief note on feature limitations for completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features that are all zero or minimal, aligning with the prediction of DoS, such as zero bytes sent and zero connection duration. However, it mentions features like 'connection length' and 'bytes sent from source to destination' which are not explicitly listed among the top features, leading to some inconsistency. The explanation does not sufficiently justify why these features are the key drivers over others, nor does it address potential caveats or alternative explanations. Overall, it captures some relevant points but lacks clarity on the feature importance and completeness in covering key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the key features with zero SHAP contribution, aligning with the 'Normal' prediction and indicating no contradictions. It clearly states the significance of features like bytes sent and service type, supporting the classification. However, it lacks detailed coverage of other potential drivers (e.g., duration, flags) and caveats that might influence the decision. The explanation is concise and SOC-ready but could improve in completeness by explicitly mentioning the absence of anomalous indicators and potential limitations of the features considered.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing small byte counts, UDP protocol, and private service as indicators of normal traffic. It avoids contradictions and clearly states the key drivers. However, it could better address potential caveats, such as the possibility of benign anomalies or the limitations of the features in capturing all malicious activities, thus slightly reducing the completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the destination service (HTTP) and connection status (SF) as indicative of normal behavior, aligning with the prediction. It notes that the source-to-destination bytes are not significant, consistent with the zero SHAP value. However, the mention of large bytes from destination to source (30053) is incomplete and somewhat contradictory, as high inbound data could be suspicious but is not explicitly linked to the normal classification. The explanation could be clearer about how these features collectively justify the 'Normal' label and should mention that other features like 'land' and 'num_failed_logins' are not contributing factors. Overall, it is concise and SOC-ready but could improve in covering all key drivers and potential caveats.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately aligns with the top features, emphasizing zero bytes sent and the nature of the telnet service, which support the 'Normal' classification. It correctly interprets the features' signs and their implications. However, it could improve clarity by explicitly connecting each feature to the normal behavior and noting that the absence of data transfer and specific connection flags are typical in benign sessions. Completeness is good but could include potential caveats, such as the possibility of stealthy malicious activity that mimics normal patterns, or mention that other features not highlighted might also influence the decision.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the top features with zero SHAP contribution, aligning with the 'Normal' prediction and emphasizing typical behavior for telnet connections. It avoids contradictions and is concise, but it lacks coverage of other potential key drivers or caveats that could influence the classification, such as specific protocol flags or failed login attempts.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns with the features indicating no data transfer and the presence of HTTP service, supporting the 'Normal' prediction. It accurately describes the significance of zero bytes sent and the protocol used. However, it could improve by explicitly connecting these features to the normal classification and noting that the absence of anomalies or suspicious activity is a key driver. The explanation is clear and concise but could include more detail on how these features collectively justify the label, thus slightly reducing the completeness score.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes the high src_bytes (520) as a key indicator of DoS, aligning with the SHAP feature importance. It notes the protocol (ICMP) and the connection duration (0 seconds), which are relevant. However, it does not explicitly address the other features with zero SHAP values, nor does it mention potential caveats such as benign high-volume ICMP traffic or false positives. Overall, it aligns well with the features and their signs, providing a clear and mostly complete justification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as application/service (http) and bytes from destination to source, aligning with the model's top features and their signs. It accurately interprets the significance of HTTP traffic and data flow direction, supporting the 'Normal' prediction. However, it does not explicitly address the other features with zero SHAP values, nor does it mention potential caveats or limitations, such as the absence of other contributing features or context. Overall, it provides a clear and mostly complete justification consistent with the model's reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as connection duration, protocol, and service, aligning with the 'Normal' prediction. It accurately interprets the significance of a zero-second duration and the use of TCP and HTTP as typical indicators of normal activity. However, it lacks explicit mention of the other top features (e.g., source/destination bytes, port similarity, host connections), which are all zero and thus less relevant here. The explanation could be more concise and explicitly state that these features do not contribute to abnormality, enhancing clarity and completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as connection duration, protocol, service, and connection status, which align with the prediction of DoS. However, it introduces features like 'connection length' and 'status REJ' that are not part of the provided top features, leading to potential contradictions. The explanation lacks clarity in connecting these features directly to the prediction and does not sufficiently justify why these features indicate a DoS attack. It also omits discussion of other relevant features like bytes sent or repeated connections, which could enhance completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features and their signs, emphasizing the short duration, common HTTP protocol, low source-to-destination bytes, and high destination-to-source bytes as indicators of normal activity. It avoids contradictions and clearly links features to the 'Normal' prediction. However, it could improve by explicitly mentioning the absence of suspicious patterns or caveats, and by summarizing the key drivers more concisely for SOC readiness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low byte counts, legitimate application, and normal connection flags, which support the 'Normal' prediction. However, it does not explicitly address the other features with zero contribution or mention potential caveats such as the context of the network or other subtle indicators. The explanation is clear and concise but could better justify why other features are not influential, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent in both directions as key indicators supporting the DoS classification, aligning with the top features and their signs. However, it mentions 'length of the connection = 0' which is not among the top features provided, indicating a potential hallucination or extraneous detail. The explanation is concise and clear but could better justify how these features directly lead to the label, and note that other typical DoS indicators (e.g., high connection rate) are not discussed. Overall, it aligns well with the features and prediction but slightly overstates the evidence.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features with zero SHAP values, aligning with the 'Normal' prediction and indicating benign activity. It clearly states the features and their implications. However, it lacks detail on how these features collectively justify the classification and does not explicitly mention potential caveats or other contributing factors. The explanation is concise and SOC-ready but could improve in completeness by summarizing how these features together support the 'Normal' label and noting any limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, aligning with the 'Normal' prediction and indicating no suspicious activity. It clearly describes each feature's role in the classification. However, it lacks explicit mention of how these features collectively support the 'Normal' label and does not discuss potential caveats or edge cases. The explanation is concise and SOC-ready but could improve in completeness by explicitly connecting feature neutrality to the benign classification and noting that other unmentioned features might also influence the decision.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing small byte transfer, legitimate HTTP service, and lack of suspicious connection patterns. It avoids contradictions and hallucinations, maintaining focus on key drivers. However, it could better clarify how these features collectively support the normal classification and explicitly mention any caveats or limitations, such as the absence of other potential indicators or the reliance on these features alone.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing minimal bytes sent and common protocols as indicators of normal behavior. It correctly notes the features' contributions and their typical interpretations. However, it lacks explicit mention of how these features collectively justify the 'Normal' label and does not discuss potential caveats or borderline cases, slightly limiting completeness. Clarity is good but could be more concise in summarizing the key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features supporting the DoS classification, such as zero bytes sent in both directions and zero connection duration, aligning with the top features and their signs. However, it overemphasizes the absence of data transfer as a primary indicator without discussing other potential factors or caveats, and it does not explicitly address the other features listed (e.g., protocol, service, flags). The explanation is clear and concise but could better justify why these features are sufficient for the label, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features with zero bytes sent in both directions, aligning with typical DoS characteristics. It emphasizes the lack of data transfer and short connection duration as indicators. However, it overstates the significance of zero bytes alone without discussing other potential factors or caveats, such as the protocol state or network context. The explanation is clear and concise but could better justify why these features alone suffice for the classification, and mention other possible explanations or limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero values (bytes sent from source to destination, connection duration) that align with the prediction of DoS, indicating no contradiction. However, it incorrectly states that 'Bytes sent from source to destination = 0' is a characteristic of DoS, which is an oversimplification and not universally true; legitimate connections can also have zero bytes sent initially. The explanation lacks coverage of other key drivers, such as the significance of the 'flag=REJ' indicating rejected connections, which is a strong indicator of DoS. Clarity is moderate; the reasoning is somewhat verbose and introduces features not present in the top features list, reducing conciseness and SOC-readiness. Overall, the explanation partially aligns with the features but overstates some points and omits critical details, leading to moderate scores.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, indicating they do not influence the 'Normal' classification, aligning with the prediction. It clearly describes each feature's role and their non-contribution. However, it lacks detail on other potential features or factors that support the 'Normal' label, and does not explicitly mention caveats or the broader context, which would improve completeness. The explanation is concise and SOC-ready, but could benefit from a brief summary of why the absence of suspicious features justifies the 'Normal' label.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features supporting the 'Normal' classification, such as low bytes sent and standard protocol usage, aligning with the SHAP values. However, it mentions 'connection status' without explicitly referencing the 'flag' feature or its contribution, which could improve clarity. The explanation covers main drivers but lacks discussion of potential caveats or other features that might influence the prediction, leading to a slightly lower completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not contribute to the prediction, leading to potential contradictions. It attempts to justify the DoS label by discussing attack tactics like SYN floods, but the features provided (all zero or neutral) do not strongly support this conclusion. The explanation is somewhat verbose and contains ambiguous reasoning about the significance of zero-valued features, reducing clarity. Overall, it partially aligns with the features but overinterprets their implications, resulting in moderate scores across all criteria.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes the zero bytes sent in both directions as key indicators supporting the DoS classification, aligning with the provided features. It clearly states the significance of no data exchange and immediate connection termination, which are typical in DoS scenarios. However, it could improve by explicitly referencing the features' signs and their direct influence on the prediction, and by mentioning potential caveats such as benign causes of zero bytes (e.g., failed connection attempts). Overall, it aligns well with the features and prediction, but some minor elaboration would enhance clarity and completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low traffic volume, UDP protocol, and private service as reasons for a 'Normal' classification. It avoids contradictions and hallucinations. However, it could better clarify how the features collectively justify the label and mention potential caveats, such as the possibility of benign anomalies or the limited scope of features considered.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the key features influencing the 'Normal' prediction, such as application type, data flow, and connection status, aligning with the provided SHAP features. However, it mentions 'Bytes sent from destination to source' as significant, which matches the positive SHAP value, and correctly interprets the 'SF' flag as indicative of normal connection termination. The explanation could improve clarity by explicitly stating how each feature's sign and magnitude contribute to the prediction, and completeness by explicitly connecting these features to the model's decision process and noting that other features had negligible impact.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not contribute to the prediction, leading to potential contradictions. It suggests that zero bytes sent indicates probing activity, but this is not strongly supported by the features provided. The explanation is somewhat verbose and lacks focus on the key drivers, making it less clear and comprehensive. It also does not sufficiently justify why these features lead to a 'Probe' label or note any caveats.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes high source bytes and reset flag as key indicators aligned with the features, supporting the DoS prediction. It avoids hallucinations and clearly links features to the attack type. However, it does not explicitly mention the low destination bytes or the other features with zero importance, which could enhance completeness. The explanation is concise and SOC-ready, but could benefit from a brief mention of caveats or limitations, such as the potential for false positives in high-traffic scenarios.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the key features influencing the 'Normal' classification, such as zero source-to-destination bytes and low destination-to-source bytes, aligning with typical telnet behavior. It accurately interprets these features without contradictions. The explanation is concise and SOC-ready, clearly connecting features to the classification. However, it could improve by explicitly mentioning the absence of suspicious patterns or anomalies, and noting that other features (like protocol type and flags) support normalcy. Overall, it provides a solid, accurate justification with minor room for clarity and completeness enhancements.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which contradicts the claim that these features contributed to the prediction. It mentions the FTP data service and connection flags but does not clearly connect these to the R2L classification, nor does it specify how these features support the label. The explanation is somewhat verbose and contains ambiguous references (e.g., 'Syn Flood' for SF) without clarifying their relevance to R2L. Overall, it lacks precise alignment with the features' contributions, clarity, and comprehensive justification.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns with the provided features, emphasizing low source-to-destination bytes and the use of HTTP, which support a normal classification. It accurately interprets the connection status (SF) as indicative of a successful, typical connection. However, it does not explicitly address the large amount of data sent from destination to source or note potential caveats, such as the context of data transfer volume, which could be relevant in some scenarios. Overall, the explanation is coherent and SOC-ready but could benefit from a brief mention of possible limitations or additional context.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as zero bytes sent from source to destination and the use of the telnet service, aligning with the 'Normal' prediction. It accurately interprets the TCP flag as a normal connection state. However, it mentions 'Syn Flood' as a normal state, which is misleading since SYN Floods are typically malicious; this could cause confusion. The explanation covers main drivers but lacks discussion of potential caveats or other features that could influence the classification, slightly reducing completeness. Overall, it is clear and mostly aligned with the features and prediction.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly identifies the zero duration and zero bytes sent as indicators of a DoS attack, aligning with the features. However, it introduces the 'Connection Length' feature, which is not among the top features provided, and discusses 'short-lived connections' as characteristic, which is somewhat implied but not explicitly supported by the given features. The explanation lacks clarity in connecting the features directly to the label and does not sufficiently note caveats or alternative interpretations, such as benign reasons for zero bytes sent.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that zero bytes sent and the telnet service are consistent with a normal connection, aligning with the prediction. However, it mentions 'SF' as a normal state without explicitly clarifying that 'SF' is a standard, normal TCP flag, which could cause ambiguity. The explanation covers key features supporting the 'Normal' label but lacks discussion of potential caveats or other features that reinforce the classification, leading to a moderate completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as connection duration and TCP protocol, which align with the prediction of DoS. However, it incorrectly states that the features are top contributors with zero SHAP values, which contradicts the importance of features like 'flag=RSTO' and 'service=telnet' in the top features list. The explanation lacks clarity in connecting the features to the DoS label and does not sufficiently justify why these features drive the prediction, nor does it address potential caveats or alternative explanations.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing the short duration, HTTP service, and byte transfer patterns consistent with normal activity. It avoids contradictions and clearly states how these features support the 'Normal' prediction. However, it could improve by explicitly mentioning the negligible feature values (all zeros) and noting potential caveats, such as rare legitimate cases with unusual data patterns, to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as connection duration and protocol, aligning with the prediction of DoS. However, it introduces features like connection length and protocol without explicitly matching the provided top features, which are all zero and do not support the explanation. The mention of 'brief connection' and 'tcp' is somewhat relevant but not strongly supported by the feature data. The explanation lacks clarity in connecting the features to the label and does not sufficiently justify why these features indicate a DoS attack, nor does it note potential caveats or limitations. Overall, the explanation is somewhat inconsistent with the feature data and could be clearer and more comprehensive.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 5.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the top features and their signs, emphasizing the use of UDP, small data volumes, and generic services as indicators of normal activity. It avoids contradictions and provides a clear, SOC-ready summary. However, it could improve by explicitly noting that the short connection duration and lack of suspicious flags further support the normal classification, enhancing completeness.",
+      "overall": 4.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, correctly emphasizing the short duration, protocol, and byte patterns consistent with normal web activity. It avoids contradictions and clearly states how each feature supports the 'Normal' classification. However, it could improve by explicitly noting that all key features are consistent with normal behavior and mentioning any potential caveats, such as the reliance on typical patterns which may not cover all edge cases.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing the zero duration, UDP protocol, and zero bytes from destination, which support the 'Normal' classification. It avoids contradictions and clearly states the key drivers. However, it could be more explicit about how these features collectively justify the label and mention potential caveats, such as rare benign UDP events that might be suspicious.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing legitimate protocol usage, connection status, and typical data transfer patterns consistent with a 'Normal' event. It avoids contradictions and hallucinations, clearly connecting features to the normal classification. However, it could improve by explicitly noting that the features collectively support the normal label and mentioning any potential caveats or limitations, such as the absence of other features that might indicate subtle anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately reflects the features contributing to the 'Normal' classification, such as the use of UDP, the generic service category, and symmetrical traffic pattern. It aligns well with the top features and their signs, avoiding contradictions. The explanation is clear and covers key drivers, though it could briefly mention potential caveats like benign anomalies or rare protocols to improve completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the key features contributing to the DoS prediction: high bytes sent from source, ICMP protocol usage, and the context of the service. It aligns with the top features indicating traffic volume and protocol as drivers. However, it could better emphasize the absence of contradictory features and clarify how the features collectively support the label. The explanation is concise and SOC-ready but could improve in explicitly connecting each feature to the DoS classification for full completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, correctly emphasizing the low byte transfer and legitimate FTP service as reasons for a normal classification. It avoids contradictions and clearly states the key drivers. However, it could improve clarity by explicitly connecting the features to the 'Normal' label and mentioning potential caveats, such as the limited feature scope or the possibility of benign anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing low traffic volume, TCP protocol, and the finger service as reasons for a 'Normal' classification. It avoids contradictions and clearly states key drivers. However, it could improve by explicitly noting that all features support normality and mentioning potential caveats, such as the unusual presence of the finger service, which might warrant further context.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their SHAP values, emphasizing low bytes sent, typical HTTP service, and normal connection flags, which support the 'Normal' prediction. However, it could clarify that all features have near-zero SHAP values, indicating minimal contribution, and explicitly mention that no contradictory features are present. The explanation is concise and SOC-ready but could briefly note caveats such as the limited feature impact.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the destination service (sunrpc) and TCP protocol to reconnaissance activities, aligning with the 'Probe' prediction. It notes the rejected connection as indicative of probing behavior. However, it does not explicitly address the absence of other features or potential caveats, such as the lack of failed login attempts or other suspicious indicators, which could enhance completeness. The explanation is concise and SOC-ready, but could benefit from clearer emphasis on how these features collectively justify the label.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not support the classification decision, leading to potential contradictions. It mentions the source sending a large amount of data as a key indicator, but this is not reflected in the provided SHAP values. The reasoning is somewhat ambiguous and lacks focus on the actual feature contributions, reducing clarity and completeness. Overall, the explanation does not convincingly justify the R2L prediction based on the given features and SHAP values.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing that low bytes sent, private service, and normal connection status support a 'Normal' classification. However, it lacks explicit mention of how these features collectively justify the label and does not address potential caveats or other key drivers, leading to a slightly lower completeness score. The explanation is concise and SOC-ready, supporting clarity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features provided, emphasizing the brief connection duration, UDP protocol, private service, and minimal data transfer as key indicators of a probe. It accurately describes how these features contribute to the classification. However, it could improve by explicitly referencing the top features listed (which are all zero in this case) and clarifying how the absence of other features supports the decision. The explanation is concise and SOC-ready, but some caveats about potential false positives or feature limitations are not mentioned, slightly affecting completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the 'systat' service, TCP protocol, and REJ flag as drivers for the 'Probe' classification, aligning with the prediction. It avoids contradictions and is clear and concise. However, it could improve by explicitly connecting how these features collectively indicate reconnaissance activity and noting potential caveats, such as the possibility of false positives when these features appear in benign contexts.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the duration feature (duration=0) aligning with the top features indicating short-lived connections, which supports the DoS prediction. However, it incorrectly emphasizes 'connection length' as a key driver, despite the top features showing zero SHAP value contributions, indicating no influence. The mention of TCP protocol and 'time' service is somewhat relevant but not strongly supported by the provided features or SHAP values. The explanation lacks clarity in connecting the features to the label and does not sufficiently justify the prediction or note potential caveats, such as the absence of significant feature contributions or alternative explanations.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features indicating normal activity: low traffic volume, short duration, and legitimate protocol usage. It correctly interprets the features without contradictions. However, it does not explicitly mention the absence of suspicious patterns in other features or potential caveats, such as rare but benign anomalies, which would enhance completeness. Clarity is good but could be slightly more concise for SOC readiness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly emphasizes zero bytes sent in both directions and the rejected connection status as key indicators supporting the DoS prediction. It aligns with the features' signs and the typical behavior of DoS attacks. However, it could improve by explicitly mentioning the significance of the 'flag=REJ' and clarifying that the absence of data transmission is a strong indicator of attack activity. The explanation is concise and SOC-ready but could include a brief note on potential caveats, such as benign causes of rejected connections.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low traffic volume, legitimate HTTP service, and absence of suspicious indicators, which support the 'Normal' prediction. It avoids contradictions and clearly states the key drivers. However, it could improve by explicitly mentioning the negligible feature values and noting that the explanation is based on typical benign patterns, with caveats about potential unseen anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features, emphasizing low traffic volume, the use of Telnet, and absence of suspicious indicators, which support the 'Normal' classification. It avoids contradictions and is clear and concise. However, it could better highlight how the specific feature values directly contribute to the prediction and mention any caveats, such as the potential risks associated with Telnet usage despite the benign features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent in both directions as key indicators supporting the DoS prediction, aligning with the features' signs. However, it mentions 'length of the connection' which is not among the provided features, indicating a potential hallucination. The explanation covers the main drivers but lacks discussion of caveats or alternative explanations, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features such as UDP protocol, private service, and minimal bytes sent, which align with typical probe behavior. It accurately interprets the significance of these features in indicating reconnaissance activity. However, it could improve by explicitly connecting these features to the predicted label and discussing potential caveats, such as benign uses of UDP or private services, to enhance completeness and clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing legitimate aspects such as application type, protocol, connection status, and data volume, which support the 'Normal' classification. However, it does not explicitly address the features with zero contribution scores, nor does it mention potential caveats or alternative explanations, slightly limiting completeness. The explanation is clear and SOC-ready, but could be more concise in summarizing the key drivers.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features such as the HTTP service, large response bytes, and successful login, which align with the 'Normal' prediction. It avoids contradictions and clearly states how these features support benign activity. However, it could improve by explicitly mentioning the absence of suspicious features (e.g., failed logins, unusual ports) and noting that other features like duration or source bytes are not contributing to the decision, ensuring full coverage of key drivers.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as application type, byte transfer amounts, and connection status, which align with the 'Normal' prediction. It avoids contradictions and hallucinations, providing a clear rationale. However, it does not explicitly address the other features (e.g., source/destination ports, flags) or note potential caveats, such as the limited scope of features considered or the possibility of benign anomalies. Overall, it effectively justifies the prediction with relevant details, but could improve completeness by covering more features and caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the benign nature of FTP, connection status, and data transfer direction, which support the 'Normal' prediction. It notes key drivers such as application type, connection state, and data flow, and mentions the 'hot' indicators, though it could clarify their non-contributing role further. Overall, it is concise and SOC-ready, but could improve by explicitly addressing potential caveats or the absence of contradictory features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly states that the negligible features align with the 'Normal' prediction and highlights key drivers such as connection length and protocol, which are relevant for the classification. However, it mentions 'significant impact' for features with zero SHAP values, which is contradictory and reduces fidelity. Clarity is good but could be more concise; completeness is moderate as it notes some key drivers but lacks discussion of potential caveats or other influential features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not contribute to the classification, leading to a mismatch between the explanation and the top features. It mentions 'Bytes sent from source to destination' and 'connection length,' but these are not among the top features with non-zero SHAP values, causing a contradiction. The reasoning about the connection duration and data flow is plausible but not directly supported by the provided feature importance. Overall, the explanation lacks alignment with the actual feature contributions and omits key drivers, reducing its fidelity and completeness. It is somewhat clear but could be more concise and SOC-ready.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights key features such as low traffic volume, TCP protocol, and SMTP service, which align with the 'Normal' prediction. It avoids contradictions and is straightforward. However, it could improve clarity by explicitly connecting these features to the 'Normal' classification and noting that no suspicious activity indicators are present. The explanation covers main drivers but could mention caveats like the absence of other potential anomalies or the context of typical SMTP traffic for completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the zero-duration connection and zero bytes sent as key indicators supporting the DoS classification, aligning with the top features. However, it introduces the 'seconds=0' feature which is not listed among the top features, potentially causing some inconsistency. The explanation covers the main drivers but could better clarify how the features directly influence the prediction and note that other features are less relevant in this case. Overall, it is clear and mostly complete but slightly overstates the importance of unlisted features.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and the 'Normal' prediction, correctly emphasizing the short connection duration, typical protocol usage, and normal byte exchange. It avoids contradictions and hallucinations, clearly justifying the classification. However, it could briefly mention the absence of suspicious patterns or anomalies to enhance completeness and clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, highlighting the zero duration, UDP protocol, and private service as key benign indicators consistent with the 'Normal' prediction. It avoids contradictions and provides a clear rationale. However, it could improve by explicitly mentioning the lack of anomalies in other features and noting potential caveats, such as the limited scope of features considered.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the application (pop_3), protocol (tcp), and connection flag (SF) as supporting the 'Normal' classification, aligning with the top features which are all zero or neutral, indicating typical activity. It avoids contradictions and provides a clear rationale. However, it could improve by explicitly mentioning that the features' values are consistent with normal behavior and noting that no anomalous drivers are present. The explanation is concise and SOC-ready, but slightly more detail on how these features collectively support normalcy would enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as the destination service (ftp_data) and source bytes, but the SHAP values indicate these features have negligible contribution (+0.000), which contradicts the narrative suggesting high source bytes as a sign of attack. The explanation does not clearly connect the features to the R2L label nor discusses the absence of significant feature influence, leading to potential hallucinations. Clarity is moderate but could be more concise and focused. Completeness is limited; it notes some features but fails to justify the classification thoroughly or address caveats, such as the lack of significant feature contributions.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as high src_bytes, ICMP protocol, and zero duration as drivers for the DoS prediction, aligning with the SHAP top features and their signs. It avoids contradictions and clearly links features to the label. However, it could improve by explicitly noting the absence of other features' influence and mentioning potential caveats, such as benign reasons for high src_bytes in some contexts. Overall, it provides a concise, accurate, and comprehensive justification suitable for SOC explanations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights zero bytes sent from source to destination and the connection duration as key indicators supporting the DoS prediction. It aligns with the features and their signs, avoiding contradictions. However, it mentions 'connection length' which is not explicitly listed among the top features, potentially causing some ambiguity. The explanation covers the main drivers but could better clarify the absence of other features and note that the explanation is based on limited feature context, leaving some caveats unaddressed.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as the application (pop_3), protocol (tcp), connection flag (SF), and byte counts, aligning with the 'Normal' prediction. It avoids contradictions and hallucinations, providing a clear rationale. However, it could improve by explicitly linking how these features support the normal classification and noting any potential caveats, such as the context of small data transfer amounts or typicality of the service.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and the prediction of 'Normal.' It correctly interprets the low traffic volume, the HTTP protocol, and the absence of suspicious indicators as key drivers for the normal classification. The mention of asymmetrical traffic and typical HTTP behavior supports the reasoning. However, it could improve by explicitly referencing the zero values for the top features, clarifying that these features contribute to the normal label, and noting that some features (e.g., duration, protocol_type, service) are not directly part of the top features but still relevant. Overall, it is concise, unambiguous, and SOC-ready, with minor room for more explicit connection to the top features.",
+      "overall": 4.125
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the top features, correctly interpreting small byte counts, private services, and successful connection flags as indicators of normal traffic. However, it lacks explicit mention of the other features (e.g., source/destination ports, connection counts) and does not address potential caveats or edge cases that could challenge the normal classification. The explanation is concise and SOC-ready but could benefit from more comprehensive coverage of key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as ICMP protocol, zero duration, and small byte size as drivers for the 'Probe' classification, aligning with the top features provided. It clearly links these features to typical probing behavior. However, it could improve by explicitly mentioning the absence of conflicting features and noting that other features (like destination service) are not contributing, ensuring full coverage of key drivers. Overall, it is accurate, concise, and SOC-ready.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights features consistent with the 'Normal' prediction, such as low bytes transferred and legitimate service (SMTP). It aligns with the SHAP features indicating negligible data transfer and standard connection status. However, it does not explicitly address the other features with zero SHAP values or discuss potential caveats, such as the context of the connection or other subtle indicators. The explanation is concise and SOC-ready but could improve in covering all key drivers and potential limitations for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features with zero SHAP values, aligning with the 'Normal' prediction and indicating minimal impact on the classification. It accurately interprets the features such as zero bytes sent from source to destination and small bytes from destination to source, consistent with normal traffic. However, it mentions the presence of telnet without explicitly stating that this alone is not suspicious, which could be clarified further. The explanation covers the main drivers but lacks discussion of potential caveats or other features that could influence the decision, leading to a slightly lower completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the key features have zero or neutral SHAP values, aligning with the 'Normal' prediction and indicating no suspicious activity. It clearly describes the role of each feature and their contribution to the classification. However, it lacks explicit mention of how these features collectively support the 'Normal' label and does not discuss potential caveats or edge cases, such as unusual but benign traffic patterns. Overall, it is accurate and understandable but could be more comprehensive in covering all key drivers and caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation claims that zero bytes sent from source to destination and a connection duration of zero seconds are indicative of a DoS attack, which is inconsistent with the provided top features. All top features have zero SHAP values, indicating they do not contribute to the prediction, yet the explanation attributes significance to them. This contradiction reduces fidelity. The explanation is somewhat concise but contains ambiguous phrasing, especially regarding the connection duration. It also lacks coverage of other potential key drivers or caveats, such as the role of the protocol or other features. Overall, the explanation does not accurately or comprehensively justify the prediction based on the given features.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing small byte counts, legitimate protocol, and normal connection flags consistent with a 'Normal' prediction. However, it does not explicitly address the other features (e.g., duration, src_bytes) or note potential caveats such as the context of activity or rare edge cases. The explanation is clear and concise but could better justify why the features collectively support the 'Normal' label and acknowledge limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies features with negligible SHAP values and their alignment with a normal classification, avoiding contradictions. It clearly states the features and their implications. However, it lacks explicit mention of how these features collectively justify the 'Normal' label and does not discuss potential caveats or other key drivers that could influence the decision, leading to a slightly lower completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the key features have zero SHAP values, indicating they do not influence the 'Normal' classification, aligning with the prediction. It clearly describes the features and their contributions, making it SOC-ready. However, it lacks discussion of other potential factors or caveats that could affect the classification, such as the context of the network activity or additional features not mentioned, which would improve completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the neutral nature of the key features (FTP, TCP, SF) in supporting a 'Normal' classification. It clearly states that these features are typical for legitimate activity, which matches the prediction. However, it lacks explicit mention of how the features collectively justify the label or address potential caveats, such as the hot indicator or byte counts, which could be relevant for completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their SHAP values, emphasizing that zero bytes sent from source to destination and the FTP data service are typical in normal traffic. It clearly states the key drivers and their implications. However, it could improve clarity by explicitly connecting the features to the 'Normal' prediction and noting that no contradictory features are present. The explanation covers the main drivers but could mention potential caveats, such as brief or idle connections that might also appear benign, to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the large dst_bytes and the application being HTTP, which support the 'Normal' classification. It aligns with the SHAP features indicating typical client-server communication. However, it does not explicitly address the zero SHAP values for other features or mention potential caveats, such as the absence of features indicating anomalies. The explanation is concise and SOC-ready but could improve completeness by explicitly connecting all features to the prediction and noting that some features have negligible impact.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the use of ICMP protocol and the generic 'eco_i' service to probe activity, aligning with the features provided. It notes the small bytes sent as indicative of scanning behavior. However, it does not explicitly address the other features with zero values or discuss potential caveats, such as benign uses of ICMP or false positives. Overall, it aligns well with the features and prediction, but could be more explicit about limitations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing that low bytes sent and standard service usage support normal behavior. However, it does not explicitly address the other features or potential caveats, such as the failed login attempt, which could be relevant. The explanation is concise and SOC-ready but could improve in covering all key drivers and potential uncertainties.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features, correctly emphasizing small byte counts, HTTP service, and normal connection flags as indicators of normal traffic. It avoids contradictions and hallucinations, maintaining consistency with the features. However, it could improve clarity by explicitly linking the features to the 'Normal' label and summarizing the key drivers more succinctly. Completeness is adequate but could better note potential caveats, such as the possibility of benign anomalies or the importance of other features not highlighted, to fully justify the classification.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features supporting the 'Normal' classification, such as small byte counts, legitimate application (HTTP), and typical connection flags. It aligns with the top features' signs, which are all zero, indicating no abnormal contributions. However, it lacks explicit mention of how these features collectively justify the normal label and does not address potential caveats or alternative explanations, slightly limiting completeness. Overall, the explanation is clear and mostly faithful to the features and prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features such as protocol, service, and connection status, aligning with the 'Normal' prediction. However, it does not explicitly connect the feature signs to the normal label or discuss potential caveats, such as the possibility of malicious activity mimicking normal traffic. The description is clear and concise but could better justify why these features support the normal classification and address any limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features supporting the 'Normal' classification, such as the HTTP service and large response bytes, aligning with the SHAP top features. It avoids contradictions and clearly links features to benign behavior. However, it could improve clarity by explicitly mentioning the signs of the features and how they support the classification, and completeness by noting that other features (e.g., duration, protocol) also contribute to the decision and acknowledging potential caveats like atypical but benign traffic.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing the significance of zero-length connections, TCP protocol, rejection status, and private service as key indicators of DoS. It avoids hallucinations and clearly states the reasoning. However, it could improve by explicitly connecting the features to the predicted label and noting potential caveats, such as benign reasons for some features.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies zero bytes sent from source to destination and zero connection duration as key indicators aligned with the features, supporting the DoS classification. It clearly states the significance of these features and their typical behavior in DoS scenarios. However, it mentions 'connection length' which is not explicitly listed among the top features provided, leading to a slight inconsistency. The explanation is concise and SOC-ready, but could improve by explicitly referencing only the provided features and their signs. Overall, it effectively justifies the label with relevant drivers and notes the caveat regarding feature mention.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately references the key features such as data transfer volumes, protocol type, and connection duration, aligning with the 'Normal' prediction. It correctly interprets the asymmetry in bytes and the HTTP protocol as typical for legitimate web traffic, avoiding contradictions. The explanation is clear and covers the main drivers of the classification, though it could briefly mention that no suspicious indicators were observed to enhance completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights the key features with their signs, such as zero bytes sent from source to destination and short connection duration, aligning with the DoS prediction. It avoids hallucinations and maintains technical accuracy, supporting fidelity. The explanation is concise and structured, making it SOC-ready, which supports clarity. However, it lacks some detail on how these features collectively justify the label and does not explicitly mention potential caveats or limitations, slightly reducing completeness. Overall, it provides a solid, accurate, and clear justification aligned with the model's features.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing key factors such as zero duration, HTTP service, and successful login, which support the 'Normal' classification. However, it overstates the significance of some features (e.g., 'no connections to the same host') without explicitly linking them to the prediction, and it does not mention potential caveats like the possibility of benign anomalies or the role of other features. Overall, it is accurate but could be more concise and explicitly connect all features to the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly emphasizes the zero bytes sent from source to destination and vice versa, aligning with the features' signs and the 'Normal' prediction. It appropriately interprets these features as indicative of a handshake or non-data transfer, consistent with typical TCP behavior. However, it does not explicitly address the other features (e.g., protocol, service, flag) or mention potential caveats such as short-lived connections or other benign behaviors that could influence the classification. The explanation is clear and concise but could benefit from a more comprehensive coverage of key drivers and acknowledgment of limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing low traffic volume, TCP protocol, and auth service as key normal indicators. It avoids contradictions and clearly states the rationale for the 'Normal' classification. However, it could be more concise and explicitly mention the absence of anomalies or caveats, such as the potential for rare benign anomalies or the limited feature set used.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing zero bytes exchanged as key indicators of DoS, consistent with the SHAP features. It clearly states the significance of these features and their typical behavior during a DoS attack. However, it could improve by explicitly mentioning the other features (e.g., protocol type, flag) and their lack of contribution, and by noting potential caveats such as benign scenarios with zero data exchange.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features with zero bytes sent in both directions, aligning with typical DoS attack patterns. It emphasizes the significance of these features and their signs, avoiding contradictions. However, it mentions 'length of the connection' which is not part of the provided features, indicating a slight inconsistency. The explanation covers the main drivers but could better clarify how the features collectively justify the DoS label and note potential caveats or limitations, such as the absence of other contributing features or context.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features such as connection duration and protocol, which are relevant, but the provided top features show zero values for all key indicators (bytes sent, application, port similarity, host connections). The explanation's features (e.g., connection length, REJ flag) are not aligned with the top features listed, leading to contradictions. The explanation is somewhat verbose and not SOC-ready, lacking concise justification directly tied to the top features. Overall, it partially addresses the label but lacks clarity and full coverage of key drivers.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features, emphasizing zero bytes sent and the rejected connection status as indicators of probing activity. It clearly links these features to the 'Probe' label and notes the absence of data transfer as key evidence. However, it could improve by explicitly mentioning the significance of the 'REJ' flag and clarifying that the features collectively support the classification without contradictions. Overall, it is concise, relevant, and covers the main drivers.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the features and their zero SHAP contributions, aligning with the 'Normal' prediction. It clearly states that low data transfer and common services support normality, with straightforward language suitable for SOC contexts. However, it does not explicitly mention the absence of other potential anomalies or caveats, such as the significance of the protocol or other features, which would enhance completeness. Overall, it provides a solid, concise justification consistent with the features and prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately references the key features with their signs and aligns with the 'Normal' prediction, emphasizing typical behavior such as small byte counts and standard protocol usage. It avoids contradictions and is clear and concise. However, it could improve completeness by explicitly connecting how these features collectively justify the 'Normal' label and noting that other features are not contributing to suspicion, as well as mentioning potential caveats like rare benign anomalies.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features supporting the 'Normal' prediction, such as the HTTP service, normal byte transfer patterns, and connection status. However, it does not explicitly address the zero SHAP values indicating these features have minimal influence, nor does it mention potential caveats like other unconsidered features or context. The explanation is clear and concise but could better justify why these features lead to a normal classification, especially given the zero SHAP contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as connection duration and protocol, aligning with the prediction of DoS. However, it incorrectly emphasizes 'connection length = 0' as a primary indicator, which is not supported by the provided top features (all zero values). The mention of 'brief, ephemeral connection' contradicts the feature data. The explanation also discusses the protocol and destination service without clearly connecting these to the model's features or the prediction, leading to ambiguity. Overall, it partially aligns but contains contradictions and lacks comprehensive coverage of the key drivers, resulting in moderate scores.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low data transfer, legitimate protocol, and typical application usage, which support the 'Normal' prediction. It avoids contradictions and clearly states the key drivers. However, it could be more concise and explicitly mention the absence of anomalies or caveats to improve clarity and completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing benign indicators such as HTTP service, normal byte transfer patterns, and standard TCP flags. It correctly interprets the absence of suspicious activity as supporting a 'Normal' classification. However, it could improve clarity by explicitly linking each feature to the prediction and noting that all key features are consistent with normal behavior. Completeness is slightly limited as it does not discuss potential caveats or alternative explanations, such as benign anomalies or missing features that could influence the decision.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as connection duration, protocol, destination service, and rejection status as drivers for the 'Probe' classification, aligning with the provided features and their signs. However, it does not explicitly mention the zero bytes sent or received, which are also consistent with probing activity, nor does it clarify how these features collectively justify the label. The explanation is concise and SOC-ready but could improve in explicitly connecting all features to the classification decision for full completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the connection duration and protocol as key indicators, aligning with the features provided. However, it mentions 'length of the connection (seconds) = 0' which is not among the top features listed, indicating a potential hallucination. The explanation also emphasizes the private service as a sign of probing, which is consistent, but it lacks detail on how the other features contribute or contradict the prediction. Overall, it partially aligns but introduces unsupported details and lacks clarity and comprehensive coverage of key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features supporting the 'Normal' classification, such as the presence of HTTP service, large destination-to-source bytes, and successful connection status, aligning with the features' signs. However, it overemphasizes the significance of large bytes from destination to source without explicitly contrasting with typical malicious patterns or noting potential caveats, such as benign large transfers or other normal behaviors. The explanation is clear and concise but could better justify why these features outweigh other factors, hence a slightly lower completeness score.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as the ICMP protocol, zero duration, and small bytes sent, which align with typical probe behavior. However, it does not explicitly address the other features with zero importance or discuss potential caveats, such as benign ICMP traffic or false positives. The description is clear and concise but could better justify why these features specifically lead to a 'Probe' classification and note limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly aligns the features with the 'Normal' prediction, emphasizing that zero bytes sent from source to destination and the presence of POP3 are typical of normal traffic. It accurately interprets the RSTO flag as a normal connection termination. However, it does not explicitly address the other features with zero values or potential caveats, such as the significance of the 'flag=RSTO' in this context or the absence of other anomalies. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately references key features such as protocol type, application, connection state, and byte transfer volumes, aligning with the prediction of 'Normal.' It clearly describes how these features support normal behavior. However, it omits explicit mention of the feature signs and their directions, which could enhance clarity and completeness. Overall, the explanation is consistent and SOC-ready, but could benefit from more explicit linkage between features and the 'Normal' classification.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly references the key features with zero SHAP contributions, aligning with the 'Normal' prediction and indicating typical behavior. It clearly states the significance of features like bytes sent and service type, supporting the classification. However, it does not explicitly mention the other features with zero SHAP values nor discusses potential caveats or the overall context, which would enhance completeness. The explanation is concise and SOC-ready, but could benefit from a brief summary of why no features suggest anomalies.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly references the key features with their signs, aligning with the model's prediction of 'Normal'. It emphasizes the negligible bytes transferred and the use of a legitimate service (SMTP), which support the normal classification. However, it does not explicitly mention the other features (e.g., source/destination ports, connection counts) or discuss potential caveats, such as the possibility of benign anomalies or the limited scope of features considered. The explanation is concise and SOC-ready but could improve in covering all relevant drivers for full completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as UDP protocol, zero duration, and minimal bytes sent as drivers for the 'Probe' classification, aligning with the top features provided. It clearly states how these features indicate scanning activity. However, it could improve by explicitly connecting the features to the signs in the top features list and noting that other features like application/service being private support the probe hypothesis. The explanation is concise and SOC-ready, covering main drivers and providing context, but it slightly lacks in explicitly addressing potential caveats or alternative explanations.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their zero SHAP values, indicating no contradictions. It clearly states that low bytes and generic service suggest normal activity. However, it lacks explicit mention of how these features collectively justify the 'Normal' label and does not discuss potential caveats or edge cases, limiting completeness. The explanation is concise and SOC-ready, but could benefit from a brief summary of the overall reasoning.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights the key features (zero bytes sent/received, duration, protocol, service) that support the 'Normal' classification, aligning with the top features provided. It avoids contradictions and is concise. However, it could improve clarity by explicitly stating that the lack of activity and immediate termination are typical of normal behavior, and it notes that telnet's presence alone isn't suspicious in this context. The explanation covers the main drivers and provides a reasonable justification, but it could briefly mention caveats such as the potential risks of telnet usage.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the top features have zero SHAP values, indicating they do not influence the classification, aligning with the 'Normal' prediction. It clearly describes each feature's lack of importance, supporting the model's decision. However, it does not explicitly mention other potential features or caveats that could influence the classification, and the explanation could be more concise for SOC readiness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions features with zero SHAP values but suggests they are significant, creating a contradiction. It does not clearly connect the features to the R2L prediction, especially given the zero SHAP values. The reasoning about high src_bytes and FTP protocol is incomplete and somewhat speculative without explicit feature contributions. The explanation could be clearer and more directly tied to the model's feature attributions.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights low data transfer, protocol type, and short duration as key factors supporting the 'Normal' classification, aligning with the top features' signs. However, it does not explicitly mention the features with zero contribution or address potential caveats, such as the absence of other contextual indicators. Overall, it aligns well with the features and prediction but could be more concise and comprehensive.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features, emphasizing zero duration, HTTP service, and absence of suspicious flags, which support the 'Normal' prediction. However, it overemphasizes certain features (e.g., 'hot' indicators) that are not part of the top features and does not explicitly address the other features with zero SHAP values, potentially missing some context. The explanation is clear and concise but could better justify why other features do not influence the classification. Overall, it accurately reflects the key drivers but could improve in completeness by covering all relevant features and caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights key features such as low data transfer volume, protocol type, and short duration, which align with the 'Normal' prediction. However, it does not explicitly address the signs (all zeros) from the top features or mention potential caveats like the absence of other contextual indicators. The explanation is clear and concise but could better justify why these features are sufficient to confirm normality, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation correctly notes that zero bytes sent and a zero-duration connection are consistent with normal activity, aligning with the prediction. However, it overemphasizes the impact of zero bytes and does not address other features or potential caveats. The SHAP values are all zero, indicating minimal influence, but the explanation could better clarify that these features alone are insufficient to fully justify the 'Normal' label without considering other factors. The explanation is mostly clear but somewhat verbose and incomplete in covering all key drivers.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation mentions key features such as zero bytes sent and rejected connection status, which align with the prediction of DoS. However, it incorrectly interprets zero bytes sent as indicative of a 'silent' attack, which contradicts typical DoS behavior where high traffic volume is expected. The explanation lacks coverage of other relevant features like connection attempts or traffic volume, and the rationale for the attack type is somewhat superficial. Overall, it partially aligns with the features but contains contradictions and insufficient detail.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as zero bytes exchanged and the RSTR flag, which are indicative of probing activity. It aligns with the prediction of 'Probe' and avoids hallucinations. However, it could be more explicit about how these features collectively justify the label and mention potential caveats, such as benign reasons for zero bytes or RSTR flags.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and the predicted label 'Normal,' emphasizing low data transfer, legitimate application use, and absence of suspicious indicators. However, it does not explicitly mention the key features with zero SHAP contributions, which could clarify why they are not influencing the prediction. The explanation is concise and SOC-ready but could better justify the absence of certain features as drivers, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the top features and their signs, correctly emphasizing the significance of bytes transfer directions, protocol, and connection status in supporting the 'Normal' classification. It avoids contradictions and hallucinations, providing a clear rationale. However, it could improve completeness by explicitly mentioning how the absence of suspicious features and the overall feature combination support the normal label, and noting potential caveats such as the limited scope of features considered.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that the top features have zero SHAP impact, aligning with the 'Normal' prediction and indicating no contradictory feature influences. It clearly states the features considered and their typical interpretations. However, it does not explicitly connect how these features collectively support the 'Normal' label or mention potential caveats, such as the absence of other features that might influence the decision. Overall, it is concise and SOC-ready but could improve in explicitly justifying the classification and noting limitations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the SHAP values indicating neutral contributions from all key features, aligning with the 'Normal' prediction. It clearly states that these features do not influence the classification, supporting fidelity and clarity. However, it lacks detail on how these features collectively support the 'Normal' label and does not mention potential caveats or other factors that could influence the decision, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing small src_bytes and typical HTTP traffic as indicators of normal activity. It correctly interprets the large dst_bytes as normal server response data. However, it does not explicitly address the other features with zero contribution or discuss potential caveats, such as the context of traffic patterns or other subtle indicators. Overall, it provides a clear and mostly complete justification consistent with the prediction.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly highlights the high bytes sent from source to destination and the use of ICMP as key indicators supporting the DoS classification. It appropriately notes the significance of these features and their typical association with DoS attacks. However, it overemphasizes the 'application/service' feature without clear evidence that 'ecr_i' is relevant or indicative of a DoS, and it does not explicitly address the other features' lack of contribution or potential contradictions. The explanation is concise and SOC-ready but could better justify the absence of other features' influence, thus slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation attributes the DoS prediction mainly to features like zero bytes sent and short connection duration, which align with typical DoS characteristics. However, it overstates the significance of the uucp service as a key driver without clear evidence, and the features provided are all zero or minimal, making the rationale weak. The explanation lacks detail on how these features collectively justify the label and does not address potential caveats or alternative interpretations, limiting its completeness and clarity.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies key features such as connection duration, protocol, and service type as supporting the 'Probe' classification, aligning with the provided SHAP features. However, it mentions features like connection length and protocol that are not explicitly listed among the top features, which could cause some confusion. The explanation is concise and SOC-ready but could better emphasize the key drivers explicitly shown in the top features. It notes the caveat that the features are indicative but does not discuss potential limitations or alternative explanations, slightly reducing completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as zero bytes sent from source to destination and short connection duration, which align with typical DoS indicators. However, the top features provided are all zero-valued, indicating no contribution from these features, which contradicts the explanation's emphasis on them. The explanation also introduces additional details (e.g., connection length) not reflected in the top features, leading to hallucinations. Clarity is moderate, but the explanation could be more concise and focused on the provided features. Completeness is limited, as it does not sufficiently justify the label based on the top features or note potential caveats.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly highlights key features such as low data transfer, protocol type, and short duration, which align with the features' signs and support the 'Normal' prediction. However, it does not explicitly address the absence of contradictory features or potential caveats, such as rare benign anomalies or atypical but legitimate traffic patterns. The explanation is clear and concise but could better justify why no suspicious indicators are present, thus slightly limiting completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not align with the typical indicators of a DoS attack, leading to contradictions. It mentions high traffic volume but then states no bytes were sent, which is inconsistent. The reasoning about connection duration being zero is relevant but not sufficiently integrated with the feature importance. Overall, the explanation lacks clarity and misses key drivers like high connection attempts or network patterns that justify the DoS label, and it does not address caveats or alternative explanations.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 3.5,
+      "rationale": "The explanation accurately states that the key features have zero SHAP values, aligning with the 'Normal' prediction and indicating no suspicious activity from these features. It clearly communicates that these features are not contributing to the classification, which supports the decision. However, it does not explicitly mention other potential factors or caveats that could influence the classification, such as the overall feature context or the absence of anomalies. The explanation is concise and SOC-ready, but could improve in completeness by explicitly noting that other features not listed also do not contribute, and by summarizing the overall reasoning more explicitly.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the provided features, emphasizing small byte counts and common HTTP traffic as indicators of normal activity, with no contradictions. It clearly states the key features and their implications. However, it does not explicitly mention potential caveats or other factors that could influence the classification, such as context or additional features, which would improve completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 2.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features like connection duration, protocol, service, and connection status, which are relevant to the prediction of DoS. However, the provided top features show all zero values, indicating no feature influence, which contradicts the explanation's emphasis on these features. The explanation also introduces details about attack mechanisms (e.g., flooding, SYN flood, exploitation) that are not supported by the feature data or the top features. Overall, the explanation partially aligns with the features but contains contradictions and lacks clarity and comprehensive justification.",
+      "overall": 2.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references the zero-length duration and TCP protocol as indicators of DoS, aligning with the features provided. However, it introduces the 'seconds=0' feature which is not present in the top features list, leading to potential hallucination. The mention of 'REJ' status is relevant but not explicitly tied to the top features. Overall, the explanation partially aligns with the features but contains some inaccuracies and lacks detail on how each feature drives the classification, limiting its clarity and completeness.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly highlights features supporting the 'Normal' classification, such as small byte counts, HTTP protocol, and successful connection status. It aligns with the top features indicating normal activity. However, it does not explicitly address the zero values for other features or potential caveats, and could be more concise for SOC readiness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features supporting the 'Normal' classification, such as short duration, legitimate protocol, and low data transfer, aligning with the top features' signs. It avoids contradictions and provides a clear, concise rationale. However, it could improve by explicitly connecting the features to the absence of anomalies and noting potential caveats, such as the limited feature scope or the possibility of benign anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation aligns well with the features and their signs, emphasizing low traffic volume, legitimate HTTP service, and absence of suspicious indicators, which supports the 'Normal' classification. However, it does not explicitly address the top features with zero importance scores, nor does it mention potential caveats such as rare benign anomalies or the context of the event. The explanation is clear and concise but could better justify why certain features are not contributing, enhancing completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly links the features to the 'Probe' label, emphasizing the brief connection duration, TCP protocol, private service, and rejected status as indicative of reconnaissance activity. However, it mentions features like connection length and protocol that are not part of the provided top features, leading to some inconsistency. The explanation covers key drivers and notes the caveat of rejection status, but could be more concise and directly aligned with the given features for maximum clarity.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as UDP protocol, private service, and minimal bytes sent as drivers for the 'Probe' classification, aligning with the top features. However, it does not explicitly address the signs of features or how they support the label, nor does it mention potential caveats or alternative explanations. The explanation is clear and concise but could benefit from more explicit linkage between features and the label to improve completeness.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies the key features influencing the DoS prediction, such as zero duration, TCP protocol, and rejection status, aligning with the top features provided. However, it introduces some features not listed among the top features (e.g., duration=0, protocol_type=tcp, flag=REJ), which may cause slight inconsistency. The reasoning is clear and concise but could better emphasize the absence of feature signs and the significance of the 'REJ' flag. It justifies the label well but lacks discussion of potential caveats or alternative explanations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent in both directions and the connection duration as key indicators supporting the DoS classification. It aligns with the features provided, which show no data exchange and a very short connection, typical of DoS attacks. However, it does not explicitly mention the other features with zero values, such as application/service or connection attempts, which could further strengthen the justification. The explanation is clear and concise but could include more detail on how these features collectively justify the label, especially noting the absence of other typical activity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent from source to destination and zero connection duration as key indicators of DoS, aligning with the features provided. However, it mentions 'connection length' which is not explicitly listed among top features, leading to some ambiguity. The explanation is generally clear and concise but could better emphasize the specific features used for the prediction. It justifies the label based on the features but lacks discussion of potential caveats or alternative explanations, slightly limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features and their SHAP values, emphasizing the negligible impact of each feature (+0.000) on the 'Normal' classification. It clearly states that small data transfer and neutral application/service contribute to the normal label, with no contradictions or hallucinations. However, it lacks explicit mention of how these features collectively justify the prediction and does not discuss potential caveats or other key drivers, limiting completeness.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 5.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation accurately aligns with the provided features and their signs, correctly emphasizing the benign nature of UDP, NTP service, and symmetric data exchange. It avoids contradictions and clearly states why these features support a 'Normal' classification. The explanation is concise and SOC-ready, though it could briefly mention potential caveats or limitations, such as rare malicious uses of these features, to improve completeness.",
+      "overall": 4.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.5,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing low data transfer volumes, the HTTP protocol, and absence of suspicious indicators, which support the 'Normal' classification. It clearly states the key drivers and their implications. Minor deductions are due to the explanation not explicitly mentioning the absence of contradictory features or potential caveats, but overall it provides a coherent and SOC-ready justification.",
+      "overall": 4.125
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation accurately reflects the neutral SHAP values for the key features and aligns with the 'Normal' prediction. It clearly states that the features considered are neutral and do not indicate anomalies. However, it lacks explicit mention of how the absence of significant SHAP contributions from other features supports the normal classification, and it could better emphasize that the features collectively justify the label. Overall, it is concise and SOC-ready but could improve in covering all key drivers and caveats.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly links the high bytes sent (1032) and the protocol (ICMP) to the DoS prediction, aligning with the top features' signs. It emphasizes the short duration and unusual protocol as key indicators. However, it does not explicitly address the other features with zero SHAP values, nor does it mention potential caveats such as benign high-volume ICMP traffic or false positives. The explanation is clear and concise but could better justify why these features are sufficient for the classification and acknowledge limitations.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies zero bytes sent in both directions and the REJ flag as key indicators supporting the DoS classification, aligning with the top features. However, it does not explicitly mention the signs of the features or how they support the label, nor does it discuss potential caveats or alternative explanations. The explanation is concise and SOC-ready but could improve in covering all key drivers and clarifying the feature contributions.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 3.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references features with zero SHAP values, which do not contribute to the prediction, leading to contradictions. It mentions 'length of the connection' and 'bytes sent from source to destination' as key drivers, but these are not among the top features with positive or negative SHAP values. The reasoning about short-lived connections and zero bytes sent is plausible but not directly supported by the provided feature importance. The explanation could be clearer and more aligned with the actual top features and their signs, and it lacks discussion of caveats or other key drivers.",
+      "overall": 2.25
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly emphasizes the high src_bytes as a key driver for the DoS prediction, aligning with the positive SHAP value and the typical characteristic of traffic flooding. It also notes the asymmetry in traffic flow, consistent with the features. However, the mention of 'hot' indicators is incomplete and somewhat vague, lacking specific details on how they contribute to the classification. The explanation does not address other potential factors or caveats, such as the context of the network event or other features that might influence the prediction. Overall, it is clear and mostly aligned with the features, but could improve in completeness and specificity.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation correctly identifies key features such as zero bytes sent from source to destination, the use of a private service, and a zero-duration connection as indicative of a probe. It aligns these features with typical probe behavior, avoiding contradictions or hallucinations. The description is clear and concise, effectively justifying the 'Probe' label and covering main drivers. However, it could improve by explicitly noting the absence of other features or behaviors that might challenge the classification, and by summarizing the reasoning more succinctly for SOC readiness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the short duration, TCP protocol, FTP service, and byte transfer directions as key drivers for the 'Normal' classification. It avoids contradictions and clearly states the reasoning. However, it could improve by explicitly mentioning the absence of suspicious patterns or caveats, and by more directly linking the features to the label decision.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 2.0,
+      "clarity": 4.0,
+      "completeness": 2.0,
+      "rationale": "The explanation references key features such as zero duration and zero bytes exchanged, which align with the prediction of DoS. However, it introduces a feature 'seconds=0' not present in the provided top features, creating a contradiction. The explanation emphasizes connection brevity and lack of data transfer, consistent with DoS behavior, but lacks coverage of other potential key drivers like connection rate or repeated attempts. The caveats about other attack types or benign anomalies are missing, reducing completeness. Overall, the explanation is somewhat aligned but contains inconsistencies and lacks comprehensive justification.",
+      "overall": 2.5
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation aligns well with the provided features: zero bytes sent, UDP protocol, and private service are consistent with a normal, brief connection. It correctly interprets the lack of data transfer and protocol characteristics. However, it does not explicitly address the top features' signs or potential contradictions, and it omits caveats about rare anomalies that might still be benign. Overall, it provides a clear and mostly complete justification but could improve on explicitly connecting all features and their signs.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.5,
+      "rationale": "The explanation correctly identifies key features such as connection duration and high source-to-destination bytes, aligning with the prediction of DoS. It accurately interprets the significance of these features and their directions. However, it lacks explicit mention of the other features with zero SHAP values, which could clarify that they are not contributing to this prediction, and does not fully address potential caveats or alternative explanations. Overall, it provides a clear and mostly complete justification consistent with the features and prediction.",
+      "overall": 3.875
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly identifies that the features with zero SHAP values and the observed values support the 'Normal' classification, aligning with the top features provided. It emphasizes the low bytes sent and standard HTTP service as key drivers, which is consistent. However, it mentions features like 'wrong fragments' and 'hot indicators' that are not included in the top features, leading to some ambiguity. The explanation could be clearer by explicitly linking the top features to the classification and noting that no contradictory features are present. The completeness is moderate, as it justifies the label based on the features but does not thoroughly discuss potential caveats or alternative explanations.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the provided features and their signs, emphasizing the zero duration, UDP protocol, and private service as key benign indicators. It avoids contradictions and clearly states the reasoning behind the 'Normal' classification. However, it could improve by explicitly mentioning the absence of other suspicious features and noting potential caveats, such as the limited feature set or the possibility of benign anomalies.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that the features have SHAP values of zero, indicating they do not influence the 'Normal' classification, aligning with the prediction. It clearly identifies key features like application type and byte transfer direction, supporting the normal label. However, it lacks explicit mention of other features or potential caveats that could influence the decision, such as duration or protocol specifics, which would improve completeness. Overall, the explanation is concise and SOC-ready, but could benefit from more comprehensive coverage of key drivers.",
+      "overall": 3.75
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 4.0,
+      "rationale": "The explanation aligns well with the top features, emphasizing the normality of the application (pop_3), TCP protocol, connection status (SF), and small byte counts, all consistent with a typical benign event. It avoids contradictions and clearly states the key drivers. However, it could improve by explicitly mentioning the absence of suspicious activity or anomalies, and noting that the features collectively support the normal classification, enhancing completeness.",
+      "overall": 4.0
+    },
+    {
+      "fidelity": 4.0,
+      "clarity": 4.0,
+      "completeness": 3.0,
+      "rationale": "The explanation correctly states that all top features have zero SHAP value, indicating neutrality and aligning with the 'Normal' prediction. It clearly describes each feature's role, maintaining clarity. However, it lacks discussion of the other features in the instance that support the 'Normal' label, such as src_bytes and dst_bytes, and does not explicitly mention potential caveats or the overall justification for the classification, limiting completeness.",
+      "overall": 3.75
+    }
+  ],
+  "summary": {
+    "fidelity": 3.685,
+    "clarity": 3.848,
+    "completeness": 3.243,
+    "overall": 3.615
+  }
+}

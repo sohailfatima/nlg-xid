@@ -1,0 +1,56 @@
+{
+  "ablation_config": {
+    "model_path": "trained_models/nsl-kdd_ae_model.pkl",
+    "test_path": "data/nsl_kdd/KDDTrain+200.txt",
+    "output_dir": "results/ablation_kdd_ae_train",
+    "explain_methods": [
+      "rules",
+      "llm",
+      "shap_only"
+    ],
+    "llm_providers": [
+      "openrouter"
+    ],
+    "llm_inputs": [
+      "full"
+    ],
+    "llm_models": [
+      "meta-llama/llama-3.1-8b-instruct"
+    ],
+    "judge_enabled": false
+  },
+  "experiments": [
+    {
+      "experiment_id": 1,
+      "experiment_name": "exp_1_rules",
+      "explain_method": "rules",
+      "llm_provider": null,
+      "llm_inputs": null,
+      "llm_model": null,
+      "success": true
+    },
+    {
+      "experiment_id": 2,
+      "experiment_name": "exp_2_llm_openrouter_full_meta_llama_llama_3.1_8b_instruct",
+      "explain_method": "llm",
+      "llm_provider": "openrouter",
+      "llm_inputs": "full",
+      "llm_model": "meta-llama/llama-3.1-8b-instruct",
+      "success": true
+    },
+    {
+      "experiment_id": 3,
+      "experiment_name": "exp_3_shap_only",
+      "explain_method": "shap_only",
+      "llm_provider": null,
+      "llm_inputs": null,
+      "llm_model": null,
+      "success": true
+    }
+  ],
+  "summary": {
+    "total_experiments": 3,
+    "successful": 3,
+    "failed": 0
+  }
+}
