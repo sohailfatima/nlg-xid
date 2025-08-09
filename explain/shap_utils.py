@@ -51,26 +51,49 @@ def _aggregate_shap_to_original_features(shap_values, feature_names_out, origina
 
 
 def shap_for_xgb(trained_pipeline, X_sample, background_samples=200, top_k=5):
-    # trained_pipeline: Pipeline(preprocessor, xgb)
+    # trained_pipeline: Pipeline(preprocessor='pre', classifier='clf')
     pre = trained_pipeline.named_steps['pre']
     clf = trained_pipeline.named_steps['clf']
+
+    # Transform and ensure dense numeric array
     X_trans = pre.transform(X_sample)
+    if hasattr(X_trans, "toarray"):
+        X_trans = X_trans.toarray()
+    X_trans = np.asarray(X_trans, dtype=np.float32)
+
+    # Build explainer and compute SHAP
     explainer = shap.TreeExplainer(clf)
-    shap_values = explainer.shap_values(X_trans)  # list per class for XGB multi:softprob
-    # Aggregate importance across classes by mean |value|
-    if isinstance(shap_values, list):
-        vals = np.mean([np.abs(v) for v in shap_values], axis=0)
+
+    # Newer SHAP returns an Explanation object from calling the explainer
+    sv = explainer(X_trans)
+
+    # Normalize to a 2-D (n_samples, n_features) array of magnitudes
+    if hasattr(sv, "values"):  # Explanation
+        vals = np.abs(sv.values)
+        if vals.ndim == 3:      # (n, d, k) multiclass
+            vals = vals.mean(axis=2)
     else:
-        vals = np.abs(shap_values)
-    
-    # Get feature names from preprocessor and original feature names
+        # Older API: sv could be np.ndarray or list[np.ndarray]
+        if isinstance(sv, list):  # list of (n, d) per class
+            vals = np.mean([np.abs(v) for v in sv], axis=0)
+        else:  # (n, d)
+            vals = np.abs(sv)
+
     feature_names_out = pre.get_feature_names_out()
     original_feature_names = list(X_sample.columns)
-    
-    # Aggregate SHAP values back to original features
+
+    # Sanity check
+    assert vals.shape[1] == len(feature_names_out), \
+        f"SHAP feature dim {vals.shape[1]} != names {len(feature_names_out)}"
+
+    # Aggregate to original features
     df = _aggregate_shap_to_original_features(vals, feature_names_out, original_feature_names)
     df.index = X_sample.index
-    
+
+    # Optional: drop label columns if present
+    df = df.drop(columns=['label', 'attack_cat'], errors='ignore')
+
+    # Top-K original features by mean |SHAP|
     top = df.abs().mean(0).sort_values(ascending=False).head(top_k)
     return df, list(top.index)
 

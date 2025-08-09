@@ -1,28 +1,3 @@
-# from typing import Dict, Any, List
-# import numpy as np
-
-# # Example rule templates for UNSW-NB15. Adjust thresholds/coverage as needed.
-# def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[str, float], glossary: Dict[str,str]) -> str:
-#     phrases: List[str] = []
-#     s = lambda f: glossary.get(f, f)
-#     if 'sbytes' in sample and 'dbytes' in sample:
-#         if sample['sbytes'] > 1e5 and sample['dbytes'] < 1e3:
-#             phrases.append(f"Large {s('sbytes')} with low {s('dbytes')} is abnormal for benign traffic.")
-#     if 'state' in sample and isinstance(sample['state'], str) and sample['state'] in {'RST', 'RSTO', 'REJ'}:
-#         phrases.append(f"Connection state {sample['state']} indicates abnormal termination.")
-#     # SHAP-driven mentions
-#     top_feats = sorted(shap_dict.items(), key=lambda x: abs(x[1]), reverse=True)[:5]
-#     for f, v in top_feats:
-#         direction = "increased" if v > 0 else "decreased"
-#         phrases.append(f"{s(f)} {direction} the model's confidence.")
-#     base = f"The model classified this flow as '{pred_label}'. "
-#     if phrases:
-#         base += " ".join(phrases)
-#     else:
-#         base += "Key factors were unavailable; please refine rules."
-#     return base
-
-
 from typing import Dict, Any, List
 
 # -----------------------------
@@ -215,8 +190,11 @@ def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[st
     cat = (pred_label or sample.get("attack_cat","") or "Unknown").title()
     rule_fn = CATEGORY_RULES.get(cat, CATEGORY_RULES.get(pred_label, None))
     phrases: List[str] = []
+    hit = 0
     if rule_fn is not None:
         phrases += rule_fn(sample, shap_dict, glossary)
+        if phrases:
+            hit = 1
     else:
         phrases.append("Heuristics for this category are not defined; using generic SHAP rationale.")
 
@@ -231,5 +209,5 @@ def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[st
     base = f"The model classified this flow as '{pred_label}'."
     details = (" " + " ".join(phrases)) if phrases else ""
     shap_txt = (" Key factors: " + "; ".join(shap_desc) + ".") if shap_desc else ""
-    return base + details + shap_txt
+    return base + details + shap_txt, hit
 

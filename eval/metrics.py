@@ -7,12 +7,44 @@ from collections import Counter
 def tokenize(s: str) -> List[str]:
     return re.findall(r"\w+|[^\w\s]", s.lower())
 
-def bleu_score(preds: List[str], refs: List[List[str]], ngram: int = 4) -> float:
-    # refs: list of list(s) of reference tokens
-    preds_tok = [tokenize(p) for p in preds]
-    refs_tok = [[tokenize(r) for r in rlist] for rlist in refs]
+def bleu_score(preds: List[str], refs: List[str], ngram: int = 4) -> float:
+    """
+    Compute corpus BLEU for a single-reference setup.
+    - preds: list of hypothesis strings
+    - refs:  list of reference strings (aligned 1:1 with preds)
+    """
+    # You already have a tokenize() in scope; if not, define a simple one
+    def tok(s: str) -> List[str]:
+        # fall back if your tokenize() isn't imported here
+        return s.split()
+
+    preds_tok = [tok(p) for p in preds]
+    # Wrap each reference token list in an extra list to satisfy corpus_bleu API
+    refs_tok = [[tok(r)] for r in refs]
+
+    # Alignment guard
+    if len(preds_tok) != len(refs_tok):
+        raise ValueError(f"BLEU: preds ({len(preds_tok)}) and refs ({len(refs_tok)}) must be same length")
+
+    # Handle empty strings to avoid zero-length issues inside BLEU
+    for i, (hyp, ref_list) in enumerate(zip(preds_tok, refs_tok)):
+        if not hyp:
+            preds_tok[i] = ["<empty>"]
+        if not ref_list[0]:
+            ref_list[0] = ["<empty>"]
+
+    # Weights for n-gram BLEU (uniform up to ngram)
+    if not (1 <= ngram <= 4):
+        raise ValueError("BLEU: ngram must be in [1,4] for NLTK bleu_score weights as defined here")
+    weights = tuple([1.0 / ngram] * ngram)
+
     chencherry = SmoothingFunction()
-    score = corpus_bleu(refs_tok, preds_tok, smoothing_function=chencherry.method1, weights=tuple([1/ngram]*ngram))
+    score = corpus_bleu(
+        refs_tok,
+        preds_tok,
+        smoothing_function=chencherry.method1,
+        weights=weights
+    )
     return float(score)
 
 def shap_fidelity_check(explanations: List[str], top_features_lists: List[List[str]]) -> float:

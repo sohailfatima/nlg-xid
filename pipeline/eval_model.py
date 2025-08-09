@@ -137,12 +137,28 @@ def main():
                                         cfg['top_k'])
         # Predictions
         preds_proba = pipe.predict_proba(X_test)
-        preds = pipe.classes_[np.argmax(preds_proba, axis=1)]
+        class_preds = pipe.classes_[np.argmax(preds_proba, axis=1)]
+        
+        if dataset == 'nb15':
+            # NB15 class mapping used during training
+            class_names = ['Analysis', 'Backdoor', 'DoS', 'Exploits', 'Fuzzers',
+                          'Generic', 'Normal', 'Reconnaissance', 'Shellcode', 'Worms']
+        else:  # nsl-kdd
+            # For NSL-KDD, we'd need to define the class mapping here
+            # This would depend on how the autoencoder was trained for NSL-KDD
+            class_names = ['DoS', 'Probe', 'R2L', 'U2R', 'Normal']  # Common NSL-KDD classes
+
+        # Map numeric predictions to class names
+        preds = [class_names[int(pred)] if int(pred) < len(class_names) else f'unknown_{pred}' 
+                for pred in class_preds]
+        
+        # Map top features through glossary to match explanation format
+        top_list_mapped = [glossary.get(feat, feat) for feat in top_list]
         
         # Prepare per-instance SHAP dict
         shap_dicts = [dict(zip(shap_df.columns, shap_df.iloc[i].values)) 
                      for i in range(shap_df.shape[0])]
-        top_lists = [top_list for _ in range(len(shap_dicts))]
+        top_lists = [top_list_mapped for _ in range(len(shap_dicts))]
         
     else:  # autoencoder
         # Autoencoder model (now classification-based)
@@ -164,27 +180,30 @@ def main():
         # Map numeric predictions to class labels based on dataset
         if dataset == 'nb15':
             # NB15 class mapping used during training
-            class_names = ['Normal', 'Backdoor', 'Analysis', 'Fuzzers', 'Shellcode', 
-                          'Reconnaissance', 'Exploits', 'DoS', 'Worms', 'Generic']
+            class_names = ['Analysis', 'Backdoor', 'DoS', 'Exploits', 'Fuzzers',
+                          'Generic', 'Normal', 'Reconnaissance', 'Shellcode', 'Worms']
         else:  # nsl-kdd
             # For NSL-KDD, we'd need to define the class mapping here
             # This would depend on how the autoencoder was trained for NSL-KDD
-            class_names = ['normal', 'dos', 'probe', 'r2l', 'u2r']  # Common NSL-KDD classes
-        
+            class_names = ['DoS', 'Probe', 'R2L', 'U2R', 'Normal']  # Common NSL-KDD classes
+
         # Map numeric predictions to class names
         preds = [class_names[int(pred)] if int(pred) < len(class_names) else f'unknown_{pred}' 
                 for pred in numeric_preds]
         
+        # Map top features through glossary to match explanation format
+        top_list_mapped = [glossary.get(feat, feat) for feat in top_list]
+        
         shap_dicts = [dict(zip(shap_df.columns, shap_df.iloc[i].values)) 
                      for i in range(shap_df.shape[0])]
-        top_lists = [top_list for _ in range(len(shap_dicts))]
+        top_lists = [top_list_mapped for _ in range(len(shap_dicts))]
 
     # Build instances as dict (original feature space for readability)
     instances = [X_test.iloc[i].to_dict() for i in range(len(shap_dicts))]
     
     # Generate explanations
     print(f"Generating {args.explain} explanations...")
-    exps = build_explanations(
+    exps, coverage = build_explanations(
         dataset=dataset, 
         preds=[str(p) for p in preds], 
         shap_frames=shap_dicts, 
@@ -202,21 +221,24 @@ def main():
     # Evaluate explanations
     print("Computing evaluation metrics...")
     metrics = {}
+
+    if args.explain == 'rules':
+        metrics['rule_coverage'] = coverage
     
     # Import metrics functions when needed
     from eval.metrics import shap_fidelity_check
     
     # Check for gold references for BLEU evaluation
     exp_name = args.experiment_name or f"{dataset}_{model_type}_{args.explain}"
-    gold_path = os.path.join(args.output_dir, f"{dataset}_gold_refs.json")
+    gold_path = os.path.join("data/gold_labels", f"{dataset}_gold_refs.json")
     
     if os.path.exists(gold_path):
         gold = json.load(open(gold_path))
-        # Expect a dict with "refs": List[List[str]] aligned to exps
+        refs = [gold[p] if p in gold and gold[p] else " " for p in preds]
         bleu = 0.0
         try:
             from eval.metrics import bleu_score
-            bleu = bleu_score(exps, gold['refs'], cfg['eval']['bleu_ngram'])
+            bleu = bleu_score(exps, refs, cfg['eval']['bleu_ngram'])
         except Exception as e:
             print(f"Warning: BLEU computation failed: {e}")
             bleu = -1.0

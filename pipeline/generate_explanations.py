@@ -12,9 +12,14 @@ def build_explanations(dataset: str, preds: List[str], shap_frames: List[Dict[st
                        llm_provider='stub', llm_inputs='full', llm_variant='instruct', llm_model: str = None, api_key: str = None) -> List[str]:
     rule_func = choose_rule_module(dataset)
     outputs = []
+    total = 0
+    hits = 0
     for pred, shap_vals, inst, top in zip(preds, shap_frames, instances, top_lists):
         if mode == 'rules':
-            outputs.append(rule_func(inst, pred, shap_vals, glossary))
+            results, hit = rule_func(inst, pred, shap_vals, glossary)
+            hits += hit
+            total += 1
+            outputs.append(results)
         elif mode == 'llm':
             outputs.append(llm_explain(pred, top, shap_vals, inst, glossary, provider=llm_provider, variant=llm_variant, input_mode=llm_inputs, model=llm_model, api_key=api_key))
         elif mode == 'hybrid':
@@ -28,4 +33,4 @@ def build_explanations(dataset: str, preds: List[str], shap_frames: List[Dict[st
             outputs.append("Top factors -> " + "; ".join(parts))
         else:
             outputs.append("[Unknown explanation mode]")
-    return outputs
+    return outputs, (hits+0.0)/(total if total > 0 else 1)

@@ -273,10 +273,8 @@ def label_specializations(label: str, sample: Dict[str,Any], _shap: Dict[str,flo
 
 def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[str, float], glossary: Dict[str,str]) -> str:
     """Return a human-readable explanation grounded in rules + SHAP."""
-    label = (pred_label or "").lower()
-    cat = ATTACK_TO_CAT.get(label, sample.get("attack_cat", "") or "unknown")
-    cat = cat if isinstance(cat, str) else str(cat)
-    cat = cat if cat else "unknown"
+    cat = pred_label
+    hit = 0
 
     pieces: List[str] = []
     # Category scaffolding
@@ -288,9 +286,14 @@ def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[st
         pieces += explain_r2l(sample, shap_dict, glossary)
     elif cat == "U2R":
         pieces += explain_u2r(sample, shap_dict, glossary)
+    elif cat == "Normal":
+        pieces.append("Normal traffic patterns detected.")
+
+    if cat == "Normal" or pieces:
+        hit = 1
 
     # Label-specific refinement
-    pieces += label_specializations(label, sample, shap_dict, glossary)
+    # pieces += label_specializations(cat, sample, shap_dict, glossary)
 
     # SHAP top factors (mention the strongest drivers)
     # We insert up to 5 strongest features by |SHAP|
@@ -301,7 +304,7 @@ def explain_instance(sample: Dict[str, Any], pred_label: str, shap_dict: Dict[st
             direction = "increased" if v > 0 else "decreased"
             shap_desc.append(f"{s(glossary,f)} {direction} the model's confidence")
 
-    base = f"The model classified this connection as '{pred_label}' (category: {cat})."
-    details = (" " + " ".join(pieces)) if pieces else " Behavior matches the predicted category's typical indicators."
+    base = f"The model classified this connection as '{pred_label}'"
+    details = (" " + " ".join(pieces)) if pieces else ""
     shap_txt = (" Key factors: " + "; ".join(shap_desc) + ".") if shap_desc else ""
-    return base + details + shap_txt
+    return base + details + shap_txt, hit
