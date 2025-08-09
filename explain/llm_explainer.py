@@ -4,42 +4,92 @@ import requests
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 
-PROMPT_TEMPLATE = """You are a cybersecurity expert analyzing network traffic for a Security Operations Center (SOC).
+PROMPT_TEMPLATE = """You are a cybersecurity analyst explaining an intrusion detection model's decision.
 
-Task: Explain why the machine learning model classified this network event as "{prediction}".
+Classification: "{prediction}"
 
-Key Contributing Features (SHAP values show feature importance):
-{top_features}
+Evidence Summary:
+- Key features{feat_hint}: {top_features}
+- Event details{raw_hint}: {raw_values}
 
-Event Details:
-{raw_values}
+Write a concise, technical explanation for SOC analysts that:
+- Focuses only on the provided evidence (no assumptions or new fields).
+- Explains how the top features and their directions support the classification.
+- Uses precise infosec terms (e.g., scan, DoS, brute force, credential abuse) where appropriate.
+- If SHAP values are present, emphasize sign and magnitude.
+- If details are missing (e.g., SHAP or raw fields), state that briefly and rely on the available evidence.
 
-Instructions:
-- Provide a clear, technical explanation suitable for SOC analysts
-- Focus on the most important features and their cybersecurity implications
-- Explain how these features support the classification decision
-- Use precise cybersecurity terminology
-- Keep the explanation concise but comprehensive
-- Do not contradict the evidence provided
+Constraints: ≤6 sentences and ≤100 words. Start directly with the explanation; do not add headings or lists.
 
 Explanation:"""
 
-def render_prompt(prediction: str, shap_top_list: List[str], shap_values: Dict[str, float], instance: Dict[str, Any], glossary: Dict[str, str], variant: str='instruct', input_mode: str='full'):
-    # input_mode ablation: 'label', 'label+features', 'label+shap', 'full'
-    s = lambda f: glossary.get(f, f)
-    if input_mode == 'label':
-        top_str = "N/A"
-        raw_str = "N/A"
-    elif input_mode == 'label+features':
-        top_str = ", ".join(s(f) for f in shap_top_list)
-        raw_str = "N/A"
-    elif input_mode == 'label+shap':
-        top_str = ", ".join(f"{s(f)} ({shap_values.get(f,0):+.3f})" for f in shap_top_list)
-        raw_str = "N/A"
+def render_prompt(
+    prediction: str,
+    shap_top_list: List[str],
+    shap_values: Dict[str, float],
+    instance: Dict[str, Any],
+    glossary: Dict[str, str],
+    variant: str = "instruct",
+    input_mode: str = "full",  # 'label', 'label+features', 'label+shap', 'full'
+    max_raw_fields: int = 20,
+    shap_decimals: int = 3,
+) -> str:
+    """Render an instruction prompt for an LLM explanation with clear ablation controls.
+
+    input_mode:
+      - 'label': only the predicted label
+      - 'label+features': label + feature names (no SHAP)
+      - 'label+shap': label + feature names with SHAP scores
+      - 'full': label + SHAP + truncated raw instance fields
+    """
+
+    # Safe glossary lookup
+    def gloss(name: str) -> str:
+        return glossary.get(name, name)
+
+    # Build feature string based on ablation
+    if input_mode == "label":
+        top_features = "N/A"
+        feat_hint = " (none provided)"
+    elif input_mode == "label+features":
+        top_features = ", ".join(gloss(f) for f in shap_top_list) or "N/A"
+        feat_hint = ""
     else:
-        top_str = ", ".join(f"{s(f)} ({shap_values.get(f,0):+.3f})" for f in shap_top_list)
-        raw_str = ", ".join(f"{s(k)}={v}" for k,v in list(instance.items())[:20])  # truncate for readability
-    return PROMPT_TEMPLATE.format(prediction=prediction, top_features=top_str, raw_values=raw_str)
+        # 'label+shap' or 'full' => include SHAP with sign
+        def fmt_val(v: float) -> str:
+            sign = "+" if v >= 0 else ""
+            return f"{sign}{round(float(v), shap_decimals):.{shap_decimals}f}"
+        top_features = ", ".join(
+            f"{gloss(f)} ({fmt_val(shap_values.get(f, 0.0))})" for f in shap_top_list
+        ) or "N/A"
+        feat_hint = " (with SHAP)"
+
+    # Build raw values string based on ablation
+    if input_mode == "full":
+        # Keep ordering deterministic and truncate for readability
+        items = list(instance.items())[:max_raw_fields]
+        raw_values = ", ".join(f"{gloss(str(k))}={v}" for k, v in items) or "N/A"
+        raw_hint = ""
+    else:
+        raw_values = "N/A"
+        raw_hint = " (none provided)"
+
+    # Assemble final prompt
+    prompt = PROMPT_TEMPLATE.format(
+        prediction=prediction,
+        top_features=top_features,
+        raw_values=raw_values,
+        feat_hint=feat_hint,
+        raw_hint=raw_hint,
+    )
+
+    # Variant hook (kept for compatibility; can adjust style subtly if needed)
+    if variant == "concise":
+        prompt += "\nKeep the explanation closer to 4 sentences if possible."
+    elif variant == "strict":
+        prompt += "\nAbsolutely do not exceed 100 words."
+
+    return prompt
 
 class OllamaClient:
     """Client for Ollama-hosted Llama models"""
