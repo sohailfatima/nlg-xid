@@ -5,11 +5,11 @@ End-to-end pipeline to:
 2) train Autoencoder (PyTorch-based unsupervised) and XGBoost (supervised),
 3) compute SHAP explanations,
 4) generate rule-based and LLM-augmented natural-language explanations,
-5) run ablations and evaluate with BLEU and optional LLM-as-judge.
+5) run ablations and evaluate with BLEU and LLM-as-judge.
 
-## New Two-Stage Workflow
+## Two-Stage Workflow
 
-This codebase now separates model training from evaluation to allow efficient multiple experiments:
+This codebase separates model training from evaluation to allow efficient multiple experiments:
 
 1. **Training Stage**: Train models once and save them to disk
 2. **Evaluation Stage**: Load trained models and run multiple experiments/ablations
@@ -17,39 +17,25 @@ This codebase now separates model training from evaluation to allow efficient mu
 ## Quickstart
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+python3 -m venv .venv && source .venv/bin/activate
+pip3 install -r requirements.txt
 ```
 
-### Option 1: Unified Demo (Train + Evaluate)
-
-```bash
-# Example: NSL-KDD with XGBoost + rule-based explanations
-python demo.py --dataset nsl-kdd --model xgb --explain rules \
-  --train_path data/nsl_kdd/KDDTrain+.txt \
-  --test_path data/nsl_kdd/KDDTest+.txt
-
-# Example: NB15 with Autoencoder + LLM explanations (using Ollama)
-python demo.py --dataset nb15 --model ae --explain llm \
-  --train_path data/unsw_nb15/nb15_train.csv \
-  --test_path data/unsw_nb15/nb15_test.csv \
-  --llm_provider ollama --llm_model llama2
-```
-
-### Option 2: Separate Training and Evaluation
+### Training and Evaluation
 
 #### Step 1: Train Models
 
 ```bash
 # Train XGBoost on NSL-KDD
-python train_model.py --dataset nsl-kdd --model xgb \
-  --train_path data/nsl_kdd/KDDTrain+.txt \
-  --model_name nsl_kdd_xgb
+python3 eval.py --dataset nsl-kdd --train_path data/nsl_kdd/KDDTrain+.txt \
+--test_path data/nsl_kdd/KDDTest+.txt --model_type xgb \
+--model_path trained_models/nsl-kdd_xgb_model.pkl
 
 # Train Autoencoder on NB15  
-python train_model.py --dataset nb15 --model ae \
-  --train_path data/unsw_nb15/nb15_train.csv \
-  --model_name nb15_autoencoder
+python3 eval.py --dataset nb15 --train_path data/unsw_nb15/nb15_train.csv \
+--test_path data/unsw_nb15/nb15_test.csv --model_type ae \
+--model_path trained_models/nb15_ae_model.pkl 
+--ae_weights trained_models/nb15_ae_model_autoencoder.pth
 ```
 
 #### Step 2: Run Evaluations (Multiple Times)
@@ -65,46 +51,45 @@ python eval_model.py --model_path trained_models/nsl_kdd_xgb.pkl \
   --test_path data/nsl_kdd/KDDTest+.txt \
   --explain llm --llm_provider ollama --llm_model llama2
 
-# Evaluate with hybrid explanations + LLM-as-judge
-python eval_model.py --model_path trained_models/nsl_kdd_xgb.pkl \
-  --test_path data/nsl_kdd/KDDTest+.txt \
-  --explain hybrid --judge --llm_provider huggingface
 ```
 
-### Option 3: Automated Ablation Studies
+### Automated Ablation Studies
 
 ```bash
 # Run comprehensive ablation study
-python run_ablations.py --model_path trained_models/nsl_kdd_xgb.pkl \
-  --test_path data/nsl_kdd/KDDTest+.txt \
-  --explain_methods rules llm hybrid \
-  --llm_providers stub ollama \
-  --llm_inputs label full \
-  --enable_judge
+!python3 pipeline/run_ablations.py \
+    --model_path trained_models/nsl-kdd_ae_model.pkl \
+    --test_path data/nsl_kdd/KDDTrain+200.txt \
+    --api_key [api_key] \
+    --llm_provider openrouter \
+    --llm_model meta-llama/llama-3.1-8b-instruct \
+    --explain_methods rules llm shap_only\
+    --output_dir results/ablation_kdd_ae_train
 ```
 
 ## Features
 
 - **Dataset Support**: NSL-KDD and UNSW-NB15 with dataset-aware feature glossaries
 - **Models**: XGBoost (supervised) and PyTorch Autoencoder (unsupervised anomaly detection)
-- **Explanations**: Rule-based, LLM-generated, and hybrid approaches
-- **LLM Support**: Stub, Ollama, and HuggingFace providers with customizable models
-- **Evaluation**: SHAP fidelity, BLEU scores, and LLM-as-judge evaluation
+- **Explanations**: Rule-based, LLM-generated, SHAP-only
+- **LLM Support**: Stub, Ollama, HuggingFace and OpenRouter providers with customizable models
+- **Evaluation**: SHAP fidelity, BLEU scores, Rule Coverage, and LLM-as-judge evaluation
 - **Efficient Workflow**: Train once, evaluate multiple times without retraining
 
 ## Directory Structure
 
 - `train_model.py` - Train and save models
-- `eval_model.py` - Load models and run evaluations  
+- `eval_model.py` - Load models and run evaluations (test model performance)  
 - `run_ablations.py` - Automated ablation studies
-- `demo.py` - Unified training + evaluation wrapper
 - `trained_models/` - Saved model files and metadata
-- `outputs/` - Evaluation results and explanations
+- `results/` - Evaluation results and explanations
 - `explain/` - Explanation generation modules
+- `eval/` - Evaluation metrics and LLM-as-judge
 - `models/` - Model implementations
 - `data_loaders/` - Data loading and preprocessing
-- `eval/` - Evaluation metrics and LLM-as-judge
+- `data/` - Full test and train datasets + 200 sample balanced evalaution sets for ablations
+- `Experiments.ipynb` - Output of all experiments ran
 
 ## Configuration
 
-Configuration is managed via `configs/defaults.yaml`. See `LLM_SETUP.md` for LLM setup instructions.
+Configuration is managed via `configs/defaults.yaml`. 
